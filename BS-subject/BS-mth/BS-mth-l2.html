@@ -5,56 +5,68 @@
         <link rel="stylesheet" href="../../CSS/general.css">
         <link rel="stylesheet" href="../../CSS/head.css">
         <link rel="stylesheet" href="../../CSS/title.css">
+        <link rel="stylesheet" href="../../CSS/sidebar.css">
         <link rel="stylesheet" href="../../CSS/questions.css">
-
+        <script src="../../Java.js"></script>
     </head>
 
     <body>
-        
-        <div class="header1-">
-            <a href="../../BS-home.html"><div class="bs-pfp-"><img src="../../Pictures/20250305_205006.jpg"></div></a>
-            <a href="../../BS-home.html"><button class="bs-pfp-txt-">Brainstormers archieve</button></a>
-            <div class="bugor-"><img class="bugor-pfp-" src="../../Pictures/hamburger-menu.svg"></div>
-        
-        </div>
-        <!--navigation bar-->
-        <div class="header2-">
-            <a href="BS-mth-l1.html"><button class="nev-btn-">Lesson 1</button></a>
-            <a href="BS-mth-l2.html"><button class="nev-btn- selected-">Lesson 2</button></a>
-            <a href="BS-mth-l3.html"><button class="nev-btn-">Lesson 3</button></a>
-            <a href="BS-mth-l4.html"><button class="nev-btn-">Lesson 4</button></a>
-        </div>
-        
-        
-        <div class="title-">
-            <div class="subject-">
-                MTH 101
+        <div class="main-">
+            <div class="curtain-" id="curtain"></div>
+
+            <div class="header1-">
+                <a href="../../BS-home.html"><div class="bs-pfp-"><img src="../../Pictures/20250305_205006.jpg"></div></a>
+                <a href="../../BS-home.html"><button class="bs-pfp-txt-">Brainstormers archieve</button></a>
+                <div class="bugor-" onclick="bugor()"><img class="bugor-pfp-" src="../../Pictures/hamburger-menu.svg"></div>
+            
+            </div>
+            <!--navigation bar-->
+            <div class="header2-">
+                <a href="BS-mth-l1.html"><button class="nev-btn-">Lesson 1</button></a>
+                <a href="BS-mth-l2.html"><button class="nev-btn- selected-">Lesson 2</button></a>
+                <a href="BS-mth-l3.html"><button class="nev-btn-">Lesson 3</button></a>
+                <a href="BS-mth-l4.html"><button class="nev-btn-">Lesson 4</button></a>
+            </div>
+            
+            
+            <div class="title-">
+                <div class="mth-101-">
+                    MTH 101
+                </div>
+
+                <div class="change-">
+                    <a href="BS-mth-l1.html"><button class="before-btn-">Before</button></a>
+                    <a href="BS-mth-l3.html"><button class="next-btn-">Next</button></a>
+                </div>
+                <div class="topic-">
+                    Elemental set theory
+                </div>
             </div>
 
-            <div class="change-">
-                <a href="BS-mth-l1.html"><button class="before-btn-">Before</button></a>
-                <a href="BS-mth-l3.html"><button class="next-btn-">Next</button></a>
+            <div class="sidebar-" id="sidebar">
+                <div class="close-" onclick="closeh()" id="close">&times;</div>
+                <div class="subject-">MTH 101</div>
+                <div class="subject-">PHY 101</div>
+                <div class="subject-"></div>
+                <div class="subject-"></div>
             </div>
-            <div class="topic-">
-                Elemental set theory
-            </div>
-        </div>
-        
-        <div class="questions-">
-            <div class="question-">
-                1. 
-            </div>
+            
+            <div class="questions-">
+                <div class="question-">
+                    1. 
+                </div>
 
-            <div class="options-">
-                <p>a.</p>
-                <p>b.</p>
-                <p>c.</p>
-                <p>d.</p>
-                <p>e.</p>
-            </div>
+                <div class="options-">
+                    <p>a.</p>
+                    <p>b.</p>
+                    <p>c.</p>
+                    <p>d.</p>
+                    <p>e.</p>
+                </div>
 
-            <div class="answer-">
-                show...
+                <div class="answer-">
+                    show...
+                </div>
             </div>
         </div>
     </body>

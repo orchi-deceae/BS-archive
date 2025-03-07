@@ -9,3 +9,11 @@ body{
     margin: 0;
     background-color: #888888;
 }
+.curtain-{
+    background-color: black;
+    position: absolute;
+    height: 2500px;
+    width: 100%;
+    opacity: 0;
+    z-index: -1;
+}
