@@ -16,16 +16,28 @@
 
             <div class="header1-">
                 <a href="../../BS-home.html"><div class="bs-pfp-"><img src="../../Pictures/20250305_205006.jpg"></div></a>
-                <a href="../../BS-home.html"><button class="bs-pfp-txt-">Brainstormers archieve</button></a>
+                <a href="../../BS-home.html"><button class="bs-pfp-txt-">Brainstormers <span class="bs-pfp-span-"> archieve</span></button></a>
                 <div class="bugor-" onclick="bugor()"><img class="bugor-pfp-" src="../../Pictures/hamburger-menu.svg"></div>
             
             </div>
             <!--navigation bar-->
             <div class="header2-">
-                <a href="BS-mth-l1.html"><button class="nev-btn-">Lesson 1</button></a>
-                <a href="BS-mth-l2.html"><button class="nev-btn- selected-">Lesson 2</button></a>
-                <a href="BS-mth-l3.html"><button class="nev-btn-">Lesson 3</button></a>
-                <a href="BS-mth-l4.html"><button class="nev-btn-">Lesson 4</button></a>
+                <div class="nav-1-">
+                    <a href="BS-mth-l1.html"><button class="nev-btn-">Lesson 1</button></a>
+                    <div class="pop-up-">Elemental set theory</div>
+                </div>
+                <div class="nav-2-">
+                    <a href="BS-mth-l2.html"><button class="nev-btn-  selected-">Lesson 2</button></a>
+                    <div class="pop-up-">Elemental set theory</div>
+                </div>
+                <div class="nav-3-">
+                    <a href="BS-mth-l3.html"><button class="nev-btn-">Lesson 3</button></a>
+                    <div class="pop-up-">Elemental set theory</div>
+                </div>
+                <div class="nav-l-">
+                    <a href="BS-mth-l4.html"><button class="nev-btn-">Lesson 4</button></a>
+                    <div class="pop-up-">Elemental set theory</div>
+                </div>
             </div>
             
             
@@ -58,14 +70,16 @@
 
                 <div class="options-">
                     <p>a.</p>
-                    <p>b.</p>
+                    <p id="answer">b. txt</p>
                     <p>c.</p>
                     <p>d.</p>
                     <p>e.</p>
                 </div>
 
                 <div class="answer-">
-                    show...
+                   <span id="show" onclick="answer()">[Show]</span>
+                   <span id="hide"  onclick="hide()"></span>
+                   <span id="extra"></span>
                 </div>
             </div>
         </div>

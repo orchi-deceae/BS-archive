@@ -18,3 +18,17 @@ function closeh(){
 
     document.getElementById("close").style.color = "white"
 }
+
+function answer(){
+    document.getElementById("answer").style.textDecoration = "underline";
+    document.getElementById("show").innerHTML = ""
+    document.getElementById("hide").innerHTML = "[Hide]"
+    document.getElementById("extra").innerHTML = "txt"
+}
+
+function hide(){
+    document.getElementById("answer").style.textDecoration = "none";
+    document.getElementById("show").innerHTML = "[Show]"
+    document.getElementById("hide").innerHTML = ""
+    document.getElementById("extra").innerHTML = ""
+}
