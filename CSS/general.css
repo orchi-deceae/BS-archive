@@ -1,0 +1,11 @@
+*{
+    font-family: arial;
+}
+a{
+    text-decoration: none;
+}
+body{
+    height: 2500px;
+    margin: 0;
+    background-color: #888888;
+}

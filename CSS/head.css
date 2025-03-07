@@ -1,0 +1,116 @@
+.header1-{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    height: 200px;
+}
+.header2-{
+    background-color: black;
+    color: white;
+
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    height: 100px;
+    padding-top: 100px;
+}
+
+.bs-pfp-{
+    display: flex;
+    height: 80px;
+    margin: 0 10px;
+    object-fit: contain;
+    cursor: pointer;
+}
+.bs-pfp-:active{
+    height: 85px;
+}
+.bs-pfp-txt-{
+    font-family: arial;
+    font-size: 30px;
+    padding-bottom: 10px;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+.bs-pfp-txt-:active{
+    background-color: green;
+}
+.bugor-{
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.bugor-pfp-{
+    height: 40px;
+}
+.bugor-pfp-:active{
+    background-color: green;
+
+    
+}
+
+.nev-btn-{
+    background-color: inherit;
+    color: white;
+
+    display: flex;
+    border: none;
+    cursor: pointer;
+
+    margin: 0;
+    padding: 8px 25px;
+    border-radius: 3px;
+    transition: background-color 200ms;
+    
+}
+.nev-btn-:hover{
+    background-color: rgba(252, 252, 252, 0.4);
+}
+.nev-btn-:active{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.8);
+}
+.selected-{
+    background-color: rgba(255, 255, 255, 0.85);
+    color: black;
+    cursor: pointer;
+    transition: background-color 200ms;
+}
+.selected-:hover{
+    background-color: white;
+    color: black;
+    
+}
+
+@media (min-width: 500px) {
+    .header1-{
+        height: 200px;
+    }
+    .header2-{
+        height: 100px;
+    }
+}
+@media (max-width: 500px) {
+    .header1-{
+        height: 100px;
+    }
+    .header2-{
+        height: 50px;
+    }
+}
