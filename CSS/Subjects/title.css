@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     font-size: 40px;
-    padding: 10px 0 0 0;
+    padding: 10px 0 10px 0;
 }
 .topic-{
     font-size: 35px;
@@ -55,4 +55,29 @@
 .before-btn-:active,
 .next-btn-:active{
     box-shadow: none;
+}
+
+.after-{
+    justify-content: end;
+}
+.before-,
+.after-{
+    position: relative;
+    display: flex;
+}
+.before- .beforepop-,
+.after- .afterpop-{
+    background-color: gray;
+    color: white;
+    position: absolute;
+    padding: 3px 7px;
+    bottom: -29px;
+    opacity: 0;
+    transition: 500ms;
+    white-space: nowrap;
+    pointer-events: none;
+}
+.before-:hover .beforepop-,
+.after-:hover .afterpop-{
+    opacity: 1;
 }

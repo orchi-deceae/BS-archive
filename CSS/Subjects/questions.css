@@ -8,12 +8,12 @@
     right: 0;
     border-radius: 7px;
     padding: 25px;
-    margin: 25px 50px;
+    margin: 25px 25px;
 }
 .question-{
     font-size:18px;
 }
 .answer-{
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
 }
