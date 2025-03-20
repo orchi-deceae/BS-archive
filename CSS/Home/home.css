@@ -17,12 +17,57 @@
 
 
 .sub-main-txt-{
-    margin-bottom: 100px;
-}
-.sub-main-txt- p{
     display: flex;
     justify-content: center;
 }
-.sub-main-txt- p:first-child{
+.sub-main-txt-:nth-child(2){
+    margin-top: 20px;
+}
+.sub-main-txt-:nth-child(3){
+    margin-bottom: 50px;
+}
+.sub-main-txt- p{
     position: relative;
+    margin: 10px 0;
+    
+}
+.sub-main-txt- .p1-::after{
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: -4px;
+    width: calc(100% + 4px);
+    height: 100%;
+    border-left: 1px solid transparent;
+    animation: 
+    blinker 750ms 6,
+    curtIN 1500ms steps(30) forwards;
+    animation-delay: 1000ms;
+}
+.sub-main-txt- .p2-::after{
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: -4px;
+    width: calc(100% + 4px);
+    height: 100%;
+    border-left: 1px solid transparent;
+    animation: 
+    blinker 750ms infinite,
+    curtIN 1500ms steps(30) forwards;
+    animation-delay: 5000ms;
+}
+
+@keyframes blinker {
+    0%, 50% {
+        border-color: darkorange;
+    }
+}
+
+@keyframes curtIN {
+    to{
+        width: 0%;
+    }
 }

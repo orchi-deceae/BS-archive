@@ -54,6 +54,7 @@
     cursor: pointer;
 }
 .subj-ol-{
+    padding-top: 20PX;
     display: none;
 }
 .subj-ol- li{
@@ -61,9 +62,13 @@
     white-space: wrap;
 }
 
-.side-sub-:checked ~ label .mth-ol-,
-.side-sub-:checked ~ label .phy-ol-,
-.side-sub-:checked ~ label .txt-ol-{
+.side-sub-:checked ~ label .mth101-ol-,
+.side-sub-:checked ~ label .phy101-ol-,
+.side-sub-:checked ~ label .cos101-ol-,
+.side-sub-:checked ~ label .gst106-ol-,
+.side-sub-:checked ~ label .gst107-ol-,
+.side-sub-:checked ~ label .chm101-ol-,
+.side-sub-:checked ~ label .bio101-ol-{
     position: relative;
     display: block;
     flex-direction: column;
@@ -83,8 +88,12 @@
     border-top: 6px solid black;
     transition: 300ms;
 }
-.side-sub-:checked ~ label .mth-arw-,
-.side-sub-:checked ~ label .phy-arw-,
-.side-sub-:checked ~ label .txt-arw-{
+.side-sub-:checked ~ label .mth101-arw-,
+.side-sub-:checked ~ label .phy101-arw-,
+.side-sub-:checked ~ label .cos101-arw-,
+.side-sub-:checked ~ label .gst106-arw-,
+.side-sub-:checked ~ label .gst107-arw-,
+.side-sub-:checked ~ label .chm101-arw-,
+.side-sub-:checked ~ label .bio101-arw-{
     transform: rotate(180deg);
 }

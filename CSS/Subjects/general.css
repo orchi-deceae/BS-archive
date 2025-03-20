@@ -9,9 +9,8 @@ body{
     height: 2500px;
     margin: 0;
     counter-reset: qs;
-    background-color: black;
-    background-image: url(../../Screenshot\ 2025-03-19\ 194542.png), url(../../Screenshot\ 2025-03-19\ 194542.png);
-    background-repeat: repeat-x, repeat-x;
-    background-position-y: -60px, 400px;
-    background-position-x: -150px, -270px;
+    background-color: rgb(255, 255, 255);
+}
+.off{
+    display: none;
 }

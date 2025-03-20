@@ -25,14 +25,22 @@
 }
 
 /*rgb(144, 255, 144)*/
-.mth-backgr-{
+.first-backgr-{
     background-color: #D9EDE1;
 }
-.phy-backgr-{
+.second-backgr-{
     background-color: #FFF4A4;
 }
-.mth-backgr-,
-.phy-backgr-{
+.third-backgr-{
+    background-color: #00df8d;
+}
+.forth-backgr-{
+    background-color: #96D4D3;
+}
+.fifth-backgr-{
+    background-color: #FFC0C8;
+}
+.backgr-{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -76,7 +84,10 @@
     display: none;
 }
 
-.check-:checked ~ label .mth-backgr- .subj-btns-,
-.check-:checked ~ label .phy-backgr- .subj-btns-{
+.check-:checked ~ label .first-backgr- .subj-btns-,
+.check-:checked ~ label .second-backgr- .subj-btns-,
+.check-:checked ~ label .third-backgr- .subj-btns-,
+.check-:checked ~ label .forth-backgr- .subj-btns-,
+.check-:checked ~ label .fifth-backgr- .subj-btns-{
     display: flex;
 }
