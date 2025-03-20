@@ -2,18 +2,16 @@
     font-family: arial;
 }
 a{
+    color: black;
     text-decoration: none;
 }
 body{
     height: 2500px;
     margin: 0;
-    background-color: #888888;
-}
-.curtain-{
+    counter-reset: qs;
     background-color: black;
-    position: absolute;
-    height: 2500px;
-    width: 100%;
-    opacity: 0;
-    z-index: -1;
+    background-image: url(../../Screenshot\ 2025-03-19\ 194542.png), url(../../Screenshot\ 2025-03-19\ 194542.png);
+    background-repeat: repeat-x, repeat-x;
+    background-position-y: -60px, 400px;
+    background-position-x: -150px, -270px;
 }

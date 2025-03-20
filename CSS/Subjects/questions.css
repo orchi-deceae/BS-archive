@@ -4,16 +4,53 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    counter-reset: as;
 
     right: 0;
     border-radius: 7px;
     padding: 25px;
-    margin: 25px 25px;
+    margin: 25px 25px;  
 }
-.question-{
-    font-size:18px;
+
+.questions- div{
+    font-size: 18px;
 }
-.answer-{
+.questions- div::before{
+    counter-increment: qs;
+    content: counter(qs)". ";
+    font-size: 18px;
+    width: 10px;
+    height: 10px;
+}
+.questions- p{
+    display: flex;
+    margin: 10px 20px;
     font-size: 16px;
+}
+.questions- p::before{
+    counter-increment: as;
+    content: counter(as, lower-alpha) ".";
+}
+.questions- label span{
     cursor: pointer;
+}
+
+
+.answer- span{
+    cursor: pointer;
+}
+label span:first-child{
+    display: flex;
+}
+.check-:checked ~ .ans-{
+    text-decoration: underline;
+}
+.check-:checked ~ label span:last-child{
+    display: flex;
+    padding-right: 5px;
+}
+#hide, .check-, 
+label span:last-child, 
+.check-:checked ~ label span:first-child{
+    display: none;
 }

@@ -12,28 +12,27 @@
 
     <body>
         <div class="main-">
-            <div class="curtain-" id="curtain"></div>
+            <div class="curtain-"  onclick="close_()" id="curtain"></div>
 
             <div class="header1-">
-                <a href="../../BS-home.html"><div class="bs-pfp-"><img src="../../Pictures/20250305_205006.jpg"></div></a>
-                <a href="../../BS-home.html"><button class="bs-pfp-txt-">Brainstormers <span class="bs-pfp-span-"> archieve</span></button></a>
-                <div class="bugor-" onclick="bugor()"><img class="bugor-pfp-" src="../../Pictures/hamburger-menu.svg"></div>
+                <a href="../../BS-home.html"><div><img src="../../Pictures/20250305_205006.jpg"></div></a>
+                <a href="../../BS-home.html"><button>Brainstormers <span> archieve</span></button></a>
+                <div onclick="bugor_()"><img src="../../Pictures/hamburger-menu.svg"></div>
             
             </div>
             <!--navigation bar-->
             <div class="header2-">
-                <a href="BS-mth-l1.html"><button class="nev-btn- selected-"><span class="lnames-">Lesson 1</span><span class="snames-">Elemental set theory</span></button></a>
-                <a href="BS-mth-l2.html"><button class="nev-btn-"><span class="lnames-">Lesson 2</span><span class="snames-">Elemental set theory</span></button></a>
-                <a href="BS-mth-l3.html"><button class="nev-btn-"><span class="lnames-">Lesson 3</span><span class="snames-">Elemental set theory</span></button></a>
-                <a href="BS-mth-l4.html"><button class="nev-btn-"><span class="lnames-">Lesson 4</span><span class="snames-">Elemental set theory</span></button></a>
+                <a href="BS-mth-l1.html"><button class = "selected-"><span>Elemental set theory</span><span class="hidden-subject-">Elemental set theory</span></button></a>
+                <a href="BS-mth-l2.html"><button><span>Lesson 2</span><span class="hidden-subject-">Elemental set theory</span></button></a>
+                <a href="BS-mth-l3.html"><button><span>Lesson 3</span><span class="hidden-subject-">Elemental set theory</span></button></a>
+                <a href="BS-mth-l4.html"><button><span>Lesson 4</span><span class="hidden-subject-">Elemental set theory</span></button></a>
             </div>
             
             
             <div class="title-">
-                <div class="mth-101-">
+                <div class="sub-101-">
                     MTH 101
                 </div>
-
                 <div class="change-">
                     <div class="before-">
                         <a href="BS-mth-l4.html"><button class="before-btn-">Before</button></a>
@@ -43,39 +42,92 @@
                         <a href="BS-mth-l2.html"><button class="next-btn-">Next</button></a>
                         <div class="afterpop-">Elemental set theory</div>
                     </div>
-                    
                 </div>
                 <div class="topic-">
                     Elemental set theory
                 </div>
             </div>
 
+            <!--side navigation-->
             <div class="sidebar-" id="sidebar">
-                <div class="close-" onclick="closeh()" id="close">&times;</div>
-                <div class="subject-">MTH 101</div>
-                <div class="subject-">PHY 101</div>
-                <div class="subject-"></div>
-                <div class="subject-"></div>
+                <div class="close-" onclick="close_()" id="close">&times;</div>
+                <div>
+                    <input type="checkbox" id="side_sub1_" class="side-sub-">
+                    <label for="side_sub1_" >
+                        MTH 101 <span class="arw- mth-arw-"></span>
+                        <ol class="subj-ol- mth-ol-">
+                            <a href="BS-mth-l1.html"><li>Lesson 1</li></a>
+                            <a href="BS-mth-l2.html"><li>Lesson 2</li></a>
+                            <a href="BS-mth-l3.html"><li>Lesson 3</li></a>
+                            <a href="BS-mth-l4.html"><li>Lesson 4</li></a>
+                        </ol>
+                    </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="side_sub2_" class="side-sub-">
+                    <label for="side_sub2_" >
+                        PHY 101 <span class="arw- phy-arw-"></span>
+                        <ol class="subj-ol- phy-ol-">
+                            <li>Lesson 1</li>
+                            <li>Lesson 2</li>
+                            <li>Lesson 3</li>
+                            <li>Lesson 4</li>
+                        </ol>
+                    </label>
+                </div><div>
+                    <input type="checkbox" id="side_sub3_" class="side-sub-">
+                    <label for="side_sub3_" >
+                        TXT 101 <span class="arw- txt-arw-"></span>
+                        <ol class="subj-ol- txt-ol-">
+                            <li>Lesson 1</li>
+                            <li>Lesson 2</li>
+                            <li>Lesson 3</li>
+                            <li>Lesson 4</li>
+                        </ol>
+                    </label>
+                </div>
             </div>
             
             <div class="questions-">
-                <div class="question-">
-                    1. 
-                </div>
+                <input type="checkbox" id="check1_"  class="check-">
+                <div>txt</div>
+                <p></p>
+                <p class="ans-">txt</p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <label for="check1_">
+                    <span>[Show]</span>
+                    <span>[Hide]</span>
+                </label>
+            </div>
 
-                <div class="options-">
-                    <p>a.</p>
-                    <p id="answer">b. txt</p>
-                    <p>c.</p>
-                    <p>d.</p>
-                    <p>e.</p>
-                </div>
+            <div class="questions-">
+                <input type="checkbox" id="check2_" class="check-">
+                <div></div>
+                <p></p>
+                <p class="ans-"></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <label for="check2_">
+                    <span>[Show]</span>
+                    <span>[Hide]</span>
+                </label>
+            </div>
 
-                <div class="answer-">
-                   <span id="show" onclick="answer()">[Show]</span>
-                   <span id="hide"  onclick="hide()"></span>
-                   <span id="extra"></span>
-                </div>
+            <div class="questions-">
+                <input type="checkbox" id="check3_" class="check-">
+                <div></div>
+                <p></p>
+                <p class="ans-"></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <label for="check3_">
+                    <span>[Show]</span>
+                    <span>[Hide]</span>
+                </label>
             </div>
         </div>
     </body>

@@ -1,0 +1,28 @@
+.bs-main-pfp-{
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+    padding: 50px 0;
+}
+.main-txt- span{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+.main-txt- span span{
+    font-family: 'Times New Roman';
+    font-style: italic;
+}
+
+
+
+.sub-main-txt-{
+    margin-bottom: 100px;
+}
+.sub-main-txt- p{
+    display: flex;
+    justify-content: center;
+}
+.sub-main-txt- p:first-child{
+    position: relative;
+}

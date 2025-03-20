@@ -1,34 +1,21 @@
-function bugor(){
+function bugor_(){
+    document.getElementById("curtain").style.display = "flex";
     document.getElementById("sidebar").style.width = "250px";
-
-    document.getElementById("curtain").style.opacity = "0.5";
-
-    document.getElementById("curtain").style.zIndex = "12";
-
-    document.getElementById("close").style.color = "black"
-
 }
 
-function closeh(){
+function close_(){
+    document.getElementById("curtain").style.display = "none";
     document.getElementById("sidebar").style.width = "0";
-
-    document.getElementById("curtain").style.opacity = "0";
-
-    document.getElementById("curtain").style.zIndex = "-1";
-
-    document.getElementById("close").style.color = "white"
 }
 
 function answer(){
+    document.getElementById("show").style.display = "none"
+    document.getElementById("hide").style.display = "flex"
     document.getElementById("answer").style.textDecoration = "underline";
-    document.getElementById("show").innerHTML = ""
-    document.getElementById("hide").innerHTML = "[Hide]"
-    document.getElementById("extra").innerHTML = "txt"
 }
 
 function hide(){
+    document.getElementById("show").style.display = "flex"
+    document.getElementById("hide").style.display = "none"
     document.getElementById("answer").style.textDecoration = "none";
-    document.getElementById("show").innerHTML = "[Show]"
-    document.getElementById("hide").innerHTML = ""
-    document.getElementById("extra").innerHTML = ""
 }

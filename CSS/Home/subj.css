@@ -1,0 +1,82 @@
+.main-btns-{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-btns- button{
+    background-color: rgb(240, 240, 240);
+
+    border: none;
+
+    
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 8px 25px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+.main-btns- button:hover{
+    background-color: white;
+}
+.main-btns- button:active{
+    background-color: rgb(80, 80, 80);
+    color: white;
+}
+
+/*rgb(144, 255, 144)*/
+.mth-backgr-{
+    background-color: #D9EDE1;
+}
+.phy-backgr-{
+    background-color: #FFF4A4;
+}
+.mth-backgr-,
+.phy-backgr-{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    left: 0;
+    padding: 100px 50px;
+    cursor: pointer;
+}
+.subj-title-{
+    font-size: 40px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+.subj-btns-{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subj-btns- button{
+    background-color: rgb(240, 240, 240);
+    border: none;
+    border-radius: 3px;
+    margin: 10px 0;
+    padding: 8px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+.subj-btns- button:hover{
+    background-color: white;
+}
+.subj-btns- button:active{
+    background-color: rgb(80, 80, 80);
+    color: white;
+}
+
+.check-{
+    display: none;
+}
+
+.check-:checked ~ label .mth-backgr- .subj-btns-,
+.check-:checked ~ label .phy-backgr- .subj-btns-{
+    display: flex;
+}
