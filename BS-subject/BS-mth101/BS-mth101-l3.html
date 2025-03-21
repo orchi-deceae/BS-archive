@@ -17,18 +17,17 @@
             <div class="header1-">
                 <a href="../../BS-home.html"><div><img src="../../Pictures/20250305_205006.jpg"></div></a>
                 <a href="../../BS-home.html"><button>Brainstormers <span> archieve</span></button></a>
-                <div onclick="bugor_()"><img src="../../Pictures/hamburger-menu.svg"></div>
+                <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
             
             </div>
             <!--navigation bar-->
             <div class="header2-">
                 <a href="BS-mth101-l1.html"><button><span>Lesson 1</span><span class="hidden-subject-">Elemental set theory</span></button></a>
-                <a href="BS-mth101-l2.html"><button><span>Lesson 2</span><span class="hidden-subject-">Elemental set theory</span></button></a>
-                <a href="BS-mth101-l3.html"><button class = "selected-"><span>Elemental set theory</span><span class="hidden-subject-">Elemental set theory</span></button></a>
-                <a href="BS-mth101-l4.html"><button><span>Lesson 4</span><span class="hidden-subject-">Elemental set theory</span></button></a>
+                <a href="BS-mth101-l2.html"><button><span>Lesson 2</span><span class="hidden-subject-">Real numbers</span></button></a>
+                <a href="BS-mth101-l3.html"><button class = "selected-"><span>Dimensions</span><span class="hidden-subject-">Dimensions</span></button></a>
             </div>
             
-            
+            <!--Topic-->
             <div class="title-">
                 <div class="sub-101-">
                     MTH 101
@@ -36,58 +35,110 @@
                 <div class="change-">
                     <div class="before-">
                         <a href="BS-mth101-l2.html"><button class="before-btn-">Before</button></a>
-                        <div class="beforepop-">pop</div>
+                        <div class="beforepop-">Real numbers</div>
                     </div>
                     <div class="after-">
-                        <a href="BS-mth101-l4.html"><button class="next-btn-">Next</button></a>
+                        <a href="BS-mth101-l1.html"><button class="next-btn-">Next</button></a>
                         <div class="afterpop-">Elemental set theory</div>
                     </div>
                 </div>
                 <div class="topic-">
-                    Elemental set theory
+                    Dimensions - 4/1/25
                 </div>
             </div>
 
             <!--side navigation-->
             <div class="sidebar-" id="sidebar">
-                <div class="close-" onclick="close_()" id="close">&times;</div>
+                <div class="close-" onclick="close_()" id="close_">&times;</div>
                 <div>
                     <input type="checkbox" id="side_sub1_" class="side-sub-">
                     <label for="side_sub1_" >
                         MTH 101 <span class="arw- mth101-arw-"></span>
                         <ol class="subj-ol- mth101-ol-">
-                            <a href="BS-mth101-l1.html"><li>Lesson 1</li></a>
-                            <a href="BS-mth101-l2.html"><li>Lesson 2</li></a>
-                            <a href="BS-mth101-l3.html"><li>Lesson 3</li></a>
-                            <a href="BS-mth101-l4.html"><li>Lesson 4</li></a>
+                            <a href="BS-mth101-l1.html"><li>Elemental set theory</li></a>
+                            <a href="BS-mth101-l2.html"><li>Real numbers</li></a>
+                            <a href="BS-mth101-l3.html"><li>Dimensions</li></a>
                         </ol>
                     </label>
                 </div>
+
                 <div>
                     <input type="checkbox" id="side_sub2_" class="side-sub-">
                     <label for="side_sub2_" >
                         PHY 101 <span class="arw- phy101-arw-"></span>
                         <ol class="subj-ol- phy101-ol-">
-                            <li>Lesson 1</li>
-                            <li>Lesson 2</li>
-                            <li>Lesson 3</li>
-                            <li>Lesson 4</li>
+                            <a href="../BS-phy101/BS-phy101-l1.html"><li>Measurements, quantities, dimensions </li></a>
+                            <a href="../BS-phy101/BS-phy101-l2.html"><li>Space, time, units and dimensions</li></a>
+                            <a href="../BS-phy101/BS-phy101-l3.html"><li>Newton's laws of motion</li></a>
                         </ol>
                     </label>
-                </div><div>
+                </div>
+
+                <div>
                     <input type="checkbox" id="side_sub3_" class="side-sub-">
                     <label for="side_sub3_" >
-                        TXT 101 <span class="arw- txt-arw-"></span>
-                        <ol class="subj-ol- txt-ol-">
-                            <li>Lesson 1</li>
-                            <li>Lesson 2</li>
-                            <li>Lesson 3</li>
-                            <li>Lesson 4</li>
+                        COS 101 <span class="arw- cos101-arw-"></span>
+                        <ol class="subj-ol- cos101-ol-">
+                            <a href="../BS-cos101/BS-cos101-l1.html"><li>Computer</li></a>
+                            <a href="../BS-cos101/BS-cos101-l2.html"><li>Structure of the computer</li></a>
+                            <a href="../BS-cos101/BS-cos101-l3.html"><li>Computing history</li></a>
+                        </ol>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="side_sub4_" class="side-sub-">
+                    <label for="side_sub4_" >
+                        GST 106 <span class="arw- gst106-arw-"></span>
+                        <ol class="subj-ol- gst106-ol-">
+                            <a href="../BS-gst106/BS-gst106-l1.html"><li>Health</li></a>
+                            <a href="../BS-gst106/BS-gst106-l2.html"><li>Nutrition</li></a>
+                            <a href="../BS-gst106/BS-gst106-l3.html"><li>Alcoholism</li></a>
+                        </ol>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="side_sub5_" class="side-sub-">
+                    <label for="side_sub5_" >
+                        GST 107 <span class="arw- gst107-arw-"></span>
+                        <ol class="subj-ol- gst107-ol-">
+                            <a href="../BS-gst107/BS-gst107-l1.html"><li>Word formation</li></a>
+                            <a href="../BS-gst107/BS-gst107-l2.html"><li>Spoken English, Listening skills</li></a>
+                            <a href="../BS-gst107/BS-gst107-l3.html"><li>Reading</li></a>
+                            <a href="../BS-gst107/BS-gst107-l4.html"><li>Word formation</li></a>
+                        </ol>
+                    </label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="side_sub6_" class="side-sub-">
+                    <label for="side_sub6_" >
+                        CHM 101 <span class="arw- chm101-arw-"></span>
+                        <ol class="subj-ol- chm101-ol-">
+                            <li>txt</li>
+                            <li>txt</li>
+                            <li>txt</li>
+                            <li>txt</li>
+                        </ol>
+                    </label>
+                </div> 
+
+                <div>
+                    <input type="checkbox" id="side_sub7_" class="side-sub-">
+                    <label for="side_sub7_" >
+                        BIO 101 <span class="arw- bio101-arw-"></span>
+                        <ol class="subj-ol- bio101-ol-">
+                            <li>txt</li>
+                            <li>txt</li>
+                            <li>txt</li>
+                            <li>txt</li>
                         </ol>
                     </label>
                 </div>
             </div>
             
+            <!--Questions-->
             <div class="questions-">
                 <input type="checkbox" id="check1_"  class="check-">
                 <div>txt</div>
