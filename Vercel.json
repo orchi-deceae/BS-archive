@@ -1,6 +1,5 @@
 {
     "rewrites": [
-        { "source": "/(.*)", "destination": "/BS-home.html" },
         { "source": "/BS-home", "destination": "/BS-home.html"},
         { "source": "/BS-mth101-l1", "destination": "/BS-mth101-l1.html"},
         { "source": "/BS-mth101-l2", "destination": "/BS-mth101-l2.html"},
@@ -31,8 +30,6 @@
         { "source": "/BS-bio101-l1", "destination": "/BS-bio101-l1.html"},
         { "source": "/BS-bio101-l2", "destination": "/BS-bio101-l2.html"},
         { "source": "/BS-bio101-l3", "destination": "/BS-bio101-l3.html"},
-        { "source": "/BS-bio101-l4", "destination": "/BS-bio101-l4.html"},
-
-        { "source": "/", "destination": "/"}
+        { "source": "/BS-bio101-l4", "destination": "/BS-bio101-l4.html"}
     ]
 }
