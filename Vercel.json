@@ -1,3 +1,38 @@
 {
-        "rewrites": [{ "source": "/(.*)", "destination": "/BS-home.html" }]
-    }
+    "rewrites": [
+        { "source": "/(.*)", "destination": "/BS-home.html" },
+        { "source": "/BS-home", "destination": "/BS-home.html"},
+        { "source": "/BS-mth101-l1", "destination": "/BS-mth101-l1.html"},
+        { "source": "/BS-mth101-l2", "destination": "/BS-mth101-l2.html"},
+        { "source": "/BS-mth101-l3", "destination": "/BS-mth101-l3.html"},
+
+        { "source": "/BS-phy101-l1", "destination": "/BS-phy101-l1.html"},
+        { "source": "/BS-phy101-l2", "destination": "/BS-phy101-l2.html"},
+        { "source": "/BS-phy101-l3", "destination": "/BS-phy101-l3.html"},
+
+        { "source": "/BS-cos101-l1", "destination": "/BS-cos101-l1.html"},
+        { "source": "/BS-cos101-l2", "destination": "/BS-cos101-l2.html"},
+        { "source": "/BS-cos101-l3", "destination": "/BS-cos101-l3.html"},
+        
+        { "source": "/BS-gst106-l1", "destination": "/BS-gst106-l1.html"},
+        { "source": "/BS-gst106-l2", "destination": "/BS-gst106-l2.html"},
+        { "source": "/BS-gst106-l3", "destination": "/BS-gst106-l3.html"},
+        
+        { "source": "/BS-gst107-l1", "destination": "/BS-gst107-l1.html"},
+        { "source": "/BS-gst107-l2", "destination": "/BS-gst107-l2.html"},
+        { "source": "/BS-gst107-l3", "destination": "/BS-gst107-l3.html"},
+        { "source": "/BS-gst107-l4", "destination": "/BS-gst107-l4.html"},
+
+        { "source": "/BS-chm101-l1", "destination": "/BS-chm101-l1.html"},
+        { "source": "/BS-chm101-l2", "destination": "/BS-chm101-l2.html"},
+        { "source": "/BS-chm101-l3", "destination": "/BS-chm101-l3.html"},
+        { "source": "/BS-chm101-l4", "destination": "/BS-chm101-l4.html"},
+
+        { "source": "/BS-bio101-l1", "destination": "/BS-bio101-l1.html"},
+        { "source": "/BS-bio101-l2", "destination": "/BS-bio101-l2.html"},
+        { "source": "/BS-bio101-l3", "destination": "/BS-bio101-l3.html"},
+        { "source": "/BS-bio101-l4", "destination": "/BS-bio101-l4.html"},
+
+        { "source": "/", "destination": "/"}
+    ]
+}
