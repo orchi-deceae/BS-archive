@@ -41,7 +41,7 @@
     height: 100%;
     border-left: 1px solid transparent;
     animation: 
-    blinker 750ms 6,
+    blinker 850ms 55,
     curtIN 1500ms steps(30) forwards;
     animation-delay: 1000ms;
 }
@@ -57,7 +57,7 @@
     animation: 
     blinker 750ms infinite,
     curtIN 1500ms steps(30) forwards;
-    animation-delay: 5000ms;
+    animation-delay: 50000ms;
 }
 
 @keyframes blinker {
