@@ -32,6 +32,14 @@
     counter-increment: as;
     content: counter(as, lower-alpha) ".";
 }
+.questions- img{
+    position: relative;
+    display: none;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0 );
+    max-width: 400px;
+}
 .questions- label span{
     cursor: pointer;
 }
@@ -41,6 +49,9 @@
     cursor: pointer;
 }
 label span:first-child{
+    display: flex;
+}
+.check-:checked ~ img{
     display: flex;
 }
 .check-:checked ~ .ans-{
