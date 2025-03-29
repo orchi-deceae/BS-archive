@@ -1,45 +1,4 @@
-.main-btns-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.main-btns- button{
-    background-color: rgb(240, 240, 240);
 
-    border: none;
-
-    
-    font-size: 16px;
-    margin: 10px 0;
-    padding: 8px 25px;
-    border-radius: 3px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-}
-.main-btns- button:hover{
-    background-color: white;
-}
-.main-btns- button:active{
-    background-color: rgb(80, 80, 80);
-    color: white;
-}
-
-/*rgb(144, 255, 144)*/
-.first-backgr-{
-    background-color: #D9EDE1;
-}
-.second-backgr-{
-    background-color: #FFF4A4;
-}
-.third-backgr-{
-    background-color: #00df8d;
-}
-.forth-backgr-{
-    background-color: #96D4D3;
-}
-.fifth-backgr-{
-    background-color: #FFC0C8;
-}
 .backgr-{
     position: relative;
     display: flex;
@@ -61,11 +20,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 .subj-btns- button{
-    background-color: rgb(240, 240, 240);
+    background-color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
     margin: 10px 0;
     padding: 8px 25px;
     font-size: 16px;
@@ -73,13 +33,18 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 }
 .subj-btns- button:hover{
-    background-color: white;
+    background-color: rgb(240, 240, 240);
 }
 .subj-btns- button:active{
     background-color: rgb(80, 80, 80);
     color: white;
 }
+.g-{
+    background-color: lightgreen !important;
+    border: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
 
+/*checkbox*/
 .check-{
     display: none;
 }
@@ -91,3 +56,22 @@
 .check-:checked ~ label .fifth-backgr- .subj-btns-{
     display: flex;
 }
+
+/*Colours*/
+.first-backgr-{
+    background-color: #D9EDE1;
+}
+.second-backgr-{
+    background-color: #FFF4A4;
+}
+.third-backgr-{
+    background-color: #00df8d;
+}
+.forth-backgr-{
+    background-color: #96D4D3;
+}
+.fifth-backgr-{
+    background-color: #FFC0C8;
+}
+/*rgb(144, 255, 144)*/
+

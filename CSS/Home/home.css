@@ -1,3 +1,5 @@
+
+/*Img and title*/
 .bs-main-pfp-{
     display: flex;
     justify-content: center;
@@ -15,7 +17,7 @@
 }
 
 
-
+/*I like it that way*/ 
 .sub-main-txt-{
     display: flex;
     justify-content: center;
@@ -69,5 +71,24 @@
 @keyframes curtIN {
     to{
         width: 0%;
+    }
+}
+
+/*aerplane*/
+.aerplane-{
+    position: fixed;
+    font-size: 20px;
+    padding: 20px 0;
+    white-space: nowrap;
+    animation: PLANE 17000ms infinite;
+    z-index: 2;
+}
+
+@keyframes PLANE {
+    from {
+        left: -340px;
+    }
+    to {
+        left: calc(340px + 100%);
     }
 }

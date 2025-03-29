@@ -1,5 +1,5 @@
 .header1-{
-    position: fixed;
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -26,7 +26,7 @@
     z-index: 10;
     height: 50px;
     margin: 0;
-    padding: 100px 2px 0 2px;
+    padding: 0px 2px 0 2px;
     overflow: scroll;
 }
 .header2-::-webkit-scrollbar{
@@ -140,7 +140,7 @@
     .header2-{
         height: 70px;
         margin: 0 5px;
-        padding: 100px 5px 0 5px;
+        padding: 0px 5px 0 5px;
     }
     .header2-:not(:first-child, :last-child){
         margin: 0;

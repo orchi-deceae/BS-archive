@@ -6,7 +6,6 @@ a{
     text-decoration: none;
 }
 body{
-    height: 2500px;
     margin: 0;
     counter-reset: qs;
     background-color: rgb(255, 255, 255);

@@ -15,6 +15,7 @@
 
 .questions- div{
     font-size: 18px;
+    margin-bottom: 5px;
 }
 .questions- div::before{
     counter-increment: qs;
@@ -25,45 +26,51 @@
 }
 .questions- p{
     display: flex;
-    margin: 10px 20px;
+    margin: 5px 20px;
     font-size: 16px;
 }
 .questions- p::before{
     counter-increment: as;
-    content: counter(as, lower-alpha) ".";
+    content: counter(as, lower-alpha) ". ";
+    margin-right: 5px;
 }
 .questions- img{
     position: relative;
     display: none;
     left: 50%;
     right: 50%;
+    padding: 30px;
     transform: translate(-50%, 0 );
-    max-width: 400px;
+    max-width: 600px;
 }
+.hide-,
 .questions- label span{
     cursor: pointer;
     font-size: 18px;
+    margin-top: 5px;
 }
 
 
 .answer- span{
     cursor: pointer;
 }
-label span:first-child{
+label .show-{
     display: flex;
 }
 .check-:checked ~ img{
-    display: flex;
+    display: block;
 }
 .check-:checked ~ .ans-{
     text-decoration: underline;
 }
-.check-:checked ~ label span:last-child{
+.check-:checked ~ .hide-,
+.check-:checked ~ label .hide-{
     display: flex;
     padding-right: 5px;
 }
-#hide, .check-, 
-label span:last-child, 
-.check-:checked ~ label span:first-child{
+#hide, .check-,
+.hide-,  
+label .hide-, 
+.check-:checked ~ label .show-{
     display: none;
 }
