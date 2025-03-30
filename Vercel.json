@@ -1,8 +1,7 @@
 {
     "rewrites": [
         {
-            "source": "/(.*)", 
-            "destination": "/BS-home.html"
+            "source": "/(.*)", "destination": "/"
         }
     ]
 }
