@@ -7,27 +7,25 @@
     counter-reset: as;
 
     right: 0;
-    border-radius: 7px;
     padding: 25px;
     margin: 25px 25px;  
+    border-radius: 7px;
+    font-size: 26px;
     box-shadow: 0 0 5px inset;
 }
 
 .questions- div{
-    font-size: 18px;
     margin-bottom: 5px;
 }
 .questions- div::before{
     counter-increment: qs;
     content: counter(qs)". ";
-    font-size: 18px;
     width: 10px;
     height: 10px;
 }
 .questions- p{
     display: flex;
     margin: 5px 20px;
-    font-size: 16px;
 }
 .questions- p::before{
     counter-increment: as;
@@ -46,7 +44,6 @@
 .hide-,
 .questions- label span{
     cursor: pointer;
-    font-size: 18px;
     margin-top: 5px;
 }
 

@@ -43,7 +43,7 @@
 
 .header1- a button{
     font-family: arial;
-    font-size: 30px;
+    font-size: 40px;
     margin: 0;
     border: none;
     background-color: inherit;
@@ -57,7 +57,7 @@
     font-style: italic;
     font-family: 'Times New Roman';
 }
-@media (max-width: 427px) {
+@media (max-width: 530px) {
     .header1- a button span{
         display: flex;
     }
@@ -146,7 +146,7 @@
         margin: 0;
     }
     .header2- button{
-        font-size: 15px;
+        font-size: 20px;
         padding: 12px 40px;
         border-radius: 5px;
     }

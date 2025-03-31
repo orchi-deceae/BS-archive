@@ -10,7 +10,7 @@
 .sub-101-{
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 50px;
     padding: 10px 0 10px 0;
 }
 .topic-{
@@ -28,7 +28,7 @@
     display: flex;
     border: none;
     
-    font-size: 20px;
+    font-size: 30px;
     margin: 0 5px;
     padding: 10px 30px;
     border-radius: 5px;
@@ -41,7 +41,7 @@
     display: flex;
     border: none;
 
-    font-size: 20px;
+    font-size: 30px;
     border-radius: 5px;
     margin: 0 5px;
     padding: 10px 35px;
