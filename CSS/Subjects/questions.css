@@ -86,7 +86,7 @@ label .hide-,
     padding: 10px 10px 20px 10px;
     border-radius: 50px;
     z-index: 1;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
 
 .up-btn- div{
