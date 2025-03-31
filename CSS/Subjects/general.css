@@ -5,6 +5,9 @@ a{
     color: black;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     counter-reset: qs;
