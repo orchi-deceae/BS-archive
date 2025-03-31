@@ -86,9 +86,9 @@
 
 @keyframes PLANE {
     from {
-        left: -340px;
+        left: -440px;
     }
     to {
-        left: calc(340px + 100%);
+        left: calc(440px + 100%);
     }
 }
