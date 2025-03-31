@@ -1,5 +1,5 @@
 .sidebar-{
-/*outside the bar*/
+/*subject container*/
     background-color: white;
     color: black;
     position: fixed;
@@ -17,6 +17,8 @@
 .sidebar-::-webkit-scrollbar{
     display: none;
 }
+/*outside the bar*/
+
 .curtain-{
     display: none;
     position: fixed;
@@ -28,7 +30,12 @@
 }
 
 .sidebar- div{
-    font-size: 30px;
+    font-size: 25px;
+}
+@media (min-height: 1500px) {
+    .sidebar- div{
+        font-size: 40px;
+    }
 }
 /*The x*/
 .sidebar- div:first-child{
@@ -37,13 +44,29 @@
     cursor: pointer;
 
     top: -10px;
-    padding-left:190px;
-    font-size: 90px;
+    padding-left: 200px;
+    font-size: 70px;
 }
-/*subject container*/
+@media (min-height: 1500px) {
+    .sidebar- div:first-child{
+        top: -30px;
+        font-size: 130px;
+        padding-left: 170px;
+    }
+}
+
+/*subjects*/
 .sidebar- div:not(:first-child){
+    position: relative;
+        top: -20px;
     padding: 0 0 40px 20px;
     white-space: nowrap;
+}
+@media (min-height: 1500px) {
+    .sidebar- div:not(:first-child){
+        position: relative;
+        top: -40px;
+    }
 }
 
 /*inside sidebar*/
@@ -62,6 +85,15 @@
     padding: 10px 0;
     white-space: wrap;
 }
+@media (min-height: 1500px) {
+    .subj-ol-{
+        margin: 80px 0 0 0;
+    }
+    .subj-ol- li{
+        font-size: 30px;
+    }
+}
+
 
 /*the ol*/
 .side-sub-:checked ~ label .mth101-ol-,
@@ -74,9 +106,20 @@
     position: relative;
     display: block;
     flex-direction: column;
-    left: -158px;
+    left: -128px;
     width: 100%;
     height: 100%;
+}
+@media (min-height: 1500px) {
+    .side-sub-:checked ~ label .mth101-ol-,
+    .side-sub-:checked ~ label .phy101-ol-,
+    .side-sub-:checked ~ label .cos101-ol-,
+    .side-sub-:checked ~ label .gst106-ol-,
+    .side-sub-:checked ~ label .gst107-ol-,
+    .side-sub-:checked ~ label .chm101-ol-,
+    .side-sub-:checked ~ label .bio101-ol-{
+        left: -200px;
+    }
 }
 .arw-{
     position: relative;
@@ -89,6 +132,14 @@
     border-right: 5px solid transparent;
     border-top: 6px solid black;
     transition: 300ms;
+}
+@media (min-height: 1500px){
+    .arw-{
+        top: 16px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 12px solid black;
+    }
 }
 .side-sub-:checked ~ label .mth101-arw-,
 .side-sub-:checked ~ label .phy101-arw-,

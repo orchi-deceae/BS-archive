@@ -1,4 +1,5 @@
 .header1-{
+    /*No head?*/
     position: relative;
     display: flex;
     flex-direction: row;
@@ -10,6 +11,7 @@
     z-index: 11;
     height: 100px;
 }
+
 .header2-{
     background-color: rgb(63, 63, 63);
     color: white;
@@ -26,12 +28,22 @@
     z-index: 10;
     height: 50px;
     margin: 0;
-    padding: 0px 2px 0 2px;
+    padding: 0px 5px;
     overflow: scroll;
 }
 .header2-::-webkit-scrollbar{
     display: none;
 }
+
+@media (min-height: 1500px) {
+    .header1-{
+        height: 150px;
+    }
+    .header2-{
+        height: 100px;
+    }
+}
+
 /*main pfp*/
 .header1- a div{
     display: flex;
@@ -40,10 +52,16 @@
     object-fit: contain;
     cursor: pointer;
 }
+@media (min-height: 1500px) {
+    .header1- a div{
+        height: 120px;
+    }
+}
+
 /*title*/
 .header1- a button{
     font-family: arial;
-    font-size: 40px;
+    font-size: 35px;
     margin: 0;
     border: none;
     background-color: inherit;
@@ -57,11 +75,17 @@
     font-style: italic;
     font-family: 'Times New Roman';
 }
-@media (max-width: 530px) {
+@media (max-width: 580px) {
     .header1- a button span{
         display: flex;
     }
 }
+@media (min-height: 1500px) {
+    .header1- a button{
+        font-size: 50px;
+    }
+}
+
 /*bugor*/
 .header1- div:not(:first-child){
     position: absolute;
@@ -78,8 +102,20 @@
     background-color: rgb(245, 245, 245);
     
 }
+@media (max-width: 430px) {
+    .header1- div:not(:first-child){
+        top: 45px;
+    }
+}
+
+@media (min-height: 1500px) {
+    .header1- div:not(:first-child) img{
+        height: 80px;
+    }
+}
 
 
+/*shelf buttons*/
 .header2- button{
     background-color: transparent;
     color: white;
@@ -91,9 +127,17 @@
 
     min-width: 50px;
     margin: 0;
-    padding: 10px 35px;
-    border-radius: 3px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 1em;
     transition: background-color 200ms;
+}
+@media (min-height: 1500px){
+    .header2- button{
+        font-size: 2em;
+        padding: 15px 40px;
+        border-radius: 8px;
+    }
 }
 .header2-  button:hover{
     background-color: rgba(252, 252, 252, 0.4);
@@ -130,33 +174,15 @@
 .header2- .selected-:hover{
     background-color: white;
     color: black;
-    
 }
 
-@media (min-width: 501px) {
-    .header1-{
-        height: 100px;
-    }
-    .header2-{
-        height: 70px;
-        margin: 0 5px;
-        padding: 0px 5px 0 5px;
-    }
-    .header2-:not(:first-child, :last-child){
-        margin: 0;
-    }
-    .header2- button{
-        font-size: 20px;
-        padding: 12px 40px;
-        border-radius: 5px;
-    }
-}
+
 @media (max-width: 500px) {
     .header1-{
         height: 100px;
     }
     .header2-{
         height: 50px;
+        padding: 0 3px;
     }
 }
-

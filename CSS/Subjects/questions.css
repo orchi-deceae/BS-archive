@@ -1,4 +1,4 @@
-
+/* Question container */
 .questions-{
     background-color: rgb(250, 255, 255);
 
@@ -7,14 +7,21 @@
     flex-direction: column;
     counter-reset: as;
 
-    right: 0;
     padding: 25px;
     margin: 25px 25px;  
     border-radius: 7px;
     font-size: 26px;
     box-shadow: 0 0 5px inset;
+    -webkit-text-size-adjust: none;
 }
 
+@media (min-height: 1500px) {
+    .questions-{
+        font-size: 2.5em;
+    }
+}
+
+/*Question text*/
 .questions- div{
     margin-bottom: 5px;
 }
