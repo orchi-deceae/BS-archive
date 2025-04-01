@@ -47,7 +47,7 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     
 }
-@media (min-height: 1500px) {
+@media (min-height: 1200px) {
     .sub-101-{
         font-size: 4.375em;/*70px*/
     }
@@ -93,4 +93,11 @@
 .before-:hover .beforepop-,
 .after-:hover .afterpop-{
     opacity: 1;
+}
+@media (min-height: 1200px){
+    .before- .beforepop-,
+    .after- .afterpop-{
+        bottom: -45px;
+        font-size: 1.9em;
+    }
 }

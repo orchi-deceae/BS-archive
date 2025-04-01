@@ -35,7 +35,7 @@
     display: none;
 }
 
-@media (min-height: 1500px) {
+@media (min-height: 1200px) {
     .header1-{
         height: 150px;
     }
@@ -52,7 +52,7 @@
     object-fit: contain;
     cursor: pointer;
 }
-@media (min-height: 1500px) {
+@media (min-height: 1200px) {
     .header1- a div{
         height: 120px;
     }
@@ -80,7 +80,7 @@
         display: flex;
     }
 }
-@media (min-height: 1500px) {
+@media (min-height: 1200px) {
     .header1- a button{
         font-size: 50px;
     }
@@ -108,7 +108,7 @@
     }
 }
 
-@media (min-height: 1500px) {
+@media (min-height: 1200px) {
     .header1- div:not(:first-child) img{
         height: 80px;
     }
@@ -132,7 +132,7 @@
     font-size: 1em;
     transition: background-color 200ms;
 }
-@media (min-height: 1500px){
+@media (min-height: 1200px){
     .header2- button{
         font-size: 2em;
         padding: 15px 40px;
