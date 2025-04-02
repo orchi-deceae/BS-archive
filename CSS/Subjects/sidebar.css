@@ -102,7 +102,8 @@
 .side-sub-:checked ~ label .gst106-ol-,
 .side-sub-:checked ~ label .gst107-ol-,
 .side-sub-:checked ~ label .chm101-ol-,
-.side-sub-:checked ~ label .bio101-ol-{
+.side-sub-:checked ~ label .bio101-ol-,
+.side-sub-:checked ~ label .general-ol-{
     position: relative;
     display: block;
     flex-direction: column;
@@ -117,7 +118,8 @@
     .side-sub-:checked ~ label .gst106-ol-,
     .side-sub-:checked ~ label .gst107-ol-,
     .side-sub-:checked ~ label .chm101-ol-,
-    .side-sub-:checked ~ label .bio101-ol-{
+    .side-sub-:checked ~ label .bio101-ol-,
+    .side-sub-:checked ~ label .general-ol-{
         left: -200px;
     }
 }
@@ -147,7 +149,8 @@
 .side-sub-:checked ~ label .gst106-arw-,
 .side-sub-:checked ~ label .gst107-arw-,
 .side-sub-:checked ~ label .chm101-arw-,
-.side-sub-:checked ~ label .bio101-arw-{
+.side-sub-:checked ~ label .bio101-arw-,
+.side-sub-:checked ~ label .general-arw-{
     transform: rotate(180deg);
 }
 
