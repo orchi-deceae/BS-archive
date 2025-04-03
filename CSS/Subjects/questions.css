@@ -67,6 +67,15 @@ label .show-{
 }
 .check-:checked ~ .ans-{
     text-decoration: underline;
+    animation: flash 2000ms linear 500ms;
+}
+@keyframes flash {
+    33%{
+        color: rgb(0, 110, 0);
+    }
+    66%{
+        color: black;
+    }
 }
 .check-:checked ~ .hide-,
 .check-:checked ~ label .hide-{

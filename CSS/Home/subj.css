@@ -44,6 +44,12 @@
     border: 1px solid rgba(0, 0, 0, 0.3) !important;
 }
 
+@media (min-height: 1200px) {
+    .subj-btns- button{
+        margin: 15px 0;
+    }
+}
+
 /*checkbox*/
 .check-{
     display: none;

@@ -15,6 +15,14 @@
     font-family: 'Times New Roman';
     font-style: italic;
 }
+@media (min-height: 1200px) {
+    .bs-main-pfp-{
+        height: 200px;
+    }
+    .main-txt- span{
+        font-size: 60px;
+    }
+}
 
 
 /*I like it that way*/ 
@@ -57,7 +65,7 @@
     height: 100%;
     border-left: 1px solid transparent;
     animation: 
-    blinker 750ms infinite,
+    blinker 650ms infinite,
     curtIN 1500ms steps(30) forwards;
     animation-delay: 50000ms;
 }
