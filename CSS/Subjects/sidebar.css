@@ -69,14 +69,18 @@
     }
 }
 
-/*inside sidebar*/
-.side-sub-{
+/*inside sidebar-->*/
+
+/* The subjects */
+.side-checkbox-{
     display: none;
 }
 .sidebar- label{
     display: flex;
     cursor: pointer;
 }
+
+/* The topics */
 .subj-ol-{
     padding-top: 20PX;
     display: none;
@@ -95,8 +99,8 @@
 }
 
 
-/*the ol*/
-.side-sub-:checked ~ label .subj-ol-{
+/*The topics (checkbox) - ol*/
+.side-checkbox-:checked ~ label .subj-ol-{
     position: relative;
     display: block;
     flex-direction: column;
@@ -105,7 +109,7 @@
     height: 100%;
 }
 @media (min-height: 1200px) {
-    .side-sub-:checked ~ label .subj-ol-{
+    .side-checkbox-:checked ~ label .subj-ol-{
         left: -200px;
     }
 }
@@ -129,11 +133,13 @@
         border-top: 12px solid black;
     }
 }
-.side-sub-:checked ~ label .arw-{
+.side-checkbox-:checked ~ label .arw-{
     transform: rotate(180deg);
 }
 
-/* strike */
+/* Strike */
 .strike-{
     text-decoration: line-through;
 }
+
+/*<-- inside sidebar */

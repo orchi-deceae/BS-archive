@@ -19,3 +19,14 @@ function hide(){
     document.getElementById("hide").style.display = "none"
     document.getElementById("answer").style.textDecoration = "none";
 }
+
+function sendMail(){
+    let parms = {
+        name : document.getElementById("name_").value,
+        email : document.getElementById("email_").value,
+        message : document.getElementById("message_").value,
+    }
+
+    emailjs.send("service_l8fwrai","template_6fh3qpj",parms).then(alert("Email Sent!!!"))
+}
+

@@ -12,39 +12,8 @@
     height: 100px;
 }
 
-.header2-{
-    background-color: rgb(63, 63, 63);
-    color: white;
 
-    position: sticky;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    height: 50px;
-    margin: 0;
-    padding: 0px 5px;
-    overflow: scroll;
-}
-.header2-::-webkit-scrollbar{
-    display: none;
-}
-
-@media (min-height: 1200px) {
-    .header1-{
-        height: 150px;
-    }
-    .header2-{
-        height: 100px;
-    }
-}
-
-/*main pfp*/
+/*logo*/
 .header1- a div{
     display: flex;
     height: 80px;
@@ -111,6 +80,40 @@
 @media (min-height: 1200px) {
     .header1- div:not(:first-child) img{
         height: 80px;
+    }
+}
+
+
+/* Shelf container */
+.header2-{
+    background-color: rgb(63, 63, 63);
+    color: white;
+
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    height: 50px;
+    margin: 0;
+    padding: 0px 5px;
+    overflow: scroll;
+}
+.header2-::-webkit-scrollbar{
+    display: none;
+}
+
+@media (min-height: 1200px) {
+    .header1-{
+        height: 150px;
+    }
+    .header2-{
+        height: 100px;
     }
 }
 

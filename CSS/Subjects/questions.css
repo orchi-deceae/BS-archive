@@ -31,6 +31,8 @@
     width: 10px;
     height: 10px;
 }
+
+/* The options */
 .questions- p{
     display: flex;
     margin: 5px 20px;
@@ -40,31 +42,9 @@
     content: counter(as, lower-alpha) ". ";
     margin-right: 5px;
 }
-.questions- img{
-    position: relative;
-    display: none;
-    left: 50%;
-    right: 50%;
-    padding: 30px;
-    transform: translate(-50%, 0 );
-    max-width: 600px;
-}
-.hide-,
-.questions- label span{
-    cursor: pointer;
-    margin-top: 5px;
-}
 
 
-.answer- span{
-    cursor: pointer;
-}
-label .show-{
-    display: flex;
-}
-.check-:checked ~ img{
-    display: block;
-}
+/* The correct option */
 .check-:checked ~ .ans-{
     text-decoration: underline;
     animation: flash 2000ms linear 500ms;
@@ -77,17 +57,40 @@ label .show-{
         color: black;
     }
 }
+
+
+/* Questions image */
+.questions- img{
+    position: relative;
+    display: none;
+    right: 50%;
+    padding: 30px;
+    transform: translate(50%); /*x, y, z*/
+    max-width: 600px;
+}
+.check-:checked ~ img{
+    display: block;
+}
+
+
+/* Show and hide */
+.questions- label span{
+    cursor: pointer;
+    margin-top: 5px;
+}
+.check-:checked ~ .show-,
+.check-:checked ~ label .show-{
+    display: none;
+}
 .check-:checked ~ .hide-,
 .check-:checked ~ label .hide-{
     display: flex;
     padding-right: 5px;
 }
-#hide, .check-,
-.hide-,  
-label .hide-, 
-.check-:checked ~ label .show-{
+#hide, .check-, .hide-{
     display: none;
 }
+
 
 /*up button */
 .up-btn-{

@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../../CSS/Subjects/title.css">
         <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
         <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
+        <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
         <script src="../../Java.js"></script>
     </head>
 
@@ -32,7 +33,7 @@
             <!--Topic-->
             <div class="title-">
                 <div class="sub-101-">
-                    txt 101
+                    txt 101 copy
                 </div>
                 <div class="change-">
                     <div class="before-">
@@ -53,7 +54,7 @@
             <div class="sidebar-" id="sidebar">
                 <div class="close-" onclick="close_()" id="close_">&times;</div>
                 <div>
-                    <input type="checkbox" id="side_sub1_" class="side-sub-">
+                    <input type="checkbox" id="side_sub1_" class="side-checkbox-">
                     <label for="side_sub1_" >
                         MTH 101 <span class="arw- mth101-arw-"></span>
                         <ol class="subj-ol- mth101-ol-">
@@ -66,7 +67,7 @@
                 </div>
 
                 <div>
-                    <input type="checkbox" id="side_sub2_" class="side-sub-">
+                    <input type="checkbox" id="side_sub2_" class="side-checkbox-">
                     <label for="side_sub2_" >
                         PHY 101 <span class="arw- phy101-arw-"></span>
                         <ol class="subj-ol- phy101-ol-">
@@ -79,7 +80,7 @@
                 </div>
 
                 <div>
-                    <input type="checkbox" id="side_sub3_" class="side-sub-">
+                    <input type="checkbox" id="side_sub3_" class="side-checkbox-">
                     <label for="side_sub3_" >
                         COS 101 <span class="arw- cos101-arw-"></span>
                         <ol class="subj-ol- cos101-ol-">
@@ -92,7 +93,7 @@
                 </div>
 
                 <div>
-                    <input type="checkbox" id="side_sub4_" class="side-sub-">
+                    <input type="checkbox" id="side_sub4_" class="side-checkbox-">
                     <label for="side_sub4_" >
                         GST 106 <span class="arw- gst106-arw-"></span>
                         <ol class="subj-ol- gst106-ol-">
@@ -105,7 +106,7 @@
                 </div>
 
                 <div>
-                    <input type="checkbox" id="side_sub5_" class="side-sub-">
+                    <input type="checkbox" id="side_sub5_" class="side-checkbox-">
                     <label for="side_sub5_" >
                         GST 107 <span class="arw- gst107-arw-"></span>
                         <ol class="subj-ol- gst107-ol-">
@@ -118,7 +119,7 @@
                 </div>
 
                 <div>
-                    <input type="checkbox" id="side_sub6_" class="side-sub-">
+                    <input type="checkbox" id="side_sub6_" class="side-checkbox-">
                     <label for="side_sub6_" >
                         CHM 101 <span class="arw- chm101-arw-"></span>
                         <ol class="subj-ol- chm101-ol-">
@@ -131,7 +132,7 @@
                 </div> 
 
                 <div>
-                    <input type="checkbox" id="side_sub7_" class="side-sub-">
+                    <input type="checkbox" id="side_sub7_" class="side-checkbox-">
                     <label for="side_sub7_" >
                         BIO 101 <span class="arw- bio101-arw-"></span>
                         <ol class="subj-ol- bio101-ol-">
@@ -144,7 +145,7 @@
                 </div>
 
                 <div>
-                    <input type="checkbox" id="side_sub8_" class="side-sub-">
+                    <input type="checkbox" id="side_sub8_" class="side-checkbox-">
                     <label for="side_sub8_" >
                         General <span class="arw- general-arw-"></span>
                         <ol class="subj-ol- general-ol-">
@@ -154,7 +155,7 @@
                 </div>
 
                 <div>
-                    <input type="checkbox" id="side_sub9_" class="side-sub-">
+                    <input type="checkbox" id="side_sub9_" class="side-checkbox-">
                     <label for="side_sub9_" >
                         CHM 111 <span class="arw- chm111-arw-"></span>
                         <ol class="subj-ol- chm111-ol-">
@@ -209,7 +210,54 @@
                     <span class="hide-">[Hide]<br></span>
                 </label>
             </div>
+        </div> 
+
+        <div>
+            <form action="" method="post" class="comm-form-" onsubmit="handleSubmit()">
+                <input type="checkbox" id="fake_" class="public-">
+
+            <div class="form-div-">
+                <img src="../../Pictures/IMG_c7sokl.jpg">
+                <label class="name-">Name: 
+                    <input type="text" name="Name" id="name_" placeholder="txt" class="name-input-" required>
+                    <input type="text" name="php_Name" placeholder="php_txt" class="name-input2" required>
+                </label><br>
+
+                <label class="email-">Email:
+                    <input type="email" name="email" id="email_" placeholder="email" class="email-input-" required>
+                </label><br>
+            </div>
+
+                <label class="comm-">comment: 
+                    <textarea name="comment" id="message_" rows="2" placeholder="txt" required></textarea>
+                    <textarea name="php_comment" rows="2" placeholder="php_txt" required></textarea>
+                </label><br>
+
+
+                <input type="submit" name="submit" value="submit-php" class="submit-input-">
+                <button onclick="sendMail()" class="submit-btn-">submit</button>
+
+                <label for="fake_" class="fake-">Public</label>
+            </form>
         </div>
+        
+
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+            emailjs.init({
+            publicKey: "Sj2duhmrEQlsjXpWJ",
+            });
+            })();
+
+
+            function handleSubmit(e)  {
+                e.preventDefault()
+
+            }
+        </script>
 
         <a href="#">
             <div class="up-btn-">
