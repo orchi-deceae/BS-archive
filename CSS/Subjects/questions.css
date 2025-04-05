@@ -42,12 +42,26 @@
     content: counter(as, lower-alpha) ". ";
     margin-right: 5px;
 }
+.answer-span-{
+    line-height: 30px;
+    margin: 5px 20px;
+}
+
+@media (min-height: 1200px) {
+    .answer-span-{
+        line-height: 55px;
+    }
+}
 
 
 /* The correct option */
 .check-:checked ~ .ans-{
     text-decoration: underline;
     animation: flash 2000ms linear 500ms;
+}
+.check-:checked ~ span .ans-{
+    text-decoration: underline;
+    animation: flash 2000ms linear 100ms;
 }
 @keyframes flash {
     33%{
@@ -57,6 +71,7 @@
         color: black;
     }
 }
+
 
 
 /* Questions image */
