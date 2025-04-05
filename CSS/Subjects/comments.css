@@ -92,7 +92,7 @@
     display: none;
 }
 .public-:checked ~ .public-comments-{
-    display: flex;
+    display: block;
 }
 .public-:checked ~ .comment-form-{
     display: none;
