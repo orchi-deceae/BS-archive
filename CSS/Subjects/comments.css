@@ -11,7 +11,7 @@
 
 
 /* Message field */
-.comm-form- img{
+.comment-form- img{
     display: flex;
     height: 50px;
     border-radius: 100px;
@@ -88,45 +88,39 @@
 .public-:checked ~ .fake-{
     background-color: red;
 }
-.name- input:nth-child(2),
-.comm- textarea:nth-child(2){
+.public-comments-{
     display: none;
 }
-.public-:checked ~ div .email-,
-.public-:checked ~ div .name- input:nth-child(1),
-.public-:checked ~ .comm- textarea:nth-child(1){
-    display: none;
-}
-.public-:checked ~ div .name- input:nth-child(2),
-.public-:checked ~ .comm- textarea:nth-child(2){
+.public-:checked ~ .public-comments-{
     display: flex;
+}
+.public-:checked ~ .comment-form-{
+    display: none;
 }
 
 
 /*buttons*/
-.fake-{
-    background-color: rgb(240, 240, 240);
-    font-size: 13px;
-    padding: 1px 6px;
-    border-radius: 2px;
-    border: 1px solid rgb(100, 100, 100);
+.com-opt-{
+    display: flex;
 }
-.submit-input-,
-.public-:checked ~ .submit-btn-{
-    display: none;
-} 
-.public-:checked ~ .submit-input-{
-    display: inline-block;
+.private-,
+.public-label-{
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 @media (min-height:1200px) {
-    .submit-input-,
     .submit-btn-{
         font-size: 40px;
         margin: 0;
     }
-    .fake-{
+    .private-,
+    .public-label-{
         font-size: 40px;
         margin-left: 10px;
+    }
+    .public-comments- span {
+        font-size: 40px;
     }
 }
