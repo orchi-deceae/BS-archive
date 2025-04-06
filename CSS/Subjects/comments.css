@@ -168,3 +168,44 @@
         font-size: 40px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#commentList {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .comment-item {
+    margin-bottom: 1rem;
+  }
+  
+  .comment-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .comment-name {
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 4px;
+  }
+  
+  .comment-content {
+    color: #444;
+    white-space: pre-wrap;
+  }

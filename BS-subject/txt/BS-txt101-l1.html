@@ -603,97 +603,85 @@
             </form>
         </div>
         
+
+
         <button id="toggleComments">Toggle Comments</button>
 
-        <div id="commentsContainer">
-            <form class="comment-form-" id="commentForm">
-            <h1>Comment</h1>
-                <div class="profile-">
-                    <div class="img-div-"><img src="../../Pictures/default-pfp.jpg"></div>
-                    <div class="top-input-">
-                        <label class="name-"> 
-                            <input type="text" name="Name" id="nameInput" placeholder="Anonymous" class="name-input-" required />
-                        </label>
-                    </div>
-                </div>
-                <label class="comm-">comment: 
-                    <textarea name="comment" id="commentInput" rows="4" placeholder="For commenting..." required></textarea>
-                </label>
-                <button type="submit" class="submit-btn-">submit</button>
-            </form>
-
-            <ul id="commentList"></ul>
+        <div id="commentsContainer" style="display: block;">
+        <h2>Comments</h2>
+        <form id="commentForm">
+            <input type="text" id="nameInput" placeholder="Your name" required />
+            <textarea id="commentInput" placeholder="Write a comment..." required></textarea>
+            <button type="submit">Post</button>
+        </form>
+        <ul id="commentList"></ul>
         </div>
+
         
 
         <script type="module">
-            // Import the functions you need from the SDKs you need
             import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-            import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js";
-            // TODO: Add SDKs for Firebase products that you want to use
-            // https://firebase.google.com/docs/web/setup#available-libraries
+            import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
           
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
             const firebaseConfig = {
               apiKey: "AIzaSyAWItC0B8LSmHwd3j23vjkRbYbz6AmqHLA",
               authDomain: "bs-archieve.firebaseapp.com",
               databaseURL: "https://bs-archieve-default-rtdb.firebaseio.com",
               projectId: "bs-archieve",
-              storageBucket: "bs-archieve.firebasestorage.app",
+              storageBucket: "bs-archieve.appspot.com",
               messagingSenderId: "902571322512",
               appId: "1:902571322512:web:da19c1f05b3b6a252bbc15",
               measurementId: "G-993RZ9J66H"
             };
           
-            // Initialize Firebase
             const app = initializeApp(firebaseConfig);
-            const analytics = getAnalytics(app);
+            const db = getFirestore(app);
           
-          
-
-
-
-
-             // Unique thread per page using the path
+            // Unique comment thread based on page URL
             const threadId = window.location.pathname;
             const commentsRef = collection(db, "comments", threadId, "messages");
-
-            // Show/hide button
+          
+            // Toggle comment section visibility
             document.getElementById("toggleComments").addEventListener("click", () => {
-                const container = document.getElementById("commentsContainer");
-                container.style.display = container.style.display === "none" ? "block" : "none";
+              const container = document.getElementById("commentsContainer");
+              container.style.display = container.style.display === "none" ? "block" : "none";
             });
-
-            // Handle comment submission
+          
+            // Handle form submission
             document.getElementById("commentForm").addEventListener("submit", async (e) => {
-                e.preventDefault();
-                const name = document.getElementById("nameInput").value.trim();
-                const content = document.getElementById("commentInput").value.trim();
-                if (!name || !content) return;
-
-                await addDoc(commentsRef, {
+              e.preventDefault();
+              const name = document.getElementById("nameInput").value.trim();
+              const content = document.getElementById("commentInput").value.trim();
+              if (!name || !content) return;
+          
+              await addDoc(commentsRef, {
                 name,
                 content,
                 createdAt: serverTimestamp()
-                });
-
-                document.getElementById("nameInput").value = "";
-                document.getElementById("commentInput").value = "";
+              });
+          
+              document.getElementById("nameInput").value = "";
+              document.getElementById("commentInput").value = "";
             });
-
-            // Real-time comment display
+          
+            // Render comments in real-time
             const q = query(commentsRef, orderBy("createdAt", "desc"));
             onSnapshot(q, (snapshot) => {
-                const list = document.getElementById("commentList");
-                list.innerHTML = "";
-                snapshot.forEach((doc) => {
+              const list = document.getElementById("commentList");
+              list.innerHTML = "";
+              snapshot.forEach((doc) => {
                 const data = doc.data();
                 const li = document.createElement("li");
-                li.innerHTML = `<strong>${data.name}</strong>: ${data.content}`;
+                li.className = "comment-item";
+                li.innerHTML = `
+                  <div class="comment-card">
+                    <div class="comment-name">${data.name}</div>
+                    <div class="comment-content">${data.content}</div>
+                  </div>
+                `;
                 list.appendChild(li);
-                });
+              });
             });
-        </script>
+          </script>
     </body>
 </html>
