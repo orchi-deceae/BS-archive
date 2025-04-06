@@ -605,25 +605,20 @@
         
         <button id="toggleComments">Toggle Comments</button>
 
-        <div id="commentsContainer">
-            <form class="comment-form-" id="commentForm">
-            <h1>Comment</h1>
-                <div class="profile-">
-                    <div class="img-div-"><img src="../../Pictures/default-pfp.jpg"></div>
-                    <div class="top-input-">
-                        <label class="name-"> 
-                            <input type="text" name="Name" id="nameInput" placeholder="Anonymous" class="name-input-" required />
-                        </label>
-                    </div>
-                </div>
-                <label class="comm-">comment: 
-                    <textarea name="comment" id="commentInput" rows="4" placeholder="For commenting..." required></textarea>
-                </label>
-                <button type="submit" class="submit-btn-">submit</button>
-            </form>
+        <!-- Show/Hide Button -->
+<button id="toggleComments">Toggle Comments</button>
 
-            <ul id="commentList"></ul>
-        </div>
+<!-- Comment Section -->
+<div id="commentsContainer" style="display: block;">
+  <h2>Comments</h2>
+  <form id="commentForm">
+    <input type="text" id="nameInput" placeholder="Your name" required />
+    <textarea id="commentInput" placeholder="Write a comment..." required></textarea>
+    <button type="submit">Post</button>
+  </form>
+  <ul id="commentList"></ul>
+</div>
+
         
 
         <script type="module">
