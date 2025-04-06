@@ -30,3 +30,16 @@ function sendMail(){
     emailjs.send("service_l8fwrai","template_6fh3qpj",parms).then(alert("Email Sent!!!"))
 }
 
+function contact_(){
+    document.getElementById("contact_form_").style.display = "block"
+    document.getElementById("comment_form_").style.display = "none"
+    document.getElementById("h1_btn1_").style.textDecoration = "underline"
+    document.getElementById("h1_btn2_").style.textDecoration = "none"
+}
+function comment_(){
+    document.getElementById("contact_form_").style.display = "none"
+    document.getElementById("comment_form_").style.display = "block"
+    document.getElementById("h1_btn2_").style.textDecoration = "underline"
+    document.getElementById("h1_btn1_").style.textDecoration = "none"
+
+}

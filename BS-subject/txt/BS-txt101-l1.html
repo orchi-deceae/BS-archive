@@ -582,40 +582,44 @@
             }
         </script>
 
-        <div>
-            <form action="" method="post" class="comment-form-" onsubmit="handleSubmit()">
-            <h1>Contact</h1>
+        <div class="comment-section-">
+            <div class="top-h1-">
+                <button onclick="contact_()"><h1 id="h1_btn1_">Contact</h1></button>
+                <button><h1>/</h1></button>
+                <button onclick="comment_()"><h1 id="h1_btn2_">Comment</h1></button>
+            </div>
+            <form id="contact_form_" class="contact-form-" onsubmit="handleSubmit()">
                 <div class="profile-">
                     <div class="img-div-"><img src="../../Pictures/default-pfp.jpg"></div>
                     <div class="top-input-">
-                        <label class="name-"> 
-                            <input type="text" name="Name" id="name_" placeholder="Anonymous" class="name-input-" required>
-                        </label>
-                        <label class="email-">
-                            <input type="email" name="email" id="email_" placeholder="email" class="email-input-" required>                            
-                        </label>
+                        <input type="text" name="Name" id="name_" placeholder="Anonymous" required>
+                        <input type="email" name="email" id="email_" placeholder="email" required>                            
                     </div>
                 </div>
                 <label class="comm-">comment: 
-                    <textarea name="comment" id="message_" rows="4" placeholder="For contacting..." required></textarea>
+                    <textarea name="comment" id="message_" rows="4" placeholder="Contact the creator here" required></textarea>
                 </label>
-                <button onclick="sendMail()" class="submit-btn-">submit</button>
+                <button onclick="sendMail()" class="submit-btn-">send</button>
             </form>
+            
+            <form id="comment_form_">
+                <button id="toggleComments">Toggle Comments</button>
+
+                <div id="commentsContainer" style="display: block;">
+                <h2>Comments</h2>
+                <form id="commentForm">
+                    <input type="text" id="nameInput" placeholder="Your name" required />
+                    <textarea id="commentInput" placeholder="Write a comment..." required></textarea>
+                    <button type="submit">Comment</button>
+                </form>
+                <ul id="commentList"></ul>
+                </div>
+            </form>  
         </div>
         
 
 
-        <button id="toggleComments">Toggle Comments</button>
-
-        <div id="commentsContainer" style="display: block;">
-        <h2>Comments</h2>
-        <form id="commentForm">
-            <input type="text" id="nameInput" placeholder="Your name" required />
-            <textarea id="commentInput" placeholder="Write a comment..." required></textarea>
-            <button type="submit">Post</button>
-        </form>
-        <ul id="commentList"></ul>
-        </div>
+        
 
         
 

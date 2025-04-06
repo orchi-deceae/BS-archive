@@ -1,28 +1,41 @@
 
 /* The coment */
-.comment-form-{
+.comment-section-{
     display: block;
     flex-direction: column;
 
     width: 100%;
-    padding-top: 30px;
+    padding: 30px 0;
     margin-top: 100px;
     border-radius: 15px 15px 0 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    -webkit-text-size-adjust: none;
+}
+.contact-form-{
+    display: block;
+    flex-direction: column;
 }
 
-
-
-.contact-txt-{
-    font-size: 25px;
-    font-weight: bold;
-    margin: 0 20px;
-}
 @media (min-height: 1200px) {
-    .contact-txt-{
-        font-size: 40px;
+    .comment-section-{
+        padding-bottom: 80px;
     }
 }
+
+
+/* Top options */
+.top-h1- button{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+.top-h1- button:first-child h1{
+    text-decoration: underline;
+}
+#comment_form_{
+    display: none;
+}
+
 /* Top part */
 .profile-{
     display: flex;
@@ -32,95 +45,125 @@
 /* Profile picture */
 .img-div-{
     display: flex;
-    height: 60px;
+    height: 70px;
 }
 .img-div- img{
     object-fit: contain;
-    border-radius: 100px;
+    border-radius: 3px;
     border: 2px solid black;
 }
 
-/* The name and emial form */
+
+/* The name, emial and comment container */
 .top-input-{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 100%;
     margin-left: 20px;
-    margin-top: 10px;
+}
+
+.comm-{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    font-size: 30px;
 }
 
 /* button */
 .submit-btn-{
+    background-color: rgb(0, 156, 255);
+    color: white;
     display: flex;
     flex-direction: column;
-    max-width: 200px;
-    padding: 10px 20px;
-    margin: 10px 20px;
+    cursor: pointer;
+    
+    padding: 5px 20px;
+    margin: 10px 20px 0 20px;
     font-size: 26px;
+    border-radius: 5px;
+    border: none;
 }
-
-/* The labels */
-.name-,
-.email-{
-    display: flex;
-    flex-direction: column;
-}
-.comm-{
-    display: flex;
-    flex-direction: column;
-    margin: 0 20px;
+.submit-btn-:hover {
+    background-color: rgb(0, 118, 191);
 }
 
 /* The inputs */
-.name- input,
-.email- input{
+.top-input- input{
+    background-color: rgb(240, 240, 240);
     border: none;
     outline: none;
-    padding: 0;
-    margin: 0;
+    max-width: 300px;
+    margin: 5px 0;
+    padding: 2px;
+    padding-left: 5px;
     font-size: 18px;
+    border-radius: 3px;
+    box-shadow: 0 0 0 0.5px black;
 }
+.top-input- input:focus-visible{
+    box-shadow: 0 0 0 1px inset rgb(0, 162, 255);
+}
+
 .comm- textarea{
+    background-color: rgb(240, 240, 240);
+    border: none;
     outline: none;
     padding: 5px;
     font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 0.5px black;
+}
+.comm- textarea:focus-visible{
+    box-shadow: 0 0 0 1px inset rgb(0, 162, 255);
 }
 
-.name- input::placeholder,
-.email- input::placeholder,
+.top-input- input::placeholder,
 .comm- textarea::placeholder{
     font-size: 18px;
 }
 
 @media (min-height:1200px) {
-    .img-div- img{
-        height: 120px;
+    .top-h1- button{
+        font-size: 25px;
     }
-    .name- input,
-    .email- input{
-        height: 40px;
+    .img-div- img{
+        height: 140px;
+    }
+    .submit-btn-,
+    .top-input-,
+    .comm-{
+        font-size: 45px;
+    }
+    .top-input- input{
+        max-width: 100%;
+    }
+    .submit-btn-{
+        width: calc(100% + -40px);
+        padding: 10px 50px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+    .top-input- input{
+        height: 30px;
         padding: 10px;
         padding-left: 15px;
-        font-size: 35px;
+        margin: 12.5px 0;
+        font-size: 30px;
     }
     .comm- textarea{
         height: 300px;
         padding: 10px;
         padding-left: 15px;
-        font-size: 15px;
+        font-size: 30px;
         border: 1px solid black;
     }
-    .name- input::placeholder,
-    .email- input::placeholder,
+    .top-input- input::placeholder,
     .comm- textarea::placeholder{
         font-size: 30px;
     }
-    .name-,
-    .email-,
-    .comm-{
-        font-size: 40px;
-    }
 }
+
+
 
 
 
@@ -138,12 +181,26 @@
 .public-:checked ~ .public-comments-{
     display: block;
 }
-.public-:checked ~ .comment-form-{
+.public-:checked ~ .contact-form-{
     display: none;
 }
 
 
-/*Top buttons ish*/
+
+.contact-txt-{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+@media (min-height: 1200px) {
+    .contact-txt-{
+        font-size: 40px;
+    }
+}
+
+
+
+/*Top buttons*/
 .com-opt-{
     display: flex;
 }
@@ -155,10 +212,6 @@
 }
 
 @media (min-height:1200px) {
-    .submit-btn-{
-        font-size: 40px;
-        margin: 0;
-    }
     .private-,
     .public-label-{
         font-size: 40px;
