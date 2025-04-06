@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../../CSS/Subjects/title.css">
         <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
         <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
+        <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
         <script src="../../Java.js"></script>
     </head>
 
@@ -561,5 +562,138 @@
                 <div></div>
             </div>
         </a>
+
+
+
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+            emailjs.init({
+            publicKey: "Sj2duhmrEQlsjXpWJ",
+            });
+            })();
+
+
+            function handleSubmit(e)  {
+                e.preventDefault()
+
+            }
+        </script>
+
+        <div>
+            <form action="" method="post" class="comment-form-" onsubmit="handleSubmit()">
+            <h1>Contact</h1>
+                <div class="profile-">
+                    <div class="img-div-"><img src="../../Pictures/default-pfp.jpg"></div>
+                    <div class="top-input-">
+                        <label class="name-"> 
+                            <input type="text" name="Name" id="name_" placeholder="Anonymous" class="name-input-" required>
+                        </label>
+                        <label class="email-">
+                            <input type="email" name="email" id="email_" placeholder="email" class="email-input-" required>                            
+                        </label>
+                    </div>
+                </div>
+                <label class="comm-">comment: 
+                    <textarea name="comment" id="message_" rows="4" placeholder="For contacting..." required></textarea>
+                </label>
+                <button onclick="sendMail()" class="submit-btn-">submit</button>
+            </form>
+        </div>
+        
+        <button id="toggleComments">Toggle Comments</button>
+
+        <div id="commentsContainer">
+            <form class="comment-form-" id="commentForm">
+            <h1>Comment</h1>
+                <div class="profile-">
+                    <div class="img-div-"><img src="../../Pictures/default-pfp.jpg"></div>
+                    <div class="top-input-">
+                        <label class="name-"> 
+                            <input type="text" name="Name" id="nameInput" placeholder="Anonymous" class="name-input-" required />
+                        </label>
+                    </div>
+                </div>
+                <label class="comm-">comment: 
+                    <textarea name="comment" id="commentInput" rows="4" placeholder="For commenting..." required></textarea>
+                </label>
+                <button type="submit" class="submit-btn-">submit</button>
+            </form>
+
+            <ul id="commentList"></ul>
+        </div>
+        
+
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyAWItC0B8LSmHwd3j23vjkRbYbz6AmqHLA",
+              authDomain: "bs-archieve.firebaseapp.com",
+              databaseURL: "https://bs-archieve-default-rtdb.firebaseio.com",
+              projectId: "bs-archieve",
+              storageBucket: "bs-archieve.firebasestorage.app",
+              messagingSenderId: "902571322512",
+              appId: "1:902571322512:web:da19c1f05b3b6a252bbc15",
+              measurementId: "G-993RZ9J66H"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          
+          
+
+
+
+
+             // Unique thread per page using the path
+            const threadId = window.location.pathname;
+            const commentsRef = collection(db, "comments", threadId, "messages");
+
+            // Show/hide button
+            document.getElementById("toggleComments").addEventListener("click", () => {
+                const container = document.getElementById("commentsContainer");
+                container.style.display = container.style.display === "none" ? "block" : "none";
+            });
+
+            // Handle comment submission
+            document.getElementById("commentForm").addEventListener("submit", async (e) => {
+                e.preventDefault();
+                const name = document.getElementById("nameInput").value.trim();
+                const content = document.getElementById("commentInput").value.trim();
+                if (!name || !content) return;
+
+                await addDoc(commentsRef, {
+                name,
+                content,
+                createdAt: serverTimestamp()
+                });
+
+                document.getElementById("nameInput").value = "";
+                document.getElementById("commentInput").value = "";
+            });
+
+            // Real-time comment display
+            const q = query(commentsRef, orderBy("createdAt", "desc"));
+            onSnapshot(q, (snapshot) => {
+                const list = document.getElementById("commentList");
+                list.innerHTML = "";
+                snapshot.forEach((doc) => {
+                const data = doc.data();
+                const li = document.createElement("li");
+                li.innerHTML = `<strong>${data.name}</strong>: ${data.content}`;
+                list.appendChild(li);
+                });
+            });
+        </script>
     </body>
 </html>
