@@ -6,6 +6,9 @@
     object-fit: contain;
     padding: 50px 0;
 }
+.main-txt-{
+    padding-bottom: 100px;
+}
 .main-txt- span{
     display: flex;
     justify-content: center;
@@ -14,6 +17,8 @@
 .main-txt- span span{
     font-family: 'Times New Roman';
     font-style: italic;
+    padding-bottom: 40px;
+    padding-bottom: 40px;
 }
 @media (min-height: 1200px) {
     .bs-main-pfp-{
