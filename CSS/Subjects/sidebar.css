@@ -86,6 +86,7 @@
     display: none;
 }
 .subj-ol- li{
+max-width: 200px;
     padding: 10px 0;
     white-space: wrap;
 }
@@ -102,7 +103,7 @@
 /*The topics (checkbox) - ol*/
 .side-checkbox-:checked ~ label .subj-ol-{
     position: relative;
-    display: block;
+    display: flex;
     flex-direction: column;
     left: -128px;
     width: 100%;
