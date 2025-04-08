@@ -1,6 +1,6 @@
 function bugor_(){
     document.getElementById("curtain").style.display = "flex";
-    document.getElementById("sidebar").style.width = "250px";
+    document.getElementById("sidebar").style.width = "300px";
 }
 
 function close_(){
