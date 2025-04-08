@@ -46,7 +46,9 @@
 
 @media (min-height: 1200px) {
     .subj-btns- button{
-        margin: 15px 0;
+        font-size: 30px;
+        padding: 10px 30px;
+        margin: 20px 0;
     }
 }
 

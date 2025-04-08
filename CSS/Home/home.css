@@ -82,6 +82,12 @@
     }
 }
 
+@media (min-height: 1200px) {
+    .sub-main-txt- p{
+        font-size: 1.375em;
+    }
+}
+
 /*aerplane*/
 .aerplane-{
     position: fixed;
