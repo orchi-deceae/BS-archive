@@ -51,7 +51,7 @@
     .sidebar- div:first-child{
         top: -30px;
         font-size: 130px;
-        padding-left: 170px;
+        padding-left: 230px;
     }
 }
 
@@ -88,11 +88,12 @@
 .subj-ol- li{
 max-width: 200px;
     padding: 10px 0;
+    font-size: 26px;
     white-space: wrap;
 }
 @media (min-height: 1200px) {
     .subj-ol-{
-        margin: 80px 0 0 0;
+        margin: 80px 0 0 20px;
     }
     .subj-ol- li{
         max-width: 250px;

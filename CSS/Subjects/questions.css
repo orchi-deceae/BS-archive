@@ -55,13 +55,11 @@
 
 
 /* The correct option */
-.check-:checked ~ .ans-{
+.check-:checked ~ .ans-,
+.check-:checked ~ span .ans-,
+.check-:checked ~ div .ans-{
     text-decoration: underline;
     animation: flash 2000ms linear 500ms;
-}
-.check-:checked ~ span .ans-{
-    text-decoration: underline;
-    animation: flash 2000ms linear 100ms;
 }
 @keyframes flash {
     33%{
