@@ -1,3 +1,5 @@
+
+// sidebar
 function bugor_(){
     document.getElementById("curtain").style.display = "flex";
     document.getElementById("sidebar").style.width = "300px";
@@ -20,6 +22,8 @@ function hide(){
     document.getElementById("answer").style.textDecoration = "none";
 }
 
+
+// email
 function sendMail(){
     let parms = {
         name : document.getElementById("name_").value,
@@ -30,6 +34,8 @@ function sendMail(){
     emailjs.send("service_l8fwrai","template_6fh3qpj",parms).then(alert("Email Sent!!!"))
 }
 
+
+// comment
 function contact_(){
     document.getElementById("contact_form_").style.display = "block"
     document.getElementById("comment_form_").style.display = "none"
