@@ -179,8 +179,19 @@
                         </ol>
                     </label>
                 </div>
+
+                <div>
+                    <input type="checkbox" id="side_sub12_" class="side-checkbox-">
+                    <label for="side_sub12_" >
+                        MTH 111 <span class="arw-"></span>
+                        <ol class="subj-ol-">
+                            <a href="../BS-mth111/l1.html"><li>Limits & Functions</li></a>
+                        </ol>
+                    </label>
+                </div>
             </div>
 
+            <div id="imgbox_" class="imgbox-"></div>
 
             <!--Questions-->
             <div class="questions-">
@@ -470,7 +481,12 @@
                     <span class="show-">[Show]</span>
                     <span class="hide-">[Hide]</span>
                 </label>
-                <img src="../../Pictures/cos101-l1-q17.jpg">
+
+                <img class="q-img-" onclick="
+                    _img = `<img src='../../Pictures/cos101-l1-q17.jpg'>`;
+                    fun();
+                " src="../../Pictures/cos101-l1-q17.jpg">
+                
                 <span class="hide-">
                     <br>
                     The Processing Unit is divided into: ALU, CU, MU

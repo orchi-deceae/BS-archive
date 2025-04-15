@@ -23,6 +23,7 @@
 
 /*Question text*/
 .questions- div{
+    max-width: 100%;
     margin-bottom: 5px;
 }
 .questions- div::before{
@@ -72,18 +73,6 @@
 
 
 
-/* Questions image */
-.questions- img{
-    position: relative;
-    display: none;
-    right: 50%;
-    padding: 30px;
-    transform: translate(50%); /*x, y, z*/
-    max-width: 600px;
-}
-.check-:checked ~ img{
-    display: block;
-}
 
 
 /* Show and hide */
@@ -133,4 +122,55 @@
     border-left: 25px solid transparent;
     border-bottom: 35px solid black;
     z-index: 2;
+}
+
+
+/* Questions image */
+.questions- .q-img-, .a-img-{
+    position: relative;
+    display: none;
+    left: 50%;
+    transform: translate(-50%);
+    object-fit: contain;
+}
+
+.a-img-,
+.check-:checked ~ .q-img-{
+    display: flex;
+}
+
+@media (max-height: 1199px){
+    .q-img-, .a-img-{
+        max-width: 500px;
+    }
+}
+
+.imgbox-{
+    position: fixed;
+        right: 50%;
+        bottom: 50%;
+    display: flex;
+    width: 100%;
+    transform: translate(50%, 50%);
+    object-fit: contain;
+    font-size: 30px;
+    z-index: 12;
+}
+@media (max-height: 1199px) {
+    .imgbox-{
+        width: calc(100% + -100px);
+        max-width: 800px;
+    }
+    .imgbox- img{
+        max-height: 100vh;
+    }
+}
+
+.imgbox- img{
+    position: relative;
+    left: 50%;
+    display: flex;
+    width: 100%;
+    transform: translate(-50%);
+    object-fit: contain;
 }

@@ -7,44 +7,43 @@
         <link rel="stylesheet" href="../../CSS/Subjects/title.css">
         <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
         <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
+        <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
         <script src="../../Java.js"></script>
     </head>
 
     <body>
         <div class="main-">
             <div class="curtain-"  onclick="close_()" id="curtain"></div>
-
+            
             <div class="header1-">
                 <a href="../../index.html"><div><img src="../../Pictures/20250305_205006.jpg"></div></a>
                 <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
                 <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
-            
+                
             </div>
             <!--navigation bar-->
             <div class="header2-">
-                <a href="BS-cos101-l1.html"><button><span>Lesson 1</span><span class="hidden-subject-">Computer</span></button></a>
-                <a href="BS-cos101-l2.html"><button><span>Lesson 2</span><span class="hidden-subject-">Structure of the computer</span></button></a>
-                <a href="BS-cos101-l3.html"><button class = "selected-"><span>Computing history</span><span class="hidden-subject-">Computing history</span></button></a>
+                <a href="l1.html"><button class = "selected-"><span>Limits & Functions</span><span class="hidden-subject-">Limits & Functions</span></button></a>
             </div>
             
             
             <!--Topic-->
             <div class="title-">
                 <div class="sub-101-">
-                    COS 101
+                    MTH 111
                 </div>
                 <div class="change-">
                     <div class="before-">
-                        <a href="BS-cos101-l2.html"><button class="before-btn-">Before</button></a>
-                        <div class="beforepop-">Structure of the computer</div>
+                        <a href="l1.html"><button class="before-btn-">Before</button></a>
+                        <div class="beforepop-">Limits & Functions</div>
                     </div>
                     <div class="after-">
-                        <a href="BS-cos101-l1.html"><button class="next-btn-">Next</button></a>
-                        <div class="afterpop-">Computer</div>
+                        <a href="l1.html"><button class="next-btn-">Next</button></a>
+                        <div class="afterpop-">Limits & Functions</div>
                     </div>
                 </div>
                 <div class="topic-">
-                    Computing history - 12/1/25
+                    Limits & Functions
                 </div>
             </div>
 
@@ -96,7 +95,7 @@
                         </ol>
                     </label>
                 </div>
-
+                
                 <div>
                     <input type="checkbox" id="side_sub5_" class="side-checkbox-">
                     <label for="side_sub5_" >
@@ -124,7 +123,7 @@
                         </ol>
                     </label>
                 </div> 
-
+                
                 <div>
                     <input type="checkbox" id="side_sub7_" class="side-checkbox-">
                     <label for="side_sub7_" >
@@ -147,7 +146,7 @@
                         </ol>
                     </label>
                 </div>
-
+                
                 <div>
                     <input type="checkbox" id="side_sub9_" class="side-checkbox-">
                     <label for="side_sub9_" >
@@ -159,7 +158,7 @@
                         </ol>
                     </label>
                 </div>
-
+                
                 <div>
                     <input type="checkbox" id="side_sub10_" class="side-checkbox-">
                     <label for="side_sub10_" >
@@ -169,7 +168,7 @@
                         </ol>
                     </label>
                 </div>
-
+                
                 <div>
                     <input type="checkbox" id="side_sub11_" class="side-checkbox-">
                     <label for="side_sub11_" >
@@ -190,335 +189,127 @@
                     </label>
                 </div>
             </div>
-
+            
+            <div id="imgbox_" class="imgbox-"></div>
 
             <!--Questions-->
             <div class="questions-">
                 <input type="checkbox" id="check1_"  class="check-">
-                <div>State the known generations of computers
-                </div>
+                <div></div>
+                <img class="a-img-" onclick="
+                    _img = `<img src='../../Pictures/MTH111/L1_Q1 IMG1.jpg'>`;
+                    fun();
+                " src="../../Pictures/MTH111/L1_Q1 IMG1.jpg">
 
                 <label for="check1_">
                     <span class="show-">[Show]</span>
                     <span class="hide-">[Hide]<br>
-                        1st,2nd,3rd,4th and 5th
+                        The answer is c
                     </span>
                 </label>
             </div>
 
             <div class="questions-">
                 <input type="checkbox" id="check2_" class="check-">
-                <div>State three characteristics of the fifth generation computers.
-                </div>
+                <div></div>
+                <img class="a-img-" onclick="
+                    _img = `<img src='../../Pictures/MTH111/L1_Q1 IMG2.jpg'>`;
+                    fun()
+                " src="../../Pictures/MTH111/L1_Q1 IMG2.jpg">
 
                 <label for="check2_">
                     <span class="show-">[Show]</span>
                     <span class="hide-">[Hide]<br>
-                        Multi processor based system 
-                        <br>Use of artificial intelligence 
-                        <br>Magnetic enabled chips
+                        The limit does not exist
+                        <br>
+                        <br>It's because as it approaches zero it becomes infinite
                     </span>
                 </label>
             </div>
 
             <div class="questions-">
                 <input type="checkbox" id="check3_" class="check-">
-                <div>Fifth generation computers are also known as?
-                </div>
+                <div></div>
+                <img class="a-img-" onclick="
+                    _img = `<img src='../../Pictures/MTH111/L1_Q1 IMG3.jpg'>`;
+                    fun()
+                " src="../../Pictures/MTH111/L1_Q1 IMG3.jpg">
 
                 <label for="check3_">
                     <span class="show-">[Show]</span>
                     <span class="hide-">[Hide]<br>
-                        Artificial intelligence
-                    </span>
+                    The answer is -1
+                </span>
                 </label>
             </div>
 
             <div class="questions-">
                 <input type="checkbox" id="check4_" class="check-">
-                <div>What was the primary technology used in first-generation computers?
-                </div>
-
-                <p>Transistors</p>
-                <p class="ans-">Vacuum tubes</p>
-                <p>Integrated Circuits</p>
-                <p>Microprocessors</p>
+                <div></div>
+                <img class="a-img-" onclick="
+                    _img = `<img src='../../Pictures/MTH111/L1_Q1 IMG4.jpg'>`;
+                    fun()
+                " src="../../Pictures/MTH111/L1_Q1 IMG4.jpg">
 
                 <label for="check4_">
                     <span class="show-">[Show]</span>
                     <span class="hide-">[Hide]<br>
-                        B ✅
+                        10
                     </span>
                 </label>
             </div>
 
             <div class="questions-">
                 <input type="checkbox" id="check5_" class="check-">
-                <div>Which of the following computers belongs to the first generation?
-                </div>
-
-                <p>IBM 360</p>
-                <p>PDP-11</p>
-                <p class="ans-">UNIVAC</p>
-                <p>Sharp PC-1211</p>
+                <div></div>
+                <img class="a-img-" onclick="
+                    _img = `<img src='../../Pictures/MTH111/L1_Q1 IMG5.jpg'>`;
+                    fun()
+                " src="../../Pictures/MTH111/L1_Q1 IMG5.jpg">
 
                 <label for="check5_">
                     <span class="show-">[Show]</span>
                     <span class="hide-">[Hide]<br>
-                        C ✅
+                        L+M
+                        <br>
+                        <br>It's just a rule
                     </span>
                 </label>
             </div>
 
             <div class="questions-">
                 <input type="checkbox" id="check6_" class="check-">
-                <div>What significant improvement did second-generation computers introduce?
-                </div>
-
-                <p>Magnetic drums</p>
-                <p>Microprocessors</p>
-                <p class="ans-">Transistors</p>
-                <p>Artificial Intelligence</p>
+                <div></div>
+                <img class="a-img-" onclick="
+                    _img = `<img src='../../Pictures/MTH111/L1_Q1 IMG6.jpg'>`;
+                    fun()
+                " src="../../Pictures/MTH111/L1_Q1 IMG6.jpg">
 
                 <label for="check6_">
                     <span class="show-">[Show]</span>
                     <span class="hide-">[Hide]<br>
-                        C ✅
+                        Even
                     </span>
                 </label>
             </div>
 
             <div class="questions-">
                 <input type="checkbox" id="check7_" class="check-">
-                <div>Which generation marked the beginning of programming in high-level languages like FORTRAN and COBOL?
-                </div>
-
-                <p>First generation</p>
-                <p class="ans-">Second generation</p>
-                <p>Third generation</p>
-                <p>Fourth generation</p>
+                <div></div>
+                <img class="a-img-" onclick="
+                    _img = `<img src='../../Pictures/MTH111/L1_Q1 IMG7.jpg'>`;
+                    fun()
+                " src="../../Pictures/MTH111/L1_Q1 IMG7.jpg">
 
                 <label for="check7_">
                     <span class="show-">[Show]</span>
                     <span class="hide-">[Hide]<br>
-                        B ✅
                     </span>
                 </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check8_" class="check-">
-                <div>The fifth generation of computers primarily focuses on which technology?
-                </div>
-
-                <p class="ans-">Artificial Intelligence</p>
-                <p>Integrated Circuits</p>
-                <p>Microprocessors</p>
-                <p>Punched Cards</p>
-
-                <label for="check8_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        A ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check9_" class="check-">
-                <div>Which of these is a characteristic of the third-generation computers?
-                </div>
-
-                <p>Use of vacuum tubes</p>
-                <p class="ans-">Operating systems for multitasking</p>
-                <p>Optical fiber circuits</p>
-                <p>Machine language programming</p>
-
-                <label for="check9_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B ✅
-                        <br>Machine language ended with the second generation.
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check10_" class="check-">
-                <div>What defines the fifth generation of computers?
-                </div>
-
-                <p>Introduction of transistors</p>
-                <p>Magnetic storage</p>
-                <p>Punched card inputs</p>
-                <p class="ans-">Quantum computation and nanotechnology</p>
-
-                <label for="check10_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        D ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check11_" class="check-">
-                <div>When did the use of microprocessors begin in computer systems?
-                </div>
-
-                <p>1940s</p>
-                <p>1950s</p>
-                <p class="ans-">1970s</p>
-                <p>2010s</p>
-
-                <label for="check11_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check12_" class="check-">
-                <div>What was the key feature of the fourth-generation computers?
-                </div>
-
-                <p>Vacuum tubes</p>
-                <p class="ans-">Large Scale Integration (LSI)</p>
-                <p>Magnetic core memory</p>
-                <p>Optical fiber circuits</p>
-
-                <label for="check12_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check13_" class="check-">
-                <div>The IBM 360 series is an example of which computer generation?</div>
-
-                <p>Second generation</p>
-                <p class="ans-">Third generation</p>
-                <p>Fourth generation</p>
-                <p>Fifth generation</p>
-
-                <label for="check13_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check14_" class="check-">
-                <div>What was one of the main disadvantages of first-generation computers?
-                </div>
-
-                <p>They were too small</p>
-                <p>They relied on artificial intelligence</p>
-                <p class="ans-">They consumed a lot of electricity</p>
-                <p>They lacked any storage capacity</p>
-
-                <label for="check14_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check15_" class="check-">
-                <div>Which type of memory was used in second-generation computers?
-                </div>
-
-                <p class="ans-">Magnetic core memory</p>
-                <p>Semiconductor memory</p>
-                <p>Optical disks</p>
-                <p>Flash memory</p>
-
-                <label for="check15_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        A ✅
-                    </span>
-                </label>
-            </div>
-            <div class="questions-">
-                <input type="checkbox" id="check16_" class="check-">
-                <div>What is the focus of fifth-generation computer development?
-                </div>
-
-                <p>Microprocessors and reduced cost</p>
-                <p>Large-scale integration and reliability</p>
-                <p class="ans-">Artificial intelligence and quantum computing</p>
-                <p>High-speed line printers</p>
-
-                <label for="check16_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check17_" class="check-">
-                <div>In which generation were graphical user interfaces (GUIs) first introduced?
-                </div>
-
-                <p>Fifth generation</p>
-                <p>Third generation</p>
-                <p>Second generation</p>
-                <p class="ans-">Fourth generation</p>
-
-                <label for="check17_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        D ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check18_" class="check-">
-                <div>What was the significant contribution of fourth-generation computers?
-                </div>
-
-                <p>Artificial Intelligence</p>
-                <p>Use of magnetic drums</p>
-                <p class="ans-">Development of microprocessors</p>
-                <p>Introduction of assembly language</p>
-
-                <label for="check18_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check19_" class="check-">
-                <div>The introduction of transistors reduced which major issue in first-generation computers?
-                </div>
-
-                <p>Lack of memory</p>
-                <p class="ans-">Heat generation</p>
-                <p>Cost of hardware</p>
-                <p>Limited programming capabilities</p>
-
-                <label for="check19_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B ✅
-                    </span>
-                </label>
+                <img class="q-img-" onclick= '
+                _img = `<img src="../../Pictures/MTH111/L1_A1 IMG7.jpg">`
+                fun()
+                ' src="../../Pictures/MTH111/L1_A1 IMG7.jpg">
             </div>
         </div>
 
