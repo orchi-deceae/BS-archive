@@ -23,13 +23,11 @@ function hide(){
     document.getElementById("answer").style.textDecoration = "none";
 }
 
-
 function fun(){
     document.getElementById("imgbox_").style.display = "block";
     document.getElementById("curtain").style.display = "flex";
     document.getElementById('imgbox_').innerHTML = _img;
-
-}
+}   let _img = 0;
 
 
 // email
