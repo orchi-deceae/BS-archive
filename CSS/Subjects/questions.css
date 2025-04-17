@@ -171,6 +171,7 @@
     left: 50%;
     display: flex;
     width: 100%;
+    max-height: calc(100vh + -100px);
     transform: translate(-50%);
     object-fit: contain;
 }
