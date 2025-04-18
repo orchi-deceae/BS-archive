@@ -3,6 +3,138 @@
         {
             "source": "/(.*)", 
             "destination": "/index.html"
+        },
+        {
+            "source": "/BS-subject/BS-bio101/BS-bio101-l1.html",
+            "destination": "/BS-subject/BS-bio101/l1.html"
+        },
+        {
+            "source": "/BS-subject/BS-bio101/BS-bio101-l2.html",
+            "destination": "/BS-subject/BS-bio101/l2.html"
+        },
+        {
+            "source": "/BS-subject/BS-bio101/BS-bio101-l3.html",
+            "destination": "/BS-subject/BS-bio101/l3.html"
+        },
+        {
+            "source": "/BS-subject/BS-bio101/BS-bio101-l4.html",
+            "destination": "/BS-subject/BS-bio101/l4.html"
+        },
+        {
+            "source": "/BS-subject/BS-bio112/BS-bio112-l1.html",
+            "destination": "/BS-subject/BS-bio112/l1.html"
+        },
+        {
+            "source": "/BS-subject/BS-bio112/BS-bio112-l2.html",
+            "destination": "/BS-subject/BS-bio112/l2.html"
+        },
+        {
+            "source": "/BS-subject/BS-chm101/BS-chm101-l1.html",
+            "destination": "/BS-subject/BS-chm101/l1.html"
+        },
+        {
+            "source": "/BS-subject/BS-chm101/BS-chm101-l2.html",
+            "destination": "/BS-subject/BS-chm101/l2.html"
+        },
+        {
+            "source": "/BS-subject/BS-chm101/BS-chm101-l3.html",
+            "destination": "/BS-subject/BS-chm101/l3.html"
+        },
+        {
+            "source": "/BS-subject/BS-chm101/BS-chm101-l4.html",
+            "destination": "/BS-subject/BS-chm101/l4.html"
+        },
+        {
+            "source": "/BS-subject/BS-chm101/BS-chm101-l5.html",
+            "destination": "/BS-subject/BS-chm101/l5.html"
+        },
+        {
+            "source": "/BS-subject/BS-chm111/BS-chm111-l1.html",
+            "destination": "/BS-subject/BS-chm111/l1.html"
+        },
+        {
+            "source": "/BS-subject/BS-chm111/BS-chm111-l2.html",
+            "destination": "/BS-subject/BS-chm111/l2.html"
+        },
+        {
+            "source": "/BS-subject/BS-chm111/BS-chm111-l3.html",
+            "destination": "/BS-subject/BS-chm111/l3.html"
+        },
+        {
+            "source": "/BS-subject/BS-cos101/BS-cos101-l1.html",
+            "destination": "/BS-subject/BS-cos101/l1.html"
+        },
+        {
+            "source": "/BS-subject/BS-cos101/BS-cos101-l2.html",
+            "destination": "/BS-subject/BS-cos101/l2.html"
+        },
+        {
+            "source": "/BS-subject/BS-cos101/BS-cos101-l3.html",
+            "destination": "/BS-subject/BS-cos101/l3.html"
+        },
+        {
+            "source": "/BS-subject/BS-general/BS-general-l1.html",
+            "destination": "/BS-subject/BS-general/l1.html"
+        },
+        {
+            "source": "/BS-subject/BS-gst106/l1.html",
+            "destination": "/BS-subject/BS-gst106/l1.html"
+        },
+        {
+            "source": "/BS-subject/BS-gst106/l2.html",
+            "destination": "/BS-subject/BS-gst106/l2.html"
+        },
+        {
+            "source": "/BS-subject/BS-gst107/BS-gst107-l1.html",
+            "destination": "/BS-subject/BS-gst107/l1.html"
+        },
+        {
+            "source": "/BS-subject/BS-gst107/BS-gst107-l2.html",
+            "destination": "/BS-subject/BS-gst107/l2.html"
+        },
+        {
+            "source": "/BS-subject/BS-gst107/BS-gst107-l3.html",
+            "destination": "/BS-subject/BS-gst107/l3.html"
+        },
+        {
+            "source": "/BS-subject/BS-gst107/BS-gst107-l4.html",
+            "destination": "/BS-subject/BS-gst107/l4.html"
+        },
+        {
+            "source": "/BS-subject/BS-gst107/BS-gst107-l5.html",
+            "destination": "/BS-subject/BS-gst107/l5.html"
+        },
+        {
+            "source": "/BS-subject/BS-mth101/BS-mth101-l1.html",
+            "destination": "/BS-subject/BS-mth101/l1.html"
+        },
+        {
+            "source": "/BS-subject/BS-mth101/BS-mth101-l2.html",
+            "destination": "/BS-subject/BS-mth101/l2.html"
+        },
+        {
+            "source": "/BS-subject/BS-mth101/BS-mth101-l3.html",
+            "destination": "/BS-subject/BS-mth101/l3.html"
+        },
+        {
+            "source": "/BS-subject/BS-BS-mth111/BS-mth111-l1.html",
+            "destination": "/BS-subject/BS-BS-mth111/l1.html"
+        },
+        {
+            "source": "/BS-subject/BS-phy101/BS-phy101-l1.html",
+            "destination": "/BS-subject/BS-phy101/l1.html"
+        },
+        {
+            "source": "/BS-subject/BS-phy101/BS-phy101-l2.html",
+            "destination": "/BS-subject/BS-phy101/l2.html"
+        },
+        {
+            "source": "/BS-subject/BS-phy101/BS-phy101-l3.html",
+            "destination": "/BS-subject/BS-phy101/l3.html"
+        },
+        {
+            "source": "/BS-subject/BS-phy111/BS-phy111-l1.html",
+            "destination": "/BS-subject/BS-phy111/l1.html"
         }
     ]
 }
