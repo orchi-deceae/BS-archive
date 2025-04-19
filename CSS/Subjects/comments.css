@@ -169,6 +169,9 @@
 .show- h3{
     font-size: 36px;
 }
+.comment{
+    border-right: 2px solid black;
+}
 .comment p{
     font-size: 26px;
 }
