@@ -9,6 +9,9 @@
     height: 100vh;
     z-index: 3;
 }
+#email_img_{
+    display: none;
+}
 #email_img_:checked ~ label .curtain-email-{
     display: block;
 }
@@ -22,16 +25,13 @@
         right: 70px;
     display: flex;
     z-index: 3;
+    cursor: pointer;
 }
 .email-img- img{
     width: 60px;
     object-fit: contain;
 }
 
-#email_img_:checked ~ .email-section-{
-    bottom: 0;
-    transition: 500ms;
-}
 
 @media (min-height: 1200px){
     .email-img-{
@@ -47,14 +47,13 @@
 .email-section-{
     background-color: white;
     position: fixed;
-        bottom: -370px;
+        top: -370px;
     display: block;
     flex-direction: column;
-
+    
     width: 100%;
     padding: 30px 0;
-    margin-top: 100px;
-    border-radius: 15px 15px 0 0;
+    border-radius: 0 0 15px 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     z-index: 3;
     -webkit-text-size-adjust: none;
@@ -63,11 +62,15 @@
     display: block;
     flex-direction: column;
 }
+#email_img_:checked ~ .email-section-{
+    top: 0;
+    transition: 500ms;
+}
 
 @media (min-height: 1200px) {
     .email-section-{
         padding-bottom: 80px;
-        bottom: -900px;
+        top: -900px;
     }
 }
 
