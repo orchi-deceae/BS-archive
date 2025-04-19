@@ -159,13 +159,19 @@
 .show-comments-btn-:active{
     opacity: 0.8;
 }
+#show_:checked ~ label .show-btn-{
+    background-color: white;
+    color: rgb(74, 185, 236);
+    box-shadow: none;
+    border: 1.5px solid rgb(74, 185, 236);
+}
 
 /* Old comments */
 .show-comments-{
     display: none;
     margin-left: 30px;
     margin-bottom: 100px;
-    
+
     -webkit-text-size-adjust: none;
 }
 .show-comments- h3{
