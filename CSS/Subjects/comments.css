@@ -152,6 +152,7 @@
     font-size: 26px;
     padding: 10px 30px;
     margin: 5px 30px;
+    margin-bottom: 100px;
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 5px black;
@@ -163,6 +164,7 @@
     background-color: white;
     color: rgb(74, 185, 236);
     box-shadow: none;
+    margin-bottom: 30px;
     border: 1.5px solid rgb(74, 185, 236);
 }
 
