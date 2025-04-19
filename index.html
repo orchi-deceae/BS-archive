@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="CSS/Home/home.css">
         <link rel="stylesheet" href="CSS/Home/subj.css">
         <link rel="stylesheet" href="CSS/Home/semester.css">
+        <link rel="stylesheet" href="CSS/Home/email.css">
         <script src="scripts/indexJS.js"></script>
     </head>
 
@@ -21,10 +22,13 @@
                         <span onclick="seme_i_()"><span>i</span></span>
                     </span>
                 </div>
+
             </div>
         </div>
-
+        
         <div class="curtain-" onclick="close_()" id="curtain_"></div>
+
+        
 
         <div class="seme-box-" id="seme_box_">
             <div class="first-100" onclick="dot_1()" id="first_100">
@@ -44,10 +48,51 @@
                 <span class="seme-">Second semester</span>
             </div>
         </div>
+        
+        
+        
+        
+        
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+            emailjs.init({
+            publicKey: "Sj2duhmrEQlsjXpWJ",
+            });
+            })();
 
-        <div class="up-btn-, off">
-            <a href="#"><div></div></a>
+
+            function handleSubmit(e)  {
+                e.preventDefault()
+
+            }
+        </script>
+
+        <input type="checkbox" id="email_img_">
+        <label for="email_img_"><div class="email-img-">
+            <img src="Pictures/Email.png"></div>
+            <div class="curtain-email-"></div>
+        </label>
+
+        <div class="email-section-">
+            <form id="contact_form_" class="contact-form-" onsubmit="handleSubmit()">
+                <div class="profile-">
+                    <div class="top-input-">
+                        <input type="text" name="Name" id="name_" placeholder="Name" required>
+                        <input type="email" name="email" id="email_" placeholder="Email" required>                            
+                    </div>
+                </div>
+
+                <label class="comm-">comment: 
+                    <textarea name="comment" id="message_" rows="4" placeholder="Message the creator here" required></textarea>
+                </label>
+
+                <button onclick="sendMail()" class="submit-btn-">send</button>
+            </form>
         </div>
+
 
         <div id="part_1">
             <div>
@@ -217,6 +262,10 @@
                     </div>
                 </label>
             </div>    
+        </div>
+
+        <div class="up-btn-, off">
+            <a href="#"><div></div></a>
         </div>
 
         <div style="display: none;"><img src="Pictures/IMG_c7sokl.jpg"><!--easter egg--></div>

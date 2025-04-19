@@ -26,3 +26,15 @@ function dot_2_off(){
     document.getElementById('second_100').style.display = "flex"
     document.getElementById('second_100_off').style.display = "none"
 }
+
+
+// email
+function sendMail(){
+    let parms = {
+        name : document.getElementById("name_").value,
+        email : document.getElementById("email_").value,
+        message : document.getElementById("message_").value,
+    }
+
+    emailjs.send("service_l8fwrai","template_6fh3qpj",parms).then(alert("Email Sent!!!"))
+}

@@ -1,6 +1,53 @@
 
-/* The coment */
-.comment-section-{
+/* Email curtain */
+.curtain-email-{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+}
+#email_img_:checked ~ label .curtain-email-{
+    display: block;
+}
+
+
+
+/* Emial icon */
+.email-img-{
+    position: fixed;
+        top: 5px;
+        right: 70px;
+    display: flex;
+    z-index: 3;
+}
+.email-img- img{
+    width: 60px;
+    object-fit: contain;
+}
+
+#email_img_:checked ~ .email-section-{
+    bottom: 0;
+    transition: 500ms;
+}
+
+@media (min-height: 1200px){
+    .email-img-{
+        right: 100px;
+    }
+    .email-img- img{
+        width: 90px;
+    }
+}
+
+
+/* The emial */
+.email-section-{
+    background-color: white;
+    position: fixed;
+        bottom: -370px;
     display: block;
     flex-direction: column;
 
@@ -9,6 +56,7 @@
     margin-top: 100px;
     border-radius: 15px 15px 0 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    z-index: 3;
     -webkit-text-size-adjust: none;
 }
 .contact-form-{
@@ -17,8 +65,9 @@
 }
 
 @media (min-height: 1200px) {
-    .comment-section-{
+    .email-section-{
         padding-bottom: 80px;
+        bottom: -900px;
     }
 }
 
@@ -36,22 +85,13 @@
     display: none;
 }
 
+
 /* Top part */
 .profile-{
     display: flex;
     margin: 10px 20px;
 }
 
-/* Profile picture */
-.img-div-{
-    display: flex;
-    height: 70px;
-}
-.img-div- img{
-    object-fit: contain;
-    border-radius: 3px;
-    border: 2px solid black;
-}
 
 
 /* The name, emial and comment container */
@@ -59,7 +99,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-left: 20px;
 }
 
 .comm-{
@@ -69,33 +108,16 @@
     font-size: 30px;
 }
 
-/* button */
-.submit-btn-{
-    background-color: rgb(0, 156, 255);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    
-    padding: 5px 20px;
-    margin: 10px 20px 0 20px;
-    font-size: 26px;
-    border-radius: 5px;
-    border: none;
-}
-.submit-btn-:hover {
-    background-color: rgb(0, 118, 191);
-}
+
 
 /* The inputs */
 .top-input- input{
     background-color: rgb(240, 240, 240);
     border: none;
     outline: none;
-    max-width: 300px;
+    width: calc(100% + -10px);
     margin: 5px 0;
-    padding: 2px;
-    padding-left: 5px;
+    padding: 5px;
     font-size: 18px;
     border-radius: 3px;
     box-shadow: 0 0 0 0.5px black;
@@ -122,11 +144,31 @@
     font-size: 18px;
 }
 
+
+
+/* button */
+.submit-btn-{
+    background-color: rgb(0, 156, 255);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    
+    padding: 5px 20px;
+    margin: 10px 20px 0 20px;
+    font-size: 26px;
+    border-radius: 5px;
+    border: none;
+}
+.submit-btn-:hover {
+    background-color: rgb(0, 118, 191);
+}
+
 @media (min-height:1200px) {
     .top-h1- button{
         font-size: 25px;
     }
-    .img-div- img{
+    .default-img- img{
         height: 140px;
     }
     .submit-btn-,
@@ -162,103 +204,3 @@
         font-size: 30px;
     }
 }
-
-
-
-
-
-
-/* The checkox */
-.public-{
-    display: none;
-}
-.public-:checked ~ .fake-{
-    background-color: red;
-}
-.public-comments-{
-    display: none;
-}
-.public-:checked ~ .public-comments-{
-    display: block;
-}
-.public-:checked ~ .contact-form-{
-    display: none;
-}
-
-
-
-.contact-txt-{
-    font-size: 25px;
-    font-weight: bold;
-    margin: 0 20px;
-}
-@media (min-height: 1200px) {
-    .contact-txt-{
-        font-size: 40px;
-    }
-}
-
-
-
-/*Top buttons*/
-.com-opt-{
-    display: flex;
-}
-.private-,
-.public-label-{
-    display: flex;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-@media (min-height:1200px) {
-    .private-,
-    .public-label-{
-        font-size: 40px;
-        margin-left: 10px;
-    }
-    .public-comments- span {
-        font-size: 40px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#commentList {
-    list-style: none;
-    padding: 0;
-    margin-top: 1rem;
-  }
-  
-  .comment-item {
-    margin-bottom: 1rem;
-  }
-  
-  .comment-card {
-    background: #f9f9f9;
-    border-radius: 8px;
-    padding: 10px 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  }
-  
-  .comment-name {
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 4px;
-  }
-  
-  .comment-content {
-    color: #444;
-    white-space: pre-wrap;
-  }

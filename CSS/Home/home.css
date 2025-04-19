@@ -22,8 +22,8 @@
     margin-bottom: 40px;
 }
 .main-txt- span span span{
-    background-color: white;
-    color: gray;
+    background-color: transparent;
+    color: black;
     position: fixed;
         top: 10px;
         right: 10px;
@@ -32,7 +32,7 @@
     font-size: 30px;
     padding: 5px 18px 5px 18px;
     border-radius: 50px;
-    border: 1px solid gray; 
+    border: 1px solid black; 
     box-shadow: 0 0 1px 1px rgba(128, 128, 128, 0.5);
     z-index: 2;
 }

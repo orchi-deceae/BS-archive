@@ -38,16 +38,6 @@ function close_img(){
     document.getElementById("curtain_img_").style.display = "none";
 }
 
-// email
-function sendMail(){
-    let parms = {
-        name : document.getElementById("name_").value,
-        email : document.getElementById("email_").value,
-        message : document.getElementById("message_").value,
-    }
-
-    emailjs.send("service_l8fwrai","template_6fh3qpj",parms).then(alert("Email Sent!!!"))
-}
 
 // comment
 function compose_(){
@@ -60,18 +50,4 @@ function close_comment_(){
 }
 
 
-// // comment
-// function contact_(){
-//     document.getElementById("contact_form_").style.display = "block";
-//     document.getElementById("comment_form_").style.display = "none";
-//     document.getElementById("h1_btn1_").style.textDecoration = "underline";
-//     document.getElementById("h1_btn2_").style.textDecoration = "none";
-// }
-// function comment_(){
-//     document.getElementById("contact_form_").style.display = "none";
-//     document.getElementById("comment_form_").style.display = "block";
-//     document.getElementById("h1_btn2_").style.textDecoration = "underline";
-//     document.getElementById("h1_btn1_").style.textDecoration = "none";
-
-// }
 

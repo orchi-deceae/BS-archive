@@ -47,7 +47,7 @@
     width: 100%;
     margin: 0 50px;
     padding: 10px 30px;
-    border-radius: 10px;
+    border-radius: 15px;
     -webkit-text-size-adjust: none;
 }
 
@@ -168,9 +168,6 @@
 }
 .show- h3{
     font-size: 36px;
-}
-.comment{
-    border-right: 2px solid black;
 }
 .comment p{
     font-size: 26px;
