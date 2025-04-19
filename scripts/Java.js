@@ -58,9 +58,6 @@ function close_comment_(){
     document.getElementById("comment_box_").style.display = "none";
     document.getElementById("curtain_comment_").style.display = "none";
 }
-function load_(){
-    document.getElementById("load_").style.display = "block"
-}
 
 
 // // comment
