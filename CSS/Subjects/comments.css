@@ -153,6 +153,7 @@
 #load_{
     display: none;
     margin-left: 30px;
+    -webkit-text-size-adjust: none;
 }
 .load- h3{
     font-size: 36px;
