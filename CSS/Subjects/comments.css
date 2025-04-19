@@ -1,24 +1,181 @@
-.comment-box-{
+
+/* Compose */
+.compose-{
+    margin-right: 60px;
+}
+.compose-:active img{
+    background-color: rgb(230, 230, 230);
+}
+.compose- img{
+    position: relative;
+        top: -5px;
+    width: 45px;
+    object-fit: contain;
+}
+
+
+/* curtain */
+.curtain-comment-{
+    display: none;
     position: fixed;
-        top: 0;
-    display: flex;
-        justify-content: center;
-        align-items: center;
+    background-color: rgba(0, 0, 0, 0.25);
     height: 100vh;
     width: 100%;
+    z-index: 12;
+    cursor: pointer;
 }
-.comment-section{
-    display: flex;
+
+
+/* Comment container */
+.comment-box-{
+    display: none;
+    position: fixed;
+        right: 50%;
+        bottom: 50%;
+    width: 100%;
+    transform: translate(50%, 50%);
+    z-index: 12;
 }
-.comment-section .comment-name-{
-    font-size: 26px;
-}
-.comment-section .comment-comment-{
-    font-size: 26px;
-}
-.comment-section .comment-submit-{
+/* Comment */
+.comments-section{
+    background-color: white;
     
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    
+    width: 100%;
+    margin: 0 50px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    -webkit-text-size-adjust: none;
 }
-.comment-section .comment-status-{
+
+
+/* The head */
+.comments-section h3{
+    margin: 10px 0;
+}
+
+
+/* The input fields */
+.comments-section .name-, 
+.comments-section .come-{
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.comments-section .name- input, 
+.comments-section .come- textarea{
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px black;
+}
+.comments-section .name- input:focus-within, 
+.comments-section .come- textarea:focus-within{
+    box-shadow: 0 0 0.5px 0.5px rgb(0, 183, 196);
+}
+
+
+/* submit button */
+.comments-section .submit-{
+    background-color: rgba(0, 195, 255, 0.9);
+    color: white;
+    font-size: 28px;
+    
+    display: flex;
+    border: none;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.comments-section .submit-:hover{
+    background-color: rgb(0, 186, 211);
+}
+.comments-section .submit-:active{
+    background-color: rgb(0, 145, 189);
+}
+
+/* status */
+.comments-section .status-{
     margin-top: 10px;
+}
+
+@media (min-height: 1200px){
+    .compose-{
+        margin-right: 90px;
+    }
+    .compose- img{
+        width: 60px;
+    }
+    .comments-section{
+        max-width: none;
+        font-size: 45px;
+    }
+    .comments-section .name-, 
+    .comments-section .come-{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .comments-section .name- input, 
+    .comments-section .come- textarea{
+        padding: 10px;
+        font-size: 40px;
+        border-radius: 10px;
+    }
+    .comments-section .name- input::placeholder, 
+    .comments-section .come- textarea::placeholder{
+        font-size: 40px;
+    }
+    .comments-section .submit-{
+        font-size: 40px;
+    }
+}
+
+.load-btn-{
+    background-color: rgb(74, 185, 236);
+    color: white;
+    width: calc(100% + -60px);
+    font-size: 26px;
+    padding: 10px 30px;
+    margin: 5px 30px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+.load-btn-:active{
+    opacity: 0.6;
+}
+#load_{
+    display: none;
+    margin-left: 30px;
+}
+.load- h3{
+    font-size: 36px;
+}
+.comment p{
+    font-size: 26px;
+}
+.comment small{
+    font-size: 20px;
+}
+
+@media (min-height: 1200px){
+    .load-btn-{
+        padding: 10px 30px;
+        font-size: 40px;
+    }
+    .load- h3{
+        font-size: 50px;
+    }
+    .comment p{
+        font-size: 40px;
+    }
+    .comment small{
+        font-size: 26px;
+    }
 }

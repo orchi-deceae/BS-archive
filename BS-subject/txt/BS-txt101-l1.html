@@ -15,10 +15,12 @@
         <div class="main-">
             <div class="curtain-"  onclick="close_()" id="curtain"></div>
             <div class="curtain-"  onclick="close_img()" id="curtain_img"></div>
+            <div class="curtain-comment-"  onclick="close_comment_()" id="curtain_comment_"></div>
 
             <div class="header1-">
                 <a href="../../index.html"><div><img src="../../Pictures/20250305_205006.jpg"></div></a>
                 <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
+                <div onclick="compose_()" class="compose-"><img src="../../Pictures/compose.png"></div>
                 <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
             
             </div>
@@ -291,29 +293,30 @@
         </div> -->
 
 
-        <div class="comment-box-">
+        <div class="comment-box-" id="comment_box_">
             <div class="comments-section">
-                <h3>Comments</h3>
+                <h3>Comment</h3>
                 
                 <form id="comment-form">
-                    <div class="comment-name-">
+                    <div class="name-">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" required>
-                    </div>
-
-                    <div class="comment-comment-">
-                        <label for="comment">Comment:</label>
-                        <textarea id="comment" rows="4" required></textarea>
+                        <input type="text" id="name" placeholder="Name" required>
                     </div>
                     
-                    <button class="comment-submit-" type="submit">Post Comment</button>
-                    <div class="comment-status-" id="comment-submission-status"></div>
+                    <div class="come-">
+                        <label for="comment">Comment:</label>
+                        <textarea id="comment" rows="4" placeholder="Write a comment" required></textarea>
+                    </div>
+                    
+                    <button class="submit-" type="submit">Post Comment</button>
+                    <div class="status-" id="comment-submission-status"></div>
                 </form>
             </div>
         </div>
-
-        <button class="load-btn-" onclick="load_()">Load Comments</button>
-        <div id="load_">
+        
+        <button class="load-btn-" onclick="load_()">Show Comments</button>
+        <div class="load-" id="load_">
+            <h3>Comments</h3>
             <div id="comments-container"></div><!-- do not touch this -->
         </div>
         

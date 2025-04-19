@@ -49,19 +49,32 @@ function sendMail(){
     emailjs.send("service_l8fwrai","template_6fh3qpj",parms).then(alert("Email Sent!!!"))
 }
 
-
 // comment
-function contact_(){
-    document.getElementById("contact_form_").style.display = "block";
-    document.getElementById("comment_form_").style.display = "none";
-    document.getElementById("h1_btn1_").style.textDecoration = "underline";
-    document.getElementById("h1_btn2_").style.textDecoration = "none";
+function compose_(){
+    document.getElementById("comment_box_").style.display = "flex"
+    document.getElementById("curtain_comment_").style.display = "flex"
 }
-function comment_(){
-    document.getElementById("contact_form_").style.display = "none";
-    document.getElementById("comment_form_").style.display = "block";
-    document.getElementById("h1_btn2_").style.textDecoration = "underline";
-    document.getElementById("h1_btn1_").style.textDecoration = "none";
+function close_comment_(){
+    document.getElementById("comment_box_").style.display = "none";
+    document.getElementById("curtain_comment_").style.display = "none";
+}
+function load_(){
+    document.getElementById("load_").style.display = "block"
+}
 
-}
+
+// // comment
+// function contact_(){
+//     document.getElementById("contact_form_").style.display = "block";
+//     document.getElementById("comment_form_").style.display = "none";
+//     document.getElementById("h1_btn1_").style.textDecoration = "underline";
+//     document.getElementById("h1_btn2_").style.textDecoration = "none";
+// }
+// function comment_(){
+//     document.getElementById("contact_form_").style.display = "none";
+//     document.getElementById("comment_form_").style.display = "block";
+//     document.getElementById("h1_btn2_").style.textDecoration = "underline";
+//     document.getElementById("h1_btn1_").style.textDecoration = "none";
+
+// }
 
