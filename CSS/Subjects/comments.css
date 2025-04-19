@@ -79,6 +79,17 @@
 .comments-section .come- textarea:focus-within{
     box-shadow: 0 0 0.5px 0.5px rgb(0, 183, 196);
 }
+@media (min-height: 1200px){
+    .comments-section .name- input, 
+    .comments-section .come- textarea{
+        box-shadow: 0 0 1px 1px black;
+        
+    }
+    .comments-section .name- input:focus-within, 
+    .comments-section .come- textarea:focus-within{
+        box-shadow: 0 0 0.5px 1px rgb(0, 183, 196);
+    }
+}
 
 
 /* submit button */
