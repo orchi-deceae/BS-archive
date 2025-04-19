@@ -169,6 +169,9 @@
 .show-comments- h3{
     font-size: 36px;
 }
+#comments-container p{
+    font-size: 26px;
+}
 .comment p{
     font-size: 26px;
 }
