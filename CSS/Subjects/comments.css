@@ -185,7 +185,7 @@
     .show- h3{
         font-size: 50px;
     }
-    .comments-container {
+    #comments-container p{
         font-size: 40px;
     }
     .comment p{
