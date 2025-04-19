@@ -164,6 +164,8 @@
 .show-comments-{
     display: none;
     margin-left: 30px;
+    margin-bottom: 100px;
+    
     -webkit-text-size-adjust: none;
 }
 .show-comments- h3{
