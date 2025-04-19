@@ -30,12 +30,12 @@ let _img = 0;
 function img(){
     document.getElementById('imgbox_').innerHTML = _img;
     document.getElementById("imgbox_").style.display = "block";
-    document.getElementById("curtain_img_").style.display = "flex";
+    document.getElementById("curtain_img").style.display = "flex";
 }   
     
 function close_img(){
     document.getElementById("imgbox_").style.display = "none";
-    document.getElementById("curtain_img_").style.display = "none";
+    document.getElementById("curtain_img").style.display = "none";
 }
 
 

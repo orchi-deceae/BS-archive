@@ -1,19 +1,18 @@
 
 /* Compose */
 .compose-{
-    margin-right: 60px;
+    margin-right: 70px;
     cursor: pointer;
 }
 .compose- img{
     position: relative;
-    top: -5px;
-    width: 45px;
+    top: -3px;
+    width: 48px;
     object-fit: contain;
 }
 .compose-:active img{
     background-color: rgb(230, 230, 230);
 }
-
 
 /* curtain */
 .curtain-comment-{
@@ -108,7 +107,7 @@
 
 @media (min-height: 1200px){
     .compose-{
-        margin-right: 90px;
+        margin-right: 110px;
     }
     .compose- img{
         width: 60px;
@@ -141,7 +140,7 @@
 #show_{
     display: none;
 }
-#show_:checked ~  .show-{
+#show_:checked ~  .show-comments-{
     display: block;
 }
 .show-btn-{
@@ -157,17 +156,17 @@
     border-radius: 10px;
     box-shadow: 0 0 5px black;
 }
-.show-btn-:active{
+.show-comments-btn-:active{
     opacity: 0.8;
 }
 
 /* Old comments */
-.show-{
+.show-comments-{
     display: none;
     margin-left: 30px;
     -webkit-text-size-adjust: none;
 }
-.show- h3{
+.show-comments- h3{
     font-size: 36px;
 }
 .comment p{
@@ -178,11 +177,11 @@
 }
 
 @media (min-height: 1200px){
-    .show-btn-{
+    .show-comments-btn-{
         padding: 10px 30px;
         font-size: 40px;
     }
-    .show- h3{
+    .show-comments- h3{
         font-size: 50px;
     }
     #comments-container p{
