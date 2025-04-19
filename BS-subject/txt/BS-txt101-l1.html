@@ -8,12 +8,13 @@
         <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
         <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
         <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
-        <script src="../../Java.js"></script>
+        <script src="../../scripts/Java.js"></script>
     </head>
 
     <body>
         <div class="main-">
             <div class="curtain-"  onclick="close_()" id="curtain"></div>
+            <div class="curtain-"  onclick="close_img()" id="curtain_img"></div>
 
             <div class="header1-">
                 <a href="../../index.html"><div><img src="../../Pictures/20250305_205006.jpg"></div></a>
@@ -194,6 +195,8 @@
             </div>
             
 
+            <div id="imgbox_" class="imgbox-"></div>
+
             <!--Questions-->
             <div class="questions-">
                 <input type="checkbox" id="check1_"  class="check-">
@@ -235,351 +238,6 @@
                 <p></p>
 
                 <label for="check3_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check4_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check4_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check5_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check5_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check6_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check6_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check7_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check7_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check8_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check8_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check9_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check9_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check10_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check10_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check11_"  class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check11_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check12_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check12_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check13_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check13_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check14_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check14_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check15_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check15_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check16_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check16_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check17_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check17_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check18_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check18_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check19_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check19_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check20_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check20_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check21_"  class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check21_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check22_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check22_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check23_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check23_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check24_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check24_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check25_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check25_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check26_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check26_">
                     <span class="show-">[Show]</span>
                     <span class="hide-">[Hide]<br></span>
                 </label>
@@ -633,24 +291,32 @@
         </div> -->
 
 
+        <div class="comment-box-">
+            <div class="comments-section">
+                <h3>Comments</h3>
+                
+                <form id="comment-form">
+                    <div class="comment-name-">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+                    </div>
 
-        <div class="comments-section">
-            <h3>Comments</h3>
-            <div id="comments-container">
-              </div>
-            <form id="comment-form">
-              <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
-              </div>
-              <div>
-                <label for="comment">Comment:</label>
-                <textarea id="comment" rows="4" required></textarea>
-              </div>
-              <button type="submit">Post Comment</button>
-              <div id="comment-submission-status" style="margin-top: 10px;"></div>
-            </form>
+                    <div class="comment-comment-">
+                        <label for="comment">Comment:</label>
+                        <textarea id="comment" rows="4" required></textarea>
+                    </div>
+                    
+                    <button class="comment-submit-" type="submit">Post Comment</button>
+                    <div class="comment-status-" id="comment-submission-status"></div>
+                </form>
+            </div>
         </div>
+
+        <button class="load-btn-" onclick="load_()">Load Comments</button>
+        <div id="load_">
+            <div id="comments-container"></div><!-- do not touch this -->
+        </div>
+        
           
         <script type="module" src="../../scripts/comments.js"></script>
     </body>

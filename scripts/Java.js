@@ -6,11 +6,12 @@ function bugor_(){
 }
 
 function close_(){
-    document.getElementById("imgbox_").style.display = "none"
     document.getElementById("curtain").style.display = "none";
     document.getElementById("sidebar").style.width = "0";
 }
 
+
+//useless
 function answer(){
     document.getElementById("hide").style.display = "flex"
     document.getElementById("show").style.display = "none"
@@ -23,12 +24,19 @@ function hide(){
     document.getElementById("answer").style.textDecoration = "none";
 }
 
-function img(){
-    document.getElementById("imgbox_").style.display = "block";
-    document.getElementById("curtain").style.display = "flex";
-    document.getElementById('imgbox_').innerHTML = _img;
-}   let _img = 0;
 
+//image
+let _img = 0;
+function img(){
+    document.getElementById('imgbox_').innerHTML = _img;
+    document.getElementById("imgbox_").style.display = "block";
+    document.getElementById("curtain_img_").style.display = "flex";
+}   
+    
+function close_img(){
+    document.getElementById("imgbox_").style.display = "none";
+    document.getElementById("curtain_img_").style.display = "none";
+}
 
 // email
 function sendMail(){
