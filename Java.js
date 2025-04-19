@@ -57,13 +57,3 @@ function comment_(){
 
 }
 
-const form = document.getElementById('comment_form_');
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    db.collection('comment_form_').add({
-        name: form.name.value,
-        comment: form.comment.value
-    });
-    form.name.value = ''
-    form.comment.value = ''
-});

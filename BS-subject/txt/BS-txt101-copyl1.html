@@ -242,48 +242,6 @@
             </div>
         </div> 
 
-        <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-        </script>
-        <script type="text/javascript">
-            (function(){
-            emailjs.init({
-            publicKey: "Sj2duhmrEQlsjXpWJ",
-            });
-            })();
-
-
-            function handleSubmit(e)  {
-                e.preventDefault()
-
-            }
-        </script>
-
-        <div>
-            <input type="checkbox" id="fake_" class="public-">
-            <div class="com-opt-">
-                <div class="private-">Private</div>
-                <label for="fake_" class="public-label-">public</label>
-            </div>
-
-            <form action="" method="post" class="comment-form-" onsubmit="handleSubmit()">
-                <div class="form-div-">
-                    <img src="../../Pictures/IMG_c7sokl.jpg">
-                    <label class="name-">Name: 
-                        <input type="text" name="Name" id="name_" placeholder="txt" class="name-input-" required>
-                    </label><br>
-                    <label class="email-">Email:
-                        <input type="email" name="email" id="email_" placeholder="email" class="email-input-" required>
-                    </label><br>
-                </div>
-                <label class="comm-">comment: 
-                    <textarea name="comment" id="message_" rows="2" placeholder="txt" required></textarea>
-                </label><br>
-
-
-                <button onclick="sendMail()" class="submit-btn-">submit</button>
-            </form>
-
 
 
         

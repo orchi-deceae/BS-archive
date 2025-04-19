@@ -594,7 +594,7 @@
 
 
 
-        <script type="text/javascript"
+        <!-- <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
         </script>
         <script type="text/javascript">
@@ -630,71 +630,28 @@
                 </label>
                 <button onclick="sendMail()" class="submit-btn-">send</button>
             </form>
+        </div> -->
 
-            
-            <form id="commentForm">
-                <input type="text" id="name" placeholder="Your name" required><br>
-                <textarea id="comment" placeholder="Your comment" required></textarea><br>
-                <button type="submit">Post Comment</button>
+
+
+        <div class="comments-section">
+            <h3>Comments</h3>
+            <div id="comments-container">
+              </div>
+            <form id="comment-form">
+              <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+              </div>
+              <div>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" rows="4" required></textarea>
+              </div>
+              <button type="submit">Post Comment</button>
+              <div id="comment-submission-status" style="margin-top: 10px;"></div>
             </form>
-            
-            <div id="commentsSection"></div>
-            
-            
-            <script type="module">
-                // Import the functions you need
-                import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-                import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-                
-                // Your Firebase configuration
-                const firebaseConfig = {
-                    apiKey: "AIzaSyCNaTMPhG1oe4c3BsdnHBLVQZspzUMbZVk",
-                    authDomain: "bs-comments.firebaseapp.com",
-                    projectId: "bs-comments",
-                    storageBucket: "bs-comments.firebasestorage.app",
-                    messagingSenderId: "1036756085818",
-                    appId: "1:1036756085818:web:5f23aed5881efc02fe9903"
-                };
-                
-                // Initialize Firebase
-                const app = initializeApp(firebaseConfig);
-                const db = getFirestore(app);
-                
-                // Handle form submission
-                const form = document.getElementById("commentForm");
-                const nameInput = document.getElementById("name");
-                const commentInput = document.getElementById("comment");
-                const commentsSection = document.getElementById("commentsSection");
-                
-                form.addEventListener("submit", async (e) => {
-                    e.preventDefault();
-                
-                    const name = nameInput.value.trim();
-                    const comment = commentInput.value.trim();
-                
-                    if (name && comment) {
-                    await addDoc(collection(db, "comments"), {
-                        name,
-                        comment,
-                        timestamp: serverTimestamp()
-                    });
-                
-                    form.reset();
-                    }
-                });
-                
-                // Real-time listener for comments
-                const q = query(collection(db, "comments"), orderBy("timestamp", "desc"));
-                onSnapshot(q, (snapshot) => {
-                    commentsSection.innerHTML = "";
-                    snapshot.forEach((doc) => {
-                    const data = doc.data();
-                    const div = document.createElement("div");
-                    div.innerHTML = `<strong>${data.name}</strong>: ${data.comment}<hr>`;
-                    commentsSection.appendChild(div);
-                    });
-                });
-            </script>
         </div>
+          
+        <script type="module" src="../../scripts/comments.js"></script>
     </body>
 </html>
