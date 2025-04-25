@@ -15,12 +15,10 @@
         <div class="main-">
             <div class="curtain-"  onclick="close_()" id="curtain"></div>
             <div class="curtain-"  onclick="close_img()" id="curtain_img"></div>
-            <div class="curtain-comment-"  onclick="close_comment_()" id="curtain_comment_"></div>
 
             <div class="header1-">
                 <a href="../../index.html"><div><img src="../../Pictures/20250305_205006.jpg"></div></a>
                 <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
-                <div onclick="compose_()" class="compose-"><img src="../../Pictures/compose.png"></div>
                 <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
             
             </div>
@@ -29,6 +27,7 @@
                 <a href="l1.html"><button><span>Lesson 1</span><span class="hidden-subject-">Introduction to organic chemistry</span></button></a>
                 <a href="l2.html"><button><span>Lesson 2</span><span class="hidden-subject-">Classification of organic compounds</span></button></a>
                 <a href="l3.html"><button class = "selected-"><span>Functional groups and homologous series</span><span class="hidden-subject-">Functional groups and homologous series</span></button></a>
+                <a href="l4.html"><button><span>Lesson 4</span><span class="hidden-subject-">Naming organic compounds</span></button></a>
             </div>
             
             
@@ -43,8 +42,8 @@
                         <div class="beforepop-">Classification of organic compounds</div>
                     </div>
                     <div class="after-">
-                        <a href="l1.html"><button class="next-btn-">Next</button></a>
-                        <div class="afterpop-">Introduction to organic chemistry</div>
+                        <a href="l4.html"><button class="next-btn-">Next</button></a>
+                        <div class="afterpop-">Naming organic compounds</div>
                     </div>
                 </div>
                 <div class="topic-">
@@ -161,6 +160,7 @@
                             <a href="../BS-chm111/l1.html"><li>Introduction to organic chemistry</li></a>
                             <a href="../BS-chm111/l2.html"><li>Classification of organic compounds</li></a>
                             <a href="../BS-chm111/l3.html"><li>Functional groups and homologous series</li></a>
+                            <a href="../BS-chm111/l4.html"><li>Naming organic compounds</li></a>
                         </ol>
                     </label>
                 </div>
@@ -578,25 +578,23 @@
         </a>
 
 
-        <div class="comment-box-" id="comment_box_">
-            <div class="comments-section">
-                <h3>Comment</h3>
+        <div class="comments-section">
+            <h3>Comment</h3>
+            
+            <form id="comment-form">
+                <div class="name-">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Name" required>
+                </div>
                 
-                <form id="comment-form">
-                    <div class="name-">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" placeholder="Name" required>
-                    </div>
-                    
-                    <div class="come-">
-                        <label for="comment">Comment:</label>
-                        <textarea id="comment" rows="4" placeholder="Write a comment" required></textarea>
-                    </div>
-                    
-                    <button class="submit-" type="submit">Post Comment</button>
-                    <div class="status-" id="comment-submission-status"></div>
-                </form>
-            </div>
+                <div class="come-">
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" rows="6" placeholder="Write a comment" required></textarea>
+                </div>
+                
+                <button class="submit-" type="submit"><img src="../../Pictures/submit.png" alt=""></button>
+                <div class="status-" id="comment-submission-status"></div>
+            </form>
         </div>
         
         <input type="checkbox" id="show_">

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="CSS/Home/general.css">
+    <link rel="stylesheet" href="CSS/Home/home.css">
+    <link rel="stylesheet" href="CSS/Home/subj.css">
+    <link rel="stylesheet" href="CSS/Home/semester.css">
+    <link rel="stylesheet" href="CSS/Home/email.css">
+    <script src="scripts/indexJS.js"></script>
+
+</head>
+<body>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init({
+        publicKey: "Sj2duhmrEQlsjXpWJ",
+        });
+        })();
+
+
+        function handleSubmit(e)  {
+            e.preventDefault()
+
+        }
+    </script>
+
+
+    <div class="email-section-">
+        <form id="contact_form_" class="contact-form-" onsubmit="handleSubmit()">
+            <h1 style="padding-left: 20px; font-size: 3em;">Email:</h1>
+            <div class="top-input-">
+                <input type="text" name="Name" id="name_" placeholder="Name" required>
+                <input type="email" name="email" id="email_" placeholder="Email" required>                            
+            </div>
+
+            <label class="comment-label-">comment: 
+                <textarea name="comment" id="message_" rows="4" placeholder="Message the creator here" required></textarea>
+            </label>
+
+            <button onclick="sendMail()" class="send-btn-">send</button>
+        </form>
+    </div>
+</body>
+</html>

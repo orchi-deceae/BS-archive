@@ -1,52 +1,15 @@
 
-/* Compose */
-.compose-{
-    margin-right: 70px;
-    cursor: pointer;
-}
-.compose- img{
-    position: relative;
-    top: -3px;
-    width: 48px;
-    object-fit: contain;
-}
-.compose-:active img{
-    background-color: rgb(230, 230, 230);
-}
-
-/* curtain */
-.curtain-comment-{
-    display: none;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.25);
-    height: 100vh;
-    width: 100%;
-    z-index: 12;
-    cursor: pointer;
-}
-
-
-/* Comment container */
-.comment-box-{
-    display: none;
-    position: fixed;
-        right: 50%;
-        bottom: 50%;
-    width: 100%;
-    transform: translate(50%, 50%);
-    z-index: 12;
-}
 /* Comment */
 .comments-section{
     background-color: white;
     
+    position: relative;
     display: flex;
     flex-direction: column;
     font-size: 30px;
     
-    width: 100%;
-    margin: 0 50px;
-    padding: 10px 30px;
+    width: calc(100% + -50px);
+    margin: 25px;
     border-radius: 15px;
     -webkit-text-size-adjust: none;
 }
@@ -68,6 +31,7 @@
 }
 .comments-section .name- input, 
 .comments-section .come- textarea{
+    background-color: rgb(250, 250, 250);
     border: none;
     outline: none;
     padding: 5px;
@@ -94,21 +58,27 @@
 
 /* submit button */
 .comments-section .submit-{
-    background-color: rgba(0, 195, 255, 0.9);
-    color: white;
-    font-size: 28px;
-    
+    background-color: transparent;
+    position: absolute;
+        right: 0;
+        bottom: -5px;
     display: flex;
     border: none;
     margin: 10px 0;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.comments-section .submit- img{
+    width: 40px;
+    padding: 3px 0 3px 5px;
+    object-fit: contain;
 }
 .comments-section .submit-:hover{
-    background-color: rgb(0, 186, 211);
+    opacity: 0.9;
 }
 .comments-section .submit-:active{
-    background-color: rgb(0, 145, 189);
+    opacity: 0.5;
 }
 
 /* status */
@@ -117,11 +87,12 @@
 }
 
 @media (min-height: 1200px){
-    .compose-{
-        margin-right: 110px;
+    .comments-section .submit-{
+        right: 30px;
+        bottom: 30px;
     }
-    .compose- img{
-        width: 60px;
+    .comments-section .submit- img{
+        width: 65px;
     }
     .comments-section{
         max-width: none;

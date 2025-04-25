@@ -39,15 +39,5 @@ function close_img(){
 }
 
 
-// comment
-function compose_(){
-    document.getElementById("comment_box_").style.display = "flex"
-    document.getElementById("curtain_comment_").style.display = "flex"
-}
-function close_comment_(){
-    document.getElementById("comment_box_").style.display = "none";
-    document.getElementById("curtain_comment_").style.display = "none";
-}
-
 
 

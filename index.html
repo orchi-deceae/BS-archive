@@ -25,11 +25,17 @@
 
             </div>
         </div>
+
+        
+        <div class="email-img-">
+            <a href="emailjs.html" target="_blank">
+            <img src="Pictures/Email.png">
+        </a></div>
+            
         
         <div class="curtain-" onclick="close_()" id="curtain_"></div>
 
         
-
         <div class="seme-box-" id="seme_box_">
             <div class="first-100" onclick="dot_1()" id="first_100">
                 <div class="dot-" id="dot_1"><div></div></div>
@@ -48,51 +54,8 @@
                 <span class="seme-">Second semester</span>
             </div>
         </div>
+
         
-        
-        
-        
-        
-        <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-        </script>
-        <script type="text/javascript">
-            (function(){
-            emailjs.init({
-            publicKey: "Sj2duhmrEQlsjXpWJ",
-            });
-            })();
-
-
-            function handleSubmit(e)  {
-                e.preventDefault()
-
-            }
-        </script>
-
-        <input type="checkbox" id="email_img_">
-        <label for="email_img_"><div class="email-img-">
-            <img src="Pictures/Email.png"></div>
-            <div class="curtain-email-"></div>
-        </label>
-
-        <div class="email-section-">
-            <form id="contact_form_" class="contact-form-" onsubmit="handleSubmit()">
-                <div class="profile-">
-                    <div class="top-input-">
-                        <input type="text" name="Name" id="name_" placeholder="Name" required>
-                        <input type="email" name="email" id="email_" placeholder="Email" required>                            
-                    </div>
-                </div>
-
-                <label class="comm-">comment: 
-                    <textarea name="comment" id="message_" rows="4" placeholder="Message the creator here" required></textarea>
-                </label>
-
-                <button onclick="sendMail()" class="submit-btn-">send</button>
-            </form>
-        </div>
-
 
         <div id="part_1">
             <div>
