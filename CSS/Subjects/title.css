@@ -16,6 +16,7 @@
 .topic-{
     font-size: 36px;
     padding: 30px 0 15px 15px;
+    -webkit-text-size-adjust: none;
 }
 .change-{
     display: flex;

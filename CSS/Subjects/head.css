@@ -151,12 +151,14 @@
 }
 .header2-  button .hidden-subject-{
     position: absolute;
+    display: none;
     opacity: 0;
     top: 0;
     right: 0;
 }
 .header2-  button:hover .hidden-subject-{
     position: static;
+    display: block;
     opacity: 1;
 }
 

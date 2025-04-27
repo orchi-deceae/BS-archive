@@ -1,5 +1,6 @@
 *{
     font-family: arial;
+    /* -webkit-text-size-adjust: none !important; */
 }
 a{
     color: black;
