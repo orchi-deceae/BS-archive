@@ -1,525 +1,387 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../../Pictures">
-        <link rel="stylesheet" href="../../CSS/Subjects/general.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/head.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/title.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
-        <script src="../../scripts/Java.js"></script>
-    </head>
 
-    <body>
-        <div class="main-">
-            <div class="curtain-"  onclick="close_()" id="curtain"></div>
-            <div class="curtain-"  onclick="close_img()" id="curtain_img"></div>
+<head>
+    <link rel="stylesheet" href="../../Pictures">
+    <link rel="stylesheet" href="../../CSS/Subjects/general.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/head.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/title.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
+</head>
 
-            <div class="header1-">
-                <a href="../../index.html"><div><img src="../../Pictures/20250305_205006.jpg"></div></a>
-                <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
-                <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
-            
+<body>
+    <div class="main-">
+        <div class="curtain-" onclick="close_()" id="curtain"></div>
+        <div class="curtain-" onclick="close_img()" id="curtain_img"></div>
+
+        <div class="header1-">
+            <a href="../../index.html">
+                <div><img src="../../Pictures/20250305_205006.jpg"></div>
+            </a>
+            <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
+            <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
+
+        </div>
+        <!--navigation bar-->
+        <div class="header2-">
+            <a href="l1.html"><button><span>Lesson 1</span><span class="hidden-subject-">Atoms, molecules and
+                        compounds</span></button></a>
+            <a href="l2.html"><button><span>Lesson 2</span><span class="hidden-subject-">Elements, Atomic numbers, Mass
+                        numbers and Isotopes</span></button></a>
+            <a href="l3.html"><button><span>Lesson 3</span><span class="hidden-subject-">Still under elements, atomic
+                        number</span></button></a>
+            <a href="l4.html"><button><span>Lesson 4</span><span class="hidden-subject-">German obj</span></button></a>
+            <a href="l5.html"><button class="selected-"><span>German obj part 2</span><span
+                        class="hidden-subject-">German obj part 2</span></button></a>
+        </div>
+
+
+        <!--Topic-->
+        <div class="title-">
+            <div class="sub-101-">
+                CHM 101
             </div>
-            <!--navigation bar-->
-            <div class="header2-">
-                <a href="l1.html"><button><span>Lesson 1</span><span class="hidden-subject-">Atoms, molecules and compounds</span></button></a>
-                <a href="l2.html"><button><span>Lesson 2</span><span class="hidden-subject-">Elements, Atomic numbers, Mass numbers and Isotopes</span></button></a>
-                <a href="l3.html"><button><span>Lesson 3</span><span class="hidden-subject-">Still under elements, atomic number</span></button></a>
-                <a href="l4.html"><button><span>Lesson 4</span><span class="hidden-subject-">German obj</span></button></a>
-                <a href="l5.html"><button class = "selected-"><span>German obj part 2</span><span class="hidden-subject-">German obj part 2</span></button></a>
-            </div>
-            
-            
-            <!--Topic-->
-            <div class="title-">
-                <div class="sub-101-">
-                    CHM 101
+            <div class="change-">
+                <div class="before-">
+                    <a href="l4.html"><button class="before-btn-">Before</button></a>
+                    <div class="beforepop-">German obj</div>
                 </div>
-                <div class="change-">
-                    <div class="before-">
-                        <a href="l4.html"><button class="before-btn-">Before</button></a>
-                        <div class="beforepop-">German obj</div>
-                    </div>
-                    <div class="after-">
-                        <a href="l1.html"><button class="next-btn-">Next</button></a>
-                        <div class="afterpop-">Atoms, molecules and compounds</div>
-                    </div>
-                </div>
-                <div class="topic-">
-                    German obj part 2 - 12/2/25
-                </div>
-            </div>
-
-            <!--side navigation-->
-            <div class="sidebar-" id="sidebar">
-                <div class="close-" onclick="close_()" id="close_">&times;</div>
-                <div>
-                    <input type="checkbox" id="side_sub1_" class="side-checkbox-">
-                    <label for="side_sub1_" >
-                        MTH 101 <span class="arw- mth101-arw-"></span>
-                        <ol class="subj-ol- mth101-ol-">
-                            <a href="../BS-mth101/l1.html"><li>Elemental set theory</li></a>
-                            <a href="../BS-mth101/l2.html"><li>Real numbers</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub2_" class="side-checkbox-">
-                    <label for="side_sub2_" >
-                        PHY 101 <span class="arw- phy101-arw-"></span>
-                        <ol class="subj-ol- phy101-ol-">
-                            <a href="../BS-phy101/l1.html"><li>Measurements, quantities, dimensions </li></a>
-                            <a href="../BS-phy101/l2.html"><li>Space, time, units and dimensions</li></a>
-                            <a href="../BS-phy101/l3.html"><li>Newton's laws of motion</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub3_" class="side-checkbox-">
-                    <label for="side_sub3_" >
-                        COS 101 <span class="arw- cos101-arw-"></span>
-                        <ol class="subj-ol- cos101-ol-">
-                            <a href="../BS-cos101/l1.html"><li>Computer</li></a>
-                            <a href="../BS-cos101/l2.html"><li>Structure of the computer</li></a>
-                            <a href="../BS-cos101/l3.html"><li>Computing history</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub4_" class="side-checkbox-">
-                    <label for="side_sub4_" >
-                        GST 106 <span class="arw- gst106-arw-"></span>
-                        <ol class="subj-ol- gst106-ol-">
-                            <a href="../BS-gst106/l1.html"><li>Health</li></a>
-                            <a href="../BS-gst106/l2.html"><li>Alcoholism</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub5_" class="side-checkbox-">
-                    <label for="side_sub5_" >
-                        GST 107 <span class="arw- gst107-arw-"></span>
-                        <ol class="subj-ol- gst107-ol-">
-                            <a href="../BS-gst107/l1.html"><li>Word formation</li></a>
-                            <a href="../BS-gst107/l2.html"><li>Communication</li></a>
-                            <a href="../BS-gst107/l3.html"><li>Spoken English</li></a>
-                            <a href="../BS-gst107/l4.html"><li>Reading, listening skills, listening skills</li></a>
-                            <a href="../BS-gst107/l5.html"><li>Word formation</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub6_" class="side-checkbox-">
-                    <label for="side_sub6_" >
-                        CHM 101 <span class="arw- chm101-arw-"></span>
-                        <ol class="subj-ol- chm101-ol-">
-                            <a href="../BS-chm101/l1.html"><li>Atoms, molecules and compounds</li></a>
-                            <a href="../BS-chm101/l2.html"><li>Elements, Atomic numbers, Mass numbers and Isotopes</li></a>
-                            <a href="../BS-chm101/l3.html"><li>Still under elements, atomic number</li></a>
-                            <a href="../BS-chm101/l4.html"><li>German obj</li></a>
-                            <a href="../BS-chm101/l5.html"><li>German obj part 2</li></a>
-                        </ol>
-                    </label>
-                </div> 
-
-                <div>
-                    <input type="checkbox" id="side_sub7_" class="side-checkbox-">
-                    <label for="side_sub7_" >
-                        BIO 101 <span class="arw- bio101-arw-"></span>
-                        <ol class="subj-ol- bio101-ol-">
-                            <a href="../BS-bio101/l1.html"><li>Ecology</li></a>
-                            <a href="../BS-bio101/l2.html"><li>Cell structure</li></a>
-                            <a href="../BS-bio101/l3.html"><li>Kingdom plantae</li></a>
-                            <a href="../BS-bio101/l4.html"><li>Bio Doc</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub8_" class="side-checkbox-">
-                    <label for="side_sub8_" >
-                        General <span class="arw- general-arw-"></span>
-                        <ol class="subj-ol- general-ol-">
-                            <a href="../BS-general/l1.html"><li>Random questions</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub9_" class="side-checkbox-">
-                    <label for="side_sub9_" >
-                        CHM 111 <span class="arw- chm111-arw-"></span>
-                        <ol class="subj-ol- chm111-ol-">
-                            <a href="../BS-chm111/l1.html"><li>Introduction to organic chemistry</li></a>
-                            <a href="../BS-chm111/l2.html"><li>Classification of organic compounds</li></a>
-                            <a href="../BS-chm111/l3.html"><li>Functional groups and homologous series</li></a>
-                            <a href="../BS-chm111/l4.html"><li>Naming organic compounds</li></a>
-                            <a href="../BS-chm111/l5.html"><li>Naming organic compounds part 2</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub10_" class="side-checkbox-">
-                    <label for="side_sub10_" >
-                        BIO 112 <span class="arw- bio112-arw-"></span>
-                        <ol class="subj-ol- bio112-ol-">
-                            <a href="../BS-bio112/l1.html"><li>Diversity of living organisms</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub11_" class="side-checkbox-">
-                    <label for="side_sub11_" >
-                        PHY 111 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-phy111/l1.html"><li>Coulomb's law</li></a>
-                            <a href="../BS-phy111/l2.html"><li>Electricity 1</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub12_" class="side-checkbox-">
-                    <label for="side_sub12_" >
-                        MTH 111 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-mth111/l1.html"><li>Limits & Functions</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub13_" class="side-checkbox-">
-                    <label for="side_sub13_" >
-                        GST 115 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-gst115/l1.html"><li>Physical features of Nigeria</li></a>
-                        </ol>
-                    </label>
+                <div class="after-">
+                    <a href="l1.html"><button class="next-btn-">Next</button></a>
+                    <div class="afterpop-">Atoms, molecules and compounds</div>
                 </div>
             </div>
-
-
-            <div id="imgbox_" class="imgbox-"></div>
-
-            <!--Questions-->
-            <div class="questions-">
-                <input type="checkbox" id="check1_"  class="check-">
-                <div>The maximum of an atom is concentrated in..........
-                </div>
-
-                <label for="check1_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Nucleus
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check2_" class="check-">
-                <div>.......... is the difference of two isotopes of the same element
-                </div>
-
-                <label for="check2_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Mass number or more preferably, number of neutrons
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check3_" class="check-">
-                <div>.......... is the electronic configuration for oxygen in spdf notation
-                </div>
-
-                <label for="check3_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        1s² 2s² 2p⁴
-                    </span>
-                </label>
-            </div>
-
-            <!-- TODO Correct this -->
-            <div class="questions-">
-                <input type="checkbox" id="check4_" class="check-">
-                <div>What is the electronic configuration of potassium in spdf notation? 
-                    <br>~ Random question
-                </div>
-
-                <label for="check4_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        1s2 2s2 2p6 3s2 3p6 4s1
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check5_" class="check-">
-                <div>Molecular mass is defined...............
-                </div>
-
-                <label for="check5_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        The sum of the atomic masses of all atoms in a molecule
-                        <br>
-                        <br>OR
-                        <br>
-                        <br>The mass of one molecule of a substance
-                        </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check6_" class="check-">
-                <div>The smallest particle of an element which can take part in any chemical change is known as...........
-                </div>
-
-                <label for="check6_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Atom
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check7_" class="check-">
-                <div>Definition of a molecule? ~ Random question
-                </div>
-
-                <label for="check7_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Combination of two or more atoms held together by chemical bond
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check8_" class="check-">
-                <div>The atomic number is the number of............
-                </div>
-
-                <label for="check8_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Proton
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check9_" class="check-">
-                <div>By exposure of electrons beams on atoms and observing their behavior upon the fall of the beam can help to determine its........... 
-                </div>
-
-                <label for="check9_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Atomic structure or electric charge
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check10_" class="check-">
-                <div>The some of protons and neutrons in an atom gives......... number
-                </div>
-
-                <label for="check10_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Mass number
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check11_"  class="check-">
-                <div>The elements which have the same number of protons but different number of neutrons are called.........
-                </div>
-
-                <label for="check11_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Isotopes
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check12_" class="check-">
-                <div>Quick question ~ What's the difference between Atomic mass and mass number?
-                    <br>It's confusing to me😪 ~ Random question
-                    </div>
-
-                <label for="check12_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Atomic number= Number of protons 
-                        <br>
-                        <br>Mass number= number of protons+ number of neutrons
-                        </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check13_" class="check-">
-                <div>The proton number is denoted by the symbol............
-                </div>
-
-                <label for="check13_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Z
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check14_" class="check-">
-                <div>When the electrons are passed through the electromagnetic field, electrons are deflected away from......... Plate
-                </div>
-
-                <label for="check14_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Negative
-                        <br>
-                        <br>It's because electron is negatively charged so it has to be deflected towards the positive plate and away from the negative plate cos like poles repel while unlike poles attract
-                        </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check15_" class="check-">
-                <div>The 1.6x10⁻¹⁰C is the charge on single.......... 
-                </div>
-
-                <label for="check15_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Electron
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check16_" class="check-">
-                <div>Who discovered the CHARGE of an electron?
-                    <br>~ Random question
-                </div>
-
-                <label for="check16_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        It's R.A Millikan
-                        <br>
-                        <br>Using the oil drop experiment
-                        </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check17_" class="check-">
-                <div>The particles which revolve around the nucleus are called........
-                </div>
-
-                <label for="check17_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Electrons
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check18_" class="check-">
-                <div>The pathway of electron is called.........
-                </div>
-
-                <label for="check18_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Orbital
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check19_" class="check-">
-                <div>Every substance in our world is made up of.......
-                </div>
-
-                <label for="check19_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Atoms
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check20_" class="check-">
-                <div>Analysis of a sample of a covalent compound showed that it contined 14.4% hydrogen and 85.6% carbon by mass. What is the empirical formula for the compound?
-                </div>
-
-                <label for="check20_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        CH2
-                    </span>
-                </label>
+            <div class="topic-">
+                German obj part 2 - 12/2/25
             </div>
         </div>
 
-        <a href="#">
-            <div class="up-btn-">
-                <div></div>
+        <!--side navigation-->
+        <div class="sidebar-" id="sidebar"></div>
+
+
+        <div id="imgbox_" class="imgbox-"></div>
+
+        <!--Questions-->
+        <div class="questions-">
+            <input type="checkbox" id="check1_" class="check-">
+            <div>The maximum of an atom is concentrated in..........
             </div>
-        </a>
+
+            <label for="check1_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Nucleus
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check2_" class="check-">
+            <div>.......... is the difference of two isotopes of the same element
+            </div>
+
+            <label for="check2_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Mass number or more preferably, number of neutrons
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check3_" class="check-">
+            <div>.......... is the electronic configuration for oxygen in spdf notation
+            </div>
+
+            <label for="check3_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    1s² 2s² 2p⁴
+                </span>
+            </label>
+        </div>
+
+        <!-- TODO Correct this -->
+        <div class="questions-">
+            <input type="checkbox" id="check4_" class="check-">
+            <div>What is the electronic configuration of potassium in spdf notation?
+                <br>~ Random question
+            </div>
+
+            <label for="check4_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    1s2 2s2 2p6 3s2 3p6 4s1
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check5_" class="check-">
+            <div>Molecular mass is defined...............
+            </div>
+
+            <label for="check5_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    The sum of the atomic masses of all atoms in a molecule
+                    <br>
+                    <br>OR
+                    <br>
+                    <br>The mass of one molecule of a substance
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check6_" class="check-">
+            <div>The smallest particle of an element which can take part in any chemical change is known as...........
+            </div>
+
+            <label for="check6_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Atom
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check7_" class="check-">
+            <div>Definition of a molecule? ~ Random question
+            </div>
+
+            <label for="check7_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Combination of two or more atoms held together by chemical bond
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check8_" class="check-">
+            <div>The atomic number is the number of............
+            </div>
+
+            <label for="check8_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Proton
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check9_" class="check-">
+            <div>By exposure of electrons beams on atoms and observing their behavior upon the fall of the beam can help
+                to determine its...........
+            </div>
+
+            <label for="check9_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Atomic structure or electric charge
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check10_" class="check-">
+            <div>The some of protons and neutrons in an atom gives......... number
+            </div>
+
+            <label for="check10_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Mass number
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check11_" class="check-">
+            <div>The elements which have the same number of protons but different number of neutrons are called.........
+            </div>
+
+            <label for="check11_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Isotopes
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check12_" class="check-">
+            <div>Quick question ~ What's the difference between Atomic mass and mass number?
+                <br>It's confusing to me😪 ~ Random question
+            </div>
+
+            <label for="check12_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Atomic number= Number of protons
+                    <br>
+                    <br>Mass number= number of protons+ number of neutrons
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check13_" class="check-">
+            <div>The proton number is denoted by the symbol............
+            </div>
+
+            <label for="check13_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Z
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check14_" class="check-">
+            <div>When the electrons are passed through the electromagnetic field, electrons are deflected away
+                from......... Plate
+            </div>
+
+            <label for="check14_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Negative
+                    <br>
+                    <br>It's because electron is negatively charged so it has to be deflected towards the positive plate
+                    and away from the negative plate cos like poles repel while unlike poles attract
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check15_" class="check-">
+            <div>The 1.6x10⁻¹⁰C is the charge on single..........
+            </div>
+
+            <label for="check15_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Electron
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check16_" class="check-">
+            <div>Who discovered the CHARGE of an electron?
+                <br>~ Random question
+            </div>
+
+            <label for="check16_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    It's R.A Millikan
+                    <br>
+                    <br>Using the oil drop experiment
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check17_" class="check-">
+            <div>The particles which revolve around the nucleus are called........
+            </div>
+
+            <label for="check17_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Electrons
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check18_" class="check-">
+            <div>The pathway of electron is called.........
+            </div>
+
+            <label for="check18_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Orbital
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check19_" class="check-">
+            <div>Every substance in our world is made up of.......
+            </div>
+
+            <label for="check19_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Atoms
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check20_" class="check-">
+            <div>Analysis of a sample of a covalent compound showed that it contined 14.4% hydrogen and 85.6% carbon by
+                mass. What is the empirical formula for the compound?
+            </div>
+
+            <label for="check20_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    CH2
+                </span>
+            </label>
+        </div>
+    </div>
+
+    <a href="#">
+        <div class="up-btn-">
+            <div></div>
+        </div>
+    </a>
 
 
-        <div class="comments-section">
-            <h3>Comment</h3>
-            
-            <form id="comment-form">
-                <div class="name-">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Name" required>
-                </div>
-                
-                <div class="come-">
-                    <label for="comment">Comment:</label>
-                    <textarea id="comment" rows="6" placeholder="Write a comment" required></textarea>
-                </div>
-                
-                <button class="submit-" type="submit"><img src="../../Pictures/submit.png" alt=""></button>
-                <div class="status-" id="comment-submission-status"></div>
-            </form>
-        </div>
-        
-        <input type="checkbox" id="show_">
-        <label for="show_"><div class="show-btn-">Show Comments</div></label>
-        <div class="show-comments-">
-            <h3>Comments</h3>
-            <div id="comments-container"></div><!-- do not touch this -->
-        </div>
-        
-          
-        <script type="module" src="../../scripts/comments.js"></script>
+    <div class="comments-section">
+        <h3>Comment</h3>
+
+        <form id="comment-form">
+            <div class="name-">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Name" required>
+            </div>
+
+            <div class="come-">
+                <label for="comment">Comment:</label>
+                <textarea id="comment" rows="6" placeholder="Write a comment" required></textarea>
+            </div>
+
+            <button class="submit-" type="submit"><img src="../../Pictures/submit.png" alt=""></button>
+            <div class="status-" id="comment-submission-status"></div>
+        </form>
+    </div>
+
+    <input type="checkbox" id="show_">
+    <label for="show_">
+        <div class="show-btn-">Show Comments</div>
+    </label>
+    <div class="show-comments-">
+        <h3>Comments</h3>
+        <div id="comments-container"></div><!-- do not touch this -->
+    </div>
+
+
+    <script type="module" src="../../scripts/comments.js"></script>
+    <script src="../../scripts/Java.js"></script>
+    <script src="../../scripts/copy&paste.js"></script>
+
 </html>

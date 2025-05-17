@@ -1,5 +1,5 @@
 /* Question container */
-.questions-{
+.questions- {
     background-color: rgb(250, 255, 255);
 
     position: relative;
@@ -8,7 +8,7 @@
     counter-reset: as;
 
     padding: 25px;
-    margin: 25px 25px;  
+    margin: 25px 25px;
     border-radius: 7px;
     font-size: 20px;
     box-shadow: 0 0 5px inset;
@@ -16,17 +16,18 @@
 }
 
 @media (min-height: 1200px) {
-    .questions-{
+    .questions- {
         font-size: 2.5em;
     }
 }
 
 /*Question text*/
-.questions- div{
+.questions- div {
     max-width: 100%;
     margin-bottom: 5px;
 }
-.questions- div::before{
+
+.questions- div::before {
     counter-increment: qs;
     content: counter(qs)". ";
     width: 10px;
@@ -34,41 +35,48 @@
 }
 
 /* The options */
-.questions- p{
+.questions- p {
     display: flex;
     margin: 5px 20px;
 }
-.questions- p::before{
+
+.questions- p::before {
     counter-increment: as;
     content: counter(as, lower-alpha) ". ";
     margin-right: 5px;
 }
-.answer-span-{
+
+.answer-span- {
     line-height: 30px;
     margin: 5px 20px;
 }
 
 @media (min-height: 1200px) {
-    .answer-span-{
+    .answer-span- {
         line-height: 55px;
     }
 }
 
+/* Your option wrong */
+.check-:checked~.underlinejs--,
+.check-:checked~div .underlinejs-- {
+    color: red;
+    text-decoration: none !important;
+}
+
+/* Your option correct */
+.check-:checked~.underlinejs-- .ans-,
+.check-:checked~div .underlinejs-- .ans- {
+    color: green;
+    text-decoration: underline;
+}
+
 
 /* The correct option */
-.check-:checked ~ .ans-,
-.check-:checked ~ span .ans-,
-.check-:checked ~ div .ans-{
-    text-decoration: underline;
-    animation: flash 2000ms linear 500ms;
-}
-@keyframes flash {
-    33%{
-        color: rgb(0, 110, 0);
-    }
-    66%{
-        color: black;
-    }
+.check-:checked~.ans-,
+.check-:checked~span .ans-,
+.check-:checked~div .ans- {
+    color: green;
 }
 
 
@@ -76,32 +84,37 @@
 
 
 /* Show and hide */
-.questions- label span{
+.questions- label span {
     cursor: pointer;
     margin-top: 5px;
 }
-.check-:checked ~ .show-,
-.check-:checked ~ label .show-{
+
+.check-:checked~.show-,
+.check-:checked~label .show- {
     display: none;
 }
-.check-:checked ~ .hide-,
-.check-:checked ~ label .hide-{
+
+.check-:checked~.hide-,
+.check-:checked~label .hide- {
     display: flex;
     padding-right: 5px;
 }
-#hide, .check-, .hide-{
+
+#hide,
+.check-,
+.hide- {
     display: none;
 }
 
 
 /*up button */
-.up-btn-{
+.up-btn- {
     background-color: white;
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     right: calc(-50px + 50%);
     bottom: 15px;
     padding: 10px 10px 20px 10px;
@@ -110,12 +123,12 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
 
-.up-btn- div{
+.up-btn- div {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     height: 0;
     width: 0;
     border-right: 25px solid transparent;
@@ -126,7 +139,8 @@
 
 
 /* Questions image */
-.questions- .q-img-, .a-img-{
+.questions- .aimg-,
+.qimg- {
     position: relative;
     display: none;
     left: 50%;
@@ -134,21 +148,23 @@
     object-fit: contain;
 }
 
-.a-img-,
-.check-:checked ~ .q-img-{
+.qimg-,
+.check-:checked~.aimg- {
     display: flex;
 }
 
-@media (max-height: 1199px){
-    .q-img-, .a-img-{
+@media (max-height: 1199px) {
+
+    .aimg-,
+    .qimg- {
         max-width: 500px;
     }
 }
 
-.imgbox-{
+.imgbox- {
     position: fixed;
-        right: 50%;
-        bottom: 50%;
+    right: 50%;
+    bottom: 50%;
     display: flex;
     width: 100%;
     transform: translate(50%, 50%);
@@ -156,17 +172,19 @@
     font-size: 30px;
     z-index: 12;
 }
+
 @media (max-height: 1199px) {
-    .imgbox-{
+    .imgbox- {
         width: calc(100% + -100px);
         max-width: 800px;
     }
-    .imgbox- img{
+
+    .imgbox- img {
         max-height: 100vh;
     }
 }
 
-.imgbox- img{
+.imgbox- img {
     position: relative;
     left: 50%;
     display: flex;

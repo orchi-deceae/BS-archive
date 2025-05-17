@@ -1,452 +1,312 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../../Pictures">
-        <link rel="stylesheet" href="../../CSS/Subjects/general.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/head.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/title.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
-        <script src="../../scripts/Java.js"></script>
-    </head>
 
-    <body>
-        <div class="main-">
-            <div class="curtain-"  onclick="close_()" id="curtain"></div>
-            <div class="curtain-"  onclick="close_img()" id="curtain_img"></div>
+<head>
+    <link rel="stylesheet" href="../../Pictures">
+    <link rel="stylesheet" href="../../CSS/Subjects/general.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/head.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/title.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
+</head>
 
-            <div class="header1-">
-                <a href="../../index.html"><div><img src="../../Pictures/20250305_205006.jpg"></div></a>
-                <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
-                <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
-            
+<body>
+    <div class="main-">
+        <div class="curtain-" onclick="close_()" id="curtain"></div>
+        <div class="curtain-" onclick="close_img()" id="curtain_img"></div>
+
+        <div class="header1-">
+            <a href="../../index.html">
+                <div><img src="../../Pictures/20250305_205006.jpg"></div>
+            </a>
+            <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
+            <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
+
+        </div>
+        <!--navigation bar-->
+        <div class="header2-">
+            <a href="l1.html"><button><span>Lesson 1</span><span class="hidden-subject-">Coulomb'slaw</span></button></a>
+            <a href="l2.html"><button class="selected-"><span>Electricity 1</span><span class="hidden-subject-">Electricity 1</span></button></a>
+            <a href="l3.html"><button><span>Lesson 3</span><span class="hidden-subject-">Energy</span></button></a>
+            <a href="l4.html"><button><span>Lesson 4</span><span class="hidden-subject-">Charge</span></button></a>
+        </div>
+
+
+        <!--Topic-->
+        <div class="title-">
+            <div class="sub-101-">
+                PHY 111
             </div>
-            <!--navigation bar-->
-            <div class="header2-">
-                <a href="l1.html"><button><span>Lesson 1</span><span class="hidden-subject-">Coulomb's law</span></button></a>
-                <a href="l2.html"><button class = "selected-"><span>Electricity 1</span><span class="hidden-subject-">Electricity 1</span></button></a>
-            </div>
-            
-            
-            <!--Topic-->
-            <div class="title-">
-                <div class="sub-101-">
-                    PHY 111
+            <div class="change-">
+                <div class="before-">
+                    <a href="l1.html"><button class="before-btn-">Before</button></a>
+                    <div class="beforepop-">Coulomb'slaw</div>
                 </div>
-                <div class="change-">
-                    <div class="before-">
-                        <a href="l1.html"><button class="before-btn-">Before</button></a>
-                        <div class="beforepop-">Electricity 1</div>
-                    </div>
-                    <div class="after-">
-                        <a href="l1.html"><button class="next-btn-">Next</button></a>
-                        <div class="afterpop-">Coulomb's law</div>
-                    </div>
-                </div>
-                <div class="topic-">
-                    Electricity 1 - 10/4/25
-                </div>
-            </div>
-
-            <!--side navigation-->
-            <div class="sidebar-" id="sidebar">
-                <div class="close-" onclick="close_()" id="close_">&times;</div>
-                <div>
-                    <input type="checkbox" id="side_sub1_" class="side-checkbox-">
-                    <label for="side_sub1_" >
-                        MTH 101 <span class="arw- mth101-arw-"></span>
-                        <ol class="subj-ol- mth101-ol-">
-                            <a href="../BS-mth101/l1.html"><li>Elemental set theory</li></a>
-                            <a href="../BS-mth101/l2.html"><li>Real numbers</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub2_" class="side-checkbox-">
-                    <label for="side_sub2_" >
-                        PHY 101 <span class="arw- phy101-arw-"></span>
-                        <ol class="subj-ol- phy101-ol-">
-                            <a href="../BS-phy101/l1.html"><li>Measurements, quantities, dimensions </li></a>
-                            <a href="../BS-phy101/l2.html"><li>Space, time, units and dimensions</li></a>
-                            <a href="../BS-phy101/l3.html"><li>Newton's laws of motion</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub3_" class="side-checkbox-">
-                    <label for="side_sub3_" >
-                        COS 101 <span class="arw- cos101-arw-"></span>
-                        <ol class="subj-ol- cos101-ol-">
-                            <a href="../BS-cos101/l1.html"><li>Computer</li></a>
-                            <a href="../BS-cos101/l2.html"><li>Structure of the computer</li></a>
-                            <a href="../BS-cos101/l3.html"><li>Computing history</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub4_" class="side-checkbox-">
-                    <label for="side_sub4_" >
-                        GST 106 <span class="arw- gst106-arw-"></span>
-                        <ol class="subj-ol- gst106-ol-">
-                            <a href="../BS-gst106/l1.html"><li>Health</li></a>
-                            <a href="../BS-gst106/l2.html"><li>Alcoholism</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub5_" class="side-checkbox-">
-                    <label for="side_sub5_" >
-                        GST 107 <span class="arw- gst107-arw-"></span>
-                        <ol class="subj-ol- gst107-ol-">
-                            <a href="../BS-gst107/l1.html"><li>Word formation</li></a>
-                            <a href="../BS-gst107/l2.html"><li>Communication</li></a>
-                            <a href="../BS-gst107/l3.html"><li>Spoken English</li></a>
-                            <a href="../BS-gst107/l4.html"><li>Reading, listening skills, listening skills</li></a>
-                            <a href="../BS-gst107/l5.html"><li>Word formation</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub6_" class="side-checkbox-">
-                    <label for="side_sub6_" >
-                        CHM 101 <span class="arw- chm101-arw-"></span>
-                        <ol class="subj-ol- chm101-ol-">
-                            <a href="../BS-chm101/l1.html"><li>Atoms, molecules and compounds</li></a>
-                            <a href="../BS-chm101/l2.html"><li>Elements, Atomic numbers, Mass numbers and Isotopes</li></a>
-                            <a href="../BS-chm101/l3.html"><li>Still under elements, atomic number</li></a>
-                            <a href="../BS-chm101/l4.html"><li>German obj</li></a>
-                            <a href="../BS-chm101/l5.html"><li>German obj part 2</li></a>
-                        </ol>
-                    </label>
-                </div> 
-
-                <div>
-                    <input type="checkbox" id="side_sub7_" class="side-checkbox-">
-                    <label for="side_sub7_" >
-                        BIO 101 <span class="arw- bio101-arw-"></span>
-                        <ol class="subj-ol- bio101-ol-">
-                            <a href="../BS-bio101/l1.html"><li>Ecology</li></a>
-                            <a href="../BS-bio101/l2.html"><li>Cell structure</li></a>
-                            <a href="../BS-bio101/l3.html"><li>Kingdom plantae</li></a>
-                            <a href="../BS-bio101/l4.html"><li>Bio Doc</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub8_" class="side-checkbox-">
-                    <label for="side_sub8_" >
-                        General <span class="arw- general-arw-"></span>
-                        <ol class="subj-ol- general-ol-">
-                            <a href="../BS-general/l1.html"><li>Random questions</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub9_" class="side-checkbox-">
-                    <label for="side_sub9_" >
-                        CHM 111 <span class="arw- chm111-arw-"></span>
-                        <ol class="subj-ol- chm111-ol-">
-                            <a href="../BS-chm111/l1.html"><li>Introduction to organic chemistry</li></a>
-                            <a href="../BS-chm111/l2.html"><li>Classification of organic compounds</li></a>
-                            <a href="../BS-chm111/l3.html"><li>Functional groups and homologous series</li></a>
-                            <a href="../BS-chm111/l4.html"><li>Naming organic compounds</li></a>
-                            <a href="../BS-chm111/l5.html"><li>Naming organic compounds part 2</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub10_" class="side-checkbox-">
-                    <label for="side_sub10_" >
-                        BIO 112 <span class="arw- bio112-arw-"></span>
-                        <ol class="subj-ol- bio112-ol-">
-                            <a href="../BS-bio112/l1.html"><li>Diversity of living organisms</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub11_" class="side-checkbox-">
-                    <label for="side_sub11_" >
-                        PHY 111 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-phy111/l1.html"><li>Coulomb's law</li></a>
-                            <a href="../BS-phy111/l2.html"><li>Electricity 1</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub12_" class="side-checkbox-">
-                    <label for="side_sub12_" >
-                        MTH 111 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-mth111/l1.html"><li>Limits & Functions</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub13_" class="side-checkbox-">
-                    <label for="side_sub13_" >
-                        GST 115 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-gst115/l1.html"><li>Physical features of Nigeria</li></a>
-                        </ol>
-                    </label>
+                <div class="after-">
+                    <a href="l3.html"><button class="next-btn-">Next</button></a>
+                    <div class="afterpop-">Energy</div>
                 </div>
             </div>
-            
-
-            <div id="imgbox_" class="imgbox-"></div>
-
-            <!--Questions-->
-            <!--Questions-->
-            <div class="questions-">
-                <input type="checkbox" id="check1_"  class="check-">
-                <div>Two capacitors, 2 μF and 3 μF, are connected in series. The equivalent capacitance is:
-                    <br><span class="ans-">A. 1.2 μF</span>
-                    <br>B. 5 μF
-                    <br>C. 0.6 μF
-                    <br>D. 6 μF
-                    </div>
-
-                <label for="check1_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        This is A 
-                        <br>The reciprocal of the capacitance has to be taken ✅
-                        </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check2_" class="check-">
-                <div>Which of the following materials is not typically used as a dielectric?
-                    <br>A. Mica
-                    <br>B. Air
-                    <br><span class="ans-">C. Copper</span>
-                    <br>D. Paper
-                    </div>
-
-                <label for="check2_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check3_" class="check-">
-                <div>Why is it C
-                </div>
-
-                <label for="check3_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Copper is a conductor of electricity, And a dielectric is always an insulator.
-                        <br>
-                        <br>It's not an insulating material.
-                        <br>
-                        <br>Dielectric substance is an insulating material that has the ability to withstand high electric stress
-                        </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check4_" class="check-">
-                <div>What happens to the capacitance when a dielectric material is inserted between the plates of a capacitor?
-                    <br>A. It decreases
-                    <br><span class="ans-">B. It increases</span>
-                    <br>C. It remains the same
-                    <br>D. It becomes zero
-                    </div>
-
-                <label for="check4_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B✅✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check5_" class="check-">
-                <div>The unit of resistance is......
-                </div>
-
-                <label for="check5_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Ohms
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check6_" class="check-">
-                <div>The unit of capacitance is:
-                    <br>A. Coulomb
-                    <br><span class="ans-">B. Farad</span>
-                    <br>C. Volt
-                    <br>D. Ohm
-                    </div>
-
-                <label for="check6_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check7_" class="check-">
-                <div>The resistivity of a material depends on:
-                    <br>A. Length of the wire
-                    <br>B. Cross-sectional area
-                    <br><span class="ans-">C. Temperature</span>
-                    <br>D. Voltage applied
-                    </div>
-
-                <label for="check7_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check8_" class="check-">
-                <div>If the length of a wire is doubled and its cross-sectional area is halved, what happens to its resistance?
-                    <br>A. Doubles
-                    <br><span class="ans-">B. Quadruples</span>
-                    <br>C. Halves
-                    <br>D. Remains the same
-                    </div>
-
-                <label for="check8_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check9_" class="check-">
-                <div>copper wire of length 2 m and cross-sectional area 0.5 mm² has a resistivity of . What is its resistance?
-                    <br><span class="ans-">A. 0.068 Ω</span>
-                    <br>B. 0.34 Ω
-                    <br>C. 6.8 Ω
-                    <br>D. 0.17 Ω
-                    <br>
-                    <br>Resistivity=1.7×10^-8
-
-                    </div>
-
-                <label for="check9_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        A✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check10_" class="check-">
-                <div>I nanofarad equals to .....farad
-                </div>
-
-                <label for="check10_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        I×10^-9
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check11_"  class="check-">
-                <div>Which of the following is a good conductor but has higher resistivity than copper?
-                    <br>A. Silver
-                    <br><span class="ans-">B. Aluminium</span>
-                    <br>C. Gold
-                    <br>D. Iron
-                    </div>
-
-                <label for="check11_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B✅
-                        </span>
-                </label>
-            </div>
-
             <div class="topic-">
-                Last Question
-                <br>It's a very simple question ooo
-                <br>Just close your eyes 👀
-            </div>
-
-
-            <div class="questions-">
-                <input type="checkbox" id="check12_" class="check-">
-                What's the full name of our female community admin?
-
-
-                <label for="check12_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Her full name is Adeoje Zeenat Oyinkansola
-                    </span>
-                </label>
+                Electricity 1 - 23/4/25
             </div>
         </div>
 
-        <a href="#">
-            <div class="up-btn-">
-                <div></div>
+        <!--side navigation-->
+        <div class="sidebar-" id="sidebar"></div>
+
+
+        <div id="imgbox_" class="imgbox-"></div>
+
+        <!--Questions-->
+        <!--Questions-->
+        <div class="questions-">
+            <input type="checkbox" id="check1_" class="check-">
+            <div>Two capacitors, 2 μF and 3 μF, are connected in series. The equivalent capacitance is:
+                <br><span class="ans-">A. 1.2 μF</span>
+                <br>B. 5 μF
+                <br>C. 0.6 μF
+                <br>D. 6 μF
             </div>
-        </a>
+
+            <label for="check1_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    This is A
+                    <br>The reciprocal of the capacitance has to be taken ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check2_" class="check-">
+            <div>Which of the following materials is not typically used as a dielectric?
+                <br>A. Mica
+                <br>B. Air
+                <br><span class="ans-">C. Copper</span>
+                <br>D. Paper
+            </div>
+
+            <label for="check2_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    C✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check3_" class="check-">
+            <div>Why is it C
+            </div>
+
+            <label for="check3_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Copper is a conductor of electricity, And a dielectric is always an insulator.
+                    <br>
+                    <br>It's not an insulating material.
+                    <br>
+                    <br>Dielectric substance is an insulating material that has the ability to withstand high electric
+                    stress
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check4_" class="check-">
+            <div>What happens to the capacitance when a dielectric material is inserted between the plates of a
+                capacitor?
+                <br>A. It decreases
+                <br><span class="ans-">B. It increases</span>
+                <br>C. It remains the same
+                <br>D. It becomes zero
+            </div>
+
+            <label for="check4_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B✅✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check5_" class="check-">
+            <div>The unit of resistance is......
+            </div>
+
+            <label for="check5_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Ohms
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check6_" class="check-">
+            <div>The unit of capacitance is:
+                <br>A. Coulomb
+                <br><span class="ans-">B. Farad</span>
+                <br>C. Volt
+                <br>D. Ohm
+            </div>
+
+            <label for="check6_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check7_" class="check-">
+            <div>The resistivity of a material depends on:
+                <br>A. Length of the wire
+                <br>B. Cross-sectional area
+                <br><span class="ans-">C. Temperature</span>
+                <br>D. Voltage applied
+            </div>
+
+            <label for="check7_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    C✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check8_" class="check-">
+            <div>If the length of a wire is doubled and its cross-sectional area is halved, what happens to its
+                resistance?
+                <br>A. Doubles
+                <br><span class="ans-">B. Quadruples</span>
+                <br>C. Halves
+                <br>D. Remains the same
+            </div>
+
+            <label for="check8_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check9_" class="check-">
+            <div>copper wire of length 2 m and cross-sectional area 0.5 mm² has a resistivity of . What is its
+                resistance?
+                <br><span class="ans-">A. 0.068 Ω</span>
+                <br>B. 0.34 Ω
+                <br>C. 6.8 Ω
+                <br>D. 0.17 Ω
+                <br>
+                <br>Resistivity=1.7×10^-8
+
+            </div>
+
+            <label for="check9_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    A✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check10_" class="check-">
+            <div>I nanofarad equals to .....farad
+            </div>
+
+            <label for="check10_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    I×10^-9
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check11_" class="check-">
+            <div>Which of the following is a good conductor but has higher resistivity than copper?
+                <br>A. Silver
+                <br><span class="ans-">B. Aluminium</span>
+                <br>C. Gold
+                <br>D. Iron
+            </div>
+
+            <label for="check11_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B✅
+                </span>
+            </label>
+        </div>
+
+        <div class="topic-">
+            Last Question
+            <br>It's a very simple question ooo
+            <br>Just close your eyes 👀
+        </div>
 
 
-        <div class="comments-section">
-            <h3>Comment</h3>
-            
-            <form id="comment-form">
-                <div class="name-">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Name" required>
-                </div>
-                
-                <div class="come-">
-                    <label for="comment">Comment:</label>
-                    <textarea id="comment" rows="6" placeholder="Write a comment" required></textarea>
-                </div>
-                
-                <button class="submit-" type="submit"><img src="../../Pictures/submit.png" alt=""></button>
-                <div class="status-" id="comment-submission-status"></div>
-            </form>
+        <div class="questions-">
+            <input type="checkbox" id="check12_" class="check-">
+            What's the full name of our female community admin?
+
+
+            <label for="check12_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Her full name is Adeoje Zeenat Oyinkansola
+                </span>
+            </label>
         </div>
-        
-        <input type="checkbox" id="show_">
-        <label for="show_"><div class="show-btn-">Show Comments</div></label>
-        <div class="show-comments-">
-            <h3>Comments</h3>
-            <div id="comments-container"></div><!-- do not touch this -->
+    </div>
+
+    <a href="#">
+        <div class="up-btn-">
+            <div></div>
         </div>
-        
-          
-        <script type="module" src="../../scripts/comments.js"></script>
+    </a>
+
+
+    <div class="comments-section">
+        <h3>Comment</h3>
+
+        <form id="comment-form">
+            <div class="name-">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Name" required>
+            </div>
+
+            <div class="come-">
+                <label for="comment">Comment:</label>
+                <textarea id="comment" rows="6" placeholder="Write a comment" required></textarea>
+            </div>
+
+            <button class="submit-" type="submit"><img src="../../Pictures/submit.png" alt=""></button>
+            <div class="status-" id="comment-submission-status"></div>
+        </form>
+    </div>
+
+    <input type="checkbox" id="show_">
+    <label for="show_">
+        <div class="show-btn-">Show Comments</div>
+    </label>
+    <div class="show-comments-">
+        <h3>Comments</h3>
+        <div id="comments-container"></div><!-- do not touch this -->
+    </div>
+
+
+    <script type="module" src="../../scripts/comments.js"></script>
+    <script src="../../scripts/Java.js"></script>
+    <script src="../../scripts/copy&paste.js"></script>
+
 </html>

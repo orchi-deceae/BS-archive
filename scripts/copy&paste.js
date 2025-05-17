@@ -1,80 +1,21 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <link rel="stylesheet" href="../../Pictures">
-    <link rel="stylesheet" href="../../CSS/Subjects/general.css">
-    <link rel="stylesheet" href="../../CSS/Subjects/head.css">
-    <link rel="stylesheet" href="../../CSS/Subjects/title.css">
-    <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
-    <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
-    <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
-</head>
-
-<body>
-    <div class="main-">
-        <div class="curtain-" onclick="close_()" id="curtain"></div>
-        <div class="curtain-" onclick="close_img()" id="curtain_img"></div>
-
-        <div class="header1-">
-            <a href="../../index.html">
-                <div><img src="../../Pictures/20250305_205006.jpg"></div>
-            </a>
-            <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
-            <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
-
-        </div>
-        <!--navigation bar-->
-        <div class="header2-">
-            <a href="l1.html"><button><span>Lesson 1</span><span class="hidden-subject-">Elemental set
-                        theory</span></button></a>
-            <a href="l2.html"><button><span>Lesson 2</span><span class="hidden-subject-">Real
-                        numbers</span></button></a>
-            <a href="l3.html"><button class="selected-"><span>Dimensions</span><span
-                        class="hidden-subject-">Dimensions</span></button></a>
-        </div>
-
-        <!--Topic-->
-        <div class="title-">
-            <div class="sub-101-">
-                MTH 101 (General)
-            </div>
-            <div class="change-">
-                <div class="before-">
-                    <a href="l2.html"><button class="before-btn-">Before</button></a>
-                    <div class="beforepop-">Real numbers</div>
-                </div>
-                <div class="after-">
-                    <a href="l1.html"><button class="next-btn-">Next</button></a>
-                    <div class="afterpop-">Elemental set theory</div>
-                </div>
-            </div>
-            <div class="topic-">
-                Dimensions - 4/1/25
-            </div>
-        </div>
-
-        <!--side navigation-->
-        <div class="sidebar-" id="sidebar">
-            <div class="close-" onclick="close_()" id="close_">&times;</div>
+function sideBar_() {
+    document.querySelector('.sidebar-').innerHTML = `
+    <div class="close-" onclick="close_()" id="close_">&times;</div>
             <div>
                 <input type="checkbox" id="side_sub1_" class="side-checkbox-">
                 <label for="side_sub1_">
                     MTH 101 <span class="arw- mth101-arw-"></span>
                     <ol class="subj-ol- mth101-ol-">
-                        <a href="l1.html">
+                        <a href="../BS-mth101/l1.html">
                             <li>Elemental set theory</li>
                         </a>
-                        <a href="l2.html">
+                        <a href="../BS-mth101/l2.html">
                             <li>Real numbers</li>
-                        </a>
-                        <a href="../txt/BS-txt101-copyl1.html">
-                            <li class="strike-">Dimensions</li>
                         </a>
                     </ol>
                 </label>
             </div>
-
+    
             <div>
                 <input type="checkbox" id="side_sub2_" class="side-checkbox-">
                 <label for="side_sub2_">
@@ -92,7 +33,7 @@
                     </ol>
                 </label>
             </div>
-
+    
             <div>
                 <input type="checkbox" id="side_sub3_" class="side-checkbox-">
                 <label for="side_sub3_">
@@ -110,7 +51,7 @@
                     </ol>
                 </label>
             </div>
-
+    
             <div>
                 <input type="checkbox" id="side_sub4_" class="side-checkbox-">
                 <label for="side_sub4_">
@@ -125,7 +66,7 @@
                     </ol>
                 </label>
             </div>
-
+    
             <div>
                 <input type="checkbox" id="side_sub5_" class="side-checkbox-">
                 <label for="side_sub5_">
@@ -149,7 +90,7 @@
                     </ol>
                 </label>
             </div>
-
+    
             <div>
                 <input type="checkbox" id="side_sub6_" class="side-checkbox-">
                 <label for="side_sub6_">
@@ -173,7 +114,7 @@
                     </ol>
                 </label>
             </div>
-
+    
             <div>
                 <input type="checkbox" id="side_sub7_" class="side-checkbox-">
                 <label for="side_sub7_">
@@ -194,7 +135,7 @@
                     </ol>
                 </label>
             </div>
-
+    
             <div>
                 <input type="checkbox" id="side_sub8_" class="side-checkbox-">
                 <label for="side_sub8_">
@@ -206,7 +147,7 @@
                     </ol>
                 </label>
             </div>
-
+    
             <div>
                 <input type="checkbox" id="side_sub9_" class="side-checkbox-">
                 <label for="side_sub9_">
@@ -233,7 +174,7 @@
                     </ol>
                 </label>
             </div>
-
+    
             <div>
                 <input type="checkbox" id="side_sub10_" class="side-checkbox-">
                 <label for="side_sub10_">
@@ -251,7 +192,7 @@
                     </ol>
                 </label>
             </div>
-
+    
             <div>
                 <input type="checkbox" id="side_sub11_" class="side-checkbox-">
                 <label for="side_sub11_">
@@ -272,7 +213,7 @@
                     </ol>
                 </label>
             </div>
-
+    
             <div>
                 <input type="checkbox" id="side_sub12_" class="side-checkbox-">
                 <label for="side_sub12_">
@@ -284,7 +225,7 @@
                     </ol>
                 </label>
             </div>
-
+    
             <div>
                 <input type="checkbox" id="side_sub13_" class="side-checkbox-">
                 <label for="side_sub13_">
@@ -302,94 +243,6 @@
                     </ol>
                 </label>
             </div>
-        </div>
-
-        <div id="imgbox_" class="imgbox-"></div>
-
-        <!--Questions-->
-        <div class="questions-">
-            <input type="checkbox" id="check1_" class="check-">
-            <div>txt</div>
-            <p></p>
-            <p class="ans-">txt</p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <label for="check1_">
-                <span class="show-">[Show]</span>
-                <span class="hide-">[Hide]<br></span>
-            </label>
-        </div>
-
-        <div class="questions-">
-            <input type="checkbox" id="check2_" class="check-">
-            <div></div>
-
-            <p></p>
-            <p class="ans-"></p>
-            <p></p>
-            <p></p>
-
-            <label for="check2_">
-                <span class="show-">[Show]</span>
-                <span class="hide-">[Hide]<br></span>
-            </label>
-        </div>
-
-        <div class="questions-">
-            <input type="checkbox" id="check3_" class="check-">
-            <div></div>
-
-            <p></p>
-            <p class="ans-"></p>
-            <p></p>
-            <p></p>
-
-            <label for="check3_">
-                <span class="show-">[Show]</span>
-                <span class="hide-">[Hide]<br></span>
-            </label>
-        </div>
-    </div>
-
-    <a href="#">
-        <div class="up-btn-">
-            <div></div>
-        </div>
-    </a>
-
-
-    <div class="comments-section">
-        <h3>Comment</h3>
-
-        <form id="comment-form">
-            <div class="name-">
-                <label for="name">Name:</label>
-                <input type="text" id="name" placeholder="Name" required>
-            </div>
-
-            <div class="come-">
-                <label for="comment">Comment:</label>
-                <textarea id="comment" rows="6" placeholder="Write a comment" required></textarea>
-            </div>
-
-            <button class="submit-" type="submit"><img src="../../Pictures/submit.png" alt=""></button>
-            <div class="status-" id="comment-submission-status"></div>
-        </form>
-    </div>
-
-    <input type="checkbox" id="show_">
-    <label for="show_">
-        <div class="show-btn-">Show Comments</div>
-    </label>
-    <div class="show-comments-">
-        <h3>Comments</h3>
-        <div id="comments-container"></div><!-- do not touch this -->
-    </div>
-
-
-    <script type="module" src="../../scripts/comments.js"></script>
-    <script src="../../scripts/Java.js"></script>
-    <script src="../../scripts/copy&paste.js"></script>
-
-</html>
+    `
+}
+sideBar_()

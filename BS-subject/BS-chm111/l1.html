@@ -1,562 +1,420 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../../Pictures">
-        <link rel="stylesheet" href="../../CSS/Subjects/general.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/head.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/title.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
-        <script src="../../scripts/Java.js"></script>
-    </head>
 
-    <body>
-        <div class="main-">
-            <div class="curtain-"  onclick="close_()" id="curtain"></div>
-            <div class="curtain-"  onclick="close_img()" id="curtain_img"></div>
+<head>
+    <link rel="stylesheet" href="../../Pictures">
+    <link rel="stylesheet" href="../../CSS/Subjects/general.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/head.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/title.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
+</head>
 
-            <div class="header1-">
-                <a href="../../index.html"><div><img src="../../Pictures/20250305_205006.jpg"></div></a>
-                <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
-                <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
-            
+<body>
+    <div class="main-">
+        <div class="curtain-" onclick="close_()" id="curtain"></div>
+        <div class="curtain-" onclick="close_img()" id="curtain_img"></div>
+
+        <div class="header1-">
+            <a href="../../index.html">
+                <div><img src="../../Pictures/20250305_205006.jpg"></div>
+            </a>
+            <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
+            <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
+
+        </div>
+        <!--navigation bar-->
+        <div class="header2-">
+            <a href="l1.html"><button class="selected-"><span>Introduction to organic chemistry</span><span class="hidden-subject-">Introduction to organic chemistry</span></button></a>
+            <a href="l2.html"><button><span>Lesson 2</span><span class="hidden-subject-">Classification of organic compounds</span></button></a>
+            <a href="l3.html"><button><span>Lesson 3</span><span class="hidden-subject-">Functional groups and homologous series</span></button></a>
+            <a href="l4.html"><button><span>Lesson 4</span><span class="hidden-subject-">Naming organic compounds</span></button></a>
+            <a href="l5.html"><button><span>Lesson 5</span><span class="hidden-subject-">Naming organic compounds part 2</span></button></a>
+            <a href="l6.html"><button><span>Lesson 6</span><span class="hidden-subject-">Hydrocarbons</span></button></a>
+        </div>
+
+
+        <!--Topic-->
+        <div class="title-">
+            <div class="sub-101-">
+                CHM 111
             </div>
-            <!--navigation bar-->
-            <div class="header2-">
-                <a href="l1.html"><button class = "selected-"><span>Introduction to organic chemistry</span><span class="hidden-subject-">Introduction to organic chemistry</span></button></a>
-                <a href="l2.html"><button><span>Lesson 2</span><span class="hidden-subject-">Classification of organic compounds</span></button></a>
-                <a href="l3.html"><button><span>Lesson 3</span><span class="hidden-subject-">Functional groups and homologous series</span></button></a>
-                <a href="l4.html"><button><span>Lesson 4</span><span class="hidden-subject-">Naming organic compounds</span></button></a>
-                <a href="l5.html"><button><span>Lesson 5</span><span class="hidden-subject-">Naming organic compounds part 2</span></button></a>
-            </div>
-            
-            
-            <!--Topic-->
-            <div class="title-">
-                <div class="sub-101-">
-                    CHM 111
+            <div class="change-">
+                <div class="before-">
+                    <a href="l6.html"><button class="before-btn-">Before</button></a>
+                    <div class="beforepop-">Hydrocarbons</div>
                 </div>
-                <div class="change-">
-                    <div class="before-">
-                        <a href="l5.html"><button class="before-btn-">Before</button></a>
-                        <div class="beforepop-">Naming organic compounds part 2</div>
-                    </div>
-                    <div class="after-">
-                        <a href="l2.html"><button class="next-btn-">Next</button></a>
-                        <div class="afterpop-">Classification of organic compounds</div>
-                    </div>
-                </div>
-                <div class="topic-">
-                    Introduction to organic chemistry - 25/3/25
-                    <br>Chapter 12
+                <div class="after-">
+                    <a href="l2.html"><button class="next-btn-">Next</button></a>
+                    <div class="afterpop-">Classification of organic compounds</div>
                 </div>
             </div>
+            <div class="topic-">
+                Introduction to organic chemistry - 25/3/25
+                <br>Chapter 12
+            </div>
+        </div>
 
-            <!--side navigation-->
-            <div class="sidebar-" id="sidebar">
-                <div class="close-" onclick="close_()" id="close_">&times;</div>
-                <div>
-                    <input type="checkbox" id="side_sub1_" class="side-checkbox-">
-                    <label for="side_sub1_" >
-                        MTH 101 <span class="arw- mth101-arw-"></span>
-                        <ol class="subj-ol- mth101-ol-">
-                            <a href="../BS-mth101/l1.html"><li>Elemental set theory</li></a>
-                            <a href="../BS-mth101/l2.html"><li>Real numbers</li></a>
-                        </ol>
-                    </label>
-                </div>
+        <!--side navigation-->
+        <div class="sidebar-" id="sidebar"></div>
 
-                <div>
-                    <input type="checkbox" id="side_sub2_" class="side-checkbox-">
-                    <label for="side_sub2_" >
-                        PHY 101 <span class="arw- phy101-arw-"></span>
-                        <ol class="subj-ol- phy101-ol-">
-                            <a href="../BS-phy101/l1.html"><li>Measurements, quantities, dimensions </li></a>
-                            <a href="../BS-phy101/l2.html"><li>Space, time, units and dimensions</li></a>
-                            <a href="../BS-phy101/l3.html"><li>Newton's laws of motion</li></a>
-                        </ol>
-                    </label>
-                </div>
 
-                <div>
-                    <input type="checkbox" id="side_sub3_" class="side-checkbox-">
-                    <label for="side_sub3_" >
-                        COS 101 <span class="arw- cos101-arw-"></span>
-                        <ol class="subj-ol- cos101-ol-">
-                            <a href="../BS-cos101/l1.html"><li>Computer</li></a>
-                            <a href="../BS-cos101/l2.html"><li>Structure of the computer</li></a>
-                            <a href="../BS-cos101/l3.html"><li>Computing history</li></a>
-                        </ol>
-                    </label>
-                </div>
+        <div id="imgbox_" class="imgbox-"></div>
 
-                <div>
-                    <input type="checkbox" id="side_sub4_" class="side-checkbox-">
-                    <label for="side_sub4_" >
-                        GST 106 <span class="arw- gst106-arw-"></span>
-                        <ol class="subj-ol- gst106-ol-">
-                            <a href="../BS-gst106/l1.html"><li>Health</li></a>
-                            <a href="../BS-gst106/l2.html"><li>Alcoholism</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub5_" class="side-checkbox-">
-                    <label for="side_sub5_" >
-                        GST 107 <span class="arw- gst107-arw-"></span>
-                        <ol class="subj-ol- gst107-ol-">
-                            <a href="../BS-gst107/l1.html"><li>Word formation</li></a>
-                            <a href="../BS-gst107/l2.html"><li>Communication</li></a>
-                            <a href="../BS-gst107/l3.html"><li>Spoken English</li></a>
-                            <a href="../BS-gst107/l4.html"><li>Reading, listening skills, listening skills</li></a>
-                            <a href="../BS-gst107/l5.html"><li>Word formation</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub6_" class="side-checkbox-">
-                    <label for="side_sub6_" >
-                        CHM 101 <span class="arw- chm111-arw-"></span>
-                        <ol class="subj-ol- chm111-ol-">
-                            <a href="../BS-chm101/l1.html"><li>Atoms, molecules and compounds</li></a>
-                            <a href="../BS-chm101/l2.html"><li>Elements, Atomic numbers, Mass numbers and Isotopes</li></a>
-                            <a href="../BS-chm101/l3.html"><li>Still under elements, atomic number</li></a>
-                            <a href="../BS-chm101/l4.html"><li class="strike-">German obj</li></a>
-                            <a href="../BS-chm101/l5.html"><li class="strike-">German obj part 2</li></a>
-                        </ol>
-                    </label>
-                </div> 
-
-                <div>
-                    <input type="checkbox" id="side_sub7_" class="side-checkbox-">
-                    <label for="side_sub7_" >
-                        BIO 101 <span class="arw- bio101-arw-"></span>
-                        <ol class="subj-ol- bio101-ol-">
-                            <a href="../BS-bio101/l1.html"><li>Ecology</li></a>
-                            <a href="../BS-bio101/l2.html"><li>Cell structure</li></a>
-                            <a href="../BS-bio101/l3.html"><li>Kingdom plantae</li></a>
-                            <a href="../BS-bio101/l4.html"><li>Bio Doc</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub8_" class="side-checkbox-">
-                    <label for="side_sub8_" >
-                        General <span class="arw- general-arw-"></span>
-                        <ol class="subj-ol- general-ol-">
-                            <a href="../BS-general/l1.html"><li>Random questions</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub9_" class="side-checkbox-">
-                    <label for="side_sub9_" >
-                        CHM 111 <span class="arw- chm111-arw-"></span>
-                        <ol class="subj-ol- chm111-ol-">
-                            <a href="../txt/BS-txt101-l1.html"><li>Introduction to organic chemistry</li></a>
-                            <a href="../BS-chm111/l2.html"><li>Classification of organic compounds</li></a>
-                            <a href="../BS-chm111/l3.html"><li>Functional groups and homologous series</li></a>
-                            <a href="../BS-chm111/l4.html"><li>Naming organic compounds</li></a>
-                            <a href="../BS-chm111/l5.html"><li>Naming organic compounds part 2</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub10_" class="side-checkbox-">
-                    <label for="side_sub10_" >
-                        BIO 112 <span class="arw- bio112-arw-"></span>
-                        <ol class="subj-ol- bio112-ol-">
-                            <a href="../BS-bio112/l1.html"><li>Diversity of living organisms</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub11_" class="side-checkbox-">
-                    <label for="side_sub11_" >
-                        PHY 111 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-phy111/l1.html"><li>Coulomb's law</li></a>
-                            <a href="../BS-phy111/l2.html"><li>Electricity 1</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub12_" class="side-checkbox-">
-                    <label for="side_sub12_" >
-                        MTH 111 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-mth111/l1.html"><li>Limits & Functions</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub13_" class="side-checkbox-">
-                    <label for="side_sub13_" >
-                        GST 115 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-gst115/l1.html"><li>Physical features of Nigeria</li></a>
-                        </ol>
-                    </label>
-                </div>
+        <!--Questions-->
+        <div class="questions-">
+            <input type="checkbox" id="check1_" class="check-">
+            <div>Who first classified chemical compounds into organic and inorganic categories?
             </div>
 
+            <p>Friedrich Wöhler</p>
+            <p class="ans-">Jon Jacob Berzelius</p>
+            <p>Robert Hooke</p>
+            <p>Antoine Lavoisier</p>
 
-            <div id="imgbox_" class="imgbox-"></div>
+            <label for="check1_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B ✅
+                </span>
+            </label>
+        </div>
 
-            <!--Questions-->
-            <div class="questions-">
-                <input type="checkbox" id="check1_"  class="check-">
-                <div>Who first classified chemical compounds into organic and inorganic categories?
-                </div>
-                
-                <p>Friedrich Wöhler</p>
-                <p class="ans-">Jon Jacob Berzelius</p>
-                <p>Robert Hooke</p>
-                <p>Antoine Lavoisier</p>
-
-                <label for="check1_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B ✅
-                    </span>
-                </label>
+        <div class="questions-">
+            <input type="checkbox" id="check2_" class="check-">
+            <div>What discovery led to the rejection of the vital force theory?
             </div>
 
-            <div class="questions-">
-                <input type="checkbox" id="check2_" class="check-">
-                <div>What discovery led to the rejection of the vital force theory?
-                </div>
-                
-                <p>The extraction of aspirin from willow bark</p>
-                <p>The classification of compounds into organic and inorganic</p>
-                <p class="ans-">The synthesis of urea from ammonium cyanate</p>
-                <p>The discovery of the periodic table</p>
+            <p>The extraction of aspirin from willow bark</p>
+            <p>The classification of compounds into organic and inorganic</p>
+            <p class="ans-">The synthesis of urea from ammonium cyanate</p>
+            <p>The discovery of the periodic table</p>
 
-                <label for="check2_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C ✅
-                        <br>The vital force theory stated that organic compounds could only be gotten from living organisms through the action of 'vital force.'
-                        <br>
-                        <br>But when urea was synthesized by Wöhler in 1828 from ammonium cyanate, it proved the theory wrong as ammonium cyanate is not a living organism.
-                        </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check3_" class="check-">
-                <div>What process led to the formation of coal over millions of years?
-                </div>
-                
-                <p>Combustion</p>
-                <p>Fermentation</p>
-                <p class="ans-">Carbonization</p>
-                <p>Crystallization</p>
-
-                <label for="check3_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check4_"  class="check-">
-                <div>What was the primary fuel source that powered the Industrial Revolution?
-                </div>
-                
-                <p class="ans-">Coal</p>
-                <p>Natural gas</p>
-                <p>Petroleum</p>
-                <p>Wood</p>
-
-                <label for="check4_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        A ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check5_"  class="check-">
-                <div>Which of these is NOT a fossil fuel?
-                </div>
-                
-                <p>Coal</p>
-                <p>Oil</p>
-                <p>Natural gas</p>
-                <p class="ans-">Oxygen</p>
-
-                <label for="check5_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        D ✅🔥
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check6_"  class="check-">
-                <div>What is the main source of oil and gas formation in prehistoric times?
-                </div>
-                
-                <p>Volcanic activity</p>
-                <p>Large dinosaurs</p>
-                <p class="ans-">Simple organisms like algae and bacteria</p>
-                <p>Meteorite impacts</p>
-
-                <label for="check6_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C ✅🔥
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check7_"  class="check-">
-                <div>What did Berzelius believe was necessary for the formation of organic compounds?
-                </div>
-                
-                <p>High temperature</p>
-                <p class="ans-">A vital force</p>
-                <p>A catalyst</p>
-                <p>Sunlight</p>
-
-                <label for="check7_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check8_"  class="check-">
-                <div>What is the primary component of fossil fuels</div>
-                
-                <p>Hydrogen peroxide</p>
-                <p class="ans-">Carbon</p>
-                <p>Nitrogen</p>
-                <p>Sodium</p>
-
-                <label for="check8_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check9_"  class="check-">
-                <div>What was coal primarily used for in the 18th and 19th centuries?
-                </div>
-                
-                <p>Cooking</p>
-                <p>Textile production</p>
-                <p>Making glass</p>
-                <p class="ans-">Powering steam engines</p>
-
-                <label for="check9_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        D ✅🔥
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check10_"  class="check-">
-                <div>What inorganic compound did Wöhler use to produce urea?
-                </div>
-                
-                <p>Ammonium nitrate</p>
-                <p>Ammonium chloride</p>
-                <p class="ans-">Ammonium cyanate</p>
-                <p>Sodium cyanide</p>
-
-                <label for="check10_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check11_"  class="check-">
-                <div>In the 20th century, ___ emerged as the dominant energy source?
-                </div>
-
-                <label for="check11_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Oil ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check12_" class="check-">
-                <div>___ is an antibiotic extracted from mold?
-                </div>
-
-                <label for="check12_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Yess, Penicillin ☺️
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check13_" class="check-">
-                <div>What are the three generally accepted sources of organic compounds?
-                </div>
-
-                <label for="check13_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Invention 
-                        <br>Living organisms 
-                        <br>Carbonized organic natter
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check14_"  class="check-">
-                <div>Coal is mainly converted into other products through ____?
-                </div>
-
-                <label for="check14_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        ✅ Destructive distillation 
-                        <br>
-                        <br>Mainly
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check15_"  class="check-">
-                <div>Name three products of the destructive distillation of coal.
+            <label for="check2_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    C ✅
+                    <br>The vital force theory stated that organic compounds could only be gotten from living organisms
+                    through the action of 'vital force.'
                     <br>
-                    <br>Diversity (Different answers please)
-                </div>
-
-                <label for="check15_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Ammonical liquor
-                        <br>Coal tar
-                        <br>Coal gas
-                        <br>Gaseous carbon and coal oil as well ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check16_"  class="check-">
-                <div>Mention a use of coal gas.
-                </div>
-
-                <label for="check16_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        As gaseous fuel
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check17_"  class="check-">
-                <div>What is shale?
-                </div>
-
-                <label for="check17_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Shale is a type of sedimentary rock formed from the compression of layers of organic matter in an aquatic environment
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check18_"  class="check-">
-                <div>Is there a difference between coal gas and wood gas ~ Confidence/Tekken
-                </div>
-
-                <label for="check18_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Wood gas is also called producergas
-                        <br>Formed from gasification
-                        <br>While coal gas is from destructive distillation
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check19_"  class="check-">
-                <div>Are hydrocarbons only composed of carbon and hydrogen?
-                </div>
-
-                <label for="check19_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Yes
-                    </span>
-                </label>
-            </div>
+                    <br>But when urea was synthesized by Wöhler in 1828 from ammonium cyanate, it proved the theory
+                    wrong as ammonium cyanate is not a living organism.
+                </span>
+            </label>
         </div>
 
-        <a href="#">
-            <div class="up-btn-">
-                <div></div>
+        <div class="questions-">
+            <input type="checkbox" id="check3_" class="check-">
+            <div>What process led to the formation of coal over millions of years?
             </div>
-        </a>
+
+            <p>Combustion</p>
+            <p>Fermentation</p>
+            <p class="ans-">Carbonization</p>
+            <p>Crystallization</p>
+
+            <label for="check3_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    C ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check4_" class="check-">
+            <div>What was the primary fuel source that powered the Industrial Revolution?
+            </div>
+
+            <p class="ans-">Coal</p>
+            <p>Natural gas</p>
+            <p>Petroleum</p>
+            <p>Wood</p>
+
+            <label for="check4_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    A ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check5_" class="check-">
+            <div>Which of these is NOT a fossil fuel?
+            </div>
+
+            <p>Coal</p>
+            <p>Oil</p>
+            <p>Natural gas</p>
+            <p class="ans-">Oxygen</p>
+
+            <label for="check5_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    D ✅🔥
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check6_" class="check-">
+            <div>What is the main source of oil and gas formation in prehistoric times?
+            </div>
+
+            <p>Volcanic activity</p>
+            <p>Large dinosaurs</p>
+            <p class="ans-">Simple organisms like algae and bacteria</p>
+            <p>Meteorite impacts</p>
+
+            <label for="check6_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    C ✅🔥
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check7_" class="check-">
+            <div>What did Berzelius believe was necessary for the formation of organic compounds?
+            </div>
+
+            <p>High temperature</p>
+            <p class="ans-">A vital force</p>
+            <p>A catalyst</p>
+            <p>Sunlight</p>
+
+            <label for="check7_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check8_" class="check-">
+            <div>What is the primary component of fossil fuels</div>
+
+            <p>Hydrogen peroxide</p>
+            <p class="ans-">Carbon</p>
+            <p>Nitrogen</p>
+            <p>Sodium</p>
+
+            <label for="check8_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check9_" class="check-">
+            <div>What was coal primarily used for in the 18th and 19th centuries?
+            </div>
+
+            <p>Cooking</p>
+            <p>Textile production</p>
+            <p>Making glass</p>
+            <p class="ans-">Powering steam engines</p>
+
+            <label for="check9_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    D ✅🔥
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check10_" class="check-">
+            <div>What inorganic compound did Wöhler use to produce urea?
+            </div>
+
+            <p>Ammonium nitrate</p>
+            <p>Ammonium chloride</p>
+            <p class="ans-">Ammonium cyanate</p>
+            <p>Sodium cyanide</p>
+
+            <label for="check10_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    C ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check11_" class="check-">
+            <div>In the 20th century, ___ emerged as the dominant energy source?
+            </div>
+
+            <label for="check11_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Oil ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check12_" class="check-">
+            <div>___ is an antibiotic extracted from mold?
+            </div>
+
+            <label for="check12_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Yess, Penicillin ☺️
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check13_" class="check-">
+            <div>What are the three generally accepted sources of organic compounds?
+            </div>
+
+            <label for="check13_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Invention
+                    <br>Living organisms
+                    <br>Carbonized organic natter
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check14_" class="check-">
+            <div>Coal is mainly converted into other products through ____?
+            </div>
+
+            <label for="check14_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    ✅ Destructive distillation
+                    <br>
+                    <br>Mainly
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check15_" class="check-">
+            <div>Name three products of the destructive distillation of coal.
+                <br>
+                <br>Diversity (Different answers please)
+            </div>
+
+            <label for="check15_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Ammonical liquor
+                    <br>Coal tar
+                    <br>Coal gas
+                    <br>Gaseous carbon and coal oil as well ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check16_" class="check-">
+            <div>Mention a use of coal gas.
+            </div>
+
+            <label for="check16_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    As gaseous fuel
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check17_" class="check-">
+            <div>What is shale?
+            </div>
+
+            <label for="check17_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Shale is a type of sedimentary rock formed from the compression of layers of organic matter in an
+                    aquatic environment
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check18_" class="check-">
+            <div>Is there a difference between coal gas and wood gas ~ Confidence/Tekken
+            </div>
+
+            <label for="check18_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Wood gas is also called producergas
+                    <br>Formed from gasification
+                    <br>While coal gas is from destructive distillation
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check19_" class="check-">
+            <div>Are hydrocarbons only composed of carbon and hydrogen?
+            </div>
+
+            <label for="check19_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Yes
+                </span>
+            </label>
+        </div>
+    </div>
+
+    <a href="#">
+        <div class="up-btn-">
+            <div></div>
+        </div>
+    </a>
 
 
-        <div class="comments-section">
-            <h3>Comment</h3>
-            
-            <form id="comment-form">
-                <div class="name-">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Name" required>
-                </div>
-                
-                <div class="come-">
-                    <label for="comment">Comment:</label>
-                    <textarea id="comment" rows="6" placeholder="Write a comment" required></textarea>
-                </div>
-                
-                <button class="submit-" type="submit"><img src="../../Pictures/submit.png" alt=""></button>
-                <div class="status-" id="comment-submission-status"></div>
-            </form>
-        </div>
-        
-        <input type="checkbox" id="show_">
-        <label for="show_"><div class="show-btn-">Show Comments</div></label>
-        <div class="show-comments-">
-            <h3>Comments</h3>
-            <div id="comments-container"></div><!-- do not touch this -->
-        </div>
-        
-          
-        <script type="module" src="../../scripts/comments.js"></script>
+    <div class="comments-section">
+        <h3>Comment</h3>
+
+        <form id="comment-form">
+            <div class="name-">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Name" required>
+            </div>
+
+            <div class="come-">
+                <label for="comment">Comment:</label>
+                <textarea id="comment" rows="6" placeholder="Write a comment" required></textarea>
+            </div>
+
+            <button class="submit-" type="submit"><img src="../../Pictures/submit.png" alt=""></button>
+            <div class="status-" id="comment-submission-status"></div>
+        </form>
+    </div>
+
+    <input type="checkbox" id="show_">
+    <label for="show_">
+        <div class="show-btn-">Show Comments</div>
+    </label>
+    <div class="show-comments-">
+        <h3>Comments</h3>
+        <div id="comments-container"></div><!-- do not touch this -->
+    </div>
+
+
+    <script type="module" src="../../scripts/comments.js"></script>
+    <script src="../../scripts/Java.js"></script>
+    <script src="../../scripts/copy&paste.js"></script>
+
 </html>

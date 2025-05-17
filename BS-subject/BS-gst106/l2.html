@@ -1,557 +1,416 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../../Pictures">
-        <link rel="stylesheet" href="../../CSS/Subjects/general.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/head.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/title.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
-        <script src="../../scripts/Java.js"></script>
-    </head>
 
-    <body>
-        <div class="main-">
-            <div class="curtain-"  onclick="close_()" id="curtain"></div>
-            <div class="curtain-"  onclick="close_img()" id="curtain_img"></div>
+<head>
+    <link rel="stylesheet" href="../../Pictures">
+    <link rel="stylesheet" href="../../CSS/Subjects/general.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/head.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/title.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
+</head>
 
-            <div class="header1-">
-                <a href="../../index.html"><div><img src="../../Pictures/20250305_205006.jpg"></div></a>
-                <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
-                <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
-            
+<body>
+    <div class="main-">
+        <div class="curtain-" onclick="close_()" id="curtain"></div>
+        <div class="curtain-" onclick="close_img()" id="curtain_img"></div>
+
+        <div class="header1-">
+            <a href="../../index.html">
+                <div><img src="../../Pictures/20250305_205006.jpg"></div>
+            </a>
+            <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
+            <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
+
+        </div>
+        <!--navigation bar-->
+        <div class="header2-">
+            <a href="l1.html"><button><span>Lesson 1</span><span class="hidden-subject-">Health</span></button></a>
+            <a href="l2.html"><button class="selected-"><span>Alcoholism</span><span
+                        class="hidden-subject-">Alcoholism</span></button></a>
+        </div>
+
+
+        <!--Topic-->
+        <div class="title-">
+            <div class="sub-101-">
+                GST 106
             </div>
-            <!--navigation bar-->
-            <div class="header2-">
-                <a href="l1.html"><button><span>Lesson 1</span><span class="hidden-subject-">Health</span></button></a>
-                <a href="l2.html"><button class = "selected-"><span>Alcoholism</span><span class="hidden-subject-">Alcoholism</span></button></a>
-            </div>
-            
-            
-            <!--Topic-->
-            <div class="title-">
-                <div class="sub-101-">
-                    GST 106
+            <div class="change-">
+                <div class="before-">
+                    <a href="l1.html"><button class="before-btn-">Before</button></a>
+                    <div class="beforepop-">Health</div>
                 </div>
-                <div class="change-">
-                    <div class="before-">
-                        <a href="l1.html"><button class="before-btn-">Before</button></a>
-                        <div class="beforepop-">Health</div>
-                    </div>
-                    <div class="after-">
-                        <a href="l1.html"><button class="next-btn-">Next</button></a>
-                        <div class="afterpop-">Health</div>
-                    </div>
-                </div>
-                <div class="topic-">
-                    Alcoholism - 6/2/25
-                </div>
-            </div>
-
-            <!--side navigation-->
-            <div class="sidebar-" id="sidebar">
-                <div class="close-" onclick="close_()" id="close_">&times;</div>
-                <div>
-                    <input type="checkbox" id="side_sub1_" class="side-checkbox-">
-                    <label for="side_sub1_" >
-                        MTH 101 <span class="arw- mth101-arw-"></span>
-                        <ol class="subj-ol- mth101-ol-">
-                            <a href="../BS-mth101/l1.html"><li>Elemental set theory</li></a>
-                            <a href="../BS-mth101/l2.html"><li>Real numbers</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub2_" class="side-checkbox-">
-                    <label for="side_sub2_" >
-                        PHY 101 <span class="arw- phy101-arw-"></span>
-                        <ol class="subj-ol- phy101-ol-">
-                            <a href="../BS-phy101/l1.html"><li>Measurements, quantities, dimensions </li></a>
-                            <a href="../BS-phy101/l2.html"><li>Space, time, units and dimensions</li></a>
-                            <a href="../BS-phy101/l3.html"><li>Newton's laws of motion</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub3_" class="side-checkbox-">
-                    <label for="side_sub3_" >
-                        COS 101 <span class="arw- cos101-arw-"></span>
-                        <ol class="subj-ol- cos101-ol-">
-                            <a href="../BS-cos101/l1.html"><li>Computer</li></a>
-                            <a href="../BS-cos101/l2.html"><li>Structure of the computer</li></a>
-                            <a href="../BS-cos101/l3.html"><li>Computing history</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub4_" class="side-checkbox-">
-                    <label for="side_sub4_" >
-                        GST 106 <span class="arw- gst106-arw-"></span>
-                        <ol class="subj-ol- gst106-ol-">
-                            <a href="../BS-gst106/l1.html"><li>Health</li></a>
-                            <a href="../BS-gst106/l2.html"><li>Alcoholism</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub5_" class="side-checkbox-">
-                    <label for="side_sub5_" >
-                        GST 107 <span class="arw- gst107-arw-"></span>
-                        <ol class="subj-ol- gst107-ol-">
-                            <a href="../BS-gst107/l1.html"><li>Word formation</li></a>
-                            <a href="../BS-gst107/l2.html"><li>Communication</li></a>
-                            <a href="../BS-gst107/l3.html"><li>Spoken English</li></a>
-                            <a href="../BS-gst107/l4.html"><li>Reading, listening skills, listening skills</li></a>
-                            <a href="../BS-gst107/l5.html"><li>Word formation</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub6_" class="side-checkbox-">
-                    <label for="side_sub6_" >
-                        CHM 101 <span class="arw- chm101-arw-"></span>
-                        <ol class="subj-ol- chm101-ol-">
-                            <a href="../BS-chm101/l1.html"><li>Atoms, molecules and compounds</li></a>
-                            <a href="../BS-chm101/l2.html"><li>Elements, Atomic numbers, Mass numbers and Isotopes</li></a>
-                            <a href="../BS-chm101/l3.html"><li>Still under elements, atomic number</li></a>
-                            <a href="../BS-chm101/l4.html"><li>German obj</li></a>
-                            <a href="../BS-chm101/l5.html"><li>German obj part 2</li></a>
-                        </ol>
-                    </label>
-                </div> 
-
-                <div>
-                    <input type="checkbox" id="side_sub7_" class="side-checkbox-">
-                    <label for="side_sub7_" >
-                        BIO 101 <span class="arw- bio101-arw-"></span>
-                        <ol class="subj-ol- bio101-ol-">
-                            <a href="../BS-bio101/l1.html"><li>Ecology</li></a>
-                            <a href="../BS-bio101/l2.html"><li>Cell structure</li></a>
-                            <a href="../BS-bio101/l3.html"><li>Kingdom plantae</li></a>
-                            <a href="../BS-bio101/l4.html"><li>Bio Doc</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub8_" class="side-checkbox-">
-                    <label for="side_sub8_" >
-                        General <span class="arw- general-arw-"></span>
-                        <ol class="subj-ol- general-ol-">
-                            <a href="../BS-general/l1.html"><li>Random questions</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub9_" class="side-checkbox-">
-                    <label for="side_sub9_" >
-                        CHM 111 <span class="arw- chm111-arw-"></span>
-                        <ol class="subj-ol- chm111-ol-">
-                            <a href="../BS-chm111/l1.html"><li>Introduction to organic chemistry</li></a>
-                            <a href="../BS-chm111/l2.html"><li>Classification of organic compounds</li></a>
-                            <a href="../BS-chm111/l3.html"><li>Functional groups and homologous series</li></a>
-                            <a href="../BS-chm111/l4.html"><li>Naming organic compounds</li></a>
-                            <a href="../BS-chm111/l5.html"><li>Naming organic compounds part 2</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub10_" class="side-checkbox-">
-                    <label for="side_sub10_" >
-                        BIO 112 <span class="arw- bio112-arw-"></span>
-                        <ol class="subj-ol- bio112-ol-">
-                            <a href="../BS-bio112/l1.html"><li>Diversity of living organisms</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub11_" class="side-checkbox-">
-                    <label for="side_sub11_" >
-                        PHY 111 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-phy111/l1.html"><li>Coulomb's law</li></a>
-                            <a href="../BS-phy111/l2.html"><li>Electricity 1</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub12_" class="side-checkbox-">
-                    <label for="side_sub12_" >
-                        MTH 111 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-mth111/l1.html"><li>Limits & Functions</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub13_" class="side-checkbox-">
-                    <label for="side_sub13_" >
-                        GST 115 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-gst115/l1.html"><li>Physical features of Nigeria</li></a>
-                        </ol>
-                    </label>
+                <div class="after-">
+                    <a href="l1.html"><button class="next-btn-">Next</button></a>
+                    <div class="afterpop-">Health</div>
                 </div>
             </div>
-
-
-            <div id="imgbox_" class="imgbox-"></div>
-
-            <!--Questions-->
-            <div class="questions-">
-                <input type="checkbox" id="check1_"  class="check-">
-                <div>What is the chemical formula of the alcohol commonly consumed by humans?
-                </div>
-                
-                <p class="ans-">C2H5OH</p>
-                <p>C6H12O6</p>
-                <p>CH3OH</p>
-                <p>C3H7OH</p>
-
-                <label for="check1_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        A✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check2_" class="check-">
-                <div>What is the actual cause of an hangover
-                </div>
-
-                <p>mixing different types of drinks</p>
-                <p class="ans-">Drinking too much alcohol</p>
-                <p>Drinking bear instead of wine</p>
-                <p>Consuming alcohol on an empty stomach</p>
-
-                <label for="check2_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check3_" class="check-">
-                <div>Which term is used to describe the inability to recall event that occured while drinking excessively 
-                </div>
-
-                <p class="ans-">Black out</p>
-                <p>Acute hangover</p>
-                <p>Bender</p>
-                <p>Loss of control</p>
-
-                <label for="check3_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        A✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check4_" class="check-">
-                <div>Which of the following is not listed as a step to alcoholism 
-                </div>
-
-                <p>social drinking</p>
-                <p>lone drinking</p>
-                <p>loss of control</p>
-                <p class="ans-">medical treatment</p>
-
-                <label for="check4_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        D✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check5_" class="check-">
-                <div>Which of the following is not mentioned as a counter measure to drinking alcohol 
-                </div>
-
-                <p>counselling</p>
-                <p>Hypnotism</p>
-                <p class="ans-">Exercising regularly</p>
-                <p>Gradual withdrawal</p>
-
-                <label for="check5_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C✅
-                        <br>While counseling, hypnotism, and gradual withdrawal are commonly discussed as countermeasures to help manage alcohol consumption, exercising regularly is not typically listed as a direct countermeasure to alcohol use.
-                        <br>
-                        <br>Exercising regularly can improve overall health and well-being, which doesn't support someone in their recovery or help reduce alcohol cravings.
-                        </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check6_" class="check-">
-                <div>What is the botanical genus of tobacco 
-                </div>
-
-                <p>Solanum</p>
-                <p>Cannabis</p>
-                <p>Eryngium</p>
-                <p class="ans-">Nicotiana</p>
-
-                <label for="check6_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        D✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check7_" class="check-">
-                <div>Which factor influence the amount of nicotine a smoker inhales
-                </div>
-
-                <p>The color of the tobacco</p>
-                <p class="ans-">The length of the cigarettes smoked</p>
-                <p>THe flavour of the tobacco</p>
-                <p>The price of the tobacco</p>
-
-                <label for="check7_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check8_" class="check-">
-                <div>-------- substance in tobacco smoke is known for its carcinogenic qualities and cause damage to ciliated cells in the respiratory passage
-                </div>
-
-                <p>Nicotine</p>
-                <p>oxygen</p>
-                <p>CO2</p>
-                <p class="ans-">Tars</p>
-
-                <label for="check8_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        D✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check9_" class="check-">
-                <div>Which of the following is suggested as a way to quit smoking 
-                </div>
-
-                <p>associate with smokers</p>
-                <p>Take coffee and cigarettes after meals</p>
-                <p>Avoid places where smoking is not tolerated</p>
-                <p class="ans-">Attend anti smoking lectures and campaign</p>
-
-                <label for="check9_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        D✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check10_" class="check-">
-                <div>What does "alcoholism" mean?
-                </div>
-
-                <p class="ans-">A disorder caused by drinking too much alcohol regularly</p>
-                <p>A type of alcohol</p>
-                <p>Drinking occasionally for fun</p>
-                <p>Never drinking alcohol</p>
-
-                <label for="check10_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        A✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check11_" class="check-">
-                <div>Which of the following is a common treatment for alcoholism?
-                </div>
-
-                <p>Increasing alcohol intake</p>
-                <p class="ans-">Therapy or counseling</p>
-                <p>Ignoring the problem</p>
-                <p>Drinking less water</p>
-
-                <label for="check11_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check12_" class="check-">
-                <div>Which of the following is a type of alcoholic drink?
-                </div>
-
-                <p>Soda</p>
-                <p>Water</p>
-                <p class="ans-">Beer</p>
-                <p>Juice</p>
-
-                <label for="check12_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check13_" class="check-">
-                <div>What is the most common reason people start drinking alcohol?
-                </div>
-
-                <p>To stay healthy</p>
-                <p class="ans-">To fit in with friends</p>
-                <p>To cure a headache</p>
-                <p>To improve memory</p>
-
-                <label for="check13_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check14_" class="check-">
-                <div>What is the primary effect of alcohol on the body?
-                </div>
-
-                <p>It makes you smarter</p>
-                <p class="ans-">It depresses the nervous system</p>
-                <p>It speeds up brain activity</p>
-                <p>It improves memory</p>
-
-                <label for="check14_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check15_" class="check-">
-                <div>Which of the following is NOT a risk of heavy drinking?
-                </div>
-
-                <p>Liver damage</p>
-                <p>Increased blood pressure</p>
-                <p class="ans-">Stronger immune system</p>
-                <p>Increased risk of cancer</p>
-
-                <label for="check15_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check16_" class="check-">
-                <div>What is described as one of the main contributors to the health hazards of tobacco?
-                </div>
-
-                <p>Water vapor</p>
-                <p class="ans-">Nicotine, tar, and carbon monoxide</p>
-                <p>Vitamin C</p>
-                <p>Carbon dioxide</p>
-
-                <label for="check16_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check17_" class="check-">
-                <div>What is the difference between medicine and drug 
-                </div>
-
-                <p>All drugs are medicines but not all medicine are drug</p>
-                <p>medicines are used for recreational purpose while drug are used for treatment</p>
-                <p class="ans-">All medicines contains drugs but not all drugs are medicines</p>
-                <p>drugs are for long term use while medicine are for short term use</p>
-
-                <label for="check17_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C✅
-                    </span>
-                </label>
+            <div class="topic-">
+                Alcoholism - 6/2/25
             </div>
         </div>
 
-        <a href="#">
-            <div class="up-btn-">
-                <div></div>
+        <!--side navigation-->
+        <div class="sidebar-" id="sidebar"></div>
+
+
+        <div id="imgbox_" class="imgbox-"></div>
+
+        <!--Questions-->
+        <div class="questions-">
+            <input type="checkbox" id="check1_" class="check-">
+            <div>What is the chemical formula of the alcohol commonly consumed by humans?
             </div>
-        </a>
+
+            <p class="ans-">C2H5OH</p>
+            <p>C6H12O6</p>
+            <p>CH3OH</p>
+            <p>C3H7OH</p>
+
+            <label for="check1_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    A✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check2_" class="check-">
+            <div>What is the actual cause of an hangover
+            </div>
+
+            <p>mixing different types of drinks</p>
+            <p class="ans-">Drinking too much alcohol</p>
+            <p>Drinking bear instead of wine</p>
+            <p>Consuming alcohol on an empty stomach</p>
+
+            <label for="check2_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check3_" class="check-">
+            <div>Which term is used to describe the inability to recall event that occured while drinking excessively
+            </div>
+
+            <p class="ans-">Black out</p>
+            <p>Acute hangover</p>
+            <p>Bender</p>
+            <p>Loss of control</p>
+
+            <label for="check3_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    A✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check4_" class="check-">
+            <div>Which of the following is not listed as a step to alcoholism
+            </div>
+
+            <p>social drinking</p>
+            <p>lone drinking</p>
+            <p>loss of control</p>
+            <p class="ans-">medical treatment</p>
+
+            <label for="check4_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    D✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check5_" class="check-">
+            <div>Which of the following is not mentioned as a counter measure to drinking alcohol
+            </div>
+
+            <p>counselling</p>
+            <p>Hypnotism</p>
+            <p class="ans-">Exercising regularly</p>
+            <p>Gradual withdrawal</p>
+
+            <label for="check5_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    C✅
+                    <br>While counseling, hypnotism, and gradual withdrawal are commonly discussed as countermeasures to
+                    help manage alcohol consumption, exercising regularly is not typically listed as a direct
+                    countermeasure to alcohol use.
+                    <br>
+                    <br>Exercising regularly can improve overall health and well-being, which doesn't support someone in
+                    their recovery or help reduce alcohol cravings.
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check6_" class="check-">
+            <div>What is the botanical genus of tobacco
+            </div>
+
+            <p>Solanum</p>
+            <p>Cannabis</p>
+            <p>Eryngium</p>
+            <p class="ans-">Nicotiana</p>
+
+            <label for="check6_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    D✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check7_" class="check-">
+            <div>Which factor influence the amount of nicotine a smoker inhales
+            </div>
+
+            <p>The color of the tobacco</p>
+            <p class="ans-">The length of the cigarettes smoked</p>
+            <p>THe flavour of the tobacco</p>
+            <p>The price of the tobacco</p>
+
+            <label for="check7_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check8_" class="check-">
+            <div>-------- substance in tobacco smoke is known for its carcinogenic qualities and cause damage to
+                ciliated cells in the respiratory passage
+            </div>
+
+            <p>Nicotine</p>
+            <p>oxygen</p>
+            <p>CO2</p>
+            <p class="ans-">Tars</p>
+
+            <label for="check8_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    D✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check9_" class="check-">
+            <div>Which of the following is suggested as a way to quit smoking
+            </div>
+
+            <p>associate with smokers</p>
+            <p>Take coffee and cigarettes after meals</p>
+            <p>Avoid places where smoking is not tolerated</p>
+            <p class="ans-">Attend anti smoking lectures and campaign</p>
+
+            <label for="check9_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    D✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check10_" class="check-">
+            <div>What does "alcoholism" mean?
+            </div>
+
+            <p class="ans-">A disorder caused by drinking too much alcohol regularly</p>
+            <p>A type of alcohol</p>
+            <p>Drinking occasionally for fun</p>
+            <p>Never drinking alcohol</p>
+
+            <label for="check10_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    A✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check11_" class="check-">
+            <div>Which of the following is a common treatment for alcoholism?
+            </div>
+
+            <p>Increasing alcohol intake</p>
+            <p class="ans-">Therapy or counseling</p>
+            <p>Ignoring the problem</p>
+            <p>Drinking less water</p>
+
+            <label for="check11_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check12_" class="check-">
+            <div>Which of the following is a type of alcoholic drink?
+            </div>
+
+            <p>Soda</p>
+            <p>Water</p>
+            <p class="ans-">Beer</p>
+            <p>Juice</p>
+
+            <label for="check12_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    C✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check13_" class="check-">
+            <div>What is the most common reason people start drinking alcohol?
+            </div>
+
+            <p>To stay healthy</p>
+            <p class="ans-">To fit in with friends</p>
+            <p>To cure a headache</p>
+            <p>To improve memory</p>
+
+            <label for="check13_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check14_" class="check-">
+            <div>What is the primary effect of alcohol on the body?
+            </div>
+
+            <p>It makes you smarter</p>
+            <p class="ans-">It depresses the nervous system</p>
+            <p>It speeds up brain activity</p>
+            <p>It improves memory</p>
+
+            <label for="check14_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check15_" class="check-">
+            <div>Which of the following is NOT a risk of heavy drinking?
+            </div>
+
+            <p>Liver damage</p>
+            <p>Increased blood pressure</p>
+            <p class="ans-">Stronger immune system</p>
+            <p>Increased risk of cancer</p>
+
+            <label for="check15_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    C✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check16_" class="check-">
+            <div>What is described as one of the main contributors to the health hazards of tobacco?
+            </div>
+
+            <p>Water vapor</p>
+            <p class="ans-">Nicotine, tar, and carbon monoxide</p>
+            <p>Vitamin C</p>
+            <p>Carbon dioxide</p>
+
+            <label for="check16_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check17_" class="check-">
+            <div>What is the difference between medicine and drug
+            </div>
+
+            <p>All drugs are medicines but not all medicine are drug</p>
+            <p>medicines are used for recreational purpose while drug are used for treatment</p>
+            <p class="ans-">All medicines contains drugs but not all drugs are medicines</p>
+            <p>drugs are for long term use while medicine are for short term use</p>
+
+            <label for="check17_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    C✅
+                </span>
+            </label>
+        </div>
+    </div>
+
+    <a href="#">
+        <div class="up-btn-">
+            <div></div>
+        </div>
+    </a>
 
 
-        <div class="comments-section">
-            <h3>Comment</h3>
-            
-            <form id="comment-form">
-                <div class="name-">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Name" required>
-                </div>
-                
-                <div class="come-">
-                    <label for="comment">Comment:</label>
-                    <textarea id="comment" rows="6" placeholder="Write a comment" required></textarea>
-                </div>
-                
-                <button class="submit-" type="submit"><img src="../../Pictures/submit.png" alt=""></button>
-                <div class="status-" id="comment-submission-status"></div>
-            </form>
-        </div>
-        
-        <input type="checkbox" id="show_">
-        <label for="show_"><div class="show-btn-">Show Comments</div></label>
-        <div class="show-comments-">
-            <h3>Comments</h3>
-            <div id="comments-container"></div><!-- do not touch this -->
-        </div>
-        
-          
-        <script type="module" src="../../scripts/comments.js"></script>
+    <div class="comments-section">
+        <h3>Comment</h3>
+
+        <form id="comment-form">
+            <div class="name-">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Name" required>
+            </div>
+
+            <div class="come-">
+                <label for="comment">Comment:</label>
+                <textarea id="comment" rows="6" placeholder="Write a comment" required></textarea>
+            </div>
+
+            <button class="submit-" type="submit"><img src="../../Pictures/submit.png" alt=""></button>
+            <div class="status-" id="comment-submission-status"></div>
+        </form>
+    </div>
+
+    <input type="checkbox" id="show_">
+    <label for="show_">
+        <div class="show-btn-">Show Comments</div>
+    </label>
+    <div class="show-comments-">
+        <h3>Comments</h3>
+        <div id="comments-container"></div><!-- do not touch this -->
+    </div>
+
+
+    <script type="module" src="../../scripts/comments.js"></script>
+    <script src="../../scripts/Java.js"></script>
+    <script src="../../scripts/copy&paste.js"></script>
+
 </html>

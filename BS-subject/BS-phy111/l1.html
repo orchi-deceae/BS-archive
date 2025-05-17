@@ -1,430 +1,294 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../../Pictures">
-        <link rel="stylesheet" href="../../CSS/Subjects/general.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/head.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/title.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
-        <script src="../../scripts/Java.js"></script>
-    </head>
 
-    <body>
-        <div class="main-">
-            <div class="curtain-"  onclick="close_()" id="curtain"></div>
-            <div class="curtain-"  onclick="close_img()" id="curtain_img"></div>
+<head>
+    <link rel="stylesheet" href="../../Pictures">
+    <link rel="stylesheet" href="../../CSS/Subjects/general.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/head.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/title.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
+</head>
 
-            <div class="header1-">
-                <a href="../../index.html"><div><img src="../../Pictures/20250305_205006.jpg"></div></a>
-                <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
-                <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
-            
+<body>
+    <div class="main-">
+        <div class="curtain-" onclick="close_()" id="curtain"></div>
+        <div class="curtain-" onclick="close_img()" id="curtain_img"></div>
+
+        <div class="header1-">
+            <a href="../../index.html">
+                <div><img src="../../Pictures/20250305_205006.jpg"></div>
+            </a>
+            <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
+            <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
+
+        </div>
+        <!--navigation bar-->
+        <div class="header2-">
+            <a href="l1.html"><button class="selected-"><span>Coulomb's law</span><span class="hidden-subject-">Coulomb's law</span></button></a>
+            <a href="l2.html"><button><span>Lesson 2</span><span class="hidden-subject-">Electricity 1</span></button></a>
+            <a href="l3.html"><button><span>Lesson 3</span><span class="hidden-subject-">Energy</span></button></a>
+            <a href="l4.html"><button><span>Lesson 4</span><span class="hidden-subject-">Charge</span></button></a>
+        </div>
+
+
+        <!--Topic-->
+        <div class="title-">
+            <div class="sub-101-">
+                PHY 111
             </div>
-            <!--navigation bar-->
-            <div class="header2-">
-                <a href="l1.html"><button class = "selected-"><span>Coulomb's law</span><span class="hidden-subject-">Coulomb's law</span></button></a>
-                <a href="l2.html"><button><span>Lesson 2</span><span class="hidden-subject-">Electricity 1</span></button></a>
-            </div>
-            
-            
-            <!--Topic-->
-            <div class="title-">
-                <div class="sub-101-">
-                    PHY 111
+            <div class="change-">
+                <div class="before-">
+                    <a href="l4.html"><button class="before-btn-">Before</button></a>
+                    <div class="beforepop-">Charge</div>
                 </div>
-                <div class="change-">
-                    <div class="before-">
-                        <a href="l2.html"><button class="before-btn-">Before</button></a>
-                        <div class="beforepop-">Coulomb's law</div>
-                    </div>
-                    <div class="after-">
-                        <a href="l2.html"><button class="next-btn-">Next</button></a>
-                        <div class="afterpop-">Electricity 1</div>
-                    </div>
-                </div>
-                <div class="topic-">
-                    Coulomb's law - 10/4/25
-                </div>
-            </div>
-
-            <!--side navigation-->
-            <div class="sidebar-" id="sidebar">
-                <div class="close-" onclick="close_()" id="close_">&times;</div>
-                <div>
-                    <input type="checkbox" id="side_sub1_" class="side-checkbox-">
-                    <label for="side_sub1_" >
-                        MTH 101 <span class="arw- mth101-arw-"></span>
-                        <ol class="subj-ol- mth101-ol-">
-                            <a href="../BS-mth101/l1.html"><li>Elemental set theory</li></a>
-                            <a href="../BS-mth101/l2.html"><li>Real numbers</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub2_" class="side-checkbox-">
-                    <label for="side_sub2_" >
-                        PHY 101 <span class="arw- phy101-arw-"></span>
-                        <ol class="subj-ol- phy101-ol-">
-                            <a href="../BS-phy101/l1.html"><li>Measurements, quantities, dimensions </li></a>
-                            <a href="../BS-phy101/l2.html"><li>Space, time, units and dimensions</li></a>
-                            <a href="../BS-phy101/l3.html"><li>Newton's laws of motion</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub3_" class="side-checkbox-">
-                    <label for="side_sub3_" >
-                        COS 101 <span class="arw- cos101-arw-"></span>
-                        <ol class="subj-ol- cos101-ol-">
-                            <a href="../BS-cos101/l1.html"><li>Computer</li></a>
-                            <a href="../BS-cos101/l2.html"><li>Structure of the computer</li></a>
-                            <a href="../BS-cos101/l3.html"><li>Computing history</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub4_" class="side-checkbox-">
-                    <label for="side_sub4_" >
-                        GST 106 <span class="arw- gst106-arw-"></span>
-                        <ol class="subj-ol- gst106-ol-">
-                            <a href="../BS-gst106/l1.html"><li>Health</li></a>
-                            <a href="../BS-gst106/l2.html"><li>Alcoholism</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub5_" class="side-checkbox-">
-                    <label for="side_sub5_" >
-                        GST 107 <span class="arw- gst107-arw-"></span>
-                        <ol class="subj-ol- gst107-ol-">
-                            <a href="../BS-gst107/l1.html"><li>Word formation</li></a>
-                            <a href="../BS-gst107/l2.html"><li>Communication</li></a>
-                            <a href="../BS-gst107/l3.html"><li>Spoken English</li></a>
-                            <a href="../BS-gst107/l4.html"><li>Reading, listening skills, listening skills</li></a>
-                            <a href="../BS-gst107/l5.html"><li>Word formation</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub6_" class="side-checkbox-">
-                    <label for="side_sub6_" >
-                        CHM 101 <span class="arw- chm101-arw-"></span>
-                        <ol class="subj-ol- chm101-ol-">
-                            <a href="../BS-chm101/l1.html"><li>Atoms, molecules and compounds</li></a>
-                            <a href="../BS-chm101/l2.html"><li>Elements, Atomic numbers, Mass numbers and Isotopes</li></a>
-                            <a href="../BS-chm101/l3.html"><li>Still under elements, atomic number</li></a>
-                            <a href="../BS-chm101/l4.html"><li>German obj</li></a>
-                            <a href="../BS-chm101/l5.html"><li>German obj part 2</li></a>
-                        </ol>
-                    </label>
-                </div> 
-
-                <div>
-                    <input type="checkbox" id="side_sub7_" class="side-checkbox-">
-                    <label for="side_sub7_" >
-                        BIO 101 <span class="arw- bio101-arw-"></span>
-                        <ol class="subj-ol- bio101-ol-">
-                            <a href="../BS-bio101/l1.html"><li>Ecology</li></a>
-                            <a href="../BS-bio101/l2.html"><li>Cell structure</li></a>
-                            <a href="../BS-bio101/l3.html"><li>Kingdom plantae</li></a>
-                            <a href="../BS-bio101/l4.html"><li>Bio Doc</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub8_" class="side-checkbox-">
-                    <label for="side_sub8_" >
-                        General <span class="arw- general-arw-"></span>
-                        <ol class="subj-ol- general-ol-">
-                            <a href="../BS-general/l1.html"><li>Random questions</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub9_" class="side-checkbox-">
-                    <label for="side_sub9_" >
-                        CHM 111 <span class="arw- chm111-arw-"></span>
-                        <ol class="subj-ol- chm111-ol-">
-                            <a href="../BS-chm111/l1.html"><li>Introduction to organic chemistry</li></a>
-                            <a href="../BS-chm111/l2.html"><li>Classification of organic compounds</li></a>
-                            <a href="../BS-chm111/l3.html"><li>Functional groups and homologous series</li></a>
-                            <a href="../BS-chm111/l4.html"><li>Naming organic compounds</li></a>
-                            <a href="../BS-chm111/l5.html"><li>Naming organic compounds part 2</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub10_" class="side-checkbox-">
-                    <label for="side_sub10_" >
-                        BIO 112 <span class="arw- bio112-arw-"></span>
-                        <ol class="subj-ol- bio112-ol-">
-                            <a href="../BS-bio112/l1.html"><li>Diversity of living organisms</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub11_" class="side-checkbox-">
-                    <label for="side_sub11_" >
-                        PHY 111 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-phy111/l1.html"><li>Coulomb's law</li></a>
-                            <a href="../BS-phy111/l2.html"><li>Electricity 1</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub12_" class="side-checkbox-">
-                    <label for="side_sub12_" >
-                        MTH 111 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-mth111/l1.html"><li>Limits & Functions</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub13_" class="side-checkbox-">
-                    <label for="side_sub13_" >
-                        GST 115 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-gst115/l1.html"><li>Physical features of Nigeria</li></a>
-                        </ol>
-                    </label>
+                <div class="after-">
+                    <a href="l2.html"><button class="next-btn-">Next</button></a>
+                    <div class="afterpop-">Electricity 1</div>
                 </div>
             </div>
-            
+            <div class="topic-">
+                Coulomb's law - 10/4/25
+            </div>
+        </div>
 
-            <div id="imgbox_" class="imgbox-"></div>
+        <!--side navigation-->
+        <div class="sidebar-" id="sidebar"></div>
 
-            <!--Questions-->
-            <div class="questions-">
-                <input type="checkbox" id="check1_"  class="check-">
-                <div>Which of the following is the general formula described by coulomb's law?
+
+        <div id="imgbox_" class="imgbox-"></div>
+
+        <!--Questions-->
+        <div class="questions-">
+            <input type="checkbox" id="check1_" class="check-">
+            <div>Which of the following is the general formula described by coulomb's law?
+                <br>
+                <br>A) F = Kq/r²
+                <br>B) F = Kq²/r²
+                <br>C) F = Kqr²
+                <br><span class="ans-">D) F = Kq1q2/r²</span>
+            </div>
+
+            <label for="check1_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    D
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check2_" class="check-">
+            <div>Why not B?
+            </div>
+
+            <label for="check2_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    F is proportional to q1 q2/r²
+                    <br>Add a constant then get
+                    <br>F=kq1q2/r²
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check3_" class="check-">
+            <div>In what case is B true?
+            </div>
+
+            <label for="check3_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    When both charges are equal In magnitude
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check4_" class="check-">
+            <div>State coulomb's law
+            </div>
+
+            <label for="check4_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Columb's law states that the electric force btw 2 point charges is directly proportional to the
+                    product and inversely proportional to the spare ot the distance btw them
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check5_" class="check-">
+            <div>As the distance between two points charges decrease, the force ____?
+            </div>
+
+            <label for="check5_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    It increases
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check6_" class="check-">
+            <div>Explain
+            </div>
+
+            <label for="check6_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    According to Coulomb's Law, the electrostatic force between two point charges is inversely
+                    proportional to the square of the distance between them. As the distance decreases, the force
+                    increases rapidly.
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check7_" class="check-">
+            <div>In relation to the forces of attraction and repulsion, differentiate the Electric Field from the
+                Gravitational Field.
+            </div>
+
+            <label for="check7_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Electric field exhibit both attraction and repulsion while gravitational field exhibit only
+                    attraction
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check8_" class="check-">
+            <div>Mention three methods of producing charges
+            </div>
+
+            <label for="check8_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Friction, conduction, induction
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check9_" class="check-">
+            <div>Two bodies each carrying a charge of 2.00 × 10 -¹⁰ C are 5cm apart. Calculate the magnitude of the
+                force between two charges.
+                <br>So let's list out the parameters given
+                <br>We were given q and r
+                <br>q is?
+                <br>r is?
+            </div>
+
+            <label for="check9_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    F = K Q1 Q2/r²
                     <br>
-                    <br>A) F = Kq/r²
-                    <br>B) F = Kq²/r²
-                    <br>C) F = Kqr²
-                    <br><span class="ans-">D) F = Kq1q2/r²</span>
-                    </div>
-
-                <label for="check1_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        D
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check2_" class="check-">
-                <div>Why not B?
-                </div>
-
-                <label for="check2_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        F is proportional to q1 q2/r²
-                        <br>Add a constant then get 
-                        <br>F=kq1q2/r²
-                        </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check3_" class="check-">
-                <div>In what case is B true?
-                </div>
-
-                <label for="check3_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        When both charges are equal In magnitude
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check4_" class="check-">
-                <div>State coulomb's law
-                </div>
-
-                <label for="check4_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Columb's law states that the electric force btw 2 point charges is directly proportional to the product and inversely proportional to the spare ot the distance btw them
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check5_" class="check-">
-                <div>As the distance between two points charges decrease, the force ____?
-                </div>
-
-                <label for="check5_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        It increases
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check6_" class="check-">
-                <div>Explain
-                </div>
-
-                <label for="check6_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        According to Coulomb's Law, the electrostatic force between two point charges is inversely proportional to the square of the distance between them. As the distance decreases, the force increases rapidly.
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check7_" class="check-">
-                <div>In relation to the forces of attraction and repulsion, differentiate the Electric Field from the Gravitational Field.
-                </div>
-
-                <label for="check7_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Electric field exhibit both attraction and repulsion while gravitational field exhibit only attraction
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check8_" class="check-">
-                <div>Mention three methods of producing charges
-                </div>
-
-                <label for="check8_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Friction, conduction, induction
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check9_" class="check-">
-                <div>Two bodies each carrying a charge of 2.00 × 10 -¹⁰ C are 5cm apart. Calculate the magnitude of the force between two charges.
-                    <br>So let's list out the parameters given
-                    <br>We were given q and r
-                    <br>q is?
-                    <br>r is?
-                    </div>
-
-                <label for="check9_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        F = K Q1 Q2/r²
-                        <br>
-                        <br>Q = 2.00x10^-10C
-                        <br>R= 5cm = 0.05m
-                        <br>K = 9 × 10⁹ Nm²C-²
-                        <br>
-                        <br>F = 9 × 10⁹ (2.00x10^-10)²/(0.05)²
-                        <br>
-                        <br>F = 9 × 10⁹ (4 x 10^-20)/(2.5×10^-³)
-                        <br>
-                        <br>F = 36 × 10^-11 / 2.5×10^-3
-                        <br>
-                        <br>F = 14.4 × 10^-11+3
-                        <br>
-                        <br>F = 14.4 × 10^-8 = 1.44 × 10^-7
-                        </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check10_" class="check-">
-                <div>An electron is at a distance of 5.0×10^-11m away from the centre of a proton. Calculate the electrostatic force on it.
-                    <br>[Electron charge = -1.6 × 10^-19C,
-                    <br>Proton charge = +1.6 × 10^-19C,
-                    <br>K = 9 × 10⁹ Nm²C-²]
-                    </div>
-
-                <label for="check10_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        F = K Q1 Q2/r²,
-                        <br>K = 9 × 10⁹ Nm²C-², 
-                        <br>Q1 = -1.6 × 10^-19C, 
-                        <br>Q2 = +1.6 × 10^-19C, 
-                        <br>R = 5.0×10^-11m
-                        <br>
-                        <br>F = (9 × 10⁹) × (1.6 × 10^-19) × (1.6 × 10^-19) / (5.0×10^-11)²
-                        <br>
-                        <br>F = 23.04 × 10^-29 / (25 × 10^-22)
-                        <br>
-                        <br>F = 0.92 × 10^-7 = 9.2 × 10^-8
-                        </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check11_"  class="check-">
-                <div>What is a charge?
-                </div>
-
-                <label for="check11_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Fundamental property of matter that causes it to experience force when put in an electric and magnetic field
-                        <br>Like dat sha
-                        </span>
-                </label>
-            </div>
+                    <br>Q = 2.00x10^-10C
+                    <br>R= 5cm = 0.05m
+                    <br>K = 9 × 10⁹ Nm²C-²
+                    <br>
+                    <br>F = 9 × 10⁹ (2.00x10^-10)²/(0.05)²
+                    <br>
+                    <br>F = 9 × 10⁹ (4 x 10^-20)/(2.5×10^-³)
+                    <br>
+                    <br>F = 36 × 10^-11 / 2.5×10^-3
+                    <br>
+                    <br>F = 14.4 × 10^-11+3
+                    <br>
+                    <br>F = 14.4 × 10^-8 = 1.44 × 10^-7
+                </span>
+            </label>
         </div>
 
-        <a href="#">
-            <div class="up-btn-">
-                <div></div>
+        <div class="questions-">
+            <input type="checkbox" id="check10_" class="check-">
+            <div>An electron is at a distance of 5.0×10^-11m away from the centre of a proton. Calculate the
+                electrostatic force on it.
+                <br>[Electron charge = -1.6 × 10^-19C,
+                <br>Proton charge = +1.6 × 10^-19C,
+                <br>K = 9 × 10⁹ Nm²C-²]
             </div>
-        </a>
+
+            <label for="check10_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    F = K Q1 Q2/r²,
+                    <br>K = 9 × 10⁹ Nm²C-²,
+                    <br>Q1 = -1.6 × 10^-19C,
+                    <br>Q2 = +1.6 × 10^-19C,
+                    <br>R = 5.0×10^-11m
+                    <br>
+                    <br>F = (9 × 10⁹) × (1.6 × 10^-19) × (1.6 × 10^-19) / (5.0×10^-11)²
+                    <br>
+                    <br>F = 23.04 × 10^-29 / (25 × 10^-22)
+                    <br>
+                    <br>F = 0.92 × 10^-7 = 9.2 × 10^-8
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check11_" class="check-">
+            <div>What is a charge?
+            </div>
+
+            <label for="check11_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Fundamental property of matter that causes it to experience force when put in an electric and
+                    magnetic field
+                    <br>Like dat sha
+                </span>
+            </label>
+        </div>
+    </div>
+
+    <a href="#">
+        <div class="up-btn-">
+            <div></div>
+        </div>
+    </a>
 
 
-        <div class="comments-section">
-            <h3>Comment</h3>
-            
-            <form id="comment-form">
-                <div class="name-">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Name" required>
-                </div>
-                
-                <div class="come-">
-                    <label for="comment">Comment:</label>
-                    <textarea id="comment" rows="6" placeholder="Write a comment" required></textarea>
-                </div>
-                
-                <button class="submit-" type="submit"><img src="../../Pictures/submit.png" alt=""></button>
-                <div class="status-" id="comment-submission-status"></div>
-            </form>
-        </div>
-        
-        <input type="checkbox" id="show_">
-        <label for="show_"><div class="show-btn-">Show Comments</div></label>
-        <div class="show-comments-">
-            <h3>Comments</h3>
-            <div id="comments-container"></div><!-- do not touch this -->
-        </div>
-        
-          
-        <script type="module" src="../../scripts/comments.js"></script>
+    <div class="comments-section">
+        <h3>Comment</h3>
+
+        <form id="comment-form">
+            <div class="name-">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Name" required>
+            </div>
+
+            <div class="come-">
+                <label for="comment">Comment:</label>
+                <textarea id="comment" rows="6" placeholder="Write a comment" required></textarea>
+            </div>
+
+            <button class="submit-" type="submit"><img src="../../Pictures/submit.png" alt=""></button>
+            <div class="status-" id="comment-submission-status"></div>
+        </form>
+    </div>
+
+    <input type="checkbox" id="show_">
+    <label for="show_">
+        <div class="show-btn-">Show Comments</div>
+    </label>
+    <div class="show-comments-">
+        <h3>Comments</h3>
+        <div id="comments-container"></div><!-- do not touch this -->
+    </div>
+
+
+    <script type="module" src="../../scripts/comments.js"></script>
+    <script src="../../scripts/Java.js"></script>
+    <script src="../../scripts/copy&paste.js"></script>
+
 </html>

@@ -1,610 +1,425 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../../Pictures">
-        <link rel="stylesheet" href="../../CSS/Subjects/general.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/head.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/title.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
-        <script src="../../scripts/Java.js"></script>
-    </head>
 
-    <body>
-        <div class="main-">
-            <div class="curtain-"  onclick="close_()" id="curtain"></div>
-            <div class="curtain-"  onclick="close_img()" id="curtain_img"></div>
+<head>
+    <link rel="stylesheet" href="../../Pictures">
+    <link rel="stylesheet" href="../../CSS/Subjects/general.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/head.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/title.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
+</head>
 
-            <div class="header1-">
-                <a href="../../index.html"><div><img src="../../Pictures/20250305_205006.jpg"></div></a>
-                <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
-                <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
-            
+<body>
+    <div class="main-">
+        <div class="curtain-" onclick="close_()" id="curtain"></div>
+        <div class="curtain-" onclick="close_img()" id="curtain_img"></div>
+
+        <div class="header1-">
+            <a href="../../index.html">
+                <div><img src="../../Pictures/20250305_205006.jpg"></div>
+            </a>
+            <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
+            <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
+
+        </div>
+        <!--navigation bar-->
+        <div class="header2-">
+            <a href="l1.html"><button><span>Lesson 1</span><span class="hidden-subject-">Ecology</span></button></a>
+            <a href="l2.html"><button class="selected-"><span>Cell structure</span><span class="hidden-subject-">Cell
+                        structure</span></button></a>
+            <a href="l3.html"><button><span>Lesson 3</span><span class="hidden-subject-">Kingdom
+                        plantae</span></button></a>
+            <a href="l4.html"><button><span>Lesson 4</span><span class="hidden-subject-">Bio Doc</span></button></a>
+        </div>
+
+
+        <!--Topic-->
+        <div class="title-">
+            <div class="sub-101-">
+                BIO 101
             </div>
-            <!--navigation bar-->
-            <div class="header2-">
-                <a href="l1.html"><button><span>Lesson 1</span><span class="hidden-subject-">Ecology</span></button></a>
-                <a href="l2.html"><button class="selected-"><span>Cell structure</span><span class="hidden-subject-">Cell structure</span></button></a>
-                <a href="l3.html"><button><span>Lesson 3</span><span class="hidden-subject-">Kingdom plantae</span></button></a>
-                <a href="l4.html"><button><span>Lesson 4</span><span class="hidden-subject-">Bio Doc</span></button></a>
-            </div>
-            
-            
-            <!--Topic-->
-            <div class="title-">
-                <div class="sub-101-">
-                    BIO 101
+            <div class="change-">
+                <div class="before-">
+                    <a href="l1.html"><button class="before-btn-">Before</button></a>
+                    <div class="beforepop-">Ecology</div>
                 </div>
-                <div class="change-">
-                    <div class="before-">
-                        <a href="l1.html"><button class="before-btn-">Before</button></a>
-                        <div class="beforepop-">Ecology</div>
-                    </div>
-                    <div class="after-">
-                        <a href="l3.html"><button class="next-btn-">Next</button></a>
-                        <div class="afterpop-">Kingdom plantae</div>
-                    </div>
-                </div>
-                <div class="topic-">
-                    Cell structure - 2/1/25
-                </div>
-            </div>
-
-            <!--side navigation-->
-            <div class="sidebar-" id="sidebar">
-                <div class="close-" onclick="close_()" id="close_">&times;</div>
-                <div>
-                    <input type="checkbox" id="side_sub1_" class="side-checkbox-">
-                    <label for="side_sub1_" >
-                        MTH 101 <span class="arw- mth101-arw-"></span>
-                        <ol class="subj-ol- mth101-ol-">
-                            <a href="../BS-mth101/l1.html"><li>Elemental set theory</li></a>
-                            <a href="../BS-mth101/l2.html"><li>Real numbers</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub2_" class="side-checkbox-">
-                    <label for="side_sub2_" >
-                        PHY 101 <span class="arw- phy101-arw-"></span>
-                        <ol class="subj-ol- phy101-ol-">
-                            <a href="../BS-phy101/l1.html"><li>Measurements, quantities, dimensions </li></a>
-                            <a href="../BS-phy101/l2.html"><li>Space, time, units and dimensions</li></a>
-                            <a href="../BS-phy101/l3.html"><li>Newton's laws of motion</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub3_" class="side-checkbox-">
-                    <label for="side_sub3_" >
-                        COS 101 <span class="arw- cos101-arw-"></span>
-                        <ol class="subj-ol- cos101-ol-">
-                            <a href="../BS-cos101/l1.html"><li>Computer</li></a>
-                            <a href="../BS-cos101/l2.html"><li>Structure of the computer</li></a>
-                            <a href="../BS-cos101/l3.html"><li>Computing history</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub4_" class="side-checkbox-">
-                    <label for="side_sub4_" >
-                        GST 106 <span class="arw- gst106-arw-"></span>
-                        <ol class="subj-ol- gst106-ol-">
-                            <a href="../BS-gst106/l1.html"><li>Health</li></a>
-                            <a href="../BS-gst106/l2.html"><li>Alcoholism</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub5_" class="side-checkbox-">
-                    <label for="side_sub5_" >
-                        GST 107 <span class="arw- gst107-arw-"></span>
-                        <ol class="subj-ol- gst107-ol-">
-                            <a href="../BS-gst107/l1.html"><li>Word formation</li></a>
-                            <a href="../BS-gst107/l2.html"><li>Communication</li></a>
-                            <a href="../BS-gst107/l3.html"><li>Spoken English</li></a>
-                            <a href="../BS-gst107/l4.html"><li>Reading, listening skills, listening skills</li></a>
-                            <a href="../BS-gst107/l5.html"><li>Word formation</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub6_" class="side-checkbox-">
-                    <label for="side_sub6_" >
-                        CHM 101 <span class="arw- chm101-arw-"></span>
-                        <ol class="subj-ol- chm101-ol-">
-                            <a href="../BS-chm101/l1.html"><li>Atoms, molecules and compounds</li></a>
-                            <a href="../BS-chm101/l2.html"><li>Elements, Atomic numbers, Mass numbers and Isotopes</li></a>
-                            <a href="../BS-chm101/l3.html"><li>Still under elements, atomic number</li></a>
-                            <a href="../BS-chm101/l4.html"><li>German obj</li></a>
-                            <a href="../BS-chm101/l5.html"><li>German obj part 2</li></a>
-                        </ol>
-                    </label>
-                </div> 
-
-                <div>
-                    <input type="checkbox" id="side_sub7_" class="side-checkbox-">
-                    <label for="side_sub7_" >
-                        BIO 101 <span class="arw- bio101-arw-"></span>
-                        <ol class="subj-ol- bio101-ol-">
-                            <a href="../BS-bio101/l1.html"><li>Ecology</li></a>
-                            <a href="../BS-bio101/l2.html"><li>Cell structure</li></a>
-                            <a href="../BS-bio101/l3.html"><li>Kingdom plantae</li></a>
-                            <a href="../BS-bio101/l4.html"><li>Bio Doc</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub8_" class="side-checkbox-">
-                    <label for="side_sub8_" >
-                        General <span class="arw- general-arw-"></span>
-                        <ol class="subj-ol- general-ol-">
-                            <a href="../BS-general/l1.html"><li>Random questions</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub9_" class="side-checkbox-">
-                    <label for="side_sub9_" >
-                        CHM 111 <span class="arw- chm111-arw-"></span>
-                        <ol class="subj-ol- chm111-ol-">
-                            <a href="../BS-chm111/l1.html"><li>Introduction to organic chemistry</li></a>
-                            <a href="../BS-chm111/l2.html"><li>Classification of organic compounds</li></a>
-                            <a href="../BS-chm111/l3.html"><li>Functional groups and homologous series</li></a>
-                            <a href="../BS-chm111/l4.html"><li>Naming organic compounds</li></a>
-                            <a href="../BS-chm111/l5.html"><li>Naming organic compounds part 2</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub10_" class="side-checkbox-">
-                    <label for="side_sub10_" >
-                        BIO 112 <span class="arw- bio112-arw-"></span>
-                        <ol class="subj-ol- bio112-ol-">
-                            <a href="../BS-bio112/l1.html"><li>Diversity of living organisms</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub11_" class="side-checkbox-">
-                    <label for="side_sub11_" >
-                        PHY 111 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-phy111/l1.html"><li>Coulomb's law</li></a>
-                            <a href="../BS-phy111/l2.html"><li>Electricity 1</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub12_" class="side-checkbox-">
-                    <label for="side_sub12_" >
-                        MTH 111 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-mth111/l1.html"><li>Limits & Functions</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub13_" class="side-checkbox-">
-                    <label for="side_sub13_" >
-                        GST 115 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-gst115/l1.html"><li>Physical features of Nigeria</li></a>
-                        </ol>
-                    </label>
+                <div class="after-">
+                    <a href="l3.html"><button class="next-btn-">Next</button></a>
+                    <div class="afterpop-">Kingdom plantae</div>
                 </div>
             </div>
+            <div class="topic-">
+                Cell structure - 2/1/25
+            </div>
+        </div>
+
+        <!--side navigation-->
+        <div class="sidebar-" id="sidebar"></div>
 
 
-            <div id="imgbox_" class="imgbox-"></div>
+        <div id="imgbox_" class="imgbox-"></div>
 
-            <!--Questions-->
-            <div class="questions-">
-                <input type="checkbox" id="check1_"  class="check-">
-                <div>Who proposed that all plants are made up of cells?
-                </div>
-                
-                <span class="answer-span-">
-                    a) Theodor Schwann
-                    <br><span class="ans-">b) Matthias Schleiden</span>
-                    <br>c) Rudolf Virchow
-                    <br>d) Anton van Leeuwenhoek
+        <!--Questions-->
+        <div class="questions-">
+            <input type="checkbox" id="check1_" class="check-">
+            <div>Who proposed that all plants are made up of cells?
+                <br>a) Theodor Schwann
+                <br><span class="ans-">b) Matthias Schleiden</span>
+                <br>c) Rudolf Virchow
+                <br>d) Anton van Leeuwenhoek
+            </div>
+
+            <label for="check1_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B ✅
                 </span>
-
-                <label for="check1_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check2_" class="check-">
-                <div>The statement "All living cells arise from pre-existing cells" was proposed by:
-                </div>
-                
-                <span class="answer-span-">
-                    a) Robert Hooke
-                    <br>b) Anton van Leeuwenhoek
-                    <br><span class="ans-">c) Rudolf Virchow</span>
-                    <br>d) Schleiden and Schwann
-                    </span>
-
-                <label for="check2_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check3_" class="check-">
-                <div>Who was the first to observe and describe single-celled organisms under a microscope?
-                </div>
-                
-                <span class="answer-span-">
-                    a) Robert Hooke
-                    <br><span class="ans-">b) Anton van Leeuwenhoek</span>
-                    <br>c) Rudolf Virchow
-                    <br>d) Theodor Schwann
-                    </span>
-
-                <label for="check3_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check4_" class="check-">
-                <div>What did Rudolf Virchow add to the cell theory?
-                </div>
-                
-                <span class="answer-span-">
-                    <span class="ans-">a) Cells arise from pre-existing cells</span>
-                    <br>b) Cells are the basic unit of life
-                    <br>c) All living organisms are made of cells
-                    <br>d) Nucleus controls all cell activities
-                    </span>
-
-                <label for="check4_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        A ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check5_" class="check-">
-                <div>Who discovered the nucleus?
-                </div>
-                
-                <span class="answer-span-">
-                    a) Robert Hooke
-                    <br>b) Schleiden
-                    <br>c) Schwann
-                    <br><span class="ans-">d) Robert Brown</span>
-                    </span>
-
-                <label for="check5_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        D ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check6_" class="check-">
-                <div>Which scientist coined the term "cell"?
-                    </div>
-                
-                <span class="answer-span-">
-                    a) Anton van Leeuwenhoek
-                    <br><span class="ans-">b) Robert Hooke</span>
-                    <br>c) Rudolf Virchow
-                    <br>d) Matthias Schleiden
-                    </span>
-
-                <label for="check6_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check7_" class="check-">
-                <div>Which organelle is known as the "powerhouse of the cell"?
-                </div>
-                
-                <span class="answer-span-">
-                    a) Nucleus
-                    <br><span class="ans-">b) Mitochondrion</span>
-                    <br>c) Chloroplast
-                    <br>d) Ribosome
-                    </span>
-
-                <label for="check7_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check8_" class="check-">
-                <div>The "post office of the cell" name is given to?
-                </div>
-                
-                <label for="check8_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Golgi apparatus
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check9_" class="check-">
-                <div>Plural of 'mitochondrion'?
-                </div>
-                
-                <label for="check9_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Mitochondria
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check10_" class="check-">
-                <div>Name two cell organelles that possess a double membrane
-                </div>
-                
-                <label for="check10_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Mitochondria 
-                        <br>Nucleus
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check11_"  class="check-">
-                <div>What are prokaryotes?
-                </div>
-                
-                <label for="check11_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Prokaryotes are cells that lack a well defined nucleus and membrane bound organelles.
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check12_" class="check-">
-                <div>Ribosomes are responsible for:
-                </div>
-                
-                <span class="answer-span-">
-                    a) Energy production
-                    <br><span class="ans-">b) Protein synthesis</span>
-                    <br>c) Packaging molecules
-                    <br>d) Lipid synthesis
-                    </span>
-
-                <label for="check12_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check13_" class="check-">
-                <div>Ribosomes attach to which endoplasmic reticulum?
-                </div>
-                
-                <label for="check13_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        'The rough endoplasmic reticulum'
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check14_" class="check-">
-                <div>What is the main role of the Golgi apparatus?
-                </div>
-                
-                <span class="answer-span-">
-                    a) Energy production
-                    <br>b) Photosynthesis
-                    <br><span class="ans-">c) Modifying and packaging proteins</span>
-                    <br>d) Synthesizing lipids
-                    </span>
-
-                <label for="check14_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check15_" class="check-">
-                <div>Which organelle is a site of photosynthesis?
-                </div>
-                
-                <span class="answer-span-">
-                    <span class="ans-">a) Chloroplast</span>
-                    <br>b) Ribosome
-                    <br>c) Mitochondrion
-                    <br>d) Nucleus
-                    </span>
-
-                <label for="check15_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Yeah, A ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check16_" class="check-">
-                <div>What is the function of the mitochondrion gangan?
-                </div>
-                
-                <label for="check16_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Cellular respiration
-                        <br>Energy production
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check17_" class="check-">
-                <div>What is the function of lysosomes?
-                </div>
-                
-                <span class="answer-span-">
-                    a) Synthesizing proteins
-                    <br><span class="ans-">b) Digesting cellular waste</span>
-                    <br>c) Energy production
-                    <br>d) Storing water
-                    </span>
-
-                <label for="check17_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check18_" class="check-">
-                <div>The plasma membrane is primarily made up of:
-                </div>
-                
-                <span class="answer-span-">
-                    a) Proteins only
-                    <br>b) Carbohydrates only
-                    <br><span class="ans-">c) Lipids and proteins</span>
-                    <br>d) Nucleic acids
-                    </span>
-
-                <label for="check18_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check19_" class="check-">
-                <div>Chloroplasts are absent in:
-                </div>
-                
-                <span class="answer-span-">
-                    a) Plant cells
-                    <br><span class="ans-">b) Animal cells</span>
-                    <br>c) Both plant and animal cells
-                    <br>d) None of the above
-                    </span>
-
-                <label for="check19_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Yes, B ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check20_" class="check-">
-                <div>Which structure is involved in cell division in animal cells?
-                </div>
-                
-                <span class="answer-span-">
-                    a) Chloroplasts
-                    <br><span class="ans-">b) Centrioles</span>
-                    <br>c) Lysosomes
-                    <br>d) Vacuoles
-                    </span>
-
-                <label for="check20_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B ✅
-                    </span>
-                </label>
-            </div>
+            </label>
         </div>
 
-        <a href="#">
-            <div class="up-btn-">
-                <div></div>
+        <div class="questions-">
+            <input type="checkbox" id="check2_" class="check-">
+            <div>The statement "All living cells arise from pre-existing cells" was proposed by:
+                <br>a) Robert Hooke
+                <br>b) Anton van Leeuwenhoek
+                <br><span class="ans-">c) Rudolf Virchow</span>
+                <br>d) Schleiden and Schwann
             </div>
-        </a>
+
+            <label for="check2_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    C ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check3_" class="check-">
+            <div>Who was the first to observe and describe single-celled organisms under a microscope?
+                <br>a) Robert Hooke
+                <br><span class="ans-">b) Anton van Leeuwenhoek</span>
+                <br>c) Rudolf Virchow
+                <br>d) Theodor Schwann
+            </div>
+
+            <label for="check3_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check4_" class="check-">
+            <div>What did Rudolf Virchow add to the cell theory?
+                <br><span class="ans-">a) Cells arise from pre-existing cells</span>
+                <br>b) Cells are the basic unit of life
+                <br>c) All living organisms are made of cells
+                <br>d) Nucleus controls all cell activities
+            </div>
 
 
-        <div class="comments-section">
-            <h3>Comment</h3>
-            
-            <form id="comment-form">
-                <div class="name-">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Name" required>
-                </div>
-                
-                <div class="come-">
-                    <label for="comment">Comment:</label>
-                    <textarea id="comment" rows="6" placeholder="Write a comment" required></textarea>
-                </div>
-                
-                <button class="submit-" type="submit"><img src="../../Pictures/submit.png" alt=""></button>
-                <div class="status-" id="comment-submission-status"></div>
-            </form>
+            <label for="check4_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    A ✅
+                </span>
+            </label>
         </div>
-        
-        <input type="checkbox" id="show_">
-        <label for="show_"><div class="show-btn-">Show Comments</div></label>
-        <div class="show-comments-">
-            <h3>Comments</h3>
-            <div id="comments-container"></div><!-- do not touch this -->
+
+        <div class="questions-">
+            <input type="checkbox" id="check5_" class="check-">
+            <div>Who discovered the nucleus?
+                <br>a) Robert Hooke
+                <br>b) Schleiden
+                <br>c) Schwann
+                <br><span class="ans-">d) Robert Brown</span>
+            </div>
+
+            <label for="check5_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    D ✅
+                </span>
+            </label>
         </div>
-        
-          
-        <script type="module" src="../../scripts/comments.js"></script>
+
+        <div class="questions-">
+            <input type="checkbox" id="check6_" class="check-">
+            <div>Which scientist coined the term "cell"?
+                <br>a) Anton van Leeuwenhoek
+                <br><span class="ans-">b) Robert Hooke</span>
+                <br>c) Rudolf Virchow
+                <br>d) Matthias Schleiden
+            </div>
+
+            <label for="check6_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check7_" class="check-">
+            <div>Which organelle is known as the "powerhouse of the cell"?
+                <br>a) Nucleus
+                <br><span class="ans-">b) Mitochondrion</span>
+                <br>c) Chloroplast
+                <br>d) Ribosome
+            </div>
+
+            <label for="check7_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check8_" class="check-">
+            <div>The "post office of the cell" name is given to?
+            </div>
+
+            <label for="check8_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Golgi apparatus
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check9_" class="check-">
+            <div>Plural of 'mitochondrion'?
+            </div>
+
+            <label for="check9_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Mitochondria
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check10_" class="check-">
+            <div>Name two cell organelles that possess a double membrane
+            </div>
+
+            <label for="check10_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Mitochondria
+                    <br>Nucleus
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check11_" class="check-">
+            <div>What are prokaryotes?
+            </div>
+
+            <label for="check11_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Prokaryotes are cells that lack a well defined nucleus and membrane bound organelles.
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check12_" class="check-">
+            <div>Ribosomes are responsible for:
+                <br>a) Energy production
+                <br><span class="ans-">b) Protein synthesis</span>
+                <br>c) Packaging molecules
+                <br>d) Lipid synthesis
+            </div>
+
+            <label for="check12_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check13_" class="check-">
+            <div>Ribosomes attach to which endoplasmic reticulum?
+            </div>
+
+            <label for="check13_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    'The rough endoplasmic reticulum'
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check14_" class="check-">
+            <div>What is the main role of the Golgi apparatus?
+                <br>a) Energy production
+                <br>b) Photosynthesis
+                <br><span class="ans-">c) Modifying and packaging proteins</span>
+                <br>d) Synthesizing lipids
+            </div>
+
+            <label for="check14_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    C ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check15_" class="check-">
+            <div>Which organelle is a site of photosynthesis?
+                <br><span class="ans-">a) Chloroplast</span>
+                <br>b) Ribosome
+                <br>c) Mitochondrion
+                <br>d) Nucleus
+            </div>
+
+            <label for="check15_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Yeah, A ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check16_" class="check-">
+            <div>What is the function of the mitochondrion gangan?
+            </div>
+
+            <label for="check16_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Cellular respiration
+                    <br>Energy production
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check17_" class="check-">
+            <div>What is the function of lysosomes?
+                <br>a) Synthesizing proteins
+                <br><span class="ans-">b) Digesting cellular waste</span>
+                <br>c) Energy production
+                <br>d) Storing water
+            </div>
+
+            <label for="check17_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check18_" class="check-">
+            <div>The plasma membrane is primarily made up of:
+                <br>a) Proteins only
+                <br>b) Carbohydrates only
+                <br><span class="ans-">c) Lipids and proteins</span>
+                <br>d) Nucleic acids
+            </div>
+
+            <label for="check18_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    C ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check19_" class="check-">
+            <div>Chloroplasts are absent in:
+                <br>a) Plant cells
+                <br><span class="ans-">b) Animal cells</span>
+                <br>c) Both plant and animal cells
+                <br>d) None of the above
+            </div>
+
+            <label for="check19_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Yes, B ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check20_" class="check-">
+            <div>Which structure is involved in cell division in animal cells?
+                <br>a) Chloroplasts
+                <br><span class="ans-">b) Centrioles</span>
+                <br>c) Lysosomes
+                <br>d) Vacuoles
+            </div>
+
+            <label for="check20_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B ✅
+                </span>
+            </label>
+        </div>
+    </div>
+
+    <a href="#">
+        <div class="up-btn-">
+            <div></div>
+        </div>
+    </a>
+
+
+    <div class="comments-section">
+        <h3>Comment</h3>
+
+        <form id="comment-form">
+            <div class="name-">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Name" required>
+            </div>
+
+            <div class="come-">
+                <label for="comment">Comment:</label>
+                <textarea id="comment" rows="6" placeholder="Write a comment" required></textarea>
+            </div>
+
+            <button class="submit-" type="submit"><img src="../../Pictures/submit.png" alt=""></button>
+            <div class="status-" id="comment-submission-status"></div>
+        </form>
+    </div>
+
+    <input type="checkbox" id="show_">
+    <label for="show_">
+        <div class="show-btn-">Show Comments</div>
+    </label>
+    <div class="show-comments-">
+        <h3>Comments</h3>
+        <div id="comments-container"></div><!-- do not touch this -->
+    </div>
+
+
+    <script type="module" src="../../scripts/comments.js"></script>
+    <script src="../../scripts/Java.js"></script>
+    <script src="../../scripts/copy&paste.js"></script>
+
 </html>

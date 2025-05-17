@@ -1,530 +1,386 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../../Pictures">
-        <link rel="stylesheet" href="../../CSS/Subjects/general.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/head.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/title.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
-        <script src="../../scripts/Java.js"></script>
-    </head>
 
-    <body>
-        <div class="main-">
-            <div class="curtain-"  onclick="close_()" id="curtain"></div>
-            <div class="curtain-"  onclick="close_img()" id="curtain_img"></div>
+<head>
+    <link rel="stylesheet" href="../../Pictures">
+    <link rel="stylesheet" href="../../CSS/Subjects/general.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/head.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/title.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
+</head>
 
-            <div class="header1-">
-                <a href="../../index.html"><div><img src="../../Pictures/20250305_205006.jpg"></div></a>
-                <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
-                <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
-            
+<body>
+    <div class="main-">
+        <div class="curtain-" onclick="close_()" id="curtain"></div>
+        <div class="curtain-" onclick="close_img()" id="curtain_img"></div>
+
+        <div class="header1-">
+            <a href="../../index.html">
+                <div><img src="../../Pictures/20250305_205006.jpg"></div>
+            </a>
+            <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
+            <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
+
+        </div>
+        <!--navigation bar-->
+        <div class="header2-">
+            <a href="l1.html"><button class="selected-"><span>Health</span><span
+                        class="hidden-subject-">Health</span></button></a>
+            <a href="l2.html"><button><span>Lesson 2</span><span class="hidden-subject-">Alcoholism</span></button></a>
+        </div>
+
+
+        <!--Topic-->
+        <div class="title-">
+            <div class="sub-101-">
+                GST 106
             </div>
-            <!--navigation bar-->
-            <div class="header2-">
-                <a href="l1.html"><button class = "selected-"><span>Health</span><span class="hidden-subject-">Health</span></button></a>
-                <a href="l2.html"><button><span>Lesson 2</span><span class="hidden-subject-">Alcoholism</span></button></a>
-            </div>
-            
-            
-            <!--Topic-->
-            <div class="title-">
-                <div class="sub-101-">
-                    GST 106
+            <div class="change-">
+                <div class="before-">
+                    <a href="l2.html"><button class="before-btn-">Before</button></a>
+                    <div class="beforepop-">Alcoholism</div>
                 </div>
-                <div class="change-">
-                    <div class="before-">
-                        <a href="l2.html"><button class="before-btn-">Before</button></a>
-                        <div class="beforepop-">Alcoholism</div>
-                    </div>
-                    <div class="after-">
-                        <a href="l2.html"><button class="next-btn-">Next</button></a>
-                        <div class="afterpop-">Alcoholism</div>
-                    </div>
-                </div>
-                <div class="topic-">
-                    Health - 6/12/24
-                </div>
-            </div>
-
-            <!--side navigation-->
-            <div class="sidebar-" id="sidebar">
-                <div class="close-" onclick="close_()" id="close_">&times;</div>
-                <div>
-                    <input type="checkbox" id="side_sub1_" class="side-checkbox-">
-                    <label for="side_sub1_" >
-                        MTH 101 <span class="arw- mth101-arw-"></span>
-                        <ol class="subj-ol- mth101-ol-">
-                            <a href="../BS-mth101/l1.html"><li>Elemental set theory</li></a>
-                            <a href="../BS-mth101/l2.html"><li>Real numbers</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub2_" class="side-checkbox-">
-                    <label for="side_sub2_" >
-                        PHY 101 <span class="arw- phy101-arw-"></span>
-                        <ol class="subj-ol- phy101-ol-">
-                            <a href="../BS-phy101/l1.html"><li>Measurements, quantities, dimensions </li></a>
-                            <a href="../BS-phy101/l2.html"><li>Space, time, units and dimensions</li></a>
-                            <a href="../BS-phy101/l3.html"><li>Newton's laws of motion</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub3_" class="side-checkbox-">
-                    <label for="side_sub3_" >
-                        COS 101 <span class="arw- cos101-arw-"></span>
-                        <ol class="subj-ol- cos101-ol-">
-                            <a href="../BS-cos101/l1.html"><li>Computer</li></a>
-                            <a href="../BS-cos101/l2.html"><li>Structure of the computer</li></a>
-                            <a href="../BS-cos101/l3.html"><li>Computing history</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub4_" class="side-checkbox-">
-                    <label for="side_sub4_" >
-                        GST 106 <span class="arw- gst106-arw-"></span>
-                        <ol class="subj-ol- gst106-ol-">
-                            <a href="../BS-gst106/l1.html"><li>Health</li></a>
-                            <a href="../BS-gst106/l2.html"><li>Alcoholism</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub5_" class="side-checkbox-">
-                    <label for="side_sub5_" >
-                        GST 107 <span class="arw- gst107-arw-"></span>
-                        <ol class="subj-ol- gst107-ol-">
-                            <a href="../BS-gst107/l1.html"><li>Word formation</li></a>
-                            <a href="../BS-gst107/l2.html"><li>Communication</li></a>
-                            <a href="../BS-gst107/l3.html"><li>Spoken English</li></a>
-                            <a href="../BS-gst107/l4.html"><li>Reading, listening skills, listening skills</li></a>
-                            <a href="../BS-gst107/l5.html"><li>Word formation</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub6_" class="side-checkbox-">
-                    <label for="side_sub6_" >
-                        CHM 101 <span class="arw- chm101-arw-"></span>
-                        <ol class="subj-ol- chm101-ol-">
-                            <a href="../BS-chm101/l1.html"><li>Atoms, molecules and compounds</li></a>
-                            <a href="../BS-chm101/l2.html"><li>Elements, Atomic numbers, Mass numbers and Isotopes</li></a>
-                            <a href="../BS-chm101/l3.html"><li>Still under elements, atomic number</li></a>
-                            <a href="../BS-chm101/l4.html"><li>German obj</li></a>
-                            <a href="../BS-chm101/l5.html"><li>German obj part 2</li></a>
-                        </ol>
-                    </label>
-                </div> 
-
-                <div>
-                    <input type="checkbox" id="side_sub7_" class="side-checkbox-">
-                    <label for="side_sub7_" >
-                        BIO 101 <span class="arw- bio101-arw-"></span>
-                        <ol class="subj-ol- bio101-ol-">
-                            <a href="../BS-bio101/l1.html"><li>Ecology</li></a>
-                            <a href="../BS-bio101/l2.html"><li>Cell structure</li></a>
-                            <a href="../BS-bio101/l3.html"><li>Kingdom plantae</li></a>
-                            <a href="../BS-bio101/l4.html"><li>Bio Doc</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub8_" class="side-checkbox-">
-                    <label for="side_sub8_" >
-                        General <span class="arw- general-arw-"></span>
-                        <ol class="subj-ol- general-ol-">
-                            <a href="../BS-general/l1.html"><li>Random questions</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub9_" class="side-checkbox-">
-                    <label for="side_sub9_" >
-                        CHM 111 <span class="arw- chm111-arw-"></span>
-                        <ol class="subj-ol- chm111-ol-">
-                            <a href="../BS-chm111/l1.html"><li>Introduction to organic chemistry</li></a>
-                            <a href="../BS-chm111/l2.html"><li>Classification of organic compounds</li></a>
-                            <a href="../BS-chm111/l3.html"><li>Functional groups and homologous series</li></a>
-                            <a href="../BS-chm111/l4.html"><li>Naming organic compounds</li></a>
-                            <a href="../BS-chm111/l5.html"><li>Naming organic compounds part 2</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub10_" class="side-checkbox-">
-                    <label for="side_sub10_" >
-                        BIO 112 <span class="arw- bio112-arw-"></span>
-                        <ol class="subj-ol- bio112-ol-">
-                            <a href="../BS-bio112/l1.html"><li>Diversity of living organisms</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub11_" class="side-checkbox-">
-                    <label for="side_sub11_" >
-                        PHY 111 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-phy111/l1.html"><li>Coulomb's law</li></a>
-                            <a href="../BS-phy111/l2.html"><li>Electricity 1</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub12_" class="side-checkbox-">
-                    <label for="side_sub12_" >
-                        MTH 111 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-mth111/l1.html"><li>Limits & Functions</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub13_" class="side-checkbox-">
-                    <label for="side_sub13_" >
-                        GST 115 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-gst115/l1.html"><li>Physical features of Nigeria</li></a>
-                        </ol>
-                    </label>
+                <div class="after-">
+                    <a href="l2.html"><button class="next-btn-">Next</button></a>
+                    <div class="afterpop-">Alcoholism</div>
                 </div>
             </div>
-
-
-            <div id="imgbox_" class="imgbox-"></div>
-
-            <!--Questions-->
-            <div class="questions-">
-                <input type="checkbox" id="check1_"  class="check-">
-                <div>What is the comprehensive definition of health by the World Health Organization?
-                </div>
-                
-                <p>Freedom from disease or pain</p>
-                <p class="ans-">A state of complete physical, mental, and social well-being</p>
-                <p>The absence of disease or infirmity</p>
-                <p>Ability to carry out daily activities successfully</p>
-
-                <label for="check1_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check2_" class="check-">
-                <div>Which of the following is NOT an aspect of health as discussed in the material?
-                </div>
-                
-                <p>Economic</p>
-                <p>Social</p>
-                <p class="ans-">Astrological</p>
-                <p>Biological</p>
-
-                <label for="check2_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check3_" class="check-">
-                <div>How is psychological health best described?
-                </div>
-                
-                <p>Freedom from physical illness</p>
-                <p class="ans-">Control of emotions in challenging situations</p>
-                <p>Economic stability</p>
-                <p>Ability to withstand physical stress</p>
-
-                <label for="check3_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check4_" class="check-">
-                <div>Which of these is a factor that negatively affects health?
-                </div>
-                
-                <p>Positive mental outlook</p>
-                <p class="ans-">Nutritional deficiency</p>
-                <p>Balanced diet</p>
-                <p>Regular exercise</p>
-
-                <label for="check4_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check5_" class="check-">
-                <div>What is the primary reason for personal 
-                </div>
-                
-                <p>To impress society</p>
-                <p>To compete with others</p>
-                <p class="ans-">To live a socially useful life</p>
-                <p>To avoid medical expenses</p>
-
-                <label for="check5_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check6_" class="check-">
-                <div>What does the term 'mirage' in health refer to?
-                </div>
-                
-                <p class="ans-">Varying perceptions of health across individuals and cultures</p>
-                <p>Illusions caused by extreme illness</p>
-                <p>The transient nature of well-being</p>
-                <p>Temporary recovery from illness</p>
-
-                <label for="check6_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        A
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check7_" class="check-">
-                <div>Which aspect of health is most impacted by stress and financial instability?
-                </div>
-                
-                <p>Biological</p>
-                <p>Psychological</p>
-                <p>Social</p>
-                <p class="ans-">Economic</p>
-
-                <label for="check7_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        D ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check8_" class="check-">
-                <div>Which factor affects health through external influences like water, food, and medical care?
-                </div>
-                
-                <p>Mental outlook</p>
-                <p class="ans-">Environment</p>
-                <p>Heredity</p>
-                <p>Lifestyle</p>
-
-                <label for="check8_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check9_" class="check-">
-                <div>What type of health value arises from prior experience with illness?
-                </div>
-                
-                <p>Positive health value</p>
-                <p>Spiritual health value</p>
-                <p class="ans-">Negative health value</p>
-                <p>Social health value</p>
-
-                <label for="check9_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        C
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check10_" class="check-">
-                <div>What lifestyle factor is most associated with lung diseases?
-                </div>
-                
-                <p class="ans-">Smoking</p>
-                <p>Stress</p>
-                <p>Poor diet</p>
-                <p>Lack of exercise</p>
-
-                <label for="check10_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        A ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check11_" class="check-">
-                <div>Which factor contributes to health by encouraging proper food consumption?
-                </div>
-                
-                <p>Heredity</p>
-                <p class="ans-">Nutrition</p>
-                <p>Environment</p>
-                <p>Occupation</p>
-
-                <label for="check11_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check12_" class="check-">
-                <div>What is the relationship between lifestyle and health?
-                </div>
-                
-                <p>Lifestyle does not impact health significantly</p>
-                <p class="ans-">Healthy lifestyles lead to better emotional and social health</p>
-                <p>Only financial aspects of lifestyle impact health</p>
-                <p>Lifestyle choices have no effect on non-communicable diseases</p>
-
-                <label for="check12_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B ✅
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check13_" class="check-">
-                <div>Define health.
-                </div>
-                
-                <label for="check13_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        Health is defined as a state of physical emotional and social well being and not merely the absence of disease or infirmity</span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check14_" class="check-">
-                <div>Which of the following is a benefit of preventive health services?
-                </div>
-                
-                <p class="ans-">Reduction in maternal mortality</p>
-                <p>Increase in stress levels</p>
-                <p>Decrease in family planning usage</p>
-                <p>Reduction in physical activity</p>
-
-                <label for="check14_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        A
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check15_" class="check-">
-                <div>Which type of disease is primarily linked to lifestyle choices?
-                </div>
-                
-                <p>Communicable diseases</p>
-                <p class="ans-">Non-communicable diseases</p>
-                <p>Genetic diseases</p>
-                <p>Acute diseases</p>
-
-                <label for="check15_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        B
-                    </span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check16_" class="check-">
-                <div>What is the most common definition of stress in health contexts
-                </div>
-                
-                <p>Overexertion in physical activities</p>
-                <p>Lack of adequate nutrition</p>
-                <p>Emotional stability during crises</p>
-                <p class="ans-">A physical or mental factor causing tension and possibly leading to disease</p>
-
-                <label for="check16_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br>
-                        D ✅ 
-                    </span>
-                </label>
+            <div class="topic-">
+                Health - 6/12/24
             </div>
         </div>
 
-        <a href="#">
-            <div class="up-btn-">
-                <div></div>
+        <!--side navigation-->
+        <div class="sidebar-" id="sidebar"></div>
+
+
+        <div id="imgbox_" class="imgbox-"></div>
+
+        <!--Questions-->
+        <div class="questions-">
+            <input type="checkbox" id="check1_" class="check-">
+            <div>What is the comprehensive definition of health by the World Health Organization?
             </div>
-        </a>
+
+            <p>Freedom from disease or pain</p>
+            <p class="ans-">A state of complete physical, mental, and social well-being</p>
+            <p>The absence of disease or infirmity</p>
+            <p>Ability to carry out daily activities successfully</p>
+
+            <label for="check1_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check2_" class="check-">
+            <div>Which of the following is NOT an aspect of health as discussed in the material?
+            </div>
+
+            <p>Economic</p>
+            <p>Social</p>
+            <p class="ans-">Astrological</p>
+            <p>Biological</p>
+
+            <label for="check2_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    C ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check3_" class="check-">
+            <div>How is psychological health best described?
+            </div>
+
+            <p>Freedom from physical illness</p>
+            <p class="ans-">Control of emotions in challenging situations</p>
+            <p>Economic stability</p>
+            <p>Ability to withstand physical stress</p>
+
+            <label for="check3_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check4_" class="check-">
+            <div>Which of these is a factor that negatively affects health?
+            </div>
+
+            <p>Positive mental outlook</p>
+            <p class="ans-">Nutritional deficiency</p>
+            <p>Balanced diet</p>
+            <p>Regular exercise</p>
+
+            <label for="check4_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check5_" class="check-">
+            <div>What is the primary reason for personal
+            </div>
+
+            <p>To impress society</p>
+            <p>To compete with others</p>
+            <p class="ans-">To live a socially useful life</p>
+            <p>To avoid medical expenses</p>
+
+            <label for="check5_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    C ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check6_" class="check-">
+            <div>What does the term 'mirage' in health refer to?
+            </div>
+
+            <p class="ans-">Varying perceptions of health across individuals and cultures</p>
+            <p>Illusions caused by extreme illness</p>
+            <p>The transient nature of well-being</p>
+            <p>Temporary recovery from illness</p>
+
+            <label for="check6_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    A
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check7_" class="check-">
+            <div>Which aspect of health is most impacted by stress and financial instability?
+            </div>
+
+            <p>Biological</p>
+            <p>Psychological</p>
+            <p>Social</p>
+            <p class="ans-">Economic</p>
+
+            <label for="check7_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    D ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check8_" class="check-">
+            <div>Which factor affects health through external influences like water, food, and medical care?
+            </div>
+
+            <p>Mental outlook</p>
+            <p class="ans-">Environment</p>
+            <p>Heredity</p>
+            <p>Lifestyle</p>
+
+            <label for="check8_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check9_" class="check-">
+            <div>What type of health value arises from prior experience with illness?
+            </div>
+
+            <p>Positive health value</p>
+            <p>Spiritual health value</p>
+            <p class="ans-">Negative health value</p>
+            <p>Social health value</p>
+
+            <label for="check9_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    C
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check10_" class="check-">
+            <div>What lifestyle factor is most associated with lung diseases?
+            </div>
+
+            <p class="ans-">Smoking</p>
+            <p>Stress</p>
+            <p>Poor diet</p>
+            <p>Lack of exercise</p>
+
+            <label for="check10_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    A ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check11_" class="check-">
+            <div>Which factor contributes to health by encouraging proper food consumption?
+            </div>
+
+            <p>Heredity</p>
+            <p class="ans-">Nutrition</p>
+            <p>Environment</p>
+            <p>Occupation</p>
+
+            <label for="check11_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check12_" class="check-">
+            <div>What is the relationship between lifestyle and health?
+            </div>
+
+            <p>Lifestyle does not impact health significantly</p>
+            <p class="ans-">Healthy lifestyles lead to better emotional and social health</p>
+            <p>Only financial aspects of lifestyle impact health</p>
+            <p>Lifestyle choices have no effect on non-communicable diseases</p>
+
+            <label for="check12_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B ✅
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check13_" class="check-">
+            <div>Define health.
+            </div>
+
+            <label for="check13_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    Health is defined as a state of physical emotional and social well being and not merely the absence
+                    of disease or infirmity</span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check14_" class="check-">
+            <div>Which of the following is a benefit of preventive health services?
+            </div>
+
+            <p class="ans-">Reduction in maternal mortality</p>
+            <p>Increase in stress levels</p>
+            <p>Decrease in family planning usage</p>
+            <p>Reduction in physical activity</p>
+
+            <label for="check14_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    A
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check15_" class="check-">
+            <div>Which type of disease is primarily linked to lifestyle choices?
+            </div>
+
+            <p>Communicable diseases</p>
+            <p class="ans-">Non-communicable diseases</p>
+            <p>Genetic diseases</p>
+            <p>Acute diseases</p>
+
+            <label for="check15_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    B
+                </span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check16_" class="check-">
+            <div>What is the most common definition of stress in health contexts
+            </div>
+
+            <p>Overexertion in physical activities</p>
+            <p>Lack of adequate nutrition</p>
+            <p>Emotional stability during crises</p>
+            <p class="ans-">A physical or mental factor causing tension and possibly leading to disease</p>
+
+            <label for="check16_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br>
+                    D ✅
+                </span>
+            </label>
+        </div>
+    </div>
+
+    <a href="#">
+        <div class="up-btn-">
+            <div></div>
+        </div>
+    </a>
 
 
-        <div class="comments-section">
-            <h3>Comment</h3>
-            
-            <form id="comment-form">
-                <div class="name-">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Name" required>
-                </div>
-                
-                <div class="come-">
-                    <label for="comment">Comment:</label>
-                    <textarea id="comment" rows="6" placeholder="Write a comment" required></textarea>
-                </div>
-                
-                <button class="submit-" type="submit"><img src="../../Pictures/submit.png" alt=""></button>
-                <div class="status-" id="comment-submission-status"></div>
-            </form>
-        </div>
-        
-        <input type="checkbox" id="show_">
-        <label for="show_"><div class="show-btn-">Show Comments</div></label>
-        <div class="show-comments-">
-            <h3>Comments</h3>
-            <div id="comments-container"></div><!-- do not touch this -->
-        </div>
-        
-          
-        <script type="module" src="../../scripts/comments.js"></script>
+    <div class="comments-section">
+        <h3>Comment</h3>
+
+        <form id="comment-form">
+            <div class="name-">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Name" required>
+            </div>
+
+            <div class="come-">
+                <label for="comment">Comment:</label>
+                <textarea id="comment" rows="6" placeholder="Write a comment" required></textarea>
+            </div>
+
+            <button class="submit-" type="submit"><img src="../../Pictures/submit.png" alt=""></button>
+            <div class="status-" id="comment-submission-status"></div>
+        </form>
+    </div>
+
+    <input type="checkbox" id="show_">
+    <label for="show_">
+        <div class="show-btn-">Show Comments</div>
+    </label>
+    <div class="show-comments-">
+        <h3>Comments</h3>
+        <div id="comments-container"></div><!-- do not touch this -->
+    </div>
+
+
+    <script type="module" src="../../scripts/comments.js"></script>
+    <script src="../../scripts/Java.js"></script>
+    <script src="../../scripts/copy&paste.js"></script>
+
 </html>

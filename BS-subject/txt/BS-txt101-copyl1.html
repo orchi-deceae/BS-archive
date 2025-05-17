@@ -1,302 +1,412 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../../Pictures">
-        <link rel="stylesheet" href="../../CSS/Subjects/general.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/head.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/title.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
-        <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
-        <script src="../../scripts/Java.js"></script>
-    </head>
 
-    <body>
-        <div class="main-">
-            <div class="curtain-"  onclick="close_()" id="curtain"></div>
-            <div class="curtain-"  onclick="close_img()" id="curtain_img"></div>
+<head>
+    <link rel="stylesheet" href="../../Pictures">
+    <link rel="stylesheet" href="../../CSS/Subjects/general.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/head.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/title.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
+    <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
+</head>
 
-            <div class="header1-">
-                <a href="../../index.html"><div><img src="../../Pictures/20250305_205006.jpg"></div></a>
-                <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
-                <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
-            
-            </div>
-            <!--navigation bar-->
-            <div class="header2-">
-                <a href="BS-txt101-l1.html"><button class = "selected-"><span>txt</span><span class="hidden-subject-">txt</span></button></a>
-                <a href="BS-txt101-l2.html"><button><span>Lesson 2</span><span class="hidden-subject-">txt</span></button></a>
-                <a href="BS-txt101-l3.html"><button><span>Lesson 3</span><span class="hidden-subject-">txt</span></button></a>
-                <a href="BS-txt101-l4.html"><button><span>Lesson 4</span><span class="hidden-subject-">txt</span></button></a>
-            </div>
-            
-            
-            <!--Topic-->
-            <div class="title-">
-                <div class="sub-101-">
-                    txt 101 copy
-                </div>
-                <div class="change-">
-                    <div class="before-">
-                        <a href="BS-txt101-l4.html"><button class="before-btn-">Before</button></a>
-                        <div class="beforepop-">txt</div>
-                    </div>
-                    <div class="after-">
-                        <a href="BS-txt101-l2.html"><button class="next-btn-">Next</button></a>
-                        <div class="afterpop-">txt</div>
-                    </div>
-                </div>
-                <div class="topic-">
-                    txt
-                </div>
-            </div>
+<body>
+    <div class="main-">
+        <div class="curtain-" onclick="close_()" id="curtain"></div>
+        <div class="curtain-" onclick="close_img()" id="curtain_img"></div>
 
-            <!--side navigation-->
-            <div class="sidebar-" id="sidebar">
-                <div class="close-" onclick="close_()" id="close_">&times;</div>
-                <div>
-                    <input type="checkbox" id="side_sub1_" class="side-checkbox-">
-                    <label for="side_sub1_" >
-                        MTH 101 <span class="arw- mth101-arw-"></span>
-                        <ol class="subj-ol- mth101-ol-">
-                            <a href="l1.html"><li>txt</li></a>
-                            <a href="l2.html"><li>txt</li></a>
-                            <a href="l3.html"><li>txt</li></a>
-                            <a href="l4.html"><li>txt</li></a>
-                        </ol>
-                    </label>
-                </div>
+        <div class="header1-">
+            <a href="../../index.html">
+                <div><img src="../../Pictures/20250305_205006.jpg"></div>
+            </a>
+            <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
+            <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
 
-                <div>
-                    <input type="checkbox" id="side_sub2_" class="side-checkbox-">
-                    <label for="side_sub2_" >
-                        PHY 101 <span class="arw- phy101-arw-"></span>
-                        <ol class="subj-ol- phy101-ol-">
-                            <a href="l1.html"><li>txt</li></a>
-                            <a href="l2.html"><li>txt</li></a>
-                            <a href="l3.html"><li>txt</li></a>
-                            <a href="l4.html"><li>txt</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub3_" class="side-checkbox-">
-                    <label for="side_sub3_" >
-                        COS 101 <span class="arw- cos101-arw-"></span>
-                        <ol class="subj-ol- cos101-ol-">
-                            <a href="l1.html"><li>txt</li></a>
-                            <a href="l2.html"><li>txt</li></a>
-                            <a href="l3.html"><li>txt</li></a>
-                            <a href="l4.html"><li>txt</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub4_" class="side-checkbox-">
-                    <label for="side_sub4_" >
-                        GST 106 <span class="arw- gst106-arw-"></span>
-                        <ol class="subj-ol- gst106-ol-">
-                            <a href="l1.html"><li>txt</li></a>
-                            <a href="l2.html"><li>txt</li></a>
-                            <a href="l3.html"><li>txt</li></a>
-                            <a href="l4.html"><li>txt</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub5_" class="side-checkbox-">
-                    <label for="side_sub5_" >
-                        GST 107 <span class="arw- gst107-arw-"></span>
-                        <ol class="subj-ol- gst107-ol-">
-                            <a href="l1.html"><li>txt</li></a>
-                            <a href="l2.html"><li>txt</li></a>
-                            <a href="l3.html"><li>txt</li></a>
-                            <a href="l4.html"><li>txt</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub6_" class="side-checkbox-">
-                    <label for="side_sub6_" >
-                        CHM 101 <span class="arw- chm101-arw-"></span>
-                        <ol class="subj-ol- chm101-ol-">
-                            <a href="l1.html"><li>txt</li></a>
-                            <a href="l2.html"><li>txt</li></a>
-                            <a href="l3.html"><li>txt</li></a>
-                            <a href="l4.html"><li>txt</li></a>
-                        </ol>
-                    </label>
-                </div> 
-
-                <div>
-                    <input type="checkbox" id="side_sub7_" class="side-checkbox-">
-                    <label for="side_sub7_" >
-                        BIO 101 <span class="arw- bio101-arw-"></span>
-                        <ol class="subj-ol- bio101-ol-">
-                            <a href="l1.html"><li>txt</li></a>
-                            <a href="l2.html"><li>txt</li></a>
-                            <a href="l3.html"><li>txt</li></a>
-                            <a href="l4.html"><li>txt</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub8_" class="side-checkbox-">
-                    <label for="side_sub8_" >
-                        General <span class="arw- general-arw-"></span>
-                        <ol class="subj-ol- general-ol-">
-                            <a href="../BS-general/l1.html"><li>Random questions</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub9_" class="side-checkbox-">
-                    <label for="side_sub9_" >
-                        CHM 111 <span class="arw- chm111-arw-"></span>
-                        <ol class="subj-ol- chm111-ol-">
-                            <a href="../BS-chm111/l1.html"><li>Introduction to organic chemistry</li></a>
-                            <a href="../BS-chm111/l2.html"><li>Classification of organic compounds</li></a>
-                            <a href="../BS-chm111/l3.html"><li>Functional groups and homologous series</li></a>
-                            <a href="../BS-chm111/l4.html"><li>Naming organic compounds</li></a>
-                            <a href="../BS-chm111/l5.html"><li>Naming organic compounds part 2</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub10_" class="side-checkbox-">
-                    <label for="side_sub10_" >
-                        BIO 112 <span class="arw- bio112-arw-"></span>
-                        <ol class="subj-ol- bio112-ol-">
-                            <a href="../BS-bio112/l1.html"><li>Diversity of living organisms</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub11_" class="side-checkbox-">
-                    <label for="side_sub11_" >
-                        PHY 111 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-phy111/l1.html"><li>Coulomb's law</li></a>
-                            <a href="../BS-phy111/l2.html"><li>Electricity 1</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub12_" class="side-checkbox-">
-                    <label for="side_sub12_" >
-                        MTH 111 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-mth111/l1.html"><li>Limits & Functions</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub13_" class="side-checkbox-">
-                    <label for="side_sub13_" >
-                        GST 115 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-gst115/l1.html"><li>Physical features of Nigeria</li></a>
-                        </ol>
-                    </label>
-                </div>
-            </div>
-
-            <div id="imgbox_" class="imgbox-"></div>
-
-            <!--Questions-->
-            <div class="questions-">
-                <input type="checkbox" id="check1_"  class="check-">
-                <div>txt</div>
-                <p></p>
-                <p class="ans-">txt</p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <label for="check1_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check2_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check2_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-
-            <div class="questions-">
-                <input type="checkbox" id="check3_" class="check-">
-                <div></div>
-                
-                <p></p>
-                <p class="ans-"></p>
-                <p></p>
-                <p></p>
-
-                <label for="check3_">
-                    <span class="show-">[Show]</span>
-                    <span class="hide-">[Hide]<br></span>
-                </label>
-            </div>
-        </div> 
-
-
-
-        
-        
-        <a href="#">
-            <div class="up-btn-">
-                <div></div>
-            </div>
-        </a>
-
-
-        <div class="comments-section">
-            <h3>Comment</h3>
-            
-            <form id="comment-form">
-                <div class="name-">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Name" required>
-                </div>
-                
-                <div class="come-">
-                    <label for="comment">Comment:</label>
-                    <textarea id="comment" rows="6" placeholder="Write a comment" required></textarea>
-                </div>
-                
-                <button class="submit-" type="submit"><img src="../../Pictures/submit.png" alt=""></button>
-                <div class="status-" id="comment-submission-status"></div>
-            </form>
         </div>
-        
-        <input type="checkbox" id="show_">
-        <label for="show_"><div class="show-btn-">Show Comments</div></label>
-        <div class="show-comments-">
-            <h3>Comments</h3>
-            <div id="comments-container"></div><!-- do not touch this -->
+        <!--navigation bar-->
+        <div class="header2-">
+            <a href="BS-txt101-l1.html"><button class="selected-"><span>txt</span><span
+                        class="hidden-subject-">txt</span></button></a>
+            <a href="BS-txt101-l2.html"><button><span>Lesson 2</span><span
+                        class="hidden-subject-">txt</span></button></a>
+            <a href="BS-txt101-l3.html"><button><span>Lesson 3</span><span
+                        class="hidden-subject-">txt</span></button></a>
+            <a href="BS-txt101-l4.html"><button><span>Lesson 4</span><span
+                        class="hidden-subject-">txt</span></button></a>
         </div>
-        
-          
-        <script type="module" src="../../scripts/comments.js"></script>
-    </body>
+
+
+        <!--Topic-->
+        <div class="title-">
+            <div class="sub-101-">
+                txt 101 copy
+            </div>
+            <div class="change-">
+                <div class="before-">
+                    <a href="BS-txt101-l4.html"><button class="before-btn-">Before</button></a>
+                    <div class="beforepop-">txt</div>
+                </div>
+                <div class="after-">
+                    <a href="BS-txt101-l2.html"><button class="next-btn-">Next</button></a>
+                    <div class="afterpop-">txt</div>
+                </div>
+            </div>
+            <div class="topic-">
+                txt
+            </div>
+        </div>
+
+        <!--side navigation-->
+        <div class="sidebar-" id="sidebar">
+            <div class="close-" onclick="close_()" id="close_">&times;</div>
+            <div>
+                <input type="checkbox" id="side_sub1_" class="side-checkbox-">
+                <label for="side_sub1_">
+                    MTH 101 <span class="arw- mth101-arw-"></span>
+                    <ol class="subj-ol- mth101-ol-">
+                        <a href="l1.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l2.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l3.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l4.html">
+                            <li>txt</li>
+                        </a>
+                    </ol>
+                </label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="side_sub2_" class="side-checkbox-">
+                <label for="side_sub2_">
+                    PHY 101 <span class="arw- phy101-arw-"></span>
+                    <ol class="subj-ol- phy101-ol-">
+                        <a href="l1.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l2.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l3.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l4.html">
+                            <li>txt</li>
+                        </a>
+                    </ol>
+                </label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="side_sub3_" class="side-checkbox-">
+                <label for="side_sub3_">
+                    COS 101 <span class="arw- cos101-arw-"></span>
+                    <ol class="subj-ol- cos101-ol-">
+                        <a href="l1.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l2.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l3.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l4.html">
+                            <li>txt</li>
+                        </a>
+                    </ol>
+                </label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="side_sub4_" class="side-checkbox-">
+                <label for="side_sub4_">
+                    GST 106 <span class="arw- gst106-arw-"></span>
+                    <ol class="subj-ol- gst106-ol-">
+                        <a href="l1.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l2.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l3.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l4.html">
+                            <li>txt</li>
+                        </a>
+                    </ol>
+                </label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="side_sub5_" class="side-checkbox-">
+                <label for="side_sub5_">
+                    GST 107 <span class="arw- gst107-arw-"></span>
+                    <ol class="subj-ol- gst107-ol-">
+                        <a href="l1.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l2.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l3.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l4.html">
+                            <li>txt</li>
+                        </a>
+                    </ol>
+                </label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="side_sub6_" class="side-checkbox-">
+                <label for="side_sub6_">
+                    CHM 101 <span class="arw- chm101-arw-"></span>
+                    <ol class="subj-ol- chm101-ol-">
+                        <a href="l1.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l2.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l3.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l4.html">
+                            <li>txt</li>
+                        </a>
+                    </ol>
+                </label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="side_sub7_" class="side-checkbox-">
+                <label for="side_sub7_">
+                    BIO 101 <span class="arw- bio101-arw-"></span>
+                    <ol class="subj-ol- bio101-ol-">
+                        <a href="l1.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l2.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l3.html">
+                            <li>txt</li>
+                        </a>
+                        <a href="l4.html">
+                            <li>txt</li>
+                        </a>
+                    </ol>
+                </label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="side_sub8_" class="side-checkbox-">
+                <label for="side_sub8_">
+                    General <span class="arw- general-arw-"></span>
+                    <ol class="subj-ol- general-ol-">
+                        <a href="../BS-general/l1.html">
+                            <li>Random questions</li>
+                        </a>
+                    </ol>
+                </label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="side_sub9_" class="side-checkbox-">
+                <label for="side_sub9_">
+                    CHM 111 <span class="arw- chm111-arw-"></span>
+                    <ol class="subj-ol- chm111-ol-">
+                        <a href="../BS-chm111/l1.html">
+                            <li>Introduction to organic chemistry</li>
+                        </a>
+                        <a href="../BS-chm111/l2.html">
+                            <li>Classification of organic compounds</li>
+                        </a>
+                        <a href="../BS-chm111/l3.html">
+                            <li>Functional groups and homologous series</li>
+                        </a>
+                        <a href="../BS-chm111/l4.html">
+                            <li>Naming organic compounds</li>
+                        </a>
+                        <a href="../BS-chm111/l5.html">
+                            <li>Naming organic compounds part 2</li>
+                        </a>
+                        <a href="../BS-chm111/l6.html">
+                            <li>Hydrocarbons</li>
+                        </a>
+                    </ol>
+                </label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="side_sub10_" class="side-checkbox-">
+                <label for="side_sub10_">
+                    BIO 112 <span class="arw- bio112-arw-"></span>
+                    <ol class="subj-ol- bio112-ol-">
+                        <a href="../BS-bio112/l1.html">
+                            <li>Diversity of living organisms</li>
+                        </a>
+                        <a href="../BS-bio112/l2.html">
+                            <li>Class Pisces</li>
+                        </a>
+                        <a href="../BS-bio112/l3.html">
+                            <li>Amphibians</li>
+                        </a>
+                    </ol>
+                </label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="side_sub11_" class="side-checkbox-">
+                <label for="side_sub11_">
+                    PHY 111 <span class="arw-"></span>
+                    <ol class="subj-ol-">
+                        <a href="../BS-phy111/l1.html">
+                            <li>Coulomb's law</li>
+                        </a>
+                        <a href="../BS-phy111/l2.html">
+                            <li>Electricity 1</li>
+                        </a>
+                        <a href="../BS-phy111/l3.html">
+                            <li>Energy</li>
+                        </a>
+                        <a href="../BS-phy111/l4.html">
+                            <li>Charge</li>
+                        </a>
+                    </ol>
+                </label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="side_sub12_" class="side-checkbox-">
+                <label for="side_sub12_">
+                    MTH 111 <span class="arw-"></span>
+                    <ol class="subj-ol-">
+                        <a href="../BS-mth111/l1.html">
+                            <li>Limits & Functions</li>
+                        </a>
+                    </ol>
+                </label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="side_sub13_" class="side-checkbox-">
+                <label for="side_sub13_">
+                    GST 115 <span class="arw-"></span>
+                    <ol class="subj-ol-">
+                        <a href="../BS-gst115/l1.html">
+                            <li>Physical features of Nigeria</li>
+                        </a>
+                        <a href="../BS-gst115/l2.html">
+                            <li>Major ethnic groups</li>
+                        </a>
+                        <a href="../BS-gst115/l3.html">
+                            <li>Origins of ethinc groups</li>
+                        </a>
+                    </ol>
+                </label>
+            </div>
+        </div>
+
+        <div id="imgbox_" class="imgbox-"></div>
+
+        <!--Questions-->
+        <div class="questions-">
+            <input type="checkbox" id="check1_" class="check-">
+            <div>txt</div>
+            <p></p>
+            <p class="ans-">txt</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <label for="check1_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br></span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check2_" class="check-">
+            <div></div>
+
+            <p></p>
+            <p class="ans-"></p>
+            <p></p>
+            <p></p>
+
+            <label for="check2_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br></span>
+            </label>
+        </div>
+
+        <div class="questions-">
+            <input type="checkbox" id="check3_" class="check-">
+            <div></div>
+
+            <p></p>
+            <p class="ans-"></p>
+            <p></p>
+            <p></p>
+
+            <label for="check3_">
+                <span class="show-">[Show]</span>
+                <span class="hide-">[Hide]<br></span>
+            </label>
+        </div>
+    </div>
+
+
+
+
+
+    <a href="#">
+        <div class="up-btn-">
+            <div></div>
+        </div>
+    </a>
+
+
+    <div class="comments-section">
+        <h3>Comment</h3>
+
+        <form id="comment-form">
+            <div class="name-">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Name" required>
+            </div>
+
+            <div class="come-">
+                <label for="comment">Comment:</label>
+                <textarea id="comment" rows="6" placeholder="Write a comment" required></textarea>
+            </div>
+
+            <button class="submit-" type="submit"><img src="../../Pictures/submit.png" alt=""></button>
+            <div class="status-" id="comment-submission-status"></div>
+        </form>
+    </div>
+
+    <input type="checkbox" id="show_">
+    <label for="show_">
+        <div class="show-btn-">Show Comments</div>
+    </label>
+    <div class="show-comments-">
+        <h3>Comments</h3>
+        <div id="comments-container"></div><!-- do not touch this -->
+    </div>
+
+
+    <script type="module" src="../../scripts/comments.js"></script>
+    <script src="../../scripts/Java.js"></script>
+    <script src="../../scripts/copy&paste.js"></script>
+</body>
+
 </html>

@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="../../CSS/Subjects/sidebar.css">
         <link rel="stylesheet" href="../../CSS/Subjects/questions.css">
         <link rel="stylesheet" href="../../CSS/Subjects/comments.css">
-        <script src="../../scripts/Java.js"></script>
     </head>
 
     <body>
@@ -29,6 +28,7 @@
                 <a href="l3.html"><button><span>Lesson 3</span><span class="hidden-subject-">Functional groups and homologous series</span></button></a>
                 <a href="l4.html"><button class = "selected-"><span>Naming organic compounds</span><span class="hidden-subject-">Naming organic compounds</span></button></a>
                 <a href="l5.html"><button><span>Lesson 5</span><span class="hidden-subject-">Naming organic compounds part 2</span></button></a>
+                <a href="l6.html"><button><span>Lesson 6</span><span class="hidden-subject-">hydrocarbons</span></button></a>
             </div>
             
             
@@ -54,158 +54,6 @@
 
             <!--side navigation-->
             <div class="sidebar-" id="sidebar">
-                <div class="close-" onclick="close_()" id="close_">&times;</div>
-                <div>
-                    <input type="checkbox" id="side_sub1_" class="side-checkbox-">
-                    <label for="side_sub1_" >
-                        MTH 101 <span class="arw- mth101-arw-"></span>
-                        <ol class="subj-ol- mth101-ol-">
-                            <a href="../BS-mth101/l1.html"><li>Elemental set theory</li></a>
-                            <a href="../BS-mth101/l2.html"><li>Real numbers</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub2_" class="side-checkbox-">
-                    <label for="side_sub2_" >
-                        PHY 101 <span class="arw- phy101-arw-"></span>
-                        <ol class="subj-ol- phy101-ol-">
-                            <a href="../BS-phy101/l1.html"><li>Measurements, quantities, dimensions </li></a>
-                            <a href="../BS-phy101/l2.html"><li>Space, time, units and dimensions</li></a>
-                            <a href="../BS-phy101/l3.html"><li>Newton's laws of motion</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub3_" class="side-checkbox-">
-                    <label for="side_sub3_" >
-                        COS 101 <span class="arw- cos101-arw-"></span>
-                        <ol class="subj-ol- cos101-ol-">
-                            <a href="../BS-cos101/l1.html"><li>Computer</li></a>
-                            <a href="../BS-cos101/l2.html"><li>Structure of the computer</li></a>
-                            <a href="../BS-cos101/l3.html"><li>Computing history</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub4_" class="side-checkbox-">
-                    <label for="side_sub4_" >
-                        GST 106 <span class="arw- gst106-arw-"></span>
-                        <ol class="subj-ol- gst106-ol-">
-                            <a href="../BS-gst106/l1.html"><li>Health</li></a>
-                            <a href="../BS-gst106/l2.html"><li>Alcoholism</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub5_" class="side-checkbox-">
-                    <label for="side_sub5_" >
-                        GST 107 <span class="arw- gst107-arw-"></span>
-                        <ol class="subj-ol- gst107-ol-">
-                            <a href="../BS-gst107/l1.html"><li>Word formation</li></a>
-                            <a href="../BS-gst107/l2.html"><li>Communication</li></a>
-                            <a href="../BS-gst107/l3.html"><li>Spoken English</li></a>
-                            <a href="../BS-gst107/l4.html"><li>Reading, listening skills, listening skills</li></a>
-                            <a href="../BS-gst107/l5.html"><li>Word formation</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub6_" class="side-checkbox-">
-                    <label for="side_sub6_" >
-                        CHM 101 <span class="arw- chm101-arw-"></span>
-                        <ol class="subj-ol- chm101-ol-">
-                            <a href="../BS-chm101/l1.html"><li>Atoms, molecules and compounds</li></a>
-                            <a href="../BS-chm101/l2.html"><li>Elements, Atomic numbers, Mass numbers and Isotopes</li></a>
-                            <a href="../BS-chm101/l3.html"><li>Still under elements, atomic number</li></a>
-                            <a href="../BS-chm101/l4.html"><li>German obj</li></a>
-                            <a href="../BS-chm101/l5.html"><li>German obj part 2</li></a>
-                        </ol>
-                    </label>
-                </div> 
-
-                <div>
-                    <input type="checkbox" id="side_sub7_" class="side-checkbox-">
-                    <label for="side_sub7_" >
-                        BIO 101 <span class="arw- bio101-arw-"></span>
-                        <ol class="subj-ol- bio101-ol-">
-                            <a href="../BS-bio101/l1.html"><li>Ecology</li></a>
-                            <a href="../BS-bio101/l2.html"><li>Cell structure</li></a>
-                            <a href="../BS-bio101/l3.html"><li>Kingdom plantae</li></a>
-                            <a href="../BS-bio101/l4.html"><li>Bio Doc</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub8_" class="side-checkbox-">
-                    <label for="side_sub8_" >
-                        General <span class="arw- general-arw-"></span>
-                        <ol class="subj-ol- general-ol-">
-                            <a href="../BS-general/l1.html"><li>Random questions</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub9_" class="side-checkbox-">
-                    <label for="side_sub9_" >
-                        CHM 111 <span class="arw- chm111-arw-"></span>
-                        <ol class="subj-ol- chm111-ol-">
-                            <a href="../BS-chm111/l1.html"><li>Introduction to organic chemistry</li></a>
-                            <a href="../BS-chm111/l2.html"><li>Classification of organic compounds</li></a>
-                            <a href="../BS-chm111/l3.html"><li>Functional groups and homologous series</li></a>
-                            <a href="../BS-chm111/l4.html"><li>Naming organic compounds</li></a>
-                            <a href="../BS-chm111/l5.html"><li>Naming organic compounds part 2</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub10_" class="side-checkbox-">
-                    <label for="side_sub10_" >
-                        BIO 112 <span class="arw- bio112-arw-"></span>
-                        <ol class="subj-ol- bio112-ol-">
-                            <a href="../BS-bio112/l1.html"><li>Diversity of living organisms</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub11_" class="side-checkbox-">
-                    <label for="side_sub11_" >
-                        PHY 111 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-phy111/l1.html"><li>Coulomb's law</li></a>
-                            <a href="../BS-phy111/l2.html"><li>Electricity 1</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub12_" class="side-checkbox-">
-                    <label for="side_sub12_" >
-                        MTH 111 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-mth111/l1.html"><li>Limits & Functions</li></a>
-                        </ol>
-                    </label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="side_sub13_" class="side-checkbox-">
-                    <label for="side_sub13_" >
-                        GST 115 <span class="arw-"></span>
-                        <ol class="subj-ol-">
-                            <a href="../BS-gst115/l1.html"><li>Physical features of Nigeria</li></a>
-                        </ol>
-                    </label>
-                </div>
             </div>
             
 
@@ -215,10 +63,7 @@
             <div class="questions-">
                 <input type="checkbox" id="check1_"  class="check-">
                 <div></div>
-                    <img  class="a-img-" onclick= '
-                        _img =  `<img src="../../Pictures/CHM L4/Q1.jpg">`
-                        img()
-                        ' src="../../Pictures/CHM L4/Q1.jpg">
+                    <img  class="qimg-" onclick= 'img(this)' src="../../Pictures/CHM L4/Q1.jpg">
 
                 <label for="check1_">
                     <span class="show-">[Show]</span>
@@ -235,10 +80,7 @@
             <div class="questions-">
                 <input type="checkbox" id="check2_" class="check-">
                 <div></div>
-                    <img class="a-img-" onclick= '
-                        _img = `<img src="../../Pictures/CHM L4/Q2.jpg">`
-                        img()
-                        ' src="../../Pictures/CHM L4/Q2.jpg">
+                    <img class="qimg-" onclick= 'img(this)' src="../../Pictures/CHM L4/Q2.jpg">
 
                 <label for="check2_">
                     <span class="show-">[Show]</span>
@@ -253,10 +95,7 @@
             <div class="questions-">
                 <input type="checkbox" id="check3_" class="check-">
                 <div></div>
-                    <img class="a-img-" onclick='
-                        _img = `<img src="../../Pictures/CHM L4/Q3.jpg">`
-                        img()
-                        ' src="../../Pictures/CHM L4/Q3.jpg">
+                    <img class="qimg-" onclick='img(this)' src="../../Pictures/CHM L4/Q3.jpg">
 
                 <label for="check3_">
                     <span class="show-">[Show]</span>
@@ -269,10 +108,7 @@
             <div class="questions-">
                 <input type="checkbox" id="check4_" class="check-">
                 <div></div>
-                    <img class="a-img-" onclick='
-                        _img = `<img src="../../Pictures/CHM L4/Q4.jpg">`
-                        img()
-                        ' src="../../Pictures/CHM L4/Q4.jpg">
+                    <img class="qimg-" onclick='img(this)' src="../../Pictures/CHM L4/Q4.jpg">
 
                 <label for="check4_">
                     <span class="show-">[Show]</span>
@@ -287,10 +123,7 @@
             <div class="questions-">
                 <input type="checkbox" id="check5_" class="check-">
                 <div></div>
-                    <img class="a-img-" onclick='
-                        _img = `<img src="../../Pictures/CHM L4/Q5.jpg">`
-                        img()
-                        ' src="../../Pictures/CHM L4/Q5.jpg">
+                    <img class="qimg-" onclick='img(this)' src="../../Pictures/CHM L4/Q5.jpg">
 
                 <label for="check5_">
                     <span class="show-">[Show]</span>
@@ -307,10 +140,7 @@
             <div class="questions-">
                 <input type="checkbox" id="check6_" class="check-">
                 <div></div>
-                    <img class="a-img-" onclick='
-                        _img = `<img src="../../Pictures/CHM L4/Q6.jpg">`
-                        img()
-                        ' src="../../Pictures/CHM L4/Q6.jpg">
+                    <img class="qimg-" onclick='img(this)' src="../../Pictures/CHM L4/Q6.jpg">
 
                 <label for="check6_">
                     <span class="show-">[Show]</span>
@@ -323,10 +153,7 @@
             <div class="questions-">
                 <input type="checkbox" id="check7_" class="check-">
                 <div></div>
-                    <img class="a-img-" onclick='
-                        _img = `<img src="../../Pictures/CHM L4/Q7.jpg">`
-                        img()
-                        ' src="../../Pictures/CHM L4/Q7.jpg">
+                    <img class="qimg-" onclick='img(this)' src="../../Pictures/CHM L4/Q7.jpg">
 
                 <label for="check7_">
                     <span class="show-">[Show]</span>
@@ -339,10 +166,7 @@
             <div class="questions-">
                 <input type="checkbox" id="check8_" class="check-">
                 <div></div>
-                    <img class="a-img-" onclick='
-                        _img = `<img src="../../Pictures/CHM L4/Q8.jpg">`
-                        img()
-                        ' src="../../Pictures/CHM L4/Q8.jpg">
+                    <img class="qimg-" onclick='img(this)' src="../../Pictures/CHM L4/Q8.jpg">
 
                 <label for="check8_">
                     <span class="show-">[Show]</span>
@@ -355,10 +179,7 @@
             <div class="questions-">
                 <input type="checkbox" id="check9_" class="check-">
                 <div></div>
-                    <img class="a-img-" onclick='
-                        _img = `<img src="../../Pictures/CHM L4/Q9.jpg">`
-                        img()
-                        ' src="../../Pictures/CHM L4/Q9.jpg">
+                    <img class="qimg-" onclick='img(this)' src="../../Pictures/CHM L4/Q9.jpg">
 
                 <label for="check9_">
                     <span class="show-">[Show]</span>
@@ -373,10 +194,7 @@
             <div class="questions-">
                 <input type="checkbox" id="check10_" class="check-">
                 <div></div>
-                    <img class="a-img-" onclick='
-                        _img = `<img src="../../Pictures/CHM L4/Q10.jpg">`
-                        img()
-                        ' src="../../Pictures/CHM L4/Q10.jpg">
+                    <img class="qimg-" onclick='img(this)' src="../../Pictures/CHM L4/Q10.jpg">
 
                 <label for="check10_">
                     <span class="show-">[Show]</span>
@@ -389,10 +207,7 @@
             <div class="questions-">
                 <input type="checkbox" id="check11_"  class="check-">
                 <div></div>
-                    <img class="a-img-" onclick='
-                        _img = `<img src="../../Pictures/CHM L4/Q11.jpg">`
-                        img()
-                        ' src="../../Pictures/CHM L4/Q11.jpg">
+                    <img class="qimg-" onclick='img(this)' src="../../Pictures/CHM L4/Q11.jpg">
 
                 <label for="check11_">
                     <span class="show-">[Show]</span>
@@ -438,5 +253,7 @@
         
           
         <script type="module" src="../../scripts/comments.js"></script>
+    <script src="../../scripts/Java.js"></script>
+    <script src="../../scripts/copy&paste.js"></script>
     </body>
 </html>
