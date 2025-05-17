@@ -63,8 +63,15 @@ function Word_Reader(x){
 function innerNew_(x1, x2, x3, x4, x5, x6, x7){
     let x = (x1 + x2 + x3 + x4 + x5 + x6 + x7).toLowerCase()
     let y = (x1 + x2 + x3 + x4).toLowerCase()
-    if (x === ' <label'){it++}// turns off system when <label> is hit
-    if (x === '       '&&!it){is++; x_+='</span>'}// closes span on tab
+    if (x === ' <label'){
+        it++
+    }//? turns off system when <label> is hit
+    if (x === '       '&&!it){
+        is++; x_+='</span>'
+    }//? closes span on tab
+    if (!in_&&x === ' <label'){
+        x_ += '<textarea rows="1" class="inputjs--"></textarea>';
+    }//? creates a textbox if there are no options
 
     if (is && !it) for (i of 'abcde'){
     // first: does not give display block
@@ -75,7 +82,7 @@ function innerNew_(x1, x2, x3, x4, x5, x6, x7){
         (x === `    <p>`&&i==='a')||
         (x === ` <p cla`&&i==='a')){
         x_+=`<span class="T--" onclick="line(this)">`
-        is=0
+        is=0;in_++
         }
     // second: gives display block
         if
@@ -84,7 +91,7 @@ function innerNew_(x1, x2, x3, x4, x5, x6, x7){
         x === `     ${i} ` ||
         (x === `  <span`&&i==='a')){
         x_+=`<span class="T--" style="display: block;" onclick="line(this)">`
-        is=0
+        is=0;in_++
         }
     }
     x_ += x1
@@ -128,6 +135,7 @@ function under(this_){
 let x_ = ''
 let it = 0
 let is = 0
+let in_= 0
 // Scans the doc for Questions
 if (true) for (let i = 0; i < 100; i++){
     let x = document.querySelector(`.questions-:nth-child(${i})`)
@@ -141,6 +149,7 @@ if (true) for (let i = 0; i < 100; i++){
         
         // console.log(document.querySelector(`.questions-:nth-child(${i})`).innerHTML)
         x_ = ''
+        in_=0
         it = 0
     }
 }

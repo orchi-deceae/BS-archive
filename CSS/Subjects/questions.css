@@ -57,6 +57,9 @@
     }
 }
 
+
+
+
 /* Your option wrong */
 .check-:checked~.underlinejs--,
 .check-:checked~div .underlinejs-- {
@@ -77,6 +80,23 @@
 .check-:checked~span .ans-,
 .check-:checked~div .ans- {
     color: green;
+}
+
+/* Theory question */
+.inputjs--{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin-bottom: 25px;
+    border-bottom: solid black 1px;
+    field-sizing: content;
+}
+
+@media (min-height: 1200px){
+    .inputjs--{
+        font-size: 38px;
+    }
 }
 
 
