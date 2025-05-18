@@ -46,19 +46,16 @@
     margin-right: 5px;
 }
 
-.answer-span- {
-    line-height: 30px;
-    margin: 5px 20px;
-}
-
-@media (min-height: 1200px) {
-    .answer-span- {
-        line-height: 55px;
-    }
-}
 .T--{
     margin-bottom: 10px;
 }
+
+@media (min-height: 1200px) {
+    .T--{
+        margin-bottom: 20px;
+    }
+}
+
 
 
 
@@ -91,7 +88,6 @@
     border: none;
     outline: none;
     font-size: 20px;
-    margin-bottom: 25px;
     border-bottom: solid black 1px;
     field-sizing: content;
 }
@@ -99,7 +95,6 @@
 @media (min-height: 1200px){
     .inputjs--{
         font-size: 38px;
-        margin-bottom: 40px;
     }
 }
 
@@ -108,9 +103,16 @@
 
 
 /* Show and hide */
+.questions- label{
+    margin-top: 25px;
+}
+@media (min-height: 1200px){
+    .questions- label{
+        margin-top: 40px;
+    }
+}
 .questions- label span {
     cursor: pointer;
-    margin-top: 5px;
 }
 
 .check-:checked~.show-,

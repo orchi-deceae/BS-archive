@@ -78,7 +78,6 @@ function innerNew_(x1, x2, x3, x4, x5, x6, x7){
         if
         (x=== `<br>${i}. ` ||
         x === `<br>${i}) ` ||
-        x === ` <br>${i} ` ||
         (x === `    <p>`&&i==='a')||
         (x === ` <p cla`&&i==='a')){
         x_+=`<span class="T--" onclick="line(this)">`
@@ -88,7 +87,6 @@ function innerNew_(x1, x2, x3, x4, x5, x6, x7){
         if
         (x=== `    ${i}) ` ||
         x === `    ${i}. ` ||
-        x === `     ${i} ` ||
         (x === `  <span`&&i==='a')){
         x_+=`<span class="T--" style="display: block;" onclick="line(this)">`
         is=0;in_++
