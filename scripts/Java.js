@@ -78,6 +78,7 @@ function innerNew_(x1, x2, x3, x4, x5, x6, x7){
         if
         (x=== `<br>${i}. ` ||
         x === `<br>${i}) ` ||
+        (x === `<br><sp`&&i==='a')||
         (x === `    <p>`&&i==='a')||
         (x === ` <p cla`&&i==='a')){
         x_+=`<span class="T--" onclick="line(this)">`
