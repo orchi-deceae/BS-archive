@@ -70,7 +70,7 @@ function innerNew_(x1, x2, x3, x4, x5, x6, x7){
         is++; x_+='</span>'
     }//? closes span on tab
     if (!in_&&x === ' <label'){
-        x_ += '<textarea rows="1" class="inputjs--"></textarea>';
+        x_ += '<textarea rows="1" class="inputjs--" oninput="autoResize_(this)"></textarea>';
     }//? creates a textbox if there are no options
 
     if (is && !it) for (i of 'abcde'){
@@ -130,6 +130,10 @@ function under(this_){
             }
         }
     }
+}
+function autoResize_(this_){
+    this_.style.height = 'auto'
+    this_.style.height = this_.scrollHeight + 'px'
 }
 let x_ = ''
 let it = 0
