@@ -46,32 +46,33 @@ function close_img(){
 console.log('hi')
 function Word_Reader(x){
     let n_ = ['', '', '', '', '', '', '']
+    x_=''
+    in_=0
     for (i of x.innerHTML){
         // Reads it left to right
-        n_[6] = n_[5]
-        n_[5] = n_[4]
-        n_[4] = n_[3]
-        n_[3] = n_[2]
-        n_[2] = n_[1]
-        n_[1] = n_[0]
-        n_[0] = i
-        
-        x.innerHTML = innerNew_(n_[6], n_[5], n_[4], n_[3], n_[2], n_[1], n_[0]) + n_[5] + n_[4] + n_[3] + n_[2] + n_[1] + n_[0]
+        n_[0] = n_[1]
+        n_[1] = n_[2]
+        n_[2] = n_[3]
+        n_[3] = n_[4]
+        n_[4] = n_[5]
+        n_[5] = n_[6]
+        n_[6] = i
+        x.innerHTML = innerNew_(n_) + n_[5] + n_[4] + n_[3] + n_[2] + n_[1] + n_[0]
     }
 }
 // This puts the options into spans and creates the new innerHTML
-function innerNew_(x1, x2, x3, x4, x5, x6, x7){
-    let x = (x1 + x2 + x3 + x4 + x5 + x6 + x7).toLowerCase()
-    let y = (x1 + x2 + x3 + x4).toLowerCase()
+function innerNew_(Array_, x=''){
+    for (i of Array_) x += i.toLowerCase()
+
     if (x === ' <label'){
+        if (!in_) x_ += '<textarea rows="1" class="inputjs--" oninput="autoResize_(this)" placeholder="Write here..."></textarea>';
         it++
-    }//? turns off system when <label> is hit
+    }
+    if (x === '</label') it--  
+    
     if (x === '       '&&!it){
         is++; x_+='</span>'
-    }//? closes span on tab
-    if (!in_&&x === ' <label'){
-        x_ += '<textarea rows="1" class="inputjs--" oninput="autoResize_(this)"></textarea>';
-    }//? creates a textbox if there are no options
+    }// closes span on tab
 
     if (is && !it) for (i of 'abcde'){
     // first: does not give display block
@@ -81,7 +82,7 @@ function innerNew_(x1, x2, x3, x4, x5, x6, x7){
         (x === `<br><sp`&&i==='a')||
         (x === `    <p>`&&i==='a')||
         (x === ` <p cla`&&i==='a')){
-        x_+=`<span class="T--" onclick="line(this)">`
+        x_+=`<span class="optionjs--" onclick="line(this)">`
         is=0;in_++
         }
     // second: gives display block
@@ -89,18 +90,17 @@ function innerNew_(x1, x2, x3, x4, x5, x6, x7){
         (x=== `    ${i}) ` ||
         x === `    ${i}. ` ||
         (x === `  <span`&&i==='a')){
-        x_+=`<span class="T--" style="display: block;" onclick="line(this)">`
+        x_+=`<span class="optionjs--" style="display: block;" onclick="line(this)">`
         is=0;in_++
         }
     }
-    x_ += x1
+    x_ += Array_[0]
     return x_
 }
 
 // Allows you to underline
 function line(this_){
-    under(this_)
-    console.log(this_.innerHTML)
+    autoLineRemover_(this_)
     if (this_.style.textDecoration !== 'underline'){
         this_.style.textDecoration = 'underline'
         this_.classList.add('underlinejs--')
@@ -109,32 +109,48 @@ function line(this_){
         this_.style.textDecoration = 'none'
         this_.classList.remove('underlinejs--')
     }
+    console.log(this_.innerHTML)
 }
 
-// Auto un-underliner
-function under(this_){
-    for(let i=0; i < 100; i++){
-        let n = document.querySelector(`.questions-:nth-child(${i})`)
-        if (n){ 
-            for(let i_=0; i_ < 100; i_++){
-                let x = document.querySelector(`.questions-:nth-child(${i}) .T--:nth-child(${i_})`) // class T-- is innerNew()
-                if (x === this_){
-                    for(let i__=0; i__ < 100; i__++){
-                        let l_ = document.querySelector(`.questions-:nth-child(${i}) .T--:nth-child(${i__})`)
-                        if(l_ && l_ !== this_){
-                            l_.style.textDecoration = 'none'
-                            l_.classList.remove('underlinejs--')
-                        }
-                    }
-                }
-            }
+function autoLineRemover_(this_){
+    const parent = this_.closest('.questions-');
+    if (!parent) return;
+
+    const all = parent.querySelectorAll('.optionjs--');
+        all.forEach(el => {
+            if (el !== this_){
+            el.style.textDecoration = 'none';
+            el.classList.remove('underlinejs--');
         }
-    }
+    });
+
 }
+
+// // Auto un-underliner
+// function under(this_){
+//     for(let i=0; i < 100; i++){
+//         let n = document.querySelector(`.questions-:nth-child(${i})`)
+//         if (n){ 
+//             for(let i_=0; i_ < 100; i_++){
+//                 let x = document.querySelector(`.questions-:nth-child(${i}) .T--:nth-child(${i_})`) // class T-- is innerNew()
+//                 if (x === this_){
+//                     for(let i__=0; i__ < 100; i__++){
+//                         let l_ = document.querySelector(`.questions-:nth-child(${i}) .T--:nth-child(${i__})`)
+//                         if(l_ && l_ !== this_){
+//                             l_.style.textDecoration = 'none'
+//                             l_.classList.remove('underlinejs--')
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 function autoResize_(this_){
     this_.style.height = 'auto'
     this_.style.height = this_.scrollHeight + 'px'
 }
+
 let x_ = ''
 let it = 0
 let is = 0
@@ -142,19 +158,9 @@ let in_= 0
 // Scans the doc for Questions
 if (true) for (let i = 0; i < 100; i++){
     let x = document.querySelector(`.questions-:nth-child(${i})`)
-    if (x){
-        console.log(i)
-        // console.log(document.querySelector(`.questions-:nth-child(${i})`).innerHTML)
-
-        // console.log(document.querySelector(`.questions-:nth-child(${i}) div`).innerHTML)
-        Word_Reader(x) //! Sends package (it's 1 question)
-        // console.log(document.querySelector(`.questions-:nth-child(${i}) div`).innerHTML)
-        
-        // console.log(document.querySelector(`.questions-:nth-child(${i})`).innerHTML)
-        x_ = ''
-        in_=0
-        it = 0
-    }
+    if (x) Word_Reader(x) //! Sends package (it's 1 question)
+    // console.log(document.querySelector(`.questions-:nth-child(${i})`).innerHTML)
 }
+
 
 
