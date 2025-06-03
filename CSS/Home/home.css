@@ -3,8 +3,11 @@
 .bs-main-pfp-{
     display: flex;
     justify-content: center;
-    object-fit: contain;
     padding: 50px 0;
+}
+.bs-main-pfp- img{
+    width: 190px;
+    border-radius: 30px;
 }
 .main-txt-{
     padding-bottom: 100px;

@@ -1,257 +1,272 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>BS-home</title>
-        <link rel="stylesheet" href="Pictures/20250305_205006.jpg">
-        <link rel="stylesheet" href="CSS/Home/general.css">
-        <link rel="stylesheet" href="CSS/Home/home.css">
-        <link rel="stylesheet" href="CSS/Home/subj.css">
-        <link rel="stylesheet" href="CSS/Home/semester.css">
-        <link rel="stylesheet" href="CSS/Home/email.css">
-        <script src="scripts/indexJS.js"></script>
-    </head>
 
-    <body>
+<head>
+    <title>BS-home</title>
+    <link rel="stylesheet" href="Pictures/BC-logo.jpg">
+    <link rel="stylesheet" href="CSS/Home/general.css">
+    <link rel="stylesheet" href="CSS/Home/home.css">
+    <link rel="stylesheet" href="CSS/Home/subj.css">
+    <link rel="stylesheet" href="CSS/Home/semester.css">
+    <link rel="stylesheet" href="CSS/Home/email.css">
+    <script src="scripts/indexJS.js"></script>
+</head>
+
+<body>
+    <div>
         <div>
-            <div>
-                <div class="bs-main-pfp-"><img src="Pictures/20250305_205006.jpg"></div>
-                <div class="main-txt-">
-                    <span>Brainstormers </span>
-                    <span>
-                        <span onclick="seme_i_()">archieve</span>
-                        <span onclick="seme_i_()"><span>i</span></span>
-                    </span>
-                </div>
-
+            <div class="bs-main-pfp-"><img src="Pictures/BC-logo.jpg"></div>
+            <div class="main-txt-">
+                <span>Brainstormers </span>
+                <span>
+                    <span onclick="seme_i_()">archieve</span>
+                    <span onclick="seme_i_()"><span>i</span></span>
+                </span>
             </div>
-        </div>
 
-        
-        <div class="email-img-">
-            <a href="emailjs.html" target="_blank">
+        </div>
+    </div>
+
+
+    <div class="email-img-">
+        <a href="emailjs.html" target="_blank">
             <img src="Pictures/Email.png">
-        </a></div>
-            
-        
-        <div class="curtain-" onclick="close_()" id="curtain_"></div>
+        </a>
+    </div>
 
-        
-        <div class="seme-box-" id="seme_box_">
-            <div class="first-100" onclick="dot_1()" id="first_100">
-                <div class="dot-" id="dot_1"><div></div></div>
-                <span class="seme-">First semester</span>
+
+    <div class="curtain-" onclick="close_()" id="curtain_"></div>
+
+
+    <div class="seme-box-" id="seme_box_">
+        <div class="first-100" onclick="dot_1()" id="first_100">
+            <div class="dot-" id="dot_1">
+                <div></div>
             </div>
-            <div class="first-100" onclick="dot_1_off()" id="first_100_off">
-                <div class="dot- white-" id="dot_1"><div></div></div>
-                <span class="seme-">First semester</span>
+            <span class="seme-">First semester</span>
+        </div>
+        <div class="first-100" onclick="dot_1_off()" id="first_100_off">
+            <div class="dot- white-" id="dot_1">
+                <div></div>
             </div>
-            <div class="second-100" onclick="dot_2()" id="second_100">
-                <div class="dot-" id="dot_2"><div></div></div>
-                <span class="seme-">Second semester</span>
+            <span class="seme-">First semester</span>
+        </div>
+        <div class="second-100" onclick="dot_2()" id="second_100">
+            <div class="dot-" id="dot_2">
+                <div></div>
             </div>
-            <div class="second-100" onclick="dot_2_off()" id="second_100_off">
-                <div class="dot- white-" id="dot_2"><div></div></div>
-                <span class="seme-">Second semester</span>
+            <span class="seme-">Second semester</span>
+        </div>
+        <div class="second-100" onclick="dot_2_off()" id="second_100_off">
+            <div class="dot- white-" id="dot_2">
+                <div></div>
             </div>
+            <span class="seme-">Second semester</span>
+        </div>
+    </div>
+
+
+
+    <div id="part_1">
+        <div>
+            <input type="checkbox" id="check1_" class="check-">
+            <label for="check1_">
+                <div class="first-backgr- backgr-">
+                    <div class="subj-title-">MTH 101</div>
+                    <div class="subj-btns-">
+                        <a href="BS-subject/BS-mth101/l1.html"><button>Element set theory</button></a>
+                        <a href="BS-subject/BS-mth101/l2.html"><button>Real numbers</button></a>
+                    </div>
+                </div>
+            </label>
         </div>
 
-        
-
-        <div id="part_1">
-            <div>
-                <input type="checkbox" id="check1_" class="check-">
-                <label for="check1_">
-                    <div class="first-backgr- backgr-">
-                        <div class="subj-title-">MTH 101</div>
-                        <div class="subj-btns-">
-                            <a href="BS-subject/BS-mth101/l1.html"><button>Element set theory</button></a>
-                            <a href="BS-subject/BS-mth101/l2.html"><button>Real numbers</button></a>
-                        </div>
+        <div>
+            <input type="checkbox" id="check2_" class="check-">
+            <label for="check2_">
+                <div class="second-backgr- backgr-">
+                    <div class="subj-title-">PHY 101</div>
+                    <div class="subj-btns-">
+                        <a href="BS-subject/BS-phy101/l1.html"><button>Measurements, quantities, dimensions</button></a>
+                        <a href="BS-subject/BS-phy101/l2.html"><button>Space, time, units and dimensions</button></a>
+                        <a href="BS-subject/BS-phy101/l3.html"><button>Newton's laws of motion</button></a>
                     </div>
-                </label>
-            </div>
-            
-           <div>
-                <input type="checkbox" id="check2_" class="check-">
-                <label for="check2_">
-                    <div class="second-backgr- backgr-">
-                        <div class="subj-title-">PHY 101</div>
-                        <div class="subj-btns-">
-                            <a href="BS-subject/BS-phy101/l1.html"><button>Measurements, quantities, dimensions</button></a>
-                            <a href="BS-subject/BS-phy101/l2.html"><button>Space, time, units and dimensions</button></a>
-                            <a href="BS-subject/BS-phy101/l3.html"><button>Newton's laws of motion</button></a>
-                        </div>
-                    </div>
-                </label>
-           </div>
-            
-           <div>
-                <input type="checkbox" id="check3_" class="check-">
-                <label for="check3_">
-                    <div class="third-backgr- backgr-">
-                        <div class="subj-title-">COS 101</div>
-                        <div class="subj-btns-">
-                            <a href="BS-subject/BS-cos101/l1.html"><button>Computer</button></a>
-                            <a href="BS-subject/BS-cos101/l2.html"><button>Structure of the computer</button></a>
-                            <a href="BS-subject/BS-cos101/l3.html"><button>Computing history</button></a>
-                        </div>
-                    </div>
-                </label>
-            </div>
-            
-            <div>
-                <input type="checkbox" id="check4_" class="check-">
-                <label for="check4_">
-                    <div class="forth-backgr-  backgr-">
-                        <div class="subj-title-">GST 106</div>
-                        <div class="subj-btns-">
-                            <a href="BS-subject/BS-gst106/l1.html"><button>Health</button></a>
-                            <a href="BS-subject/BS-gst106/l2.html"><button>Alcoholism</button></a>
-                        </div>
-                    </div>
-                </label>
-            </div>
-    
-            <div>
-                <input type="checkbox" id="check5_" class="check-">
-                <label for="check5_">
-                    <div class="fifth-backgr- backgr-">
-                        <div class="subj-title-">GST 107</div>
-                        <div class="subj-btns-">
-                            <a href="BS-subject/BS-gst107/l1.html"><button>Word formation</button></a>
-                            <a href="BS-subject/BS-gst107/l2.html"><button>Communication</button></a>
-                            <a href="BS-subject/BS-gst107/l3.html"><button>Spoken English</button></a>
-                            <a href="BS-subject/BS-gst107/l4.html"><button>Reading, listening skills</button></a>
-                            <a href="BS-subject/BS-gst107/l5.html"><button>Word formation</button></a>
-                        </div>
-                    </div>
-                </label>
-           </div>
-    
-           <div>
-                <input type="checkbox" id="check6_" class="check-">
-                <label for="check6_">
-                    <div class="first-backgr- backgr-">
-                        <div class="subj-title-">CHM 101</div>
-                        <div class="subj-btns-">
-                            <a href="BS-subject/BS-chm101/l1.html"><button>Atoms, molecules and compounds</button></a>
-                            <a href="BS-subject/BS-chm101/l2.html"><button>Elements, Atomic numbers, Mass numbers and Isotopes</button></a>
-                            <a href="BS-subject/BS-chm101/l3.html"><button>Still under elements, atomic number</button></a>
-                            <a href="BS-subject/BS-chm101/l4.html"><button>German obj</button></a>
-                            <a href="BS-subject/BS-chm101/l5.html"><button>German obj part 2</button></a>
-                        </div>
-                    </div>
-                </label>
-            </div>
-    
-            <div>
-                <input type="checkbox" id="check7_" class="check-">
-                <label for="check7_">
-                    <div class="second-backgr- backgr-">
-                        <div class="subj-title-">BIO 101</div>
-                        <div class="subj-btns-">
-                            <a href="BS-subject/BS-bio101/l1.html"><button>Ecology</button></a>
-                            <a href="BS-subject/BS-bio101/l2.html"><button>Cell structure</button></a>
-                            <a href="BS-subject/BS-bio101/l3.html"><button>Kingdom plantae</button></a>
-                            <a href="BS-subject/BS-bio101/l4.html"><button>Bio Doc</button></a>
-                        </div>
-                    </div>
-                </label>
-            </div>
-    
-            <div>
-                <input type="checkbox" id="check8_" class="check-">
-                <label for="check8_">
-                    <div class="third-backgr- backgr-">
-                        <div class="subj-title-">General</div>
-                        <div class="subj-btns-">
-                            <a href="BS-subject/BS-general/l1.html"><button>Just random questions</button></a>
-                        </div>
-                    </div>
-                </label>
-            </div>    
+                </div>
+            </label>
         </div>
 
-
-
-        <div id="part_2">
-            <div>
-                <input type="checkbox" id="check9_" class="check-">
-                <label for="check9_">
-                    <div class="forth-backgr- backgr-">
-                        <div class="subj-title-">CHM 111</div>
-                        <div class="subj-btns-">
-                            <a href="BS-subject/BS-chm111/l1.html"><button>Introduction to organic chemistry</button></a>
-                            <a href="BS-subject/BS-chm111/l2.html"><button>Classification of organic compounds</button></a>
-                            <a href="BS-subject/BS-chm111/l3.html"><button>Functional groups and homologous series</button></a>
-                            <a href="BS-subject/BS-chm111/l4.html"><button>Naming organic compounds</button></a>
-                            <a href="BS-subject/BS-chm111/l5.html"><button>Naming organic compounds part 2</button></a>
-                            <a href="BS-subject/BS-chm111/l6.html"><button>Hydrocarbons</button></a>
-                        </div>
+        <div>
+            <input type="checkbox" id="check3_" class="check-">
+            <label for="check3_">
+                <div class="third-backgr- backgr-">
+                    <div class="subj-title-">COS 101</div>
+                    <div class="subj-btns-">
+                        <a href="BS-subject/BS-cos101/l1.html"><button>Computer</button></a>
+                        <a href="BS-subject/BS-cos101/l2.html"><button>Structure of the computer</button></a>
+                        <a href="BS-subject/BS-cos101/l3.html"><button>Computing history</button></a>
                     </div>
-                </label>
-            </div>
-    
-            <div>
-                <input type="checkbox" id="check10_" class="check-">
-                <label for="check10_">
-                    <div class="fifth-backgr- backgr-">
-                        <div class="subj-title-">BIO 112</div>
-                        <div class="subj-btns-">
-                            <a href="BS-subject/BS-bio112/l1.html"><button>Diversity of living organisms</button></a>
-                            <a href="BS-subject/BS-bio112/l2.html"><button>Class Pisces</button></a>
-                            <a href="BS-subject/BS-bio112/l3.html"><button>Amphibians</button></a>
-                        </div>
-                    </div>
-                </label>
-            </div>
-    
-            <div>
-                <input type="checkbox" id="check11_" class="check-">
-                <label for="check11_">
-                    <div class="first-backgr- backgr-">
-                        <div class="subj-title-">PHY 111</div>
-                        <div class="subj-btns-">
-                            <a href="BS-subject/BS-phy111/l1.html"><button>Coulomb's law</button></a>
-                            <a href="BS-subject/BS-phy111/l2.html"><button>Electricity 1</button></a>
-                            <a href="BS-subject/BS-phy111/l3.html"><button>Energy</button></a>
-                            <a href="BS-subject/BS-phy111/l4.html"><button>Charge</button></a>
-                        </div>
-                    </div>
-                </label>
-            </div>
-    
-            <div>
-                <input type="checkbox" id="check12_" class="check-">
-                <label for="check12_">
-                    <div class="second-backgr- backgr-">
-                        <div class="subj-title-">MTH 111</div>
-                        <div class="subj-btns-">
-                            <a href="BS-subject/BS-mth111/l1.html"><button>Limits & Functions</button></a>
-                        </div>
-                    </div>
-                </label>
-            </div>
-    
-            <div>
-                <input type="checkbox" id="check13_" class="check-">
-                <label for="check13_">
-                    <div class="third-backgr- backgr-">
-                        <div class="subj-title-">GST 115</div>
-                        <div class="subj-btns-">
-                            <a href="BS-subject/BS-gst115/l1.html"><button>Physical features of Nigeria</button></a>
-                            <a href="BS-subject/BS-gst115/l2.html"><button>Major ethnic groups</button></a>
-                            <a href="BS-subject/BS-gst115/l3.html"><button>Origins of ethinc groups</button></a>
-                        </div>
-                    </div>
-                </label>
-            </div>    
+                </div>
+            </label>
         </div>
 
-        <div class="up-btn-, off">
-            <a href="#"><div></div></a>
+        <div>
+            <input type="checkbox" id="check4_" class="check-">
+            <label for="check4_">
+                <div class="forth-backgr-  backgr-">
+                    <div class="subj-title-">GST 106</div>
+                    <div class="subj-btns-">
+                        <a href="BS-subject/BS-gst106/l1.html"><button>Health</button></a>
+                        <a href="BS-subject/BS-gst106/l2.html"><button>Alcoholism</button></a>
+                    </div>
+                </div>
+            </label>
         </div>
 
-        <div style="display: none;"><img src="Pictures/IMG_c7sokl.jpg"><!--easter egg--></div>
-    </body>
+        <div>
+            <input type="checkbox" id="check5_" class="check-">
+            <label for="check5_">
+                <div class="fifth-backgr- backgr-">
+                    <div class="subj-title-">GST 107</div>
+                    <div class="subj-btns-">
+                        <a href="BS-subject/BS-gst107/l1.html"><button>Word formation</button></a>
+                        <a href="BS-subject/BS-gst107/l2.html"><button>Communication</button></a>
+                        <a href="BS-subject/BS-gst107/l3.html"><button>Spoken English</button></a>
+                        <a href="BS-subject/BS-gst107/l4.html"><button>Reading, listening skills</button></a>
+                        <a href="BS-subject/BS-gst107/l5.html"><button>Word formation</button></a>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="check6_" class="check-">
+            <label for="check6_">
+                <div class="first-backgr- backgr-">
+                    <div class="subj-title-">CHM 101</div>
+                    <div class="subj-btns-">
+                        <a href="BS-subject/BS-chm101/l1.html"><button>Atoms, molecules and compounds</button></a>
+                        <a href="BS-subject/BS-chm101/l2.html"><button>Elements, Atomic numbers, Mass numbers and
+                                Isotopes</button></a>
+                        <a href="BS-subject/BS-chm101/l3.html"><button>Still under elements, atomic number</button></a>
+                        <a href="BS-subject/BS-chm101/l4.html"><button>German obj</button></a>
+                        <a href="BS-subject/BS-chm101/l5.html"><button>German obj part 2</button></a>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="check7_" class="check-">
+            <label for="check7_">
+                <div class="second-backgr- backgr-">
+                    <div class="subj-title-">BIO 101</div>
+                    <div class="subj-btns-">
+                        <a href="BS-subject/BS-bio101/l1.html"><button>Ecology</button></a>
+                        <a href="BS-subject/BS-bio101/l2.html"><button>Cell structure</button></a>
+                        <a href="BS-subject/BS-bio101/l3.html"><button>Kingdom plantae</button></a>
+                        <a href="BS-subject/BS-bio101/l4.html"><button>Bio Doc</button></a>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="check8_" class="check-">
+            <label for="check8_">
+                <div class="third-backgr- backgr-">
+                    <div class="subj-title-">General</div>
+                    <div class="subj-btns-">
+                        <a href="BS-subject/BS-general/l1.html"><button>Just random questions</button></a>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+
+
+
+    <div id="part_2">
+        <div>
+            <input type="checkbox" id="check9_" class="check-">
+            <label for="check9_">
+                <div class="forth-backgr- backgr-">
+                    <div class="subj-title-">CHM 111</div>
+                    <div class="subj-btns-">
+                        <a href="BS-subject/BS-chm111/l1.html"><button>Introduction to organic chemistry</button></a>
+                        <a href="BS-subject/BS-chm111/l2.html"><button>Classification of organic compounds</button></a>
+                        <a href="BS-subject/BS-chm111/l3.html"><button>Functional groups and homologous
+                                series</button></a>
+                        <a href="BS-subject/BS-chm111/l4.html"><button>Naming organic compounds</button></a>
+                        <a href="BS-subject/BS-chm111/l5.html"><button>Naming organic compounds part 2</button></a>
+                        <a href="BS-subject/BS-chm111/l6.html"><button>Hydrocarbons</button></a>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="check10_" class="check-">
+            <label for="check10_">
+                <div class="fifth-backgr- backgr-">
+                    <div class="subj-title-">BIO 112</div>
+                    <div class="subj-btns-">
+                        <a href="BS-subject/BS-bio112/l1.html"><button>Diversity of living organisms</button></a>
+                        <a href="BS-subject/BS-bio112/l2.html"><button>Class Pisces</button></a>
+                        <a href="BS-subject/BS-bio112/l3.html"><button>Amphibians</button></a>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="check11_" class="check-">
+            <label for="check11_">
+                <div class="first-backgr- backgr-">
+                    <div class="subj-title-">PHY 111</div>
+                    <div class="subj-btns-">
+                        <a href="BS-subject/BS-phy111/l1.html"><button>Coulomb's law</button></a>
+                        <a href="BS-subject/BS-phy111/l2.html"><button>Electricity 1</button></a>
+                        <a href="BS-subject/BS-phy111/l3.html"><button>Energy</button></a>
+                        <a href="BS-subject/BS-phy111/l4.html"><button>Charge</button></a>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="check12_" class="check-">
+            <label for="check12_">
+                <div class="second-backgr- backgr-">
+                    <div class="subj-title-">MTH 111</div>
+                    <div class="subj-btns-">
+                        <a href="BS-subject/BS-mth111/l1.html"><button>Limits & Functions</button></a>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="check13_" class="check-">
+            <label for="check13_">
+                <div class="third-backgr- backgr-">
+                    <div class="subj-title-">GST 115</div>
+                    <div class="subj-btns-">
+                        <a href="BS-subject/BS-gst115/l1.html"><button>Physical features of Nigeria</button></a>
+                        <a href="BS-subject/BS-gst115/l2.html"><button>Major ethnic groups</button></a>
+                        <a href="BS-subject/BS-gst115/l3.html"><button>Origins of ethinc groups</button></a>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="up-btn-, off">
+        <a href="#">
+            <div></div>
+        </a>
+    </div>
+
+    <div style="display: none;"><img src="Pictures/IMG_c7sokl.jpg"><!--easter egg--></div>
+</body>
+
 </html>

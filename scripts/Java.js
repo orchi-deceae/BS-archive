@@ -46,8 +46,6 @@ function close_img(){
 console.log('hi')
 function Word_Reader(x){
     let n_ = ['', '', '', '', '', '', '']
-    x_=''
-    in_=0
     for (i of x.innerHTML){
         // Reads it left to right
         n_[0] = n_[1]
@@ -59,6 +57,8 @@ function Word_Reader(x){
         n_[6] = i
         x.innerHTML = innerNew_(n_) + n_[5] + n_[4] + n_[3] + n_[2] + n_[1] + n_[0]
     }
+    x_=''
+    in_=0
 }
 // This puts the options into spans and creates the new innerHTML
 function innerNew_(Array_, x=''){
@@ -159,7 +159,7 @@ let in_= 0
 if (true) for (let i = 0; i < 100; i++){
     let x = document.querySelector(`.questions-:nth-child(${i})`)
     if (x) Word_Reader(x) //! Sends package (it's 1 question)
-    // console.log(document.querySelector(`.questions-:nth-child(${i})`).innerHTML)
+    // x &&console.log(x.innerHTML)
 }
 
 

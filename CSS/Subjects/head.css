@@ -21,6 +21,9 @@
     object-fit: contain;
     cursor: pointer;
 }
+.header1- a div img{
+    border-radius: 15px;
+}
 @media (min-height: 1200px) {
     .header1- a div{
         height: 120px;
