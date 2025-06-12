@@ -3,7 +3,6 @@
 .comments-section{
     background-color: white;
     
-    position: relative;
     display: flex;
     flex-direction: column;
     font-size: 30px;
@@ -24,6 +23,7 @@
 /* The input fields */
 .comments-section .name-, 
 .comments-section .come-{
+    position: relative;
     display: flex;
     flex-direction: column;
     font-size: 22px;
@@ -61,7 +61,7 @@
     background-color: transparent;
     position: absolute;
         right: 0;
-        bottom: -5px;
+        bottom: -15px;
     display: flex;
     border: none;
     margin: 10px 0;

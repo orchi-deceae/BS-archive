@@ -54,6 +54,7 @@ function Word_Reader(){
             //if (yes=1&-1) it closes spans by alternating 1 and -1 (1 outside -1 inside).
             //if (no=0) it prints a textArea for the user to answer the theory
         }
+        
         let content = question.innerHTML
         for (i of content){
             // Reads it left to right
@@ -154,7 +155,6 @@ function autoResize_(this_){
 Word_Reader()
 
 document.querySelectorAll('.questions- img').forEach((value) => {
-    console.log(value)
     value.addEventListener('click', () => {
         img(value)
     });
