@@ -65,7 +65,38 @@
         </div>
     </div>
 
+    <!-- <div class="radio-">
+        <input type="radio" name="names_" id="names_">
+        <input type="radio" name="names_" id="names_">
+        <label >text</label>
+    </div>
+    <div  class="radio-">
+        <input type="radio" name="names" id="names">
+        <input type="radio" name="names" id="names">
+        <label>text</label>
+    </div> -->
 
+    <script>
+        document.querySelectorAll('.radio- input:nth-child(1)').forEach((value) => {
+            value.addEventListener('click', () => {
+                use1(value)
+            });
+        });
+        document.querySelectorAll('.radio- input:nth-child(1)').forEach((value) => {
+            value.addEventListener('click', () => {
+                use1(value)
+            });
+        });
+        document.querySelectorAll('.radio- input:nth-child(1)').forEach((value) => {
+            value.addEventListener('click', () => {
+                use1(value)
+            });
+        });
+        function use1(value){
+            let parent = value.closest('.radio-')
+            console.log(parent)
+        }
+    </script>
 
     <div id="part_1">
         <div>
