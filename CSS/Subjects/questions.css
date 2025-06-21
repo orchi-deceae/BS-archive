@@ -61,28 +61,6 @@
 
 
 
-/* Your option wrong */
-.check-:checked~.underlinejs--,
-.check-:checked~div .underlinejs-- {
-    color: red;
-    text-decoration: none !important;
-}
-
-/* Your option correct */
-.check-:checked~.underlinejs-- .ans-,
-.check-:checked~div .underlinejs-- .ans- {
-    color: green;
-    text-decoration: underline;
-}
-
-
-/* The correct option */
-.check-:checked~.ans-,
-.check-:checked~span .ans-,
-.check-:checked~div .ans- {
-    color: green;
-}
-
 /* Theory question */
 .inputjs--{
     background-color: transparent;
@@ -92,11 +70,31 @@
     border-bottom: solid black 1px;
     /* field-sizing: content; */
 }
-
 @media (min-height: 1200px){
     .inputjs--{
         font-size: 38px;
     }
+}
+
+/* The correct option */
+.check-:checked ~ .ans-,
+.check-:checked ~ span .ans-,
+.check-:checked ~ div .ans- {
+    color: green;
+}
+
+/* Your option correct */
+.check-:checked ~ .underlinejs-- .ans-,
+.check-:checked ~ div .underlinejs-- .ans- {
+    color: green;
+    text-decoration: underline;
+}
+
+/* Your option wrong */
+.check-:checked ~ .underlinejs--,
+.check-:checked ~ div .underlinejs-- {
+    color: red;
+    text-decoration: none !important;
 }
 
 
@@ -197,7 +195,7 @@
     transform: translate(50%, 50%);
     object-fit: contain;
     font-size: 30px;
-    z-index: 12;
+    z-index: 13;
 }
 
 @media (max-height: 1199px) {

@@ -1,45 +1,40 @@
 
-// sidebar
+// Side menu
 function bugor_(){
-    document.getElementById("curtain").style.display = "flex";
-    document.getElementById("sidebar").style.width = "300px";
+    document.getElementById('sidebar').style.width = '300px'
+
+    const curtain = document.createElement('div')
+    document.body.appendChild(curtain)
+    
+    curtain.addEventListener('click', () => close_());
+    curtain.classList.add('curtain-')
 }
 
 function close_(){
-    document.getElementById("curtain").style.display = "none";
-    document.getElementById("sidebar").style.width = "0";
+    document.body.removeChild(document.querySelector(".curtain-"))
+    document.getElementById("sidebar").style.width = "";
 }
 
-
-//useless
-function answer(){
-    document.getElementById("hide").style.display = "flex"
-    document.getElementById("show").style.display = "none"
-    document.getElementById("answer").style.textDecoration = "underline";
-}
-
-function hide(){
-    document.getElementById("show").style.display = "flex"
-    document.getElementById("hide").style.display = "none"
-    document.getElementById("answer").style.textDecoration = "none";
-}
 
 
 //image
 function img(this_){
-    document.getElementById('imgbox_').innerHTML = `<img>`
-    document.querySelector('#imgbox_ img').src = this_.src
-    document.getElementById('imgbox_').style.display = "block";
-    document.getElementById("curtain_img").style.display = "flex";
-}   
+    const imgbox_ = document.createElement('div')
+    const curtain = document.createElement('div')
     
-function close_img(){
-    document.getElementById("imgbox_").style.display = "none";
-    document.getElementById("curtain_img").style.display = "none";
-}
+    imgbox_.classList.add('imgbox-')
+    curtain.classList.add('curtain-')
 
+    document.body.appendChild(imgbox_)
+    document.body.appendChild(curtain)
+    
+    imgbox_.innerHTML = this_.outerHTML
 
-
+    curtain.addEventListener('click', () => {
+        document.body.removeChild(imgbox_)
+        document.body.removeChild(curtain)
+    });
+}   
 
 // I made it smart
 console.log('hi')
@@ -61,11 +56,12 @@ function Word_Reader(){
             letters.push(i) //adds to the top [6]
 
             elementCreator(letters)
-
             object1.newHTML += letters[0] //pushes the last letter
-            question.innerHTML = object1.newHTML + letters.slice(1).join('')
         }
+        question.innerHTML = object1.newHTML + letters.slice(1).join('')
     });
+
+
     document.querySelectorAll('.optionjs--').forEach((value) => {
         value.addEventListener('click', () => {
             lineCreator(value)
@@ -74,6 +70,11 @@ function Word_Reader(){
     document.querySelectorAll('.inputjs--').forEach((value) => {
         value.addEventListener('input', () => {
             autoResize_(value)
+        });
+    });
+    document.querySelectorAll('.questions- img').forEach((value) => {
+        value.addEventListener('click', () => {
+            img(value)
         });
     });
 }
@@ -123,7 +124,7 @@ function lineCreator(this_){
         this_.style.textDecoration = 'none'
         this_.classList.remove('underlinejs--')
     }
-    console.log(this_.innerHTML)
+    console.log(this_)
 }
 
 //to remove the underline
@@ -149,8 +150,28 @@ function autoResize_(this_){
 
 Word_Reader()
 
-document.querySelectorAll('.questions- img').forEach((value) => {
-    value.addEventListener('click', () => {
-        img(value)
+
+function use1(){
+    const array = document.querySelectorAll('.header2- a')
+    const arrayL = array.length
+    let back;
+    let next;
+    array.forEach((value, i) => {
+        value.querySelector('button span').innerHTML = `Lesson ${i+1}`
+        if (value.href === window.location.href){
+            value.querySelector('button').classList.add('selected-')
+            back = array[i-1] ? array[i-1] : array[arrayL - 1];
+            next = array[i+1] ? array[i+1] : array[0];
+            console.log(next, back)
+            
+            value.querySelector('button span').innerHTML = 
+            value.querySelector('button .hidden-subject-').innerHTML
+        }
     });
-});
+    document.querySelector('.before- div').innerHTML = back.querySelector('button .hidden-subject-').innerHTML
+    document.querySelector('.before- a').href = back.href
+    
+    document.querySelector('.after- div').innerHTML = next.querySelector('button .hidden-subject-').innerHTML
+    document.querySelector('.after- a').href = next.href
+}
+use1()
