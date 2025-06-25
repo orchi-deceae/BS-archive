@@ -1,7 +1,9 @@
 
 // Side menu
 function bugor_(){
-    document.getElementById('sidebar').style.width = '300px'
+    const sidebar = document.getElementById('sidebar').style
+    console.log()
+    sidebar.width = '300px'
 
     const curtain = document.createElement('div')
     document.body.appendChild(curtain)
@@ -34,7 +36,72 @@ function img(this_){
         document.body.removeChild(imgbox_)
         document.body.removeChild(curtain)
     });
-}   
+}
+
+
+// New project for Top page
+
+function add_Header(title, past,next, now){
+    if (document.querySelector('.header1-')) document.querySelector('.header1-').remove()
+    if (document.querySelector('.header2-')) document.querySelector('.header2-').remove()
+    if (document.querySelector('.title-')) document.querySelector('.title-').remove()
+        console.log('hm')
+    const head = `
+    <div class="header1-">
+        <a href="../../index.html"><div><img src="../../Pictures/BC-logo.jpg"></div></a>
+
+        <a href="../../index.html"><button>Brainstormers <span> archieve</span></button></a>
+
+        <div onclick="bugor_()" id="bugor_"><img src="../../Pictures/hamburger-menu.svg"></div>
+    </div>
+
+    <!--navigation bar-->
+    <div class="header2-"></div>
+
+    <!--Topic-->
+    <div class="title-">
+        <div class="sub-101-">${title.textContent}</div>
+
+        <div class="change-">
+            <div class="before-">
+                <a href="${past.href}"><button class="before-btn-">Before</button></a>
+                <div class="beforepop-">${past.textContent}</div>
+            </div>
+            <div class="after-">
+                <a href="${next.href}"><button class="next-btn-">Next</button></a>
+                <div class="afterpop-">${next.textContent}</div>
+            </div>
+        </div>
+
+        <div class="topic-">${now.textContent}</div>
+    </div>
+    `
+    document.body.innerHTML = head + document.body.innerHTML
+
+    
+    now.parentElement.querySelectorAll('a').forEach((value, i) => {
+        document.querySelector('.header2-').innerHTML += `<a href="l${i+1}.html"><button><span>Lesson ${i+1}</span><span class="hidden-subject-">${value.textContent}</span></button></a>`
+        if (value.href === window.location.href){
+            document.querySelector('.header2- a:last-child button span').innerHTML = value.textContent
+            document.querySelector('.header2- a:last-child button').classList.add('selected-')
+        }
+    });
+}
+
+
+document.querySelectorAll('.sidebar- div:not(:first-child)').forEach((value) => {
+    let topics = value.querySelectorAll('a')
+    topics.forEach((topic, i) => {
+        if (topic.href === window.location.href){
+            let title = topic.parentElement.parentElement.firstChild
+            let past = topics[i - 1] ? topics[i-1] : topics[topics.length-1]
+            let next = topics[i + 1] ? topics[i+1] : topics[0]
+
+            add_Header(title, past, next, topic)
+            return
+        }
+    });
+});
 
 // I made it smart
 console.log('hi')
@@ -151,27 +218,27 @@ function autoResize_(this_){
 Word_Reader()
 
 
-function use1(){
-    const array = document.querySelectorAll('.header2- a')
-    const arrayL = array.length
-    let back;
-    let next;
-    array.forEach((value, i) => {
-        value.querySelector('button span').innerHTML = `Lesson ${i+1}`
-        if (value.href === window.location.href){
-            value.querySelector('button').classList.add('selected-')
-            back = array[i-1] ? array[i-1] : array[arrayL - 1];
-            next = array[i+1] ? array[i+1] : array[0];
-            console.log(next, back)
+// function use1(){
+//     const array = document.querySelectorAll('.header2- a')
+//     const arrayL = array.length
+//     let back;
+//     let next;
+//     array.forEach((value, i) => {
+//         value.querySelector('button span').innerHTML = `Lesson ${i+1}`
+//         if (value.href === window.location.href){
+//             value.querySelector('button').classList.add('selected-')
+//             back = array[i-1] ? array[i-1] : array[arrayL - 1];
+//             next = array[i+1] ? array[i+1] : array[0];
+//             console.log(next, back)
             
-            value.querySelector('button span').innerHTML = 
-            value.querySelector('button .hidden-subject-').innerHTML
-        }
-    });
-    document.querySelector('.before- div').innerHTML = back.querySelector('button .hidden-subject-').innerHTML
-    document.querySelector('.before- a').href = back.href
+//             value.querySelector('button span').innerHTML = 
+//             value.querySelector('button .hidden-subject-').innerHTML
+//         }
+//     });
+//     document.querySelector('.before- div').innerHTML = back.querySelector('button .hidden-subject-').innerHTML
+//     document.querySelector('.before- a').href = back.href
     
-    document.querySelector('.after- div').innerHTML = next.querySelector('button .hidden-subject-').innerHTML
-    document.querySelector('.after- a').href = next.href
-}
-use1()
+//     document.querySelector('.after- div').innerHTML = next.querySelector('button .hidden-subject-').innerHTML
+//     document.querySelector('.after- a').href = next.href
+// }
+// use1()
