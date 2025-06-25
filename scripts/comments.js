@@ -30,7 +30,6 @@ signInAnonymously(auth).then(() => {
 onAuthStateChanged(auth, (user) => {
     if (user) {
         currentUser = user
-        console.log(currentUser)
     }
 });
 
@@ -114,6 +113,7 @@ commentForm.addEventListener('submit', async (event) => {
     const pageId = getPageId();
 
     
+    console.log(name, text, currentUser)
     if (name && text && currentUser) {
         commentSubmissionStatus.textContent = 'Submitting comment...';
         try {
