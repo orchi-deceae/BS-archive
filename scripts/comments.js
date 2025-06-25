@@ -100,7 +100,7 @@ function sendMail() {
         message: commentInput.value.trim()
     }
 
-    console.log('is it working?')
+    console.log(parms)
 
     emailjs.send("service_l8fwrai", "template_6fh3qpj", parms).then(alert("Email Sent!!! -by EmailJS.com"))
 }
