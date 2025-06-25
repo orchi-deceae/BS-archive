@@ -30,6 +30,7 @@ signInAnonymously(auth).then(() => {
 onAuthStateChanged(auth, (user) => {
     if (user) {
         currentUser = user
+        console.log(currentUser)
     }
 });
 
@@ -99,6 +100,8 @@ function sendMail() {
         email: 'oksherlock9661@gmail.com',
         message: commentInput.value.trim()
     }
+
+    console.log('is it working?')
 
     emailjs.send("service_l8fwrai", "template_6fh3qpj", parms).then(alert("Email Sent!!! -by EmailJS.com"))
 }
