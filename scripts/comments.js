@@ -63,8 +63,8 @@ function displayComments(comments) {
         // Show delete button only if the uid matches
         if (comment.uid === currentUser?.uid) {
             const deleteBtn = document.createElement('button');
+            deleteBtn.classList.add('deleteCommentBtnjs--')
             deleteBtn.textContent = 'Delete'
-            deleteBtn.style = 'background-color: red; color: white; margin-top: 5px; padding: 4px 8px; border: none; border-radius: 4px;'
             deleteBtn.onclick = async () => {
                 if (confirm('Are you sure you want to delete this comment?')){
                     await deleteDoc(doc(db, 'comments', comment.id))
@@ -93,15 +93,19 @@ function loadComments() {
 }
 
 // email
-function sendMail() {
+function sendMail(name, text) {
     let parms = {
-        name: nameInput.value.trim(),
+        name: 'Comment System',
         email: 'oksherlock9661@gmail.com',
-        message: commentInput.value.trim()
+        message: `${name}: ${text}`
     }
-
     console.log(parms)
-    emailjs.send("service_l8fwrai", "template_6fh3qpj", parms).then(alert("Email Sent!!! -by EmailJS.com"))
+
+    emailjs.send("service_l8fwrai", "template_6fh3qpj", parms).then(() => {
+        console.log('Comment sent to Email')
+    }).catch(error => {
+        console.error('Email sending faild', error)
+    });;
 }
 
 // Event listener for comment submission
@@ -112,7 +116,6 @@ commentForm.addEventListener('submit', async (event) => {
     const pageId = getPageId();
 
     
-    console.log(name, text, currentUser)
     if (name && text && currentUser) {
         commentSubmissionStatus.textContent = 'Submitting comment...';
         try {
@@ -124,7 +127,7 @@ commentForm.addEventListener('submit', async (event) => {
                 timestamp: serverTimestamp() // Use server timestamp for accuracy
             });
             
-            sendMail()
+            sendMail(name, text)
             nameInput.value = '';
             commentInput.value = '';
             commentSubmissionStatus.textContent = 'Comment submitted successfully!';
@@ -142,19 +145,3 @@ commentForm.addEventListener('submit', async (event) => {
 
 // Load initial comments when the page loads
 loadComments();
-
-document.body.innerHTML = `
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init({
-            publicKey: "Sj2duhmrEQlsjXpWJ",
-            });
-        })();
-
-
-        function handleSubmit(e)  {
-            e.preventDefault()
-
-        }
-    </script>` + document.body.innerHTML

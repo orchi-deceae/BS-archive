@@ -2,8 +2,7 @@
 // Side menu
 function bugor_(){
     const sidebar = document.getElementById('sidebar').style
-    console.log()
-    sidebar.width = '300px'
+    sidebar.width = window.innerHeight >= 1200 ? '500px' : '300px'
 
     const curtain = document.createElement('div')
     document.body.appendChild(curtain)
@@ -45,7 +44,7 @@ function add_Header(title, past,next, now){
     if (document.querySelector('.header1-')) document.querySelector('.header1-').remove()
     if (document.querySelector('.header2-')) document.querySelector('.header2-').remove()
     if (document.querySelector('.title-')) document.querySelector('.title-').remove()
-        console.log('hm')
+    console.log('hm')
     const head = `
     <div class="header1-">
         <a href="../../index.html"><div><img src="../../Pictures/BC-logo.jpg"></div></a>
@@ -81,7 +80,7 @@ function add_Header(title, past,next, now){
     
     now.parentElement.querySelectorAll('a').forEach((value, i) => {
         document.querySelector('.header2-').innerHTML += `<a href="l${i+1}.html"><button><span>Lesson ${i+1}</span><span class="hidden-subject-">${value.textContent}</span></button></a>`
-        if (value.href === window.location.href){
+        if (value.pathname === window.location.pathname){
             document.querySelector('.header2- a:last-child button span').innerHTML = value.textContent
             document.querySelector('.header2- a:last-child button').classList.add('selected-')
         }
@@ -92,7 +91,7 @@ function add_Header(title, past,next, now){
 document.querySelectorAll('.sidebar- div:not(:first-child)').forEach((value) => {
     let topics = value.querySelectorAll('a')
     topics.forEach((topic, i) => {
-        if (topic.href === window.location.href){
+        if (topic.pathname === window.location.pathname){
             let title = topic.parentElement.parentElement.firstChild
             let past = topics[i - 1] ? topics[i-1] : topics[topics.length-1]
             let next = topics[i + 1] ? topics[i+1] : topics[0]
@@ -217,28 +216,3 @@ function autoResize_(this_){
 
 Word_Reader()
 
-
-// function use1(){
-//     const array = document.querySelectorAll('.header2- a')
-//     const arrayL = array.length
-//     let back;
-//     let next;
-//     array.forEach((value, i) => {
-//         value.querySelector('button span').innerHTML = `Lesson ${i+1}`
-//         if (value.href === window.location.href){
-//             value.querySelector('button').classList.add('selected-')
-//             back = array[i-1] ? array[i-1] : array[arrayL - 1];
-//             next = array[i+1] ? array[i+1] : array[0];
-//             console.log(next, back)
-            
-//             value.querySelector('button span').innerHTML = 
-//             value.querySelector('button .hidden-subject-').innerHTML
-//         }
-//     });
-//     document.querySelector('.before- div').innerHTML = back.querySelector('button .hidden-subject-').innerHTML
-//     document.querySelector('.before- a').href = back.href
-    
-//     document.querySelector('.after- div').innerHTML = next.querySelector('button .hidden-subject-').innerHTML
-//     document.querySelector('.after- a').href = next.href
-// }
-// use1()

@@ -35,9 +35,10 @@
 }
 @media (min-height: 1200px) {
     .sidebar- div{
-        font-size: 40px;
+        font-size: 60px;
     }
 }
+
 /*The x*/
 .sidebar- div:first-child{
     position: relative;
@@ -45,23 +46,23 @@
     cursor: pointer;
 
     top: -10px;
-    padding-left: 250px;
+    margin-left: 250px;
     font-size: 70px;
 }
 @media (min-height: 1200px) {
     .sidebar- div:first-child{
         top: -30px;
-        font-size: 130px;
-        padding-left: 230px;
+        font-size: 150px;
+        margin-left: 400px;
     }
 }
 
 /*subjects*/
 .sidebar- div:not(:first-child){
     position: relative;
-        top: -20px;
-    padding: 0 0 40px 20px;
-    white-space: nowrap;
+    top: -20px;
+    margin: 0 0 40px 20px;
+    white-space: wrap;
 }
 @media (min-height: 1200px) {
     .sidebar- div:not(:first-child){
@@ -77,68 +78,72 @@
     display: none;
 }
 .sidebar- label{
-    display: flex;
     cursor: pointer;
 }
 
 /* The topics */
 .subj-ol-{
-    padding-top: 20PX;
     display: none;
+    margin: 50px 0;
+    padding: 0;
 }
-.subj-ol- li{
-max-width: 200px;
+.subj-ol- a{
     padding: 10px 0;
+    padding-left: 30px;
     font-size: 26px;
     white-space: wrap;
 }
 @media (min-height: 1200px) {
-    .subj-ol-{
-        margin: 80px 0 0 20px;
+    .subj-ol- a{
+        margin: 0;
+        padding-left: 30px;
     }
     .subj-ol- li{
-        max-width: 250px;
-        font-size: 30px;
+        font-size: 40px;
     }
 }
 
 
-/*The topics (checkbox) - ol*/
+/*The topics (clicked) - ol*/
 .side-checkbox-:checked ~ label .subj-ol-{
     position: relative;
     display: flex;
     flex-direction: column;
-    left: -150px;
     width: 100%;
     height: 100%;
 }
-@media (min-height: 1200px) {
-    .side-checkbox-:checked ~ label .subj-ol-{
-        left: -200px;
-    }
-}
+
+/* The arrow */
 .arw-{
     position: relative;
-    display: flex;
-    top: 13px;
+    display: inline;
+    top: 25px;
     width: 0;
     height: 0;
     margin-left: 10px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 12px solid black;
-    transition: 300ms;
-}
-@media (min-height: 1200px){
-    .arw-{
-        top: 16px;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-top: 12px solid black;
-    }
 }
 .side-checkbox-:checked ~ label .arw-{
     transform: rotate(180deg);
+    border-bottom: 12px solid black;
+    border-top: 0;
+    top: -25px;
+}
+@media (min-height: 1200px){
+    .arw-{
+        top: 50px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 30px solid black;
+    }
+    .side-checkbox-:checked  ~ label .arw-{ 
+        transform: rotate(180deg);
+        border-bottom: 30px solid black;
+        border-top: 0;
+        top: -50px;
+    }
 }
 
 /* Strike */

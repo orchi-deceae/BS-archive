@@ -118,6 +118,24 @@
     }
 }
 
+
+/* Comment delete button */
+.deleteCommentBtnjs--{
+    background-color: red; 
+    color: white; 
+    margin-top: 5px; 
+    padding: 4px 8px; 
+    border: none; 
+    border-radius: 4px;
+}
+@media (min-height: 1200px){
+    .deleteCommentBtnjs--{
+        padding: 5px 10px;
+        margin-left: 10px;
+        font-size: 26px;
+    }
+}
+
 /* Show button */
 #show_{
     display: none;
