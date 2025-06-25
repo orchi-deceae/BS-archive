@@ -94,23 +94,6 @@ function loadComments() {
 
 // email
 function sendMail() {
-    document.body.innerHTML = `<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function(){
-        emailjs.init({
-        publicKey: "Sj2duhmrEQlsjXpWJ",
-        });
-        })();
-
-
-        function handleSubmit(e)  {
-            e.preventDefault()
-
-        }
-    </script>` + document.body.innerHTML
-
     let parms = {
         name: nameInput.value.trim(),
         email: 'oksherlock9661@gmail.com',
@@ -118,11 +101,7 @@ function sendMail() {
     }
 
     console.log(parms)
-
     emailjs.send("service_l8fwrai", "template_6fh3qpj", parms).then(alert("Email Sent!!! -by EmailJS.com"))
-    console.log(document.body)
-    document.body.removeChild('script')
-    console.log(document.body)
 }
 
 // Event listener for comment submission
@@ -163,3 +142,19 @@ commentForm.addEventListener('submit', async (event) => {
 
 // Load initial comments when the page loads
 loadComments();
+
+document.body.innerHTML = `
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "Sj2duhmrEQlsjXpWJ",
+            });
+        })();
+
+
+        function handleSubmit(e)  {
+            e.preventDefault()
+
+        }
+    </script>` + document.body.innerHTML
