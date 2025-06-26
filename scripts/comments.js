@@ -97,7 +97,7 @@ function sendMail(name, text) {
     let parms = {
         name: 'Comment System',
         email: 'oksherlock9661@gmail.com',
-        message: `${name}: ${text}`
+        message: `${name}: ${text} \n${getPageId()}`
     }
     console.log(parms)
 

@@ -40,6 +40,21 @@ function img(this_){
 
 // New project for Top page
 
+document.querySelectorAll('.sidebar- div:not(:first-child)').forEach((value) => {
+    let topics = value.querySelectorAll('a')
+    topics.forEach((topic, i) => {
+        if (topic.pathname === window.location.pathname){
+            let title = topic.parentElement.parentElement.firstChild
+            let past = topics[i - 1] ? topics[i-1] : topics[topics.length-1]
+            let next = topics[i + 1] ? topics[i+1] : topics[0]
+
+            add_Header(title, past, next, topic)
+            return
+        }
+    });
+});
+
+
 function add_Header(title, past,next, now){
     if (document.querySelector('.header1-')) document.querySelector('.header1-').remove()
     if (document.querySelector('.header2-')) document.querySelector('.header2-').remove()
@@ -87,20 +102,6 @@ function add_Header(title, past,next, now){
     });
 }
 
-
-document.querySelectorAll('.sidebar- div:not(:first-child)').forEach((value) => {
-    let topics = value.querySelectorAll('a')
-    topics.forEach((topic, i) => {
-        if (topic.pathname === window.location.pathname){
-            let title = topic.parentElement.parentElement.firstChild
-            let past = topics[i - 1] ? topics[i-1] : topics[topics.length-1]
-            let next = topics[i + 1] ? topics[i+1] : topics[0]
-
-            add_Header(title, past, next, topic)
-            return
-        }
-    });
-});
 
 // I made it smart
 console.log('hi')
@@ -153,6 +154,7 @@ function elementCreator(letters){
 
     for (i of 'abcde'){
         if(
+        package === `   (${i}) ` ||
         package === `    ${i}) ` ||
         package === `    ${i}. ` ||
         package === `    <p>`||
