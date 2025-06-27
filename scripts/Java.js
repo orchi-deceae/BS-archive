@@ -101,7 +101,7 @@ function add_Header(title, past,next, now){
         }
     });
 }
-
+// console.log('1231114'.replaceAll('1', ''))
 
 // I made it smart
 console.log('hi')

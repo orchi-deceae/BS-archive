@@ -99,7 +99,6 @@ function sendMail(name, text) {
         email: 'oksherlock9661@gmail.com',
         message: `${name}: ${text} \n${getPageId()}`
     }
-    console.log(parms)
 
     emailjs.send("service_l8fwrai", "template_6fh3qpj", parms).then(() => {
         console.log('Comment sent to Email')
