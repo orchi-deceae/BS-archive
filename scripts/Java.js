@@ -59,7 +59,7 @@ function add_Header(title, past,next, now){
     if (document.querySelector('.header1-')) document.querySelector('.header1-').remove()
     if (document.querySelector('.header2-')) document.querySelector('.header2-').remove()
     if (document.querySelector('.title-')) document.querySelector('.title-').remove()
-    console.log('hm')
+    console.log('headers added')
     const head = `
     <div class="header1-">
         <a href="../../index.html"><div><img src="../../Pictures/BC-logo.jpg"></div></a>
@@ -104,7 +104,6 @@ function add_Header(title, past,next, now){
 // console.log('1231114'.replaceAll('1', ''))
 
 // I made it smart
-console.log('hi')
 
 function Word_Reader(){
     let letters = ['', '', '', '', '', '', '']
@@ -144,6 +143,7 @@ function Word_Reader(){
             img(value)
         });
     });
+    console.log('options-- added')
 }
 // This puts the options into spans and creates the new innerHTML
 function elementCreator(letters){

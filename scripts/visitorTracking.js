@@ -17,6 +17,7 @@
 // Load Firebase modules
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
 import { getDatabase, ref, runTransaction } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-database.js";
+import { getAuth, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
 
 // Your Firebase configuration
 const firebaseConfig = {
@@ -32,18 +33,27 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
+const auth = getAuth(app);
 
-// Generate a safe page key (e.g., "home", "about_me")
-const pageKey = location.pathname.replace(/\/|\.html/g, "_") || "home";
-const totalRef = ref(db, "visits/_total");
-const pageRef = ref(db, `visits/${pageKey}`);
+signInAnonymously(auth).catch((error) => console.log("Anonymous auth failed: ", error));
 
-// Increment total counter
-runTransaction(totalRef, (current) => (current || 0) + 1).catch((e) =>
-  console.error("Total count failed:", e)
-);
+onAuthStateChanged(auth, (user) => {
+    if (user){
+        const uid = user.uid
+        const pageKey = location.pathname.replace(/\/|\.html/g, "_") || "home";
 
-// Increment page-specific counter
-runTransaction(pageRef, (current) => (current || 0) + 1).catch((e) =>
-  console.error("Page count failed:", e)
-);
+        // Generate a safe page key (e.g., "home", "about_me")
+        const totalUserRef = ref(db, `visits/_total/${uid}`);
+        const pageUserRef = ref(db, `visits/${pageKey}/${uid}`);
+
+        // Increment total counter
+        runTransaction(totalUserRef, (current) => (current || 0) + 1).catch((e) =>
+        console.error("Total count failed:", e)
+        );
+
+        // Increment page-specific counter
+        runTransaction(pageUserRef, (current) => (current || 0) + 1).catch((e) =>
+        console.error("Page count failed:", e)
+        );
+    }
+});
