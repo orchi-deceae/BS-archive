@@ -43,13 +43,13 @@ onAuthStateChanged(auth, (user) => {
         const pageKey = location.pathname.replace(/\/|\.html/g, "_") || "home";
 
         // Generate a safe page key (e.g., "home", "about_me")
-        const visitsUserRef = ref(db, `visits/_count`);
+        const countUserRef = ref(db, `visits/_count`);
         const totalUserRef = ref(db, `visits/_total/${uid}`);
         const pageUserRef = ref(db, `visits/${pageKey}/${uid}`);
 
         // Increment total number counter
-        runTransaction(visitsUserRef, (current) => (current || 0) + 1).catch((e) =>
-        console.error("visits count failed:", e)
+        runTransaction(countUserRef, (current) => (current || 0) + 1).catch((e) =>
+        console.error("grand count failed:", e)
         );
 
         // Increment total counter
