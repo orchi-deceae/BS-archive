@@ -1,3 +1,4 @@
+
 function sideBar_() {
     document.querySelector('.sidebar-').innerHTML = `
     <div class="close-" onclick="close_()" id="close_">&times;</div>
@@ -123,6 +124,7 @@ function sideBar_() {
                 <a href="../BS-bio112/l2.html"><li>Class Pisces</li></a>
                 <a href="../BS-bio112/l3.html"><li>Amphibians</li></a>
                 <a href="../BS-bio112/l4.html"><li>Class Aves</li></a>
+                <a href="../BS-bio112/l5.html"><li>Characteristics of birds</li></a>
             </ol>
         </label>
     </div>
@@ -161,6 +163,7 @@ function sideBar_() {
                 <a href="../BS-gst115/l2.html"><li>Major ethnic groups</li></a>
                 <a href="../BS-gst115/l3.html"><li>Origins of ethinc groups</li></a>
                 <a href="../BS-gst115/l4.html"><li>Nigeria as a political unit</li></a>
+                <a href="../BS-gst115/l5.html"><li>Nigeria's physical features</li></a>
             </ol>
         </label>
     </div>
